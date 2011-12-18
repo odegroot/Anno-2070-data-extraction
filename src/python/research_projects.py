@@ -1,7 +1,9 @@
 '''
-Created on 13.12.2011
+Generates a JSON file with the properties of all research projects.
 
-@author: peter.hozak@gmail.com
+Created on Dec 18, 2011
+
+@author: Oscar de Groot
 '''
 
 from __future__ import division
@@ -10,7 +12,8 @@ import json
 import re
 from xml.etree import ElementTree as ET
 
-__version__ = "0.2"
+__version__ = "0.1"
+__game_version__ = "1.02"
 
 # global settings
 # The txt files are encoded in UCS-2.
@@ -269,7 +272,7 @@ def main():
                            }
              }
     
-    print validate(buildings, model)
+    print(validate(buildings, model))
     out_json(buildings, model)
     
         
