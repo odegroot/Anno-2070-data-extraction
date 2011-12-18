@@ -10,6 +10,13 @@
 Model reference
 =====================
 
+GUID:
+    A globally unique identifier for this research project. No other entity within Anno 2070 will have the same GUID.
+Name:
+    Internal name of the research project. This name is NOT displayed in-game; a localization text is used instead.
+Name.eng:
+    English localized name of the research project. 
+
 category:
     Each project belongs to one of the following categories: Energy, Ecologic, Vehicles, Seed, Public, Special, Production, Research
 subcategory: (optional)
@@ -20,931 +27,1603 @@ subcategory: (optional)
 
 [
   {
-    "category": "Energy", 
+    "GUID": "61011",
+    "Name": "Productivity CoalPowerPlant",
+    "Name.eng": "Control room upgrade",
+    "category": "Energy",
     "subcategory": "CoalPowerPlant"
-  }, 
+  },
   {
-    "category": "Energy", 
+    "GUID": "61012",
+    "Name": "EcoCost CoalPowerPlant",
+    "Name.eng": "Regenerative combustion",
+    "category": "Energy",
     "subcategory": "CoalPowerPlant"
-  }, 
+  },
   {
-    "category": "Energy", 
+    "GUID": "61013",
+    "Name": "Productivity EcoCost CoalPowerPlant",
+    "Name.eng": "Spheric procedure",
+    "category": "Energy",
     "subcategory": "CoalPowerPlant"
-  }, 
+  },
   {
-    "category": "Energy", 
+    "GUID": "61014",
+    "Name": "Productivity EcoCost Strong CoalPowerPlant",
+    "Name.eng": "Thermodynamic efficiency enhancement",
+    "category": "Energy",
     "subcategory": "CoalPowerPlant"
-  }, 
+  },
   {
-    "category": "Energy", 
+    "GUID": "61015",
+    "Name": "ConstructionPlan HydroelectricPowerPlant",
+    "Name.eng": "Blueprint: [GUIDNAME 10087]",
+    "category": "Energy",
     "subcategory": "HydroelectricPowerPlant"
-  }, 
+  },
   {
-    "category": "Energy", 
+    "GUID": "61016",
+    "Name": "Productivity HydroElectricPowerPlant",
+    "Name.eng": "High performance Turbine",
+    "category": "Energy",
     "subcategory": "HydroelectricPowerPlant"
-  }, 
+  },
   {
-    "category": "Energy", 
+    "GUID": "61017",
+    "Name": "EcoCost HydroElectricPowerPlant",
+    "Name.eng": "Improved Cargo hold cleansing",
+    "category": "Energy",
     "subcategory": "HydroelectricPowerPlant"
-  }, 
+  },
   {
-    "category": "Energy", 
+    "GUID": "61018",
+    "Name": "Productivity EcoCost HydroelectricPowerPlant",
+    "Name.eng": "Natural water head optimization",
+    "category": "Energy",
     "subcategory": "HydroelectricPowerPlant"
-  }, 
+  },
   {
-    "category": "Energy", 
+    "GUID": "61019",
+    "Name": "Productivity EcoCost Strong HydroelectricPowerPlant",
+    "Name.eng": "Eco-neutral diffuser technology",
+    "category": "Energy",
     "subcategory": "HydroelectricPowerPlant"
-  }, 
+  },
   {
-    "category": "Energy", 
+    "GUID": "61033",
+    "Name": "Upkeep NuclearPowerPlant",
+    "Name.eng": "Mixed oxide use",
+    "category": "Energy",
     "subcategory": "NuclearPowerPlant"
-  }, 
+  },
   {
-    "category": "Energy", 
+    "GUID": "61034",
+    "Name": "AccidenChance NuclearPowerPlant",
+    "Name.eng": "Catalytic recombiners",
+    "category": "Energy",
     "subcategory": "NuclearPowerPlant"
-  }, 
+  },
   {
-    "category": "Energy", 
+    "GUID": "61035",
+    "Name": "Upkeep AccidentChance NuclearPowerPlant",
+    "Name.eng": "Heavy water cooling system",
+    "category": "Energy",
     "subcategory": "NuclearPowerPlant"
-  }, 
+  },
   {
-    "category": "Energy", 
+    "GUID": "61036",
+    "Name": "Upkeep AccidentChance Strong NuclearPowerPlant",
+    "Name.eng": "Spherical reactor",
+    "category": "Energy",
     "subcategory": "NuclearPowerPlant"
-  }, 
+  },
   {
-    "category": "Energy", 
+    "GUID": "61038",
+    "Name": "InfluenceRadius Windpark",
+    "Name.eng": "Optimized rotor blades",
+    "category": "Energy",
     "subcategory": "Windpark"
-  }, 
+  },
   {
-    "category": "Energy", 
+    "GUID": "61037",
+    "Name": "Upkeep Windpark",
+    "Name.eng": "Automated maintenance",
+    "category": "Energy",
     "subcategory": "Windpark"
-  }, 
+  },
   {
-    "category": "Energy", 
+    "GUID": "61039",
+    "Name": "Upkeep InfluenceRadius Windpark",
+    "Name.eng": "Electronic rotor controls",
+    "category": "Energy",
     "subcategory": "Windpark"
-  }, 
+  },
   {
-    "category": "Energy", 
+    "GUID": "61040",
+    "Name": "Upkeep InfluenceRadius Strong Windpark",
+    "Name.eng": "Super rotor",
+    "category": "Energy",
     "subcategory": "Windpark"
-  }, 
+  },
   {
-    "category": "Energy", 
+    "GUID": "61041",
+    "Name": "Upkeep OffshoreWindpark",
+    "Name.eng": "Monopile deep sea foundation",
+    "category": "Energy",
     "subcategory": "OffshoreWindpark"
-  }, 
+  },
   {
-    "category": "Energy", 
+    "GUID": "61042",
+    "Name": "InfluenceRadius OffshoreWindpark",
+    "Name.eng": "Turbulence reduction",
+    "category": "Energy",
     "subcategory": "OffshoreWindpark"
-  }, 
+  },
   {
-    "category": "Energy", 
+    "GUID": "61043",
+    "Name": "Upkeep InfluenceRadius OffshoreWindpark",
+    "Name.eng": "Darrieus rotor",
+    "category": "Energy",
     "subcategory": "OffshoreWindpark"
-  }, 
+  },
   {
-    "category": "Energy", 
+    "GUID": "61044",
+    "Name": "Upkeep InfluenceRadius Strong OffshoreWindpark",
+    "Name.eng": "Multifractal positioning system",
+    "category": "Energy",
     "subcategory": "OffshoreWindpark"
-  }, 
+  },
   {
-    "category": "Energy", 
+    "GUID": "61045",
+    "Name": "Upkeep CogenerationPowerPlant",
+    "Name.eng": "Improved flue gas cleaning system",
+    "category": "Energy",
     "subcategory": "CogenerationPowerPlant"
-  }, 
+  },
   {
-    "category": "Energy", 
+    "GUID": "61046",
+    "Name": "Productivity CogenerationPowerPlant",
+    "Name.eng": "Power-heat coupling",
+    "category": "Energy",
     "subcategory": "CogenerationPowerPlant"
-  }, 
+  },
   {
-    "category": "Energy", 
+    "GUID": "61047",
+    "Name": "Upkeep Productivity CogenerationPowerPlant",
+    "Name.eng": "Fluidized bed process",
+    "category": "Energy",
     "subcategory": "CogenerationPowerPlant"
-  }, 
+  },
   {
-    "category": "Energy", 
+    "GUID": "61048",
+    "Name": "Upkeep Productivity Strong CogenerationPowerPlant",
+    "Name.eng": "Flue heat exchanger technology",
+    "category": "Energy",
     "subcategory": "CogenerationPowerPlant"
-  }, 
+  },
   {
-    "category": "Energy", 
+    "GUID": "61049",
+    "Name": "Upkeep SolarTower",
+    "Name.eng": "Ceramic heat reservoir",
+    "category": "Energy",
     "subcategory": "SolarTower"
-  }, 
+  },
   {
-    "category": "Energy", 
+    "GUID": "61050",
+    "Name": "Productivity SolarTower",
+    "Name.eng": "Solar furnace modernization",
+    "category": "Energy",
     "subcategory": "SolarTower"
-  }, 
+  },
   {
-    "category": "Energy", 
+    "GUID": "61051",
+    "Name": "Upkeep Productivity SolarTower",
+    "Name.eng": "Parabolic trough technology",
+    "category": "Energy",
     "subcategory": "SolarTower"
-  }, 
+  },
   {
-    "category": "Energy", 
+    "GUID": "61052",
+    "Name": "Upkeep Productivity Strong SolarTower",
+    "Name.eng": "Dish-Stirling system",
+    "category": "Energy",
     "subcategory": "SolarTower"
-  }, 
+  },
   {
-    "category": "Ecologic", 
+    "GUID": "61061",
+    "Name": "Productivity WasteIncinerator",
+    "Name.eng": "Interim waste storage",
+    "category": "Ecologic",
     "subcategory": "WasteIncinerator"
-  }, 
+  },
   {
-    "category": "Ecologic", 
+    "GUID": "61062",
+    "Name": "EnergyCost WasteIncinerator",
+    "Name.eng": "Heterogenous catalysis",
+    "category": "Ecologic",
     "subcategory": "WasteIncinerator"
-  }, 
+  },
   {
-    "category": "Ecologic", 
+    "GUID": "61063",
+    "Name": "Productivity EnergyCost WasteIncinerator",
+    "Name.eng": "Atmospheric fluidized bed combustion",
+    "category": "Ecologic",
     "subcategory": "WasteIncinerator"
-  }, 
+  },
   {
-    "category": "Ecologic", 
+    "GUID": "61064",
+    "Name": "Productivity EnergyCost Strong WasteIncinerator",
+    "Name.eng": "Compact combustion process",
+    "category": "Ecologic",
     "subcategory": "WasteIncinerator"
-  }, 
+  },
   {
-    "category": "Ecologic", 
+    "GUID": "61065",
+    "Name": "Upkeep FinalStorage",
+    "Name.eng": "Maintenance-free storage Technology",
+    "category": "Ecologic",
     "subcategory": "FinalStorage"
-  }, 
+  },
   {
-    "category": "Ecologic", 
+    "GUID": "61066",
+    "Name": "EnergyCost FinalStorage",
+    "Name.eng": "Fully biological advection barrier",
+    "category": "Ecologic",
     "subcategory": "FinalStorage"
-  }, 
+  },
   {
-    "category": "Ecologic", 
+    "GUID": "61067",
+    "Name": "Upkeep EnergyCost FinalStorage",
+    "Name.eng": "Simplified multi-barrier system",
+    "category": "Ecologic",
     "subcategory": "FinalStorage"
-  }, 
+  },
   {
-    "category": "Ecologic", 
+    "GUID": "61068",
+    "Name": "Upkeep EnergyCost Strong FinalStorage",
+    "Name.eng": "Desorption-proof container",
+    "category": "Ecologic",
     "subcategory": "FinalStorage"
-  }, 
+  },
   {
-    "category": "Ecologic", 
+    "GUID": "61069",
+    "Name": "InfluenceRadius WeatherControlStation",
+    "Name.eng": "Improved air mass acquisition",
+    "category": "Ecologic",
     "subcategory": "WeatherControlStation"
-  }, 
+  },
   {
-    "category": "Ecologic", 
+    "GUID": "61070",
+    "Name": "MaintenanceCost WeatherControlStation",
+    "Name.eng": "Biological aerosol compression",
+    "category": "Ecologic",
     "subcategory": "WeatherControlStation"
-  }, 
+  },
   {
-    "category": "Ecologic", 
+    "GUID": "61071",
+    "Name": "InfluenceRadiusMaintenanceCost WeatherControlStation",
+    "Name.eng": "Exosphere ionization",
+    "category": "Ecologic",
     "subcategory": "WeatherControlStation"
-  }, 
+  },
   {
-    "category": "Ecologic", 
+    "GUID": "61072",
+    "Name": "InfluenceRadius MaintenanceCost Strong WeatherControlStation",
+    "Name.eng": "Artificial atmospheric regulation",
+    "category": "Ecologic",
     "subcategory": "WeatherControlStation"
-  }, 
+  },
   {
-    "category": "Ecologic", 
+    "GUID": "61073",
+    "Name": "Upkeep MonitoringStation",
+    "Name.eng": "Computerized data monitoring",
+    "category": "Ecologic",
     "subcategory": "MonitoringStation"
-  }, 
+  },
   {
-    "category": "Ecologic", 
+    "GUID": "61074",
+    "Name": "EnergyCost MonitoringStation",
+    "Name.eng": "Energy-efficient cellulose registery",
+    "category": "Ecologic",
     "subcategory": "MonitoringStation"
-  }, 
+  },
   {
-    "category": "Ecologic", 
+    "GUID": "61075",
+    "Name": "Upkeep EnergyCost MonitoringStation",
+    "Name.eng": "Generating anemometer",
+    "category": "Ecologic",
     "subcategory": "MonitoringStation"
-  }, 
+  },
   {
-    "category": "Ecologic", 
+    "GUID": "61076",
+    "Name": "Upkeep EnergyCost Strong MonitoringStation",
+    "Name.eng": "Automated observation equipment",
+    "category": "Ecologic",
     "subcategory": "MonitoringStation"
-  }, 
+  },
   {
-    "category": "Ecologic", 
+    "GUID": "61078",
+    "Name": "EnergyCost OzoneMaker",
+    "Name.eng": "Solar energy supply",
+    "category": "Ecologic",
     "subcategory": "OzoneMaker"
-  }, 
+  },
   {
-    "category": "Ecologic", 
+    "GUID": "61077",
+    "Name": "InfluenceRadius OzoneMaker",
+    "Name.eng": "Artificial Oxygen photolysis",
+    "category": "Ecologic",
     "subcategory": "OzoneMaker"
-  }, 
+  },
   {
-    "category": "Ecologic", 
+    "GUID": "61079",
+    "Name": "InfluenceRadius EnergyCost OzoneMaker",
+    "Name.eng": "Recombination acceleration",
+    "category": "Ecologic",
     "subcategory": "OzoneMaker"
-  }, 
+  },
   {
-    "category": "Ecologic", 
+    "GUID": "61080",
+    "Name": "InfluenceRadius EnergyCost Strong OzoneMaker",
+    "Name.eng": "Molar ozone reaction enthalpy shift",
+    "category": "Ecologic",
     "subcategory": "OzoneMaker"
-  }, 
+  },
   {
-    "category": "Ecologic", 
+    "GUID": "61081",
+    "Name": "Upkeep RiverFilterPlant",
+    "Name.eng": "Self-cleaning particle filter",
+    "category": "Ecologic",
     "subcategory": "RiverFilterPlant"
-  }, 
+  },
   {
-    "category": "Ecologic", 
+    "GUID": "61082",
+    "Name": "EnergyCost RiverFilterPlant",
+    "Name.eng": "Organic adsorption",
+    "category": "Ecologic",
     "subcategory": "RiverFilterPlant"
-  }, 
+  },
   {
-    "category": "Ecologic", 
+    "GUID": "61083",
+    "Name": "Upkeep EnergyCost RiverFilterPlant",
+    "Name.eng": "Nanofiltration plant",
+    "category": "Ecologic",
     "subcategory": "RiverFilterPlant"
-  }, 
+  },
   {
-    "category": "Ecologic", 
+    "GUID": "61084",
+    "Name": "Upkeep EnergyCost Strong RiverFilterPlant",
+    "Name.eng": "Reverse osmosis process",
+    "category": "Ecologic",
     "subcategory": "RiverFilterPlant"
-  }, 
+  },
   {
-    "category": "Ecologic", 
+    "GUID": "61364",
+    "Name": "InfluenceRadius DeacidificationStation",
+    "Name.eng": "Cascade header",
+    "category": "Ecologic",
     "subcategory": "DeacidicationStation"
-  }, 
+  },
   {
-    "category": "Ecologic", 
+    "GUID": "61365",
+    "Name": "EnergyCost DeacidificationStation",
+    "Name.eng": "Corrugated plate columns",
+    "category": "Ecologic",
     "subcategory": "DeacidicationStation"
-  }, 
+  },
   {
-    "category": "Ecologic", 
+    "GUID": "61366",
+    "Name": "InfluenceRadius EnergyCost DeacidificationStation",
+    "Name.eng": "Hydro-calcite deacidification",
+    "category": "Ecologic",
     "subcategory": "DeacidicationStation"
-  }, 
+  },
   {
-    "category": "Ecologic", 
+    "GUID": "61367",
+    "Name": "InfluenceRadius EnergyCost DeacidificationStation Strong",
+    "Name.eng": "Dolomitic filter material",
+    "category": "Ecologic",
     "subcategory": "DeacidicationStation"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "60972",
+    "Name": "Speed CommandoShip",
+    "Name.eng": "[GUIDNAME 20023] Turbine revision",
+    "category": "Vehicles",
     "subcategory": "CommandoShip"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "60973",
+    "Name": "Damage CommandoShip",
+    "Name.eng": "[GUIDNAME 20023] Amuniton improvement",
+    "category": "Vehicles",
     "subcategory": "CommandoShip"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "60974",
+    "Name": "Capacity CommandoShip",
+    "Name.eng": "[GUIDNAME 20023] Cargo hold expansion",
+    "category": "Vehicles",
     "subcategory": "CommandoShip"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "60975",
+    "Name": "Speed Damage CommandoShip",
+    "Name.eng": "[GUIDNAME 20023] Mission upgrade",
+    "category": "Vehicles",
     "subcategory": "CommandoShip"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "60976",
+    "Name": "Speed Damage Strong CommandoShip",
+    "Name.eng": "[GUIDNAME 20023] Military overhaul",
+    "category": "Vehicles",
     "subcategory": "CommandoShip"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "60977",
+    "Name": "Speed Capacity CommandoShip",
+    "Name.eng": "[GUIDNAME 20023] Transport optimization",
+    "category": "Vehicles",
     "subcategory": "CommandoShip"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "60978",
+    "Name": "Speed Capacity Strong CommandoShip",
+    "Name.eng": "[GUIDNAME 20023] Trading diversification",
+    "category": "Vehicles",
     "subcategory": "CommandoShip"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "61228",
+    "Name": "Attract Dolphin",
+    "Name.eng": "Sound wave modulator",
+    "category": "Vehicles",
     "subcategory": "CommandoShip"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "60964",
+    "Name": "Speed Hovercraft",
+    "Name.eng": "[GUIDNAME 20028] Engine optimization",
+    "category": "Vehicles",
     "subcategory": "Hovercraft"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "60965",
+    "Name": "Damage Hovercraft",
+    "Name.eng": "[GUIDNAME 20028] reinforced Gun barrels",
+    "category": "Vehicles",
     "subcategory": "Hovercraft"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "60966",
+    "Name": "Speed Damage Hovercraft",
+    "Name.eng": "[GUIDNAME 20028] Combat expansion",
+    "category": "Vehicles",
     "subcategory": "Hovercraft"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "60967",
+    "Name": "Speed Damage Hovercraft Strong",
+    "Name.eng": "[GUIDNAME 20028] Combat suite extension",
+    "category": "Vehicles",
     "subcategory": "Hovercraft"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "60979",
+    "Name": "Speed Viper",
+    "Name.eng": "[GUIDNAME 20061] Engine room expansion",
+    "category": "Vehicles",
     "subcategory": "Viper"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "60980",
+    "Name": "Damage Viper",
+    "Name.eng": "[GUIDNAME 20061] Artillery expansion",
+    "category": "Vehicles",
     "subcategory": "Viper"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "60981",
+    "Name": "Speed Damage Viper",
+    "Name.eng": "[GUIDNAME 20061] Combat upgrade",
+    "category": "Vehicles",
     "subcategory": "Viper"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "60982",
+    "Name": "Speed Damage Strong Viper",
+    "Name.eng": "[GUIDNAME 20061] Battle suite",
+    "category": "Vehicles",
     "subcategory": "Viper"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "60968",
+    "Name": "Speed SmallTradingShip",
+    "Name.eng": "[GUIDNAME 20069] Engine optimization",
+    "category": "Vehicles",
     "subcategory": "SmallTradingShip"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "60969",
+    "Name": "Capacity SmallTradingShip",
+    "Name.eng": "[GUIDNAME 20069] Capacity expansion",
+    "category": "Vehicles",
     "subcategory": "SmallTradingShip"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "60970",
+    "Name": "Speed Capacity SmallTradingShip",
+    "Name.eng": "[GUIDNAME 20069] Cargo service customization",
+    "category": "Vehicles",
     "subcategory": "SmallTradingShip"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "60971",
+    "Name": "Speed Capacity SmallTradingShip Strong",
+    "Name.eng": "[GUIDNAME 20069] Cargo specification",
+    "category": "Vehicles",
     "subcategory": "SmallTradingShip"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "60983",
+    "Name": "Speed MediumTradingShip",
+    "Name.eng": "[GUIDNAME 20067] Engine room optimization",
+    "category": "Vehicles",
     "subcategory": "MediumTradingShip"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "60984",
+    "Name": "Capacity MediumTradingShip",
+    "Name.eng": "[GUIDNAME 20067] Cargo capacity revision",
+    "category": "Vehicles",
     "subcategory": "MediumTradingShip"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "60985",
+    "Name": "Speed Capacity MediumTradingShip",
+    "Name.eng": "[GUIDNAME 20067] Haulage equipment",
+    "category": "Vehicles",
     "subcategory": "MediumTradingShip"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "60986",
+    "Name": "Speed Capacity Strong MediumTradingShip",
+    "Name.eng": "[GUIDNAME 20067] Cargo service upgrade",
+    "category": "Vehicles",
     "subcategory": "MediumTradingShip"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "60987",
+    "Name": "Speed ContainerShip",
+    "Name.eng": "[GUIDNAME 20068] Turbine boost",
+    "category": "Vehicles",
     "subcategory": "ContainerShip"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "60988",
+    "Name": "Capacity ContainerShip",
+    "Name.eng": "[GUIDNAME 20068] Cargo hold expansion",
+    "category": "Vehicles",
     "subcategory": "ContainerShip"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "60989",
+    "Name": "Speed Capacity ContainerShip",
+    "Name.eng": "[GUIDNAME 20068] Logistics revision",
+    "category": "Vehicles",
     "subcategory": "ContainerShip"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "60990",
+    "Name": "Speed Capacity Strong ContainerShip",
+    "Name.eng": "[GUIDNAME 20068] Haulage diversification",
+    "category": "Vehicles",
     "subcategory": "ContainerShip"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "60991",
+    "Name": "Speed Trimaran",
+    "Name.eng": "[GUIDNAME 20000] Engine modernization",
+    "category": "Vehicles",
     "subcategory": "Trimaran"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "60992",
+    "Name": "Capacity Trimaran",
+    "Name.eng": "[GUIDNAME 20000] Cargo capacity revision",
+    "category": "Vehicles",
     "subcategory": "Trimaran"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "60993",
+    "Name": "Speed Capacity Trimaran",
+    "Name.eng": "[GUIDNAME 20000] Cargo transport customization",
+    "category": "Vehicles",
     "subcategory": "Trimaran"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "60994",
+    "Name": "Speed Capacity Strong Trimaran",
+    "Name.eng": "[GUIDNAME 20000] Logistic specification",
+    "category": "Vehicles",
     "subcategory": "Trimaran"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "60995",
+    "Name": "Speed Submarine",
+    "Name.eng": "[GUIDNAME 20015] Fuel cell engine",
+    "category": "Vehicles",
     "subcategory": "Submarine"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "60996",
+    "Name": "Damage Submarine",
+    "Name.eng": "[GUIDNAME 20015] Torpedo enhancement",
+    "category": "Vehicles",
     "subcategory": "Submarine"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "60997",
+    "Name": "Speed Damage Submarine",
+    "Name.eng": "[GUIDNAME 20015] Combat equipment",
+    "category": "Vehicles",
     "subcategory": "Submarine"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "60998",
+    "Name": "Speed Damage Strong Submarine",
+    "Name.eng": "[GUIDNAME 20015] Battle classification",
+    "category": "Vehicles",
     "subcategory": "Submarine"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "60999",
+    "Name": "FuelConsumption Chopper",
+    "Name.eng": "[GUIDNAME 20014] Engine efficiency improvement",
+    "category": "Vehicles",
     "subcategory": "Chopper"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "61000",
+    "Name": "Damage Chopper",
+    "Name.eng": "[GUIDNAME 20014] Ammunition modernization",
+    "category": "Vehicles",
     "subcategory": "Chopper"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "61001",
+    "Name": "FuelConsumption Damage Chopper",
+    "Name.eng": "[GUIDNAME 20014] Combat upgrade",
+    "category": "Vehicles",
     "subcategory": "Chopper"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "61002",
+    "Name": "FuelConsumption Damage Strong Chopper",
+    "Name.eng": "[GUIDNAME 20014] Hunter classification",
+    "category": "Vehicles",
     "subcategory": "Chopper"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "61003",
+    "Name": "FuelConsumtion TakeOverPlane",
+    "Name.eng": "[GUIDNAME 20016] Turbine optimization",
+    "category": "Vehicles",
     "subcategory": "TakeOverPlane"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "61004",
+    "Name": "Damage TakeOverPlane",
+    "Name.eng": "[GUIDNAME 20016] Missile extension",
+    "category": "Vehicles",
     "subcategory": "TakeOverPlane"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "61005",
+    "Name": "FuelConsumption Damage TakeOverPlane",
+    "Name.eng": "[GUIDNAME 20016] Mission optimization",
+    "category": "Vehicles",
     "subcategory": "TakeOverPlane"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "61006",
+    "Name": "Fuelconsumption Damage Strong TakeOverPlane",
+    "Name.eng": "[GUIDNAME 20016] Battle optimization",
+    "category": "Vehicles",
     "subcategory": "TakeOverPlane"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "61007",
+    "Name": "FuelConsumption Bomber",
+    "Name.eng": "[GUIDNAME 20027] Rotor revision",
+    "category": "Vehicles",
     "subcategory": "Bomber"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "61008",
+    "Name": "Damage Bomber",
+    "Name.eng": "[GUIDNAME 20027] Armament improvement",
+    "category": "Vehicles",
     "subcategory": "Bomber"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "61009",
+    "Name": "FuelConsumption Damage Bomber",
+    "Name.eng": "[GUIDNAME 20027] Mission equipment",
+    "category": "Vehicles",
     "subcategory": "Bomber"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "61010",
+    "Name": "FuelConsumption Damage Strong Bomber",
+    "Name.eng": "[GUIDNAME 20027] Battle specification",
+    "category": "Vehicles",
     "subcategory": "Bomber"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "61224",
+    "Name": "Speed MediumWarShip",
+    "Name.eng": "[GUIDNAME 20117] Drive expansion",
+    "category": "Vehicles",
     "subcategory": "MediumWarShip"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "61225",
+    "Name": "Damage MediumWarShip",
+    "Name.eng": "[GUIDNAME 20117] Armament enhancement",
+    "category": "Vehicles",
     "subcategory": "MediumWarShip"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "61226",
+    "Name": "Speed Damage MediumWarShip",
+    "Name.eng": "[GUIDNAME 20117] Maneuvering revision",
+    "category": "Vehicles",
     "subcategory": "MediumWarShip"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "61227",
+    "Name": "Speed Damage Strong MediumWarShip",
+    "Name.eng": "[GUIDNAME 20117] Combat operations upgrade",
+    "category": "Vehicles",
     "subcategory": "MediumWarShip"
-  }, 
+  },
   {
-    "category": "Vehicles", 
+    "GUID": "61282",
+    "Name": "Biosph\u00e4rengenerator",
+    "Name.eng": "Biosphere generator",
+    "category": "Vehicles",
     "subcategory": "Ark"
-  }, 
+  },
   {
-    "category": "Seed", 
-    "subcategory": null
-  }, 
+    "GUID": "60949",
+    "Name": "SeedRice",
+    "Name.eng": "Rice substitute",
+    "category": "Seed"
+  },
   {
-    "category": "Seed", 
-    "subcategory": null
-  }, 
+    "GUID": "60950",
+    "Name": "SeedSugar",
+    "Name.eng": "Sugar beet replica",
+    "category": "Seed"
+  },
   {
-    "category": "Seed", 
-    "subcategory": null
-  }, 
+    "GUID": "60951",
+    "Name": "SeedTea",
+    "Name.eng": "Tea substitute",
+    "category": "Seed"
+  },
   {
-    "category": "Seed", 
-    "subcategory": null
-  }, 
+    "GUID": "60953",
+    "Name": "SeedVegetables",
+    "Name.eng": "Vegetable replicas",
+    "category": "Seed"
+  },
   {
-    "category": "Seed", 
-    "subcategory": null
-  }, 
+    "GUID": "60954",
+    "Name": "SeedFruits",
+    "Name.eng": "Fruit synthesis",
+    "category": "Seed"
+  },
   {
-    "category": "Seed", 
-    "subcategory": null
-  }, 
+    "GUID": "60955",
+    "Name": "SeedGrain",
+    "Name.eng": "Grain analog",
+    "category": "Seed"
+  },
   {
-    "category": "Seed", 
-    "subcategory": null
-  }, 
+    "GUID": "60956",
+    "Name": "SeedCorn",
+    "Name.eng": "Modified Corn",
+    "category": "Seed"
+  },
   {
-    "category": "Seed", 
-    "subcategory": null
-  }, 
+    "GUID": "60957",
+    "Name": "SeedCoffee",
+    "Name.eng": "Seed replica",
+    "category": "Seed"
+  },
   {
-    "category": "Seed", 
-    "subcategory": null
-  }, 
+    "GUID": "60958",
+    "Name": "SeedGrapes",
+    "Name.eng": "Synthetic Wine grape seed",
+    "category": "Seed"
+  },
   {
-    "category": "Seed", 
-    "subcategory": null
-  }, 
+    "GUID": "60959",
+    "Name": "SeedTruffles",
+    "Name.eng": "Artificial Truffle strain",
+    "category": "Seed"
+  },
   {
-    "category": "Seed", 
-    "subcategory": null
-  }, 
+    "GUID": "61221",
+    "Name": "End Black Smoker Gold",
+    "Name.eng": "Aurogenic Chemicals",
+    "category": "Seed"
+  },
   {
-    "category": "Seed", 
-    "subcategory": null
-  }, 
+    "GUID": "61222",
+    "Name": "End Black Smoker Uranium",
+    "Name.eng": "Uranogenic Chemicals",
+    "category": "Seed"
+  },
   {
-    "category": "Seed", 
-    "subcategory": null
-  }, 
+    "GUID": "61223",
+    "Name": "End Black Smoker Copper",
+    "Name.eng": "Cuprogenic Chemicals",
+    "category": "Seed"
+  },
   {
-    "category": "Seed", 
-    "subcategory": null
-  }, 
+    "GUID": "61336",
+    "Name": "End Black Smoker Iron",
+    "Name.eng": "Ferrogenic Chemicals",
+    "category": "Seed"
+  },
   {
-    "category": "Seed", 
-    "subcategory": null
-  }, 
+    "GUID": "61337",
+    "Name": "End Black Smoker Manganese",
+    "Name.eng": "Manganogenic Chemicals",
+    "category": "Seed"
+  },
   {
-    "category": "Seed", 
-    "subcategory": null
-  }, 
+    "GUID": "61338",
+    "Name": "End Black Smoker Diamonds",
+    "Name.eng": "Carbonogenic Chemicals",
+    "category": "Seed"
+  },
   {
-    "category": "Public", 
+    "GUID": "61105",
+    "Name": "EnergyCost Community",
+    "Name.eng": "Opening hours regulation",
+    "category": "Public",
     "subcategory": "Community"
-  }, 
+  },
   {
-    "category": "Public", 
+    "GUID": "61106",
+    "Name": "InfluenceRadius EnergyCost Community",
+    "Name.eng": "Automated Hovercraft parking guidance system",
+    "category": "Public",
     "subcategory": "Community"
-  }, 
+  },
   {
-    "category": "Public", 
+    "GUID": "61107",
+    "Name": "InfluenceRadius EnergyCost Strong Community",
+    "Name.eng": "Centralized urban agglomeration",
+    "category": "Public",
     "subcategory": "Community"
-  }, 
+  },
   {
-    "category": "Public", 
+    "GUID": "61108",
+    "Name": "InfluenceRadius Information",
+    "Name.eng": "Transmission power increase",
+    "category": "Public",
     "subcategory": "Information"
-  }, 
+  },
   {
-    "category": "Public", 
+    "GUID": "61109",
+    "Name": "EnergyCost Information",
+    "Name.eng": "Full LED conversion",
+    "category": "Public",
     "subcategory": "Information"
-  }, 
+  },
   {
-    "category": "Public", 
+    "GUID": "61110",
+    "Name": "InfluenceRadius EnergyCost Information",
+    "Name.eng": "Barrier-free long-wave propagation",
+    "category": "Public",
     "subcategory": "Information"
-  }, 
+  },
   {
-    "category": "Public", 
+    "GUID": "61111",
+    "Name": "InfluenceRadius EnergyCost Strong Information",
+    "Name.eng": "Amplitude modulated carrier wave",
+    "category": "Public",
     "subcategory": "Information"
-  }, 
+  },
   {
-    "category": "Public", 
+    "GUID": "61112",
+    "Name": "InfluenceRadius Activity",
+    "Name.eng": "Target audience neutral entertainment program",
+    "category": "Public",
     "subcategory": "Activity"
-  }, 
+  },
   {
-    "category": "Public", 
+    "GUID": "61113",
+    "Name": "EnergyCost Activity",
+    "Name.eng": "Daylight headlights",
+    "category": "Public",
     "subcategory": "Activity"
-  }, 
+  },
   {
-    "category": "Public", 
+    "GUID": "61114",
+    "Name": "InfluenceRadius EnergyCost Activity",
+    "Name.eng": "Targeted intake control device",
+    "category": "Public",
     "subcategory": "Activity"
-  }, 
+  },
   {
-    "category": "Public", 
+    "GUID": "61115",
+    "Name": "InfluenceRadius EnergyCost Strong Activity",
+    "Name.eng": "Computer-assisted program planning",
+    "category": "Public",
     "subcategory": "Activity"
-  }, 
+  },
   {
-    "category": "Public", 
+    "GUID": "61116",
+    "Name": "InfluenceRadius Participation",
+    "Name.eng": "Public tenders",
+    "category": "Public",
     "subcategory": "Participation"
-  }, 
+  },
   {
-    "category": "Public", 
+    "GUID": "61117",
+    "Name": "EnergyCost Participation",
+    "Name.eng": "Unlit voting booths",
+    "category": "Public",
     "subcategory": "Participation"
-  }, 
+  },
   {
-    "category": "Public", 
+    "GUID": "61118",
+    "Name": "InfluenceRadius EnergyCost Participation",
+    "Name.eng": "Fully electronic application system",
+    "category": "Public",
     "subcategory": "Participation"
-  }, 
+  },
   {
-    "category": "Public", 
+    "GUID": "61119",
+    "Name": "InfluenceRadius EnergyCost Strong Participation",
+    "Name.eng": "Inner-city self-determination",
+    "category": "Public",
     "subcategory": "Participation"
-  }, 
+  },
   {
-    "category": "Public", 
+    "GUID": "61128",
+    "Name": "AccidentChance Laboratory",
+    "Name.eng": "Labor regulations documentation",
+    "category": "Public",
     "subcategory": "Laboratory"
-  }, 
+  },
   {
-    "category": "Public", 
+    "GUID": "61129",
+    "Name": "AccidentChance Medium Laboratory",
+    "Name.eng": "Assistants' training",
+    "category": "Public",
     "subcategory": "Laboratory"
-  }, 
+  },
   {
-    "category": "Public", 
+    "GUID": "61130",
+    "Name": "AccidentChance Strong Laboratory",
+    "Name.eng": "High-security Laboratories",
+    "category": "Public",
     "subcategory": "Laboratory"
-  }, 
+  },
   {
-    "category": "Special", 
+    "GUID": "61132",
+    "Name": "Upkeep TradeBuilding",
+    "Name.eng": "Central warehouse management",
+    "category": "Special",
     "subcategory": "Trade"
-  }, 
+  },
   {
-    "category": "Special", 
+    "GUID": "61133",
+    "Name": "Additional Unit TradeBuilding",
+    "Name.eng": "Automated Warehouse filling",
+    "category": "Special",
     "subcategory": "Trade"
-  }, 
+  },
   {
-    "category": "Special", 
+    "GUID": "61134",
+    "Name": "Upkeep AdditionalUnit TradeBuilding",
+    "Name.eng": "Optimized inventory turnover",
+    "category": "Special",
     "subcategory": "Trade"
-  }, 
+  },
   {
-    "category": "Special", 
+    "GUID": "61135",
+    "Name": "Upkeep AdditionalUnit Strong TradeBuilding",
+    "Name.eng": "Automated Transport facilities",
+    "category": "Special",
     "subcategory": "Trade"
-  }, 
+  },
   {
-    "category": "Special", 
+    "GUID": "61136",
+    "Name": "Healthpoints TradeBuilding",
+    "Name.eng": "Massive construction",
+    "category": "Special",
     "subcategory": "Trade"
-  }, 
+  },
   {
-    "category": "Special", 
+    "GUID": "61137",
+    "Name": "Capacity TradeBuilding",
+    "Name.eng": "Depot expansion",
+    "category": "Special",
     "subcategory": "Trade"
-  }, 
+  },
   {
-    "category": "Special", 
+    "GUID": "61138",
+    "Name": "Healthpoints Capacity TradeBuilding",
+    "Name.eng": "Reinforced Central warehouse",
+    "category": "Special",
     "subcategory": "Trade"
-  }, 
+  },
   {
-    "category": "Special", 
+    "GUID": "61139",
+    "Name": "Healthpoints Capacity Strong TradeBuilding",
+    "Name.eng": "Goods bunker",
+    "category": "Special",
     "subcategory": "Trade"
-  }, 
+  },
   {
-    "category": "Special", 
+    "GUID": "61202",
+    "Name": "InfluenceRadius Military",
+    "Name.eng": "Improved radar sensors",
+    "category": "Special",
     "subcategory": "Military"
-  }, 
+  },
   {
-    "category": "Special", 
+    "GUID": "61203",
+    "Name": "Damage Military",
+    "Name.eng": "Improved kinetic penetrators",
+    "category": "Special",
     "subcategory": "Military"
-  }, 
+  },
   {
-    "category": "Special", 
+    "GUID": "61204",
+    "Name": "InfluenceRadius Damage Military",
+    "Name.eng": "Upgraded Turrets",
+    "category": "Special",
     "subcategory": "Military"
-  }, 
+  },
   {
-    "category": "Special", 
+    "GUID": "61205",
+    "Name": "InfluenceRadius Damage Strong Military",
+    "Name.eng": "Long-range guns",
+    "category": "Special",
     "subcategory": "Military"
-  }, 
+  },
   {
-    "category": "Special", 
+    "GUID": "61206",
+    "Name": "Healthpoints Military",
+    "Name.eng": "Selective armor",
+    "category": "Special",
     "subcategory": "Military"
-  }, 
+  },
   {
-    "category": "Special", 
+    "GUID": "61207",
+    "Name": "Upkeep Military",
+    "Name.eng": "Automatic maintenance unit",
+    "category": "Special",
     "subcategory": "Military"
-  }, 
+  },
   {
-    "category": "Special", 
+    "GUID": "61208",
+    "Name": "Healthpoints Upkeep Military",
+    "Name.eng": "Multiple spaced Armor",
+    "category": "Special",
     "subcategory": "Military"
-  }, 
+  },
   {
-    "category": "Special", 
+    "GUID": "61209",
+    "Name": "Healthpoints Upkeep Strong Military",
+    "Name.eng": "Intelligent reactive Armor",
+    "category": "Special",
     "subcategory": "Military"
-  }, 
+  },
   {
-    "category": "Special", 
+    "GUID": "61092",
+    "Name": "InfluenceRadius Firestation",
+    "Name.eng": "Automatic fire detection system",
+    "category": "Special",
     "subcategory": "FireStation"
-  }, 
+  },
   {
-    "category": "Special", 
+    "GUID": "61093",
+    "Name": "HealingTime Firestation",
+    "Name.eng": "Fire engine modernization",
+    "category": "Special",
     "subcategory": "FireStation"
-  }, 
+  },
   {
-    "category": "Special", 
+    "GUID": "61094",
+    "Name": "InfluenceRadius HealingTime Firestation",
+    "Name.eng": "Fire safety guard",
+    "category": "Special",
     "subcategory": "FireStation"
-  }, 
+  },
   {
-    "category": "Special", 
+    "GUID": "61095",
+    "Name": "InfluenceRadius HealingTime Strong Firestation",
+    "Name.eng": "Fire protection regulations",
+    "category": "Special",
     "subcategory": "FireStation"
-  }, 
+  },
   {
-    "category": "Special", 
+    "GUID": "61096",
+    "Name": "InfluenceRadius Hospital",
+    "Name.eng": "Bed increases",
+    "category": "Special",
     "subcategory": "Hospital"
-  }, 
+  },
   {
-    "category": "Special", 
+    "GUID": "61097",
+    "Name": "HealingTime Hospital",
+    "Name.eng": "First responder service concept",
+    "category": "Special",
     "subcategory": "Hospital"
-  }, 
+  },
   {
-    "category": "Special", 
+    "GUID": "61098",
+    "Name": "InfluenceRadius HealingTime Hospital",
+    "Name.eng": "Vehicle fleet renewal",
+    "category": "Special",
     "subcategory": "Hospital"
-  }, 
+  },
   {
-    "category": "Special", 
+    "GUID": "61099",
+    "Name": "InfluenceRadius HealingTime Strong Hospital",
+    "Name.eng": "Medical specialist support",
+    "category": "Special",
     "subcategory": "Hospital"
-  }, 
+  },
   {
-    "category": "Special", 
+    "GUID": "61100",
+    "Name": "InfluenceRadius PoliceStation",
+    "Name.eng": "Increased patrols",
+    "category": "Special",
     "subcategory": "PoliceStation"
-  }, 
+  },
   {
-    "category": "Special", 
+    "GUID": "61101",
+    "Name": "HealingTime PoliceStation",
+    "Name.eng": "Training in interrogation techniques",
+    "category": "Special",
     "subcategory": "PoliceStation"
-  }, 
+  },
   {
-    "category": "Special", 
+    "GUID": "61102",
+    "Name": "InfluenceRadius HealingTime PoliceStation",
+    "Name.eng": "General video surveillance",
+    "category": "Special",
     "subcategory": "PoliceStation"
-  }, 
+  },
   {
-    "category": "Special", 
+    "GUID": "61103",
+    "Name": "InfluenceRadius HealingTime Strong PoliceStation",
+    "Name.eng": "Centralized biometric database",
+    "category": "Special",
     "subcategory": "PoliceStation"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61141",
+    "Name": "RessourceUsage BasaltCrusher",
+    "Name.eng": "Precision drill heads",
+    "category": "Production",
     "subcategory": "BasaltCrusher"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61142",
+    "Name": "Upkeep BasaltCrusher",
+    "Name.eng": "Automatic conveyor",
+    "category": "Production",
     "subcategory": "BasaltCrusher"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61143",
+    "Name": "RessourceUsage Upkeep BasaltCrusher",
+    "Name.eng": "Maintenance free automatic conveyor",
+    "category": "Production",
     "subcategory": "BasaltCrusher"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61144",
+    "Name": "RessourceUsage Upkeep Strong BasaltCrusher",
+    "Name.eng": "Basalt tailing recycling",
+    "category": "Production",
     "subcategory": "BasaltCrusher"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61145",
+    "Name": "RessourceUsage CoalMine",
+    "Name.eng": "Reinforced Reisshaken plows",
+    "category": "Production",
     "subcategory": "CoalMine"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61146",
+    "Name": "EcologicCost CoalMine",
+    "Name.eng": "Emmision control",
+    "category": "Production",
     "subcategory": "CoalMine"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61147",
+    "Name": "RessourceUsage EcologicCost CoalMine",
+    "Name.eng": "More efficient tunnel design",
+    "category": "Production",
     "subcategory": "CoalMine"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61148",
+    "Name": "RessourceUsage EcologicCost Strong CoalMine",
+    "Name.eng": "Coal tailing recycling",
+    "category": "Production",
     "subcategory": "CoalMine"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61149",
+    "Name": "RessourceUsage IronMine",
+    "Name.eng": "Ore detector",
+    "category": "Production",
     "subcategory": "IronMine"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61150",
+    "Name": "EcologicCost IronMine",
+    "Name.eng": "Natural drainage",
+    "category": "Production",
     "subcategory": "IronMine"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61151",
+    "Name": "RessourceUsage EcologicCost IronMine",
+    "Name.eng": "Magnet driven Ore carts",
+    "category": "Production",
     "subcategory": "IronMine"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61152",
+    "Name": "RessourceUsage EcologicCost Strong IronMine",
+    "Name.eng": "Iron ore tailing recycling",
+    "category": "Production",
     "subcategory": "IronMine"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61153",
+    "Name": "RessourceUsage CopperMine",
+    "Name.eng": "Optimized carriers",
+    "category": "Production",
     "subcategory": "CopperMine"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61154",
+    "Name": "EcologicCost CopperMine",
+    "Name.eng": "Eco-friendly Copper treatment",
+    "category": "Production",
     "subcategory": "CopperMine"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61155",
+    "Name": "RessourceUsage EcologicCost CopperMine",
+    "Name.eng": "Precision Copper drill bit",
+    "category": "Production",
     "subcategory": "CopperMine"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61156",
+    "Name": "RessourceUsage EcologicCost Strong CopperMine",
+    "Name.eng": "Copper tailing recycling",
+    "category": "Production",
     "subcategory": "CopperMine"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61157",
+    "Name": "RessourceUsage LimestoneMine",
+    "Name.eng": "Computer-based Quarry plan",
+    "category": "Production",
     "subcategory": "LimestoneMine"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61158",
+    "Name": "EcologicCost LimestoneMine",
+    "Name.eng": "Explosives free Stone crusher",
+    "category": "Production",
     "subcategory": "LimestoneMine"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61159",
+    "Name": "RessourceUsage EcologicCost LimestoneMine",
+    "Name.eng": "Careful exposure drones",
+    "category": "Production",
     "subcategory": "LimestoneMine"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61160",
+    "Name": "RessourceUsage EcologicCost Strong LimestoneMine",
+    "Name.eng": "Limestone tailing recycling",
+    "category": "Production",
     "subcategory": "LimestoneMine"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61161",
+    "Name": "RessourceUsage UraniumMine",
+    "Name.eng": "Radiation-proof prospecting electronics",
+    "category": "Production",
     "subcategory": "UraniumMine"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61162",
+    "Name": "EcologicCost UraniumMine",
+    "Name.eng": "Shielded transport shafts",
+    "category": "Production",
     "subcategory": "UraniumMine"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61163",
+    "Name": "RessourceUsage EcologicCost UraniumMine",
+    "Name.eng": "Radiation-proof mining robots",
+    "category": "Production",
     "subcategory": "UraniumMine"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61164",
+    "Name": "RessourceUsage EcologicCost Strong UraniumMine",
+    "Name.eng": "Uranium tailing recycling",
+    "category": "Production",
     "subcategory": "UraniumMine"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61165",
+    "Name": "RessourceUsage Oildriller",
+    "Name.eng": "Automatic deposits survey",
+    "category": "Production",
     "subcategory": "Oildriller"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61166",
+    "Name": "EcologicCost Oildriller",
+    "Name.eng": "Low friction flush head",
+    "category": "Production",
     "subcategory": "Oildriller"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61167",
+    "Name": "RessourceUsage EcologicCost Oildriller",
+    "Name.eng": "Loss-free primary extraction",
+    "category": "Production",
     "subcategory": "Oildriller"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61168",
+    "Name": "RessourceUsage EcologicCost Strong Oildriller",
+    "Name.eng": "Crude oil sump recycling",
+    "category": "Production",
     "subcategory": "Oildriller"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61169",
+    "Name": "RessourceUsage Oilrig",
+    "Name.eng": "Offshore deposits survey",
+    "category": "Production",
     "subcategory": "Oilrig"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61170",
+    "Name": "AccidentChance Oilrig",
+    "Name.eng": "Self-locking pipe connection",
+    "category": "Production",
     "subcategory": "Oilrig"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61171",
+    "Name": "RessourceUsage Accident Chance Oilrig",
+    "Name.eng": "Failsafe drilling cap",
+    "category": "Production",
     "subcategory": "Oilrig"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61172",
+    "Name": "RessourceUsage Accident Chance Strong Oilrig",
+    "Name.eng": "Blowout preventers",
+    "category": "Production",
     "subcategory": "Oilrig"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61173",
+    "Name": "RessourceUsage SandExtractor",
+    "Name.eng": "Sand grain sorting matrix",
+    "category": "Production",
     "subcategory": "SandExtractor"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61174",
+    "Name": "EcologicCost SandExtractor",
+    "Name.eng": "River water nutrient enrichment",
+    "category": "Production",
     "subcategory": "SandExtractor"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61175",
+    "Name": "RessourceUsage EcologicCost SandExtractor",
+    "Name.eng": "Sediment filtration",
+    "category": "Production",
     "subcategory": "SandExtractor"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61176",
+    "Name": "RessourceUsage EcologicCost Strong SandExtractor",
+    "Name.eng": "Sand filter residue recycling",
+    "category": "Production",
     "subcategory": "SandExtractor"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61177",
+    "Name": "RessourceUsage GoldRefinery",
+    "Name.eng": "Opto-electric Gold scale",
+    "category": "Production",
     "subcategory": "GoldRefinery"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61178",
+    "Name": "EcologicCost GoldRefinery",
+    "Name.eng": "Fully automatic filter cleaning",
+    "category": "Production",
     "subcategory": "GoldRefinery"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61179",
+    "Name": "RessourceUsage EcologicCost GoldRefinery",
+    "Name.eng": "Cumulative Gold dust scanner",
+    "category": "Production",
     "subcategory": "GoldRefinery"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61180",
+    "Name": "RessourceUsage EcologicCost Strong GoldRefinery",
+    "Name.eng": "Gold filter residue recycling",
+    "category": "Production",
     "subcategory": "GoldRefinery"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61181",
+    "Name": "RessourceUsage LobsterFarm",
+    "Name.eng": "Efficient breeding methodology",
+    "category": "Production",
     "subcategory": "LobsterFarm"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61182",
+    "Name": "EcologicCost LobsterFarm",
+    "Name.eng": "Aqua farm with outdoor area",
+    "category": "Production",
     "subcategory": "LobsterFarm"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61183",
+    "Name": "RessourceUsage EcologicCost LobsterFarm",
+    "Name.eng": "Organic Lobster farming",
+    "category": "Production",
     "subcategory": "LobsterFarm"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61184",
+    "Name": "RessourceUsage EcologicCost Strong LobsterFarm",
+    "Name.eng": "Total animal utilization",
+    "category": "Production",
     "subcategory": "LobsterFarm"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61185",
+    "Name": "RessourceUsage Excavator",
+    "Name.eng": "Selective mining",
+    "category": "Production",
     "subcategory": "Excavator"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61186",
+    "Name": "EcologicCost Excavator",
+    "Name.eng": "Excavator drive exhaust after-treatment",
+    "category": "Production",
     "subcategory": "Excavator"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61187",
+    "Name": "RessourceUsage EcologicCost Excavator",
+    "Name.eng": "Soil reclamation plan",
+    "category": "Production",
     "subcategory": "Excavator"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61188",
+    "Name": "RessourceUsage EcologicCost Strong Excavator",
+    "Name.eng": "Brown Coal tailing recycling",
+    "category": "Production",
     "subcategory": "Excavator"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61359",
+    "Name": "RessourceUsage BasaltRecycler",
+    "Name.eng": "Refined Basalt screens",
+    "category": "Production",
     "subcategory": "BasaltRecycler"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61360",
+    "Name": "Upkeep BasaltRecycler",
+    "Name.eng": "Improved blasting methodology",
+    "category": "Production",
     "subcategory": "BasaltRecycler"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61361",
+    "Name": "RessourceUsage Upkeep BasaltRecycler",
+    "Name.eng": "Reinforced Basalt mills",
+    "category": "Production",
     "subcategory": "BasaltRecycler"
-  }, 
+  },
   {
-    "category": "Production", 
+    "GUID": "61362",
+    "Name": "RessourceUsage Upkeep Strong BasaltRecycler",
+    "Name.eng": "Automated cracking procedure",
+    "category": "Production",
     "subcategory": "BasaltRecycler"
-  }, 
+  },
   {
-    "category": "Research", 
-    "subcategory": null
-  }, 
+    "GUID": "61220",
+    "Name": "MilitaryResearch",
+    "Name.eng": "[GUIDNAME 1420011] Research",
+    "category": "Research"
+  },
   {
-    "category": "Research", 
-    "subcategory": null
-  }, 
+    "GUID": "61219",
+    "Name": "ProductionResearch",
+    "Name.eng": "[GUIDNAME 1420012] Research",
+    "category": "Research"
+  },
   {
-    "category": "Research", 
-    "subcategory": null
-  }, 
+    "GUID": "61218",
+    "Name": "SpecialResearch",
+    "Name.eng": "[GUIDNAME 1420015] Research",
+    "category": "Research"
+  },
   {
-    "category": "Research", 
-    "subcategory": null
-  }, 
+    "GUID": "61217",
+    "Name": "PublicResearch",
+    "Name.eng": "[GUIDNAME 1420013] Research",
+    "category": "Research"
+  },
   {
-    "category": "Research", 
-    "subcategory": null
-  }, 
+    "GUID": "61216",
+    "Name": "ResourceResearch",
+    "Name.eng": "[GUIDNAME 1420014] Research",
+    "category": "Research"
+  },
   {
-    "category": "Research", 
-    "subcategory": null
-  }, 
+    "GUID": "60944",
+    "Name": "VehicleResearch",
+    "Name.eng": "[GUIDNAME 1420016] Research",
+    "category": "Research"
+  },
   {
-    "category": "Research", 
-    "subcategory": null
-  }, 
+    "GUID": "61215",
+    "Name": "EcologicResearch",
+    "Name.eng": "[GUIDNAME 1420009] Research",
+    "category": "Research"
+  },
   {
-    "category": "Research", 
-    "subcategory": null
+    "GUID": "61214",
+    "Name": "EnergyResearch",
+    "Name.eng": "[GUIDNAME 1420010] Research",
+    "category": "Research"
   }
 ]
