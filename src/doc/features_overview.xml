@@ -1,0 +1,44 @@
+<AssetList>
+  <Groups>
+    <Group><Name>Science</Name><!-- All research stuff is here. -->
+      <Groups>
+        <Group><Name>Modules</Name><!-- Laboratory research stuff is here. --></Group>
+        <Group><Name>Prototypes</Name></Group>
+        <Group><Name>Devs</Name><!-- Academy research stuff is here. -->
+          <Groups>
+          	<!-- Academy research projects are divided into eight categories. -->
+            <Group><Name>Energy</Name>
+              <Groups>
+              	<!-- Technologies are grouped by the building or unit that they affect. -->
+                <Group><Name>CoalPowerPlant</Name>
+                  <Assets>
+                    <Asset>
+                      <Values>
+                        <Standard>
+                          <Name>Productivity CoalPowerPlant</Name>
+                          <GUID>61011</GUID>
+                        </Standard>
+                        <!-- Effects, costs, etc. of this technology -->
+                      </Values>
+                    </Asset>
+                    <!-- More technologies for this building here. -->
+                  </Assets>
+                </Group>
+                <!-- More building groups here. -->
+              </Groups>
+            </Group>
+            <Group><Name>Ecologic</Name></Group>
+            <Group><Name>Vehicles</Name></Group>
+            <Group><Name>Seed</Name></Group>
+            <Group><Name>Public</Name></Group>
+            <Group><Name>Special</Name></Group>
+            <Group><Name>Production</Name></Group>
+            <Group><Name>Research</Name></Group>
+          </Groups>
+        </Group>
+        <Group><Name>DiscoveryPools</Name><!-- Pools of research formulas that can be discovered by doing basic research. --></Group>
+      </Groups>
+    </Group>
+    <!-- Other stuff not related to research. -->
+  </Groups>
+</AssetList>
