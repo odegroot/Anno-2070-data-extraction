@@ -9,7 +9,7 @@ Contains source code, subdivided by programming language (php, python, etc.).
 ---------------------------
 src/rda/
 ---------------------------
-Conatins game data extracted from the rda files.
+Contains game data extracted from the rda files.
 Only files that are actually used by scripts should be included. Do not add a full data dump, since that wouldn't fit on github.
 
 Please use the following structure:
