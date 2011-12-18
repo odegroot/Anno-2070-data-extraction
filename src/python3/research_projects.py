@@ -8,26 +8,28 @@ Created on Dec 18, 2011
 '''
 
 import json
+import os
 import re
 from xml.etree import ElementTree as ET
 
-__version__ = "0.1"
-__game_version__ = "1.02"
+__script_version = "0.1"
+__game_version = "1.02"
 
 # global settings
-folder = "..\\rda\\"
-out_folder = "..\\..\\target\\"
-assets_path = folder + "patch3\\data\\config\\game\\assets.xml"
-icons_txt_path = folder + "eng3\\data\\loca\\eng\\txt\\icons.txt"
-guids_txt_path = folder + "eng3\\data\\loca\\eng\\txt\\guids.txt"
-properties_path = folder + "patch3\\data\\config\\game\\properties.xml"
-icons_path = folder + "patch3\\data\\config\\game\\icons.xml"
+__project_root  = os.path.join('..', '..')
+__rda_folder    = os.path.join(__project_root, "src", "rda")
+__out_folder    = os.path.join(__project_root, "target")
+assets_path     = os.path.join(__rda_folder, "patch3", "data", "config", "game", "assets.xml")
+properties_path = os.path.join(__rda_folder, "patch3", "data", "config", "game", "properties.xml")
+icons_path      = os.path.join(__rda_folder, "patch3", "data", "config", "game", "icons.xml")
+icons_txt_path  = os.path.join(__rda_folder, "eng3", "data", "loca", "eng", "txt", "icons.txt")
+guids_txt_path  = os.path.join(__rda_folder, "eng3", "data", "loca", "eng", "txt", "guids.txt")
 icons_prefix = "icon_"
 icons_midfix = "_"
 icons_postfix =".png"
 icons_index_shift = 0
-output_name = "list_of_buildings_v" + __version__ + ".json"
-model_name = "list_of_buildings_model_v" + __version__ + ".json"
+output_name = os.path.join(__out_folder, "list_of_buildings_v" + __script_version + ".json")
+model_name = os.path.join(__out_folder, "list_of_buildings_model_v" + __script_version + ".json")
 model_url = "http://aprilboy.e404.sk/anno2070/"
 
 
@@ -159,7 +161,7 @@ def parse_IconFileNames():
     return IconFileNames
 
 def get_BuildBlocker(detail_path):
-    ifo_path = folder + "data2\\graphics\\buildings\\" + detail_path
+    ifo_path = __rda_folder + "data2\\graphics\\buildings\\" + detail_path
     b = ET.parse(ifo_path).find(".//BuildBlocker/Position")
     
     x = abs(int(b.find("x").text)) >> 11
@@ -184,13 +186,13 @@ def validate(buildings, model):
 
 def out_json(buildings, model):
     json.dump(model,
-              fp=open(out_folder + model_name, mode="w", encoding="utf_8"),
+              fp=open(model_name, mode="w", encoding="utf_8"),
               indent=2,
               sort_keys=True)
-    json.dump({"_version": __version__,
+    json.dump({"_version": __script_version,
                "_model": model_url + model_name,
                "buildings": buildings},
-              fp=open(out_folder + output_name, mode="w", encoding="utf_8"),
+              fp=open(output_name, mode="w", encoding="utf_8"),
               indent=2,
               sort_keys=True)
 
@@ -219,7 +221,7 @@ def main():
              "buildings": {"GUID": "int: GUID as appears in assets.xml and other files",
                            "Name": "text: base name that appears in data files",
                            "Eng1": "text: english localisation labels from Eng1.rda for building GUID",
-                           "IconFileName": "text: filename from the folder http://odegroot.nl/anno2070/img/orig/icon/ (or see icon folder in the zip file from http://odegroot.nl/anno2070/all_icons.php (first number is IconFileID, the second is IconIndex+1)",
+                           "IconFileName": "text: filename from the __rda_folder http://odegroot.nl/anno2070/img/orig/icon/ (or see icon __rda_folder in the zip file from http://odegroot.nl/anno2070/all_icons.php (first number is IconFileID, the second is IconIndex+1)",
                            "Faction": "text: tycoons, ecos, techs, others, ... ",
                            "Group": "text: residence, public, production, special, ... (farms and factories are both production, see template)",
                            "Template":"text: type of building",
