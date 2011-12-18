@@ -6,7 +6,6 @@ Created on Dec 18, 2011
 @author: Oscar de Groot
 '''
 
-from __future__ import division
 import codecs
 import json
 import re
@@ -18,7 +17,7 @@ __game_version__ = "1.02"
 # global settings
 # The txt files are encoded in UCS-2.
 # For an explanation of reading Unicode data in Python, see:
-# http://docs.python.org/howto/unicode.html#python-2-x-s-unicode-supportture__ import division
+# http://docs.python.org/howto/unicode.html#python-2-x-s-unicode-support
 folder = "..\\rda\\"
 out_folder = "..\\..\\target\\"
 assets_path = folder + "patch3\\data\\config\\game\\assets.xml"
