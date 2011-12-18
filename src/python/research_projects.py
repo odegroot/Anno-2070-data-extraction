@@ -1,3 +1,4 @@
+# coding=utf_8
 '''
 Generates a JSON file with the properties of all research projects.
 
@@ -6,7 +7,6 @@ Created on Dec 18, 2011
 @author: Oscar de Groot
 '''
 
-import codecs
 import json
 import re
 from xml.etree import ElementTree as ET
@@ -15,9 +15,6 @@ __version__ = "0.1"
 __game_version__ = "1.02"
 
 # global settings
-# The txt files are encoded in UCS-2.
-# For an explanation of reading Unicode data in Python, see:
-# http://docs.python.org/howto/unicode.html#python-2-x-s-unicode-support
 folder = "..\\rda\\"
 out_folder = "..\\..\\target\\"
 assets_path = folder + "patch3\\data\\config\\game\\assets.xml"
@@ -130,11 +127,12 @@ def get_building_list():
 def parse_Eng1():
     Eng1 = {}
     
-    for line in codecs.open(icons_txt_path, encoding="utf_16_le"):
+    # The text files are encoded in UTF-16.
+    for line in open(icons_txt_path, encoding="utf_16_le"): 
         result = re.search("(\\d*)=(.*)", line)
         if result:
             Eng1[int(result.group(1))] = result.group(2)
-    for line in codecs.open(guids_txt_path, encoding="utf_16_le"):
+    for line in open(guids_txt_path, encoding="utf_16_le"):
         result = re.search("(\\d*)=(.*)", line)
         if result:
             Eng1[int(result.group(1))] = result.group(2)
@@ -186,13 +184,13 @@ def validate(buildings, model):
 
 def out_json(buildings, model):
     json.dump(model,
-              fp=open(out_folder + model_name, "w"),
+              fp=open(out_folder + model_name, mode="w", encoding="utf_8"),
               indent=2,
               sort_keys=True)
     json.dump({"_version": __version__,
                "_model": model_url + model_name,
                "buildings": buildings},
-              fp=open(out_folder + output_name, "w"),
+              fp=open(out_folder + output_name, mode="w", encoding="utf_8"),
               indent=2,
               sort_keys=True)
 
