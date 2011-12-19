@@ -116,13 +116,13 @@ def _get_json_path():
     '''
     Returns the path to the JSON file that will contain the result of this script.
     
-    The JSON filename is the same as the script that generates it, but with the extension ".js", and with a version number included.
-    Example: "academy_research_v0.1.js"
+    The JSON filename is the same as the script that generates it, but with the extension ".json", and with a version number included.
+    Example: "academy_research_v0.1.json"
     The file is placed in "{project_root}/target/"
     '''
     # this_py_filename.rpartition('.') --> (filename_without_extension, '.', 'py')
     filename_without_extension = _get_current_py_filename().rpartition('.')[0]
-    json_filename = filename_without_extension + '.js'
+    json_filename = filename_without_extension + '.json'
     json_path = os.path.join(__out_folder, json_filename)
     
     return json_path
