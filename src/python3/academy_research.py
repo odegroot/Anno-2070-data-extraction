@@ -24,7 +24,6 @@ __rda_folder    = os.path.join(__project_root, "src", "rda")
 __out_folder    = os.path.join(__project_root, "target")
 __features_xml  = os.path.join(__rda_folder, "patch3", "data", "config", "features", "features.xml")
 __guids_txt     = os.path.join(__rda_folder, "eng3", "data", "loca", "eng", "txt", "guids.txt")
-__icons_txt     = os.path.join(__rda_folder, "eng3", "data", "loca", "eng", "txt", "icons.txt")
 __interface_txt = os.path.join(__rda_folder, "eng3", "data", "loca", "eng", "txt", "interface.txt")
 
 __regex_guidname= re.compile(r'\[GUIDNAME (?P<GUID>\d+)\]')
@@ -87,6 +86,11 @@ def main():
                 Each project belongs to one of the following categories: Energy, Ecologic, Vehicles, Seed, Public, Special, Production, Research
             subcategory: (optional)
                 Technologies are grouped by the building or unit that they affect. Example: Energy -> CoalPowerPlant -> Productivity CoalPowerPlant
+            
+            ItemQuality:
+                The quality of the research project, expressed as a letter. Possible values: A, B, C, D, null. A is the highest, D is the lowest. Null is equivalent to A.
+            ItemQuality.stars:
+                The quality of the research project, expressed as the number of gold stars . Possible values: 0, 1, 2, 3.
             
             =====================
             */\n\n'''
@@ -183,6 +187,8 @@ def _get_research_project_dict(project_asset, eng, category, subcategory=None):
     
     project['ItemQuality'] = project_asset.findtext('Values/Item/ItemQuality')
     project['ItemQuality.stars'] = __ItemQuality_stars[project['ItemQuality']]
+    
+#    project[''] = ''
     
     return project
 
