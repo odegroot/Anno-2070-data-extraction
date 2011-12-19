@@ -1,0 +1,45 @@
+=====================================
+academy_research.json Model Reference
+=====================================
+
+GUID:
+    A globally unique identifier for this research project. No other entity within Anno 2070 will have the same GUID.
+Name:
+    Internal name of the research project. This name is NOT displayed in-game; a localization text is used instead.
+Name.eng:
+    English localized name of the research project. 
+
+category:
+    Each project belongs to one of the following categories: Energy, Ecologic, Vehicles, Seed, Public, Special, Production, Research
+subcategory (optional):
+    Technologies are grouped by the building or unit that they affect. Example: Energy -> CoalPowerPlant -> Productivity CoalPowerPlant
+
+ItemQuality:
+    The quality of the research project, expressed as a letter. Possible values: A, B, C, D, null. A is the highest, D is the lowest. Null is equivalent to A.
+ItemQuality.stars (redundant, derived from ItemQuality):
+    The quality of the research project, expressed as the number of gold stars . Possible values: 0, 1, 2, 3.
+
+icon.base:
+    Filename of the base icon of the research project.
+icon.overlay (optional):
+    Filename of the overlay icon of the research project.
+    
+effect.ActiveEcoEffect.Value (int):
+effect.ActiveEcoEffect.Percental (bool):
+effect.ActiveEcoEffect.text (redundant, derived from Value + Percental):
+effect.InActiveEcoEffect.Value (int):
+effect.InActiveEcoEffect.Percental (bool):
+effect.InActiveEcoEffect.text (redundant, derived from Value + Percental):
+    Eco effect of the technology produced by this research project.
+    
+    Value/Percental/text are probably best explained by example:
+    ┌───────┬───────────┬──────┬───────────────┬────────────────┐
+    │ Value │ Percental │ text │ normal effect │ boosted effect │
+    ├───────┼───────────┼──────┼───────────────┼────────────────┤
+    │  -50  │   true    │ -50% │     -30       │      -15       │
+    │  -50  │   false   │ -50  │     -30       │      -80       │
+    │   50  │   true    │ +50% │      30       │       45       │
+    │   50  │   false   │ +50  │      30       │       80       │
+    └───────┴───────────┴──────┴───────────────┴────────────────┘
+    
+    The exact meaning of active vs. inactive is not known. All known projects have identical values for active and inactive. 
