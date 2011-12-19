@@ -1,9 +1,10 @@
+# coding=utf_8
 '''
 Parses icons.xml and creates a mapping from GUIDs to icon filenames, including overlays.
 
 Created on Dec 19, 2011
 
-@author: Oscar de Groot
+@author: Oscar de Groot (Grilse)
 '''
 
 import os
@@ -18,8 +19,6 @@ __icons_xml     = os.path.join(__rda_folder, "patch3", "data", "config", "game",
 
 def get_guid_to_icon_dict():
     IconFileNames = {}
-    
-    variations = set()
     
     for i in ET.parse(__icons_xml).findall("i"):
         GUID = i.findtext("GUID")
