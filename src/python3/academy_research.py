@@ -86,14 +86,14 @@ def main():
                 Eco effect of the technology produced by this research project.
                 
                 Value/Percental/text are probably best explained by example:
-                |-------|-----------|------|---------------|----------------|
-                | Value | Percental | text | normal effect | boosted effect |
-                |-------|-----------|------|---------------|----------------|
-                |  -50  |   true    | -50% |     -30       |      -15       |
-                |  -50  |   false   | -50  |     -30       |      -80       |
-                |   50  |   true    | +50% |      30       |       45       |
-                |   50  |   false   | +50  |      30       |       80       |
-                |-------|-----------|------|---------------|----------------|
+                ┌───────┬───────────┬──────┬───────────────┬────────────────┐
+                │ Value │ Percental │ text │ normal effect │ boosted effect │
+                ├───────┼───────────┼──────┼───────────────┼────────────────┤
+                │  -50  │   true    │ -50% │     -30       │      -15       │
+                │  -50  │   false   │ -50  │     -30       │      -80       │
+                │   50  │   true    │ +50% │      30       │       45       │
+                │   50  │   false   │ +50  │      30       │       80       │
+                └───────┴───────────┴──────┴───────────────┴────────────────┘
                 
                 The exact meaning of active vs. inactive is not known. All known projects have identical values for active and inactive. 
             
