@@ -24,8 +24,7 @@ __project_root  = os.path.join('..', '..')
 __rda_folder    = os.path.join(__project_root, "src", "rda")
 __out_folder    = os.path.join(__project_root, "target")
 __features_xml  = os.path.join(__rda_folder, "patch3", "data", "config", "features", "features.xml")
-__guids_txt     = os.path.join(__rda_folder, "eng3", "data", "loca", "eng", "txt", "guids.txt")
-__interface_txt = os.path.join(__rda_folder, "eng3", "data", "loca", "eng", "txt", "interface.txt")
+__eng_folder    = os.path.join(__rda_folder, "eng3", "data", "loca", "eng", "txt")
 
 __regex_guidname= re.compile(r'\[GUIDNAME (?P<GUID>\d+)\]')
 
@@ -170,6 +169,10 @@ def _get_research_project_dict(project_asset, eng, category, subcategory=None):
         inner_GUID = __regex_guidname.search(name_eng).group('GUID')
         name_eng = __regex_guidname.sub(eng[inner_GUID], name_eng, count=1)
     project['Name.eng'] = name_eng
+    # The tooltip descriptions are linked to GUIDs that are in the 10,000,000 - 19,999,999 range.
+    # It appears that the game simply adds 10M to the normal GUID, but I have not found an explicit confirmation of this.
+    # So I'm just assuming that this is the case.
+    project['description.eng'] = eng[str(int(GUID)+10000000)]
     
     project['category'] = category
     if subcategory != None: project['subcategory'] = subcategory
@@ -193,12 +196,14 @@ def _get_localization(lang):
         raise Exception('Only English localization is currently supported.')
     
     # The text files are encoded in UTF-16. Its endianness is automatically detected by open(), using the BOM.
-    guids_file     = open(__guids_txt    , encoding="utf_16")
-    interface_file = open(__interface_txt, encoding="utf_16")
+    guids_file     = open(os.path.join(__eng_folder, 'guids.txt'    ), encoding="utf_16")
+    interface_file = open(os.path.join(__eng_folder, 'interface.txt'), encoding="utf_16")
+    tt_normal_file = open(os.path.join(__eng_folder, 'tt_normal.txt'), encoding="utf_16")
     
     config = configparser.ConfigParser()
-    config.read_file(_add_section_header(guids_file    , 'DEFAULT'), source=__guids_txt)
-    config.read_file(_add_section_header(interface_file, 'DEFAULT'), source=__interface_txt)
+    config.read_file(_add_section_header(guids_file    , 'DEFAULT'), source='guids.txt')
+    config.read_file(_add_section_header(interface_file, 'DEFAULT'), source='interface.txt')
+    config.read_file(_add_section_header(tt_normal_file, 'DEFAULT'), source='tt_normal.txt')
     return config['DEFAULT']
 
 def _add_section_header(properties_file, header_name):
