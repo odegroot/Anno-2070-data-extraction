@@ -6,7 +6,7 @@
   "model_reference": "https://github.com/odegroot/Anno-2070-data-extraction/blob/master/src/doc/academy_research_model_reference.txt",
   "data": [
     {
-      "GUID": "61011",
+      "GUID": 61011,
       "Name": "Productivity CoalPowerPlant",
       "Name.eng": "Control room upgrade",
       "description.eng": "Better controlled combustion processes.",
@@ -18,7 +18,7 @@
       "icon.overlay": "icon_30_463.png"
     },
     {
-      "GUID": "61012",
+      "GUID": 61012,
       "Name": "EcoCost CoalPowerPlant",
       "Name.eng": "Regenerative combustion",
       "description.eng": "Fast residue-free and relatively clean.",
@@ -36,7 +36,7 @@
       "effect.InActiveEcoEffect.text": "-30%"
     },
     {
-      "GUID": "61013",
+      "GUID": 61013,
       "Name": "Productivity EcoCost CoalPowerPlant",
       "Name.eng": "Spheric procedure",
       "description.eng": "Far more efficient than conventional methods.",
@@ -54,7 +54,7 @@
       "effect.InActiveEcoEffect.text": "-40%"
     },
     {
-      "GUID": "61014",
+      "GUID": 61014,
       "Name": "Productivity EcoCost Strong CoalPowerPlant",
       "Name.eng": "Thermodynamic efficiency enhancement",
       "description.eng": "Maximum efficiency through advanced combustion technologies.",
@@ -72,7 +72,7 @@
       "effect.InActiveEcoEffect.text": "-50%"
     },
     {
-      "GUID": "61015",
+      "GUID": 61015,
       "Name": "ConstructionPlan HydroelectricPowerPlant",
       "Name.eng": "Blueprint: Hydroelectric power plant",
       "description.eng": "Clean, safe, efficient.",
@@ -84,7 +84,7 @@
       "icon.overlay": "icon_30_462.png"
     },
     {
-      "GUID": "61016",
+      "GUID": 61016,
       "Name": "Productivity HydroElectricPowerPlant",
       "Name.eng": "High performance Turbine",
       "description.eng": "Pelton configuration scheme.",
@@ -96,7 +96,7 @@
       "icon.overlay": "icon_30_463.png"
     },
     {
-      "GUID": "61017",
+      "GUID": 61017,
       "Name": "EcoCost HydroElectricPowerPlant",
       "Name.eng": "Improved Cargo hold cleansing",
       "description.eng": "Fewer failures due to foreign bodies.",
@@ -114,7 +114,7 @@
       "effect.InActiveEcoEffect.text": "-30%"
     },
     {
-      "GUID": "61018",
+      "GUID": 61018,
       "Name": "Productivity EcoCost HydroelectricPowerPlant",
       "Name.eng": "Natural water head optimization",
       "description.eng": "Perfect Turbine load.",
@@ -132,7 +132,7 @@
       "effect.InActiveEcoEffect.text": "-40%"
     },
     {
-      "GUID": "61019",
+      "GUID": 61019,
       "Name": "Productivity EcoCost Strong HydroelectricPowerPlant",
       "Name.eng": "Eco-neutral diffuser technology",
       "description.eng": "Protects the environment and Materials.",
@@ -150,7 +150,7 @@
       "effect.InActiveEcoEffect.text": "-50%"
     },
     {
-      "GUID": "61033",
+      "GUID": 61033,
       "Name": "Upkeep NuclearPowerPlant",
       "Name.eng": "Mixed oxide use",
       "description.eng": "Reduced cost factor.",
@@ -162,7 +162,7 @@
       "icon.overlay": "icon_30_466.png"
     },
     {
-      "GUID": "61034",
+      "GUID": 61034,
       "Name": "AccidenChance NuclearPowerPlant",
       "Name.eng": "Catalytic recombiners",
       "description.eng": "More cooling capacity in an emergency",
@@ -174,7 +174,7 @@
       "icon.overlay": "icon_30_467.png"
     },
     {
-      "GUID": "61035",
+      "GUID": 61035,
       "Name": "Upkeep AccidentChance NuclearPowerPlant",
       "Name.eng": "Heavy water cooling system",
       "description.eng": "Lower neutron absorption.",
@@ -186,7 +186,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61036",
+      "GUID": 61036,
       "Name": "Upkeep AccidentChance Strong NuclearPowerPlant",
       "Name.eng": "Spherical reactor",
       "description.eng": "Higher temperature due to gaseous coolant.",
@@ -198,7 +198,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61038",
+      "GUID": 61038,
       "Name": "InfluenceRadius Windpark",
       "Name.eng": "Optimized rotor blades",
       "description.eng": "High wind yield on days with little wind.",
@@ -210,7 +210,7 @@
       "icon.overlay": "icon_30_468.png"
     },
     {
-      "GUID": "61037",
+      "GUID": 61037,
       "Name": "Upkeep Windpark",
       "Name.eng": "Automated maintenance",
       "description.eng": "Saves an enormous amount of service costs.",
@@ -222,7 +222,7 @@
       "icon.overlay": "icon_30_466.png"
     },
     {
-      "GUID": "61039",
+      "GUID": 61039,
       "Name": "Upkeep InfluenceRadius Windpark",
       "Name.eng": "Electronic rotor controls",
       "description.eng": "Quick adaptation to changing weather conditions.",
@@ -234,7 +234,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61040",
+      "GUID": 61040,
       "Name": "Upkeep InfluenceRadius Strong Windpark",
       "Name.eng": "Super rotor",
       "description.eng": "Perfect wind-energy ratio.",
@@ -246,7 +246,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61041",
+      "GUID": 61041,
       "Name": "Upkeep OffshoreWindpark",
       "Name.eng": "Monopile deep sea foundation",
       "description.eng": "Stable foundations, low maintenance.",
@@ -258,7 +258,7 @@
       "icon.overlay": "icon_30_466.png"
     },
     {
-      "GUID": "61042",
+      "GUID": 61042,
       "Name": "InfluenceRadius OffshoreWindpark",
       "Name.eng": "Turbulence reduction",
       "description.eng": "Increased productivity through more stable running performance.",
@@ -270,7 +270,7 @@
       "icon.overlay": "icon_30_468.png"
     },
     {
-      "GUID": "61043",
+      "GUID": 61043,
       "Name": "Upkeep InfluenceRadius OffshoreWindpark",
       "Name.eng": "Darrieus rotor",
       "description.eng": "Rotor shape upgrade for increased efficiency.",
@@ -282,7 +282,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61044",
+      "GUID": 61044,
       "Name": "Upkeep InfluenceRadius Strong OffshoreWindpark",
       "Name.eng": "Multifractal positioning system",
       "description.eng": "Exactly balanced for maximum Energy gain.",
@@ -294,7 +294,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61045",
+      "GUID": 61045,
       "Name": "Upkeep CogenerationPowerPlant",
       "Name.eng": "Improved flue gas cleaning system",
       "description.eng": "Doubled filter life.",
@@ -306,7 +306,7 @@
       "icon.overlay": "icon_30_466.png"
     },
     {
-      "GUID": "61046",
+      "GUID": 61046,
       "Name": "Productivity CogenerationPowerPlant",
       "Name.eng": "Power-heat coupling",
       "description.eng": "Reduced heat loss.",
@@ -318,7 +318,7 @@
       "icon.overlay": "icon_30_463.png"
     },
     {
-      "GUID": "61047",
+      "GUID": 61047,
       "Name": "Upkeep Productivity CogenerationPowerPlant",
       "Name.eng": "Fluidized bed process",
       "description.eng": "Increased utilization coefficient.",
@@ -330,7 +330,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61048",
+      "GUID": 61048,
       "Name": "Upkeep Productivity Strong CogenerationPowerPlant",
       "Name.eng": "Flue heat exchanger technology",
       "description.eng": "Improved surface evaporators.",
@@ -342,7 +342,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61049",
+      "GUID": 61049,
       "Name": "Upkeep SolarTower",
       "Name.eng": "Ceramic heat reservoir",
       "description.eng": "Lasting power output even during periods of little sunlight.",
@@ -354,7 +354,7 @@
       "icon.overlay": "icon_30_466.png"
     },
     {
-      "GUID": "61050",
+      "GUID": 61050,
       "Name": "Productivity SolarTower",
       "Name.eng": "Solar furnace modernization",
       "description.eng": "Increased process heat factor.",
@@ -366,7 +366,7 @@
       "icon.overlay": "icon_30_463.png"
     },
     {
-      "GUID": "61051",
+      "GUID": 61051,
       "Name": "Upkeep Productivity SolarTower",
       "Name.eng": "Parabolic trough technology",
       "description.eng": "Energy generation by convex mirror.",
@@ -378,7 +378,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61052",
+      "GUID": 61052,
       "Name": "Upkeep Productivity Strong SolarTower",
       "Name.eng": "Dish-Stirling system",
       "description.eng": "Produced Energy which can even be used mechanically.",
@@ -390,7 +390,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61061",
+      "GUID": 61061,
       "Name": "Productivity WasteIncinerator",
       "Name.eng": "Interim waste storage",
       "description.eng": "Minimizes waste.",
@@ -408,7 +408,7 @@
       "effect.InActiveEcoEffect.text": "+20%"
     },
     {
-      "GUID": "61062",
+      "GUID": 61062,
       "Name": "EnergyCost WasteIncinerator",
       "Name.eng": "Heterogenous catalysis",
       "description.eng": "Lower firing temperatures, same result!",
@@ -420,7 +420,7 @@
       "icon.overlay": "icon_30_469.png"
     },
     {
-      "GUID": "61063",
+      "GUID": 61063,
       "Name": "Productivity EnergyCost WasteIncinerator",
       "Name.eng": "Atmospheric fluidized bed combustion",
       "description.eng": "Increased efficiency due to smaller particles.",
@@ -438,7 +438,7 @@
       "effect.InActiveEcoEffect.text": "+30%"
     },
     {
-      "GUID": "61064",
+      "GUID": 61064,
       "Name": "Productivity EnergyCost Strong WasteIncinerator",
       "Name.eng": "Compact combustion process",
       "description.eng": "Condensed phase combustion, reduced emissions.",
@@ -456,7 +456,7 @@
       "effect.InActiveEcoEffect.text": "+40%"
     },
     {
-      "GUID": "61065",
+      "GUID": 61065,
       "Name": "Upkeep FinalStorage",
       "Name.eng": "Maintenance-free storage Technology",
       "description.eng": "Out of sight, out of mind.",
@@ -468,7 +468,7 @@
       "icon.overlay": "icon_30_466.png"
     },
     {
-      "GUID": "61066",
+      "GUID": 61066,
       "Name": "EnergyCost FinalStorage",
       "Name.eng": "Fully biological advection barrier",
       "description.eng": "Prevents washout and dissolution.",
@@ -480,7 +480,7 @@
       "icon.overlay": "icon_30_469.png"
     },
     {
-      "GUID": "61067",
+      "GUID": 61067,
       "Name": "Upkeep EnergyCost FinalStorage",
       "Name.eng": "Simplified multi-barrier system",
       "description.eng": "Safety through redundancy.",
@@ -492,7 +492,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61068",
+      "GUID": 61068,
       "Name": "Upkeep EnergyCost Strong FinalStorage",
       "Name.eng": "Desorption-proof container",
       "description.eng": "What's in there, stays in there!",
@@ -504,7 +504,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61069",
+      "GUID": 61069,
       "Name": "InfluenceRadius WeatherControlStation",
       "Name.eng": "Improved air mass acquisition",
       "description.eng": "Large-scale scanning of meteorological processes.",
@@ -516,7 +516,7 @@
       "icon.overlay": "icon_30_468.png"
     },
     {
-      "GUID": "61070",
+      "GUID": 61070,
       "Name": "MaintenanceCost WeatherControlStation",
       "Name.eng": "Biological aerosol compression",
       "description.eng": "Increased manipulation factor.",
@@ -528,7 +528,7 @@
       "icon.overlay": "icon_30_466.png"
     },
     {
-      "GUID": "61071",
+      "GUID": 61071,
       "Name": "InfluenceRadiusMaintenanceCost WeatherControlStation",
       "Name.eng": "Exosphere ionization",
       "description.eng": "Creates favorable conditions in near-Earth space.",
@@ -540,7 +540,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61072",
+      "GUID": 61072,
       "Name": "InfluenceRadius MaintenanceCost Strong WeatherControlStation",
       "Name.eng": "Artificial atmospheric regulation",
       "description.eng": "High pressure and low pressure at the push of a button.",
@@ -552,7 +552,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61073",
+      "GUID": 61073,
       "Name": "Upkeep MonitoringStation",
       "Name.eng": "Computerized data monitoring",
       "description.eng": "Automated history logs.",
@@ -564,7 +564,7 @@
       "icon.overlay": "icon_30_466.png"
     },
     {
-      "GUID": "61074",
+      "GUID": 61074,
       "Name": "EnergyCost MonitoringStation",
       "Name.eng": "Energy-efficient cellulose registery",
       "description.eng": "Economical long-term data storage.",
@@ -576,7 +576,7 @@
       "icon.overlay": "icon_30_469.png"
     },
     {
-      "GUID": "61075",
+      "GUID": 61075,
       "Name": "Upkeep EnergyCost MonitoringStation",
       "Name.eng": "Generating anemometer",
       "description.eng": "Two birds with one stone: measures wind, generates Electricity.",
@@ -588,7 +588,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61076",
+      "GUID": 61076,
       "Name": "Upkeep EnergyCost Strong MonitoringStation",
       "Name.eng": "Automated observation equipment",
       "description.eng": "... thanks to camera drones and nanotrackers.",
@@ -600,7 +600,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61078",
+      "GUID": 61078,
       "Name": "EnergyCost OzoneMaker",
       "Name.eng": "Solar energy supply",
       "description.eng": "... uses the sun's rays.",
@@ -612,7 +612,7 @@
       "icon.overlay": "icon_30_469.png"
     },
     {
-      "GUID": "61077",
+      "GUID": 61077,
       "Name": "InfluenceRadius OzoneMaker",
       "Name.eng": "Artificial Oxygen photolysis",
       "description.eng": "... accelerated molecular cleavage.",
@@ -624,7 +624,7 @@
       "icon.overlay": "icon_30_468.png"
     },
     {
-      "GUID": "61079",
+      "GUID": 61079,
       "Name": "InfluenceRadius EnergyCost OzoneMaker",
       "Name.eng": "Recombination acceleration",
       "description.eng": "Improved molecular bonding process.",
@@ -636,7 +636,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61080",
+      "GUID": 61080,
       "Name": "InfluenceRadius EnergyCost Strong OzoneMaker",
       "Name.eng": "Molar ozone reaction enthalpy shift",
       "description.eng": "Reduces Energy loss to almost zero.",
@@ -648,7 +648,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61081",
+      "GUID": 61081,
       "Name": "Upkeep RiverFilterPlant",
       "Name.eng": "Self-cleaning particle filter",
       "description.eng": "Avoids lengthy maintenance periods.",
@@ -660,7 +660,7 @@
       "icon.overlay": "icon_30_466.png"
     },
     {
-      "GUID": "61082",
+      "GUID": 61082,
       "Name": "EnergyCost RiverFilterPlant",
       "Name.eng": "Organic adsorption",
       "description.eng": "Uses natural accumulation processes.",
@@ -672,7 +672,7 @@
       "icon.overlay": "icon_30_469.png"
     },
     {
-      "GUID": "61083",
+      "GUID": 61083,
       "Name": "Upkeep EnergyCost RiverFilterPlant",
       "Name.eng": "Nanofiltration plant",
       "description.eng": "Full particle blockage - thanks to pressure-driven membranes.",
@@ -684,7 +684,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61084",
+      "GUID": 61084,
       "Name": "Upkeep EnergyCost Strong RiverFilterPlant",
       "Name.eng": "Reverse osmosis process",
       "description.eng": "Simpler filters through pressure differential.",
@@ -696,7 +696,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61364",
+      "GUID": 61364,
       "Name": "InfluenceRadius DeacidificationStation",
       "Name.eng": "Cascade header",
       "description.eng": "Increased infiltration factor.",
@@ -708,7 +708,7 @@
       "icon.overlay": "icon_30_468.png"
     },
     {
-      "GUID": "61365",
+      "GUID": 61365,
       "Name": "EnergyCost DeacidificationStation",
       "Name.eng": "Corrugated plate columns",
       "description.eng": "Enhanced de-gassing.",
@@ -720,7 +720,7 @@
       "icon.overlay": "icon_30_469.png"
     },
     {
-      "GUID": "61366",
+      "GUID": 61366,
       "Name": "InfluenceRadius EnergyCost DeacidificationStation",
       "Name.eng": "Hydro-calcite deacidification",
       "description.eng": "Faster results.",
@@ -732,7 +732,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61367",
+      "GUID": 61367,
       "Name": "InfluenceRadius EnergyCost DeacidificationStation Strong",
       "Name.eng": "Dolomitic filter material",
       "description.eng": "Faster acid balance adjustment using magnesium.",
@@ -744,7 +744,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "60972",
+      "GUID": 60972,
       "Name": "Speed CommandoShip",
       "Name.eng": "Commando Ship Turbine revision",
       "description.eng": "Higher top speed due to higher Turbine speed.",
@@ -756,7 +756,7 @@
       "icon.overlay": "icon_30_470.png"
     },
     {
-      "GUID": "60973",
+      "GUID": 60973,
       "Name": "Damage CommandoShip",
       "Name.eng": "Commando Ship Amuniton improvement",
       "description.eng": "Greater impact through increased propellant charges.",
@@ -768,7 +768,7 @@
       "icon.overlay": "icon_30_471.png"
     },
     {
-      "GUID": "60974",
+      "GUID": 60974,
       "Name": "Capacity CommandoShip",
       "Name.eng": "Commando Ship Cargo hold expansion",
       "description.eng": "Increases the maximum allowable load.",
@@ -780,7 +780,7 @@
       "icon.overlay": "icon_30_472.png"
     },
     {
-      "GUID": "60975",
+      "GUID": 60975,
       "Name": "Speed Damage CommandoShip",
       "Name.eng": "Commando Ship Mission upgrade",
       "description.eng": "Professional equipment.",
@@ -792,7 +792,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "60976",
+      "GUID": 60976,
       "Name": "Speed Damage Strong CommandoShip",
       "Name.eng": "Commando Ship Military overhaul",
       "description.eng": "Meets the highest load demands.",
@@ -804,7 +804,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "60977",
+      "GUID": 60977,
       "Name": "Speed Capacity CommandoShip",
       "Name.eng": "Commando Ship Transport optimization",
       "description.eng": "Greater efficiency in Goods transportation.",
@@ -816,7 +816,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "60978",
+      "GUID": 60978,
       "Name": "Speed Capacity Strong CommandoShip",
       "Name.eng": "Commando Ship Trading diversification",
       "description.eng": "Optimized for mercantile use.",
@@ -828,7 +828,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61228",
+      "GUID": 61228,
       "Name": "Attract Dolphin",
       "Name.eng": "Sound wave modulator",
       "description.eng": "Communicates with marine mammals",
@@ -840,7 +840,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "60964",
+      "GUID": 60964,
       "Name": "Speed Hovercraft",
       "Name.eng": "Hovercraft Engine optimization",
       "description.eng": "High performance Turbines with emission certification.",
@@ -852,7 +852,7 @@
       "icon.overlay": "icon_30_470.png"
     },
     {
-      "GUID": "60965",
+      "GUID": 60965,
       "Name": "Damage Hovercraft",
       "Name.eng": "Hovercraft reinforced Gun barrels",
       "description.eng": "Increased muzzle velocity.",
@@ -864,7 +864,7 @@
       "icon.overlay": "icon_30_471.png"
     },
     {
-      "GUID": "60966",
+      "GUID": 60966,
       "Name": "Speed Damage Hovercraft",
       "Name.eng": "Hovercraft Combat expansion",
       "description.eng": "Optimized for combat missions.",
@@ -876,7 +876,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "60967",
+      "GUID": 60967,
       "Name": "Speed Damage Hovercraft Strong",
       "Name.eng": "Hovercraft Combat suite extension",
       "description.eng": "Total military conversion.",
@@ -888,7 +888,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "60979",
+      "GUID": 60979,
       "Name": "Speed Viper",
       "Name.eng": "Colossus Engine room expansion",
       "description.eng": "Marine diesel twin turbochargers.",
@@ -900,7 +900,7 @@
       "icon.overlay": "icon_30_470.png"
     },
     {
-      "GUID": "60980",
+      "GUID": 60980,
       "Name": "Damage Viper",
       "Name.eng": "Colossus Artillery expansion",
       "description.eng": "Gyro stabilized fire control system.",
@@ -912,7 +912,7 @@
       "icon.overlay": "icon_30_471.png"
     },
     {
-      "GUID": "60981",
+      "GUID": 60981,
       "Name": "Speed Damage Viper",
       "Name.eng": "Colossus Combat upgrade",
       "description.eng": "Flexible mission profile.",
@@ -924,7 +924,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "60982",
+      "GUID": 60982,
       "Name": "Speed Damage Strong Viper",
       "Name.eng": "Colossus Battle suite",
       "description.eng": "Optimized offensive protocols.",
@@ -936,7 +936,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "60968",
+      "GUID": 60968,
       "Name": "Speed SmallTradingShip",
       "Name.eng": "Freight ship Engine optimization",
       "description.eng": "Double helical configuration.",
@@ -948,7 +948,7 @@
       "icon.overlay": "icon_30_470.png"
     },
     {
-      "GUID": "60969",
+      "GUID": 60969,
       "Name": "Capacity SmallTradingShip",
       "Name.eng": "Freight ship Capacity expansion",
       "description.eng": "Modified loading bays.",
@@ -960,7 +960,7 @@
       "icon.overlay": "icon_30_472.png"
     },
     {
-      "GUID": "60970",
+      "GUID": 60970,
       "Name": "Speed Capacity SmallTradingShip",
       "Name.eng": "Freight ship Cargo service customization",
       "description.eng": "Increased transportation capacity over long distances.",
@@ -972,7 +972,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "60971",
+      "GUID": 60971,
       "Name": "Speed Capacity SmallTradingShip Strong",
       "Name.eng": "Freight ship Cargo specification",
       "description.eng": "Optimized transport routines for the onboard computer.",
@@ -984,7 +984,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "60983",
+      "GUID": 60983,
       "Name": "Speed MediumTradingShip",
       "Name.eng": "Cargo liner Engine room optimization",
       "description.eng": "Additional glycol injection.",
@@ -996,7 +996,7 @@
       "icon.overlay": "icon_30_470.png"
     },
     {
-      "GUID": "60984",
+      "GUID": 60984,
       "Name": "Capacity MediumTradingShip",
       "Name.eng": "Cargo liner Cargo capacity revision",
       "description.eng": "Improved internal structures.",
@@ -1008,7 +1008,7 @@
       "icon.overlay": "icon_30_472.png"
     },
     {
-      "GUID": "60985",
+      "GUID": 60985,
       "Name": "Speed Capacity MediumTradingShip",
       "Name.eng": "Cargo liner Haulage equipment",
       "description.eng": "Improved Transport services.",
@@ -1020,7 +1020,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "60986",
+      "GUID": 60986,
       "Name": "Speed Capacity Strong MediumTradingShip",
       "Name.eng": "Cargo liner Cargo service upgrade",
       "description.eng": "Maximum Transport efficiency.",
@@ -1032,7 +1032,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "60987",
+      "GUID": 60987,
       "Name": "Speed ContainerShip",
       "Name.eng": "Container ship Turbine boost",
       "description.eng": "Higher speed through more robust Turbine blades.",
@@ -1044,7 +1044,7 @@
       "icon.overlay": "icon_30_470.png"
     },
     {
-      "GUID": "60988",
+      "GUID": 60988,
       "Name": "Capacity ContainerShip",
       "Name.eng": "Container ship Cargo hold expansion",
       "description.eng": "Certification for increased deck Cargo.",
@@ -1056,7 +1056,7 @@
       "icon.overlay": "icon_30_472.png"
     },
     {
-      "GUID": "60989",
+      "GUID": 60989,
       "Name": "Speed Capacity ContainerShip",
       "Name.eng": "Container ship Logistics revision",
       "description.eng": "Next-generation Cargo systems.",
@@ -1068,7 +1068,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "60990",
+      "GUID": 60990,
       "Name": "Speed Capacity Strong ContainerShip",
       "Name.eng": "Container ship Haulage diversification",
       "description.eng": "Maximum efficiency in Container traffic.",
@@ -1080,7 +1080,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "60991",
+      "GUID": 60991,
       "Name": "Speed Trimaran",
       "Name.eng": "T 38 Ocean Glider Engine modernization",
       "description.eng": "Super cavitation upgrade.",
@@ -1092,7 +1092,7 @@
       "icon.overlay": "icon_30_470.png"
     },
     {
-      "GUID": "60992",
+      "GUID": 60992,
       "Name": "Capacity Trimaran",
       "Name.eng": "T 38 Ocean Glider Cargo capacity revision",
       "description.eng": "Increased Storage capacity modules.",
@@ -1104,7 +1104,7 @@
       "icon.overlay": "icon_30_472.png"
     },
     {
-      "GUID": "60993",
+      "GUID": 60993,
       "Name": "Speed Capacity Trimaran",
       "Name.eng": "T 38 Ocean Glider Cargo transport customization",
       "description.eng": "Repeal of the tonnage limitation.",
@@ -1116,7 +1116,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "60994",
+      "GUID": 60994,
       "Name": "Speed Capacity Strong Trimaran",
       "Name.eng": "T 38 Ocean Glider Logistic specification",
       "description.eng": "Cargo Trimaran classification.",
@@ -1128,7 +1128,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "60995",
+      "GUID": 60995,
       "Name": "Speed Submarine",
       "Name.eng": "Deep Sea Hunter Fuel cell engine",
       "description.eng": "Improved dive profile.",
@@ -1140,7 +1140,7 @@
       "icon.overlay": "icon_30_470.png"
     },
     {
-      "GUID": "60996",
+      "GUID": 60996,
       "Name": "Damage Submarine",
       "Name.eng": "Deep Sea Hunter Torpedo enhancement",
       "description.eng": "Enlarged Warheads.",
@@ -1152,7 +1152,7 @@
       "icon.overlay": "icon_30_471.png"
     },
     {
-      "GUID": "60997",
+      "GUID": 60997,
       "Name": "Speed Damage Submarine",
       "Name.eng": "Deep Sea Hunter Combat equipment",
       "description.eng": "Military power buffer.",
@@ -1164,7 +1164,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "60998",
+      "GUID": 60998,
       "Name": "Speed Damage Strong Submarine",
       "Name.eng": "Deep Sea Hunter Battle classification",
       "description.eng": "Advanced assault tactics.",
@@ -1176,7 +1176,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "60999",
+      "GUID": 60999,
       "Name": "FuelConsumption Chopper",
       "Name.eng": "Chopper Engine efficiency improvement",
       "description.eng": "Allows long-range Missions.",
@@ -1188,7 +1188,7 @@
       "icon.overlay": "icon_30_473.png"
     },
     {
-      "GUID": "61000",
+      "GUID": 61000,
       "Name": "Damage Chopper",
       "Name.eng": "Chopper Ammunition modernization",
       "description.eng": "Tungsten projectiles with increased penetration factor.",
@@ -1200,7 +1200,7 @@
       "icon.overlay": "icon_30_471.png"
     },
     {
-      "GUID": "61001",
+      "GUID": 61001,
       "Name": "FuelConsumption Damage Chopper",
       "Name.eng": "Chopper Combat upgrade",
       "description.eng": "Longer patrol missions with greater firepower.",
@@ -1212,7 +1212,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61002",
+      "GUID": 61002,
       "Name": "FuelConsumption Damage Strong Chopper",
       "Name.eng": "Chopper Hunter classification",
       "description.eng": "Increased range, increased combat factor.",
@@ -1224,7 +1224,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61003",
+      "GUID": 61003,
       "Name": "FuelConsumtion TakeOverPlane",
       "Name.eng": "Hawk Turbine optimization",
       "description.eng": "Increased standby time window.",
@@ -1236,7 +1236,7 @@
       "icon.overlay": "icon_30_473.png"
     },
     {
-      "GUID": "61004",
+      "GUID": 61004,
       "Name": "Damage TakeOverPlane",
       "Name.eng": "Hawk Missile extension",
       "description.eng": "Improved attack profile.",
@@ -1248,7 +1248,7 @@
       "icon.overlay": "icon_30_471.png"
     },
     {
-      "GUID": "61005",
+      "GUID": 61005,
       "Name": "FuelConsumption Damage TakeOverPlane",
       "Name.eng": "Hawk Mission optimization",
       "description.eng": "Extended operating parameters.",
@@ -1260,7 +1260,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61006",
+      "GUID": 61006,
       "Name": "Fuelconsumption Damage Strong TakeOverPlane",
       "Name.eng": "Hawk Battle optimization",
       "description.eng": "Maximum military power.",
@@ -1272,7 +1272,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61007",
+      "GUID": 61007,
       "Name": "FuelConsumption Bomber",
       "Name.eng": "FireBird Rotor revision",
       "description.eng": "Long distance mission upgrade.",
@@ -1284,7 +1284,7 @@
       "icon.overlay": "icon_30_473.png"
     },
     {
-      "GUID": "61008",
+      "GUID": 61008,
       "Name": "Damage Bomber",
       "Name.eng": "FireBird Armament improvement",
       "description.eng": "Escalation upgrade.",
@@ -1296,7 +1296,7 @@
       "icon.overlay": "icon_30_471.png"
     },
     {
-      "GUID": "61009",
+      "GUID": 61009,
       "Name": "FuelConsumption Damage Bomber",
       "Name.eng": "FireBird Mission equipment",
       "description.eng": "Tactical ground attack configuration.",
@@ -1308,7 +1308,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61010",
+      "GUID": 61010,
       "Name": "FuelConsumption Damage Strong Bomber",
       "Name.eng": "FireBird Battle specification",
       "description.eng": "Strategic ground attack configuration.",
@@ -1320,7 +1320,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61224",
+      "GUID": 61224,
       "Name": "Speed MediumWarShip",
       "Name.eng": "Viper Drive expansion",
       "description.eng": "Increased battle speed.",
@@ -1332,7 +1332,7 @@
       "icon.overlay": "icon_30_470.png"
     },
     {
-      "GUID": "61225",
+      "GUID": 61225,
       "Name": "Damage MediumWarShip",
       "Name.eng": "Viper Armament enhancement",
       "description.eng": "Improved surface and underwater combat values\u200b\u200b.",
@@ -1344,7 +1344,7 @@
       "icon.overlay": "icon_30_471.png"
     },
     {
-      "GUID": "61226",
+      "GUID": 61226,
       "Name": "Speed Damage MediumWarShip",
       "Name.eng": "Viper Maneuvering revision",
       "description.eng": "Specialization profile Convoy escort",
@@ -1356,7 +1356,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61227",
+      "GUID": 61227,
       "Name": "Speed Damage Strong MediumWarShip",
       "Name.eng": "Viper Combat operations upgrade",
       "description.eng": "Specialization profile Submarine hunter",
@@ -1368,7 +1368,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61282",
+      "GUID": 61282,
       "Name": "Biosph\u00e4rengenerator",
       "Name.eng": "Biosphere generator",
       "description.eng": "Hans Hass and Jacques Cousteau would have given their right arm for this thing!",
@@ -1379,7 +1379,7 @@
       "icon.base": "icon_30_20.png"
     },
     {
-      "GUID": "60949",
+      "GUID": 60949,
       "Name": "SeedRice",
       "Name.eng": "Rice substitute",
       "description.eng": "Almost the same carbohydrate and protein content.",
@@ -1390,7 +1390,7 @@
       "icon.overlay": "icon_30_474.png"
     },
     {
-      "GUID": "60950",
+      "GUID": 60950,
       "Name": "SeedSugar",
       "Name.eng": "Sugar beet replica",
       "description.eng": "Synthetic, but usable.",
@@ -1401,7 +1401,7 @@
       "icon.overlay": "icon_30_474.png"
     },
     {
-      "GUID": "60951",
+      "GUID": 60951,
       "Name": "SeedTea",
       "Name.eng": "Tea substitute",
       "description.eng": "Indistinguishable from the natural product.",
@@ -1412,7 +1412,7 @@
       "icon.overlay": "icon_30_474.png"
     },
     {
-      "GUID": "60953",
+      "GUID": 60953,
       "Name": "SeedVegetables",
       "Name.eng": "Vegetable replicas",
       "description.eng": "Even more colorful than the original plants...",
@@ -1423,7 +1423,7 @@
       "icon.overlay": "icon_30_474.png"
     },
     {
-      "GUID": "60954",
+      "GUID": 60954,
       "Name": "SeedFruits",
       "Name.eng": "Fruit synthesis",
       "description.eng": "Immune to worms and insects.",
@@ -1434,7 +1434,7 @@
       "icon.overlay": "icon_30_474.png"
     },
     {
-      "GUID": "60955",
+      "GUID": 60955,
       "Name": "SeedGrain",
       "Name.eng": "Grain analog",
       "description.eng": "Grows practically everywhere.",
@@ -1445,7 +1445,7 @@
       "icon.overlay": "icon_30_474.png"
     },
     {
-      "GUID": "60956",
+      "GUID": 60956,
       "Name": "SeedCorn",
       "Name.eng": "Modified Corn",
       "description.eng": "Very frugal plants",
@@ -1456,7 +1456,7 @@
       "icon.overlay": "icon_30_474.png"
     },
     {
-      "GUID": "60957",
+      "GUID": 60957,
       "Name": "SeedCoffee",
       "Name.eng": "Seed replica",
       "description.eng": "Increased caffeine, less bitterness.",
@@ -1467,7 +1467,7 @@
       "icon.overlay": "icon_30_474.png"
     },
     {
-      "GUID": "60958",
+      "GUID": 60958,
       "Name": "SeedGrapes",
       "Name.eng": "Synthetic Wine grape seed",
       "description.eng": "Also thrives under artificial sunlight.",
@@ -1478,7 +1478,7 @@
       "icon.overlay": "icon_30_474.png"
     },
     {
-      "GUID": "60959",
+      "GUID": 60959,
       "Name": "SeedTruffles",
       "Name.eng": "Artificial Truffle strain",
       "description.eng": "Only gourmets can taste the difference.",
@@ -1489,7 +1489,7 @@
       "icon.overlay": "icon_30_474.png"
     },
     {
-      "GUID": "61221",
+      "GUID": 61221,
       "Name": "End Black Smoker Gold",
       "Name.eng": "Aurogenic Chemicals",
       "description.eng": "... and down deep: the Gold!",
@@ -1500,7 +1500,7 @@
       "icon.overlay": "icon_30_477.png"
     },
     {
-      "GUID": "61222",
+      "GUID": 61222,
       "Name": "End Black Smoker Uranium",
       "Name.eng": "Uranogenic Chemicals",
       "description.eng": "The Deposits are far from being exhausted!",
@@ -1511,7 +1511,7 @@
       "icon.overlay": "icon_30_477.png"
     },
     {
-      "GUID": "61223",
+      "GUID": 61223,
       "Name": "End Black Smoker Copper",
       "Name.eng": "Cuprogenic Chemicals",
       "description.eng": "Demand for Copper continues!",
@@ -1522,7 +1522,7 @@
       "icon.overlay": "icon_30_477.png"
     },
     {
-      "GUID": "61336",
+      "GUID": 61336,
       "Name": "End Black Smoker Iron",
       "Name.eng": "Ferrogenic Chemicals",
       "description.eng": "The seabed is rich in Iron ore!",
@@ -1533,7 +1533,7 @@
       "icon.overlay": "icon_30_477.png"
     },
     {
-      "GUID": "61337",
+      "GUID": 61337,
       "Name": "End Black Smoker Manganese",
       "Name.eng": "Manganogenic Chemicals",
       "description.eng": "There are many Deposits worth mining under the sea...",
@@ -1544,7 +1544,7 @@
       "icon.overlay": "icon_30_477.png"
     },
     {
-      "GUID": "61338",
+      "GUID": 61338,
       "Name": "End Black Smoker Diamonds",
       "Name.eng": "Carbonogenic Chemicals",
       "description.eng": "Treasures from the bowels of the Earth.",
@@ -1555,7 +1555,7 @@
       "icon.overlay": "icon_30_477.png"
     },
     {
-      "GUID": "61105",
+      "GUID": 61105,
       "Name": "EnergyCost Community",
       "Name.eng": "Opening hours regulation",
       "description.eng": "Late-night shopping.",
@@ -1567,7 +1567,7 @@
       "icon.overlay": "icon_30_469.png"
     },
     {
-      "GUID": "61106",
+      "GUID": 61106,
       "Name": "InfluenceRadius EnergyCost Community",
       "Name.eng": "Automated Hovercraft parking guidance system",
       "description.eng": "... for worry-free shopping sprees in the City.",
@@ -1579,7 +1579,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61107",
+      "GUID": 61107,
       "Name": "InfluenceRadius EnergyCost Strong Community",
       "Name.eng": "Centralized urban agglomeration",
       "description.eng": "Creates multiple sub-centers.",
@@ -1591,7 +1591,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61108",
+      "GUID": 61108,
       "Name": "InfluenceRadius Information",
       "Name.eng": "Transmission power increase",
       "description.eng": "Reaches every Inhabitant.",
@@ -1603,7 +1603,7 @@
       "icon.overlay": "icon_30_468.png"
     },
     {
-      "GUID": "61109",
+      "GUID": 61109,
       "Name": "EnergyCost Information",
       "Name.eng": "Full LED conversion",
       "description.eng": "Reduced set radiation for viewers.",
@@ -1615,7 +1615,7 @@
       "icon.overlay": "icon_30_469.png"
     },
     {
-      "GUID": "61110",
+      "GUID": 61110,
       "Name": "InfluenceRadius EnergyCost Information",
       "Name.eng": "Barrier-free long-wave propagation",
       "description.eng": "Reduced electromagnetic pollution at the same transmission power.",
@@ -1627,7 +1627,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61111",
+      "GUID": 61111,
       "Name": "InfluenceRadius EnergyCost Strong Information",
       "Name.eng": "Amplitude modulated carrier wave",
       "description.eng": "Cost control and uniform transmission profile even at peak times.",
@@ -1639,7 +1639,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61112",
+      "GUID": 61112,
       "Name": "InfluenceRadius Activity",
       "Name.eng": "Target audience neutral entertainment program",
       "description.eng": "Increased public acceptance.",
@@ -1651,7 +1651,7 @@
       "icon.overlay": "icon_30_468.png"
     },
     {
-      "GUID": "61113",
+      "GUID": 61113,
       "Name": "EnergyCost Activity",
       "Name.eng": "Daylight headlights",
       "description.eng": "Avoid exorbitant Electricity bills.",
@@ -1663,7 +1663,7 @@
       "icon.overlay": "icon_30_469.png"
     },
     {
-      "GUID": "61114",
+      "GUID": 61114,
       "Name": "InfluenceRadius EnergyCost Activity",
       "Name.eng": "Targeted intake control device",
       "description.eng": "Well-ordered spectator processing.",
@@ -1675,7 +1675,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61115",
+      "GUID": 61115,
       "Name": "InfluenceRadius EnergyCost Strong Activity",
       "Name.eng": "Computer-assisted program planning",
       "description.eng": "Better room utilization, less idle time.",
@@ -1687,7 +1687,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61116",
+      "GUID": 61116,
       "Name": "InfluenceRadius Participation",
       "Name.eng": "Public tenders",
       "description.eng": "Equal opportunities for every company.",
@@ -1699,7 +1699,7 @@
       "icon.overlay": "icon_30_468.png"
     },
     {
-      "GUID": "61117",
+      "GUID": 61117,
       "Name": "EnergyCost Participation",
       "Name.eng": "Unlit voting booths",
       "description.eng": "Democracy doesn't stop at sundown.",
@@ -1711,7 +1711,7 @@
       "icon.overlay": "icon_30_469.png"
     },
     {
-      "GUID": "61118",
+      "GUID": 61118,
       "Name": "InfluenceRadius EnergyCost Participation",
       "Name.eng": "Fully electronic application system",
       "description.eng": "Avoids bureaucratic paperwork.",
@@ -1723,7 +1723,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61119",
+      "GUID": 61119,
       "Name": "InfluenceRadius EnergyCost Strong Participation",
       "Name.eng": "Inner-city self-determination",
       "description.eng": "... for responsible, ambitious citizens.",
@@ -1735,7 +1735,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61128",
+      "GUID": 61128,
       "Name": "AccidentChance Laboratory",
       "Name.eng": "Labor regulations documentation",
       "description.eng": "Most lab accidents are preventable.",
@@ -1747,7 +1747,7 @@
       "icon.overlay": "icon_30_467.png"
     },
     {
-      "GUID": "61129",
+      "GUID": 61129,
       "Name": "AccidentChance Medium Laboratory",
       "Name.eng": "Assistants' training",
       "description.eng": "Safety first!",
@@ -1759,7 +1759,7 @@
       "icon.overlay": "icon_30_467.png"
     },
     {
-      "GUID": "61130",
+      "GUID": 61130,
       "Name": "AccidentChance Strong Laboratory",
       "Name.eng": "High-security Laboratories",
       "description.eng": "Here everything is done behind Plexiglas.",
@@ -1771,7 +1771,7 @@
       "icon.overlay": "icon_30_467.png"
     },
     {
-      "GUID": "61132",
+      "GUID": 61132,
       "Name": "Upkeep TradeBuilding",
       "Name.eng": "Central warehouse management",
       "description.eng": "... thanks to digital sorting databases.",
@@ -1783,7 +1783,7 @@
       "icon.overlay": "icon_30_466.png"
     },
     {
-      "GUID": "61133",
+      "GUID": 61133,
       "Name": "Additional Unit TradeBuilding",
       "Name.eng": "Automated Warehouse filling",
       "description.eng": "Missing items will be ordered immediately.",
@@ -1795,7 +1795,7 @@
       "icon.overlay": "icon_30_475.png"
     },
     {
-      "GUID": "61134",
+      "GUID": 61134,
       "Name": "Upkeep AdditionalUnit TradeBuilding",
       "Name.eng": "Optimized inventory turnover",
       "description.eng": "Short storage times, reduced costs.",
@@ -1807,7 +1807,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61135",
+      "GUID": 61135,
       "Name": "Upkeep AdditionalUnit Strong TradeBuilding",
       "Name.eng": "Automated Transport facilities",
       "description.eng": "The Storage androids can find any item in a jiffy.",
@@ -1819,7 +1819,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61136",
+      "GUID": 61136,
       "Name": "Healthpoints TradeBuilding",
       "Name.eng": "Massive construction",
       "description.eng": "Also withstands heavy loads.",
@@ -1831,7 +1831,7 @@
       "icon.overlay": "icon_30_476.png"
     },
     {
-      "GUID": "61137",
+      "GUID": 61137,
       "Name": "Capacity TradeBuilding",
       "Name.eng": "Depot expansion",
       "description.eng": "More efficient Storehouse floor use.",
@@ -1843,7 +1843,7 @@
       "icon.overlay": "icon_30_472.png"
     },
     {
-      "GUID": "61138",
+      "GUID": 61138,
       "Name": "Healthpoints Capacity TradeBuilding",
       "Name.eng": "Reinforced Central warehouse",
       "description.eng": "Larger, more stable Warehouses.",
@@ -1855,7 +1855,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61139",
+      "GUID": 61139,
       "Name": "Healthpoints Capacity Strong TradeBuilding",
       "Name.eng": "Goods bunker",
       "description.eng": "Bomb-proof, and with plenty of space.",
@@ -1867,7 +1867,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61202",
+      "GUID": 61202,
       "Name": "InfluenceRadius Military",
       "Name.eng": "Improved radar sensors",
       "description.eng": "Increased detection range.",
@@ -1879,7 +1879,7 @@
       "icon.overlay": "icon_30_468.png"
     },
     {
-      "GUID": "61203",
+      "GUID": 61203,
       "Name": "Damage Military",
       "Name.eng": "Improved kinetic penetrators",
       "description.eng": "Depleted Uranium penetrators...",
@@ -1891,7 +1891,7 @@
       "icon.overlay": "icon_30_471.png"
     },
     {
-      "GUID": "61204",
+      "GUID": 61204,
       "Name": "InfluenceRadius Damage Military",
       "Name.eng": "Upgraded Turrets",
       "description.eng": "Second-generation target acquisition sensors",
@@ -1903,7 +1903,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61205",
+      "GUID": 61205,
       "Name": "InfluenceRadius Damage Strong Military",
       "Name.eng": "Long-range guns",
       "description.eng": "Destroy the enemy before he is within reach.",
@@ -1915,7 +1915,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61206",
+      "GUID": 61206,
       "Name": "Healthpoints Military",
       "Name.eng": "Selective armor",
       "description.eng": "With adaptive surface...",
@@ -1927,7 +1927,7 @@
       "icon.overlay": "icon_30_476.png"
     },
     {
-      "GUID": "61207",
+      "GUID": 61207,
       "Name": "Upkeep Military",
       "Name.eng": "Automatic maintenance unit",
       "description.eng": "For regular maintenance cycles.",
@@ -1939,7 +1939,7 @@
       "icon.overlay": "icon_30_466.png"
     },
     {
-      "GUID": "61208",
+      "GUID": 61208,
       "Name": "Healthpoints Upkeep Military",
       "Name.eng": "Multiple spaced Armor",
       "description.eng": "Prevents the emission of explosive gases.",
@@ -1951,7 +1951,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61209",
+      "GUID": 61209,
       "Name": "Healthpoints Upkeep Strong Military",
       "Name.eng": "Intelligent reactive Armor",
       "description.eng": "Responds only to enemy Projectiles cataloged as threats.",
@@ -1963,7 +1963,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61092",
+      "GUID": 61092,
       "Name": "InfluenceRadius Firestation",
       "Name.eng": "Automatic fire detection system",
       "description.eng": "Fire, fire! Alarm!",
@@ -1975,7 +1975,7 @@
       "icon.overlay": "icon_30_468.png"
     },
     {
-      "GUID": "61093",
+      "GUID": 61093,
       "Name": "HealingTime Firestation",
       "Name.eng": "Fire engine modernization",
       "description.eng": "Open the floodgates!",
@@ -1987,7 +1987,7 @@
       "icon.overlay": "icon_30_463.png"
     },
     {
-      "GUID": "61094",
+      "GUID": 61094,
       "Name": "InfluenceRadius HealingTime Firestation",
       "Name.eng": "Fire safety guard",
       "description.eng": "Rescue, extinguish, contain, protect!",
@@ -1999,7 +1999,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61095",
+      "GUID": 61095,
       "Name": "InfluenceRadius HealingTime Strong Firestation",
       "Name.eng": "Fire protection regulations",
       "description.eng": "At least five fire extinguishers on every floor!",
@@ -2011,7 +2011,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61096",
+      "GUID": 61096,
       "Name": "InfluenceRadius Hospital",
       "Name.eng": "Bed increases",
       "description.eng": "Doubled occupancy for every room.",
@@ -2023,7 +2023,7 @@
       "icon.overlay": "icon_30_468.png"
     },
     {
-      "GUID": "61097",
+      "GUID": 61097,
       "Name": "HealingTime Hospital",
       "Name.eng": "First responder service concept",
       "description.eng": "The first few minutes are the most critical!",
@@ -2035,7 +2035,7 @@
       "icon.overlay": "icon_30_463.png"
     },
     {
-      "GUID": "61098",
+      "GUID": 61098,
       "Name": "InfluenceRadius HealingTime Hospital",
       "Name.eng": "Vehicle fleet renewal",
       "description.eng": "Ready for any emergency!",
@@ -2047,7 +2047,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61099",
+      "GUID": 61099,
       "Name": "InfluenceRadius HealingTime Strong Hospital",
       "Name.eng": "Medical specialist support",
       "description.eng": "Rapid treatment, around the clock!",
@@ -2059,7 +2059,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61100",
+      "GUID": 61100,
       "Name": "InfluenceRadius PoliceStation",
       "Name.eng": "Increased patrols",
       "description.eng": "Increases the uniformed presence on the streets.",
@@ -2071,7 +2071,7 @@
       "icon.overlay": "icon_30_468.png"
     },
     {
-      "GUID": "61101",
+      "GUID": 61101,
       "Name": "HealingTime PoliceStation",
       "Name.eng": "Training in interrogation techniques",
       "description.eng": "Good cop, bad cop.",
@@ -2083,7 +2083,7 @@
       "icon.overlay": "icon_30_463.png"
     },
     {
-      "GUID": "61102",
+      "GUID": 61102,
       "Name": "InfluenceRadius HealingTime PoliceStation",
       "Name.eng": "General video surveillance",
       "description.eng": "Greetings from Big Brother...",
@@ -2095,7 +2095,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61103",
+      "GUID": 61103,
       "Name": "InfluenceRadius HealingTime Strong PoliceStation",
       "Name.eng": "Centralized biometric database",
       "description.eng": "Registration at birth...",
@@ -2107,7 +2107,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61141",
+      "GUID": 61141,
       "Name": "RessourceUsage BasaltCrusher",
       "Name.eng": "Precision drill heads",
       "description.eng": "Reduced excess debris.",
@@ -2119,7 +2119,7 @@
       "icon.overlay": "icon_30_477.png"
     },
     {
-      "GUID": "61142",
+      "GUID": 61142,
       "Name": "Upkeep BasaltCrusher",
       "Name.eng": "Automatic conveyor",
       "description.eng": "Prolonged drilling cycles.",
@@ -2131,7 +2131,7 @@
       "icon.overlay": "icon_30_466.png"
     },
     {
-      "GUID": "61143",
+      "GUID": 61143,
       "Name": "RessourceUsage Upkeep BasaltCrusher",
       "Name.eng": "Maintenance free automatic conveyor",
       "description.eng": "Runs without a break, 24 / 7",
@@ -2143,7 +2143,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61144",
+      "GUID": 61144,
       "Name": "RessourceUsage Upkeep Strong BasaltCrusher",
       "Name.eng": "Basalt tailing recycling",
       "description.eng": "Everything is recycled.",
@@ -2155,7 +2155,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61145",
+      "GUID": 61145,
       "Name": "RessourceUsage CoalMine",
       "Name.eng": "Reinforced Reisshaken plows",
       "description.eng": "Helps shearers work better.",
@@ -2167,7 +2167,7 @@
       "icon.overlay": "icon_30_477.png"
     },
     {
-      "GUID": "61146",
+      "GUID": 61146,
       "Name": "EcologicCost CoalMine",
       "Name.eng": "Emmision control",
       "description.eng": "Protects against Coal dust.",
@@ -2185,7 +2185,7 @@
       "effect.InActiveEcoEffect.text": "-50%"
     },
     {
-      "GUID": "61147",
+      "GUID": 61147,
       "Name": "RessourceUsage EcologicCost CoalMine",
       "Name.eng": "More efficient tunnel design",
       "description.eng": "Much better yield.",
@@ -2203,7 +2203,7 @@
       "effect.InActiveEcoEffect.text": "-100%"
     },
     {
-      "GUID": "61148",
+      "GUID": 61148,
       "Name": "RessourceUsage EcologicCost Strong CoalMine",
       "Name.eng": "Coal tailing recycling",
       "description.eng": "Nothing is lost.",
@@ -2221,7 +2221,7 @@
       "effect.InActiveEcoEffect.text": "-100%"
     },
     {
-      "GUID": "61149",
+      "GUID": 61149,
       "Name": "RessourceUsage IronMine",
       "Name.eng": "Ore detector",
       "description.eng": "Finds every vein.",
@@ -2233,7 +2233,7 @@
       "icon.overlay": "icon_30_477.png"
     },
     {
-      "GUID": "61150",
+      "GUID": 61150,
       "Name": "EcologicCost IronMine",
       "Name.eng": "Natural drainage",
       "description.eng": "Good for the ground water regime.",
@@ -2251,7 +2251,7 @@
       "effect.InActiveEcoEffect.text": "-50%"
     },
     {
-      "GUID": "61151",
+      "GUID": 61151,
       "Name": "RessourceUsage EcologicCost IronMine",
       "Name.eng": "Magnet driven Ore carts",
       "description.eng": "Mining at a new level.",
@@ -2269,7 +2269,7 @@
       "effect.InActiveEcoEffect.text": "-100%"
     },
     {
-      "GUID": "61152",
+      "GUID": 61152,
       "Name": "RessourceUsage EcologicCost Strong IronMine",
       "Name.eng": "Iron ore tailing recycling",
       "description.eng": "Don't waste anything!",
@@ -2287,7 +2287,7 @@
       "effect.InActiveEcoEffect.text": "-100%"
     },
     {
-      "GUID": "61153",
+      "GUID": 61153,
       "Name": "RessourceUsage CopperMine",
       "Name.eng": "Optimized carriers",
       "description.eng": "More Copper for less effort.",
@@ -2299,7 +2299,7 @@
       "icon.overlay": "icon_30_477.png"
     },
     {
-      "GUID": "61154",
+      "GUID": 61154,
       "Name": "EcologicCost CopperMine",
       "Name.eng": "Eco-friendly Copper treatment",
       "description.eng": "Gentle processing.",
@@ -2317,7 +2317,7 @@
       "effect.InActiveEcoEffect.text": "-50%"
     },
     {
-      "GUID": "61155",
+      "GUID": 61155,
       "Name": "RessourceUsage EcologicCost CopperMine",
       "Name.eng": "Precision Copper drill bit",
       "description.eng": "Avoids costly dry holes.",
@@ -2335,7 +2335,7 @@
       "effect.InActiveEcoEffect.text": "-100%"
     },
     {
-      "GUID": "61156",
+      "GUID": 61156,
       "Name": "RessourceUsage EcologicCost Strong CopperMine",
       "Name.eng": "Copper tailing recycling",
       "description.eng": "Don't let things deteriorate!",
@@ -2353,7 +2353,7 @@
       "effect.InActiveEcoEffect.text": "-100%"
     },
     {
-      "GUID": "61157",
+      "GUID": 61157,
       "Name": "RessourceUsage LimestoneMine",
       "Name.eng": "Computer-based Quarry plan",
       "description.eng": "Determines exactly where work needs to be done.",
@@ -2365,7 +2365,7 @@
       "icon.overlay": "icon_30_477.png"
     },
     {
-      "GUID": "61158",
+      "GUID": 61158,
       "Name": "EcologicCost LimestoneMine",
       "Name.eng": "Explosives free Stone crusher",
       "description.eng": "No dynamite required!",
@@ -2383,7 +2383,7 @@
       "effect.InActiveEcoEffect.text": "-50%"
     },
     {
-      "GUID": "61159",
+      "GUID": 61159,
       "Name": "RessourceUsage EcologicCost LimestoneMine",
       "Name.eng": "Careful exposure drones",
       "description.eng": "No unnecessary destruction!",
@@ -2401,7 +2401,7 @@
       "effect.InActiveEcoEffect.text": "-100%"
     },
     {
-      "GUID": "61160",
+      "GUID": 61160,
       "Name": "RessourceUsage EcologicCost Strong LimestoneMine",
       "Name.eng": "Limestone tailing recycling",
       "description.eng": "All that can still be used!",
@@ -2419,7 +2419,7 @@
       "effect.InActiveEcoEffect.text": "-100%"
     },
     {
-      "GUID": "61161",
+      "GUID": 61161,
       "Name": "RessourceUsage UraniumMine",
       "Name.eng": "Radiation-proof prospecting electronics",
       "description.eng": "Resistant to false measurements.",
@@ -2431,7 +2431,7 @@
       "icon.overlay": "icon_30_477.png"
     },
     {
-      "GUID": "61162",
+      "GUID": 61162,
       "Name": "EcologicCost UraniumMine",
       "Name.eng": "Shielded transport shafts",
       "description.eng": "Protect the staff...",
@@ -2449,7 +2449,7 @@
       "effect.InActiveEcoEffect.text": "-30%"
     },
     {
-      "GUID": "61163",
+      "GUID": 61163,
       "Name": "RessourceUsage EcologicCost UraniumMine",
       "Name.eng": "Radiation-proof mining robots",
       "description.eng": "Avoids costly outages.",
@@ -2467,7 +2467,7 @@
       "effect.InActiveEcoEffect.text": "-50%"
     },
     {
-      "GUID": "61164",
+      "GUID": 61164,
       "Name": "RessourceUsage EcologicCost Strong UraniumMine",
       "Name.eng": "Uranium tailing recycling",
       "description.eng": "Ensures total utilization.",
@@ -2485,7 +2485,7 @@
       "effect.InActiveEcoEffect.text": "-70%"
     },
     {
-      "GUID": "61165",
+      "GUID": 61165,
       "Name": "RessourceUsage Oildriller",
       "Name.eng": "Automatic deposits survey",
       "description.eng": "Provides better mining planning.",
@@ -2497,7 +2497,7 @@
       "icon.overlay": "icon_30_477.png"
     },
     {
-      "GUID": "61166",
+      "GUID": 61166,
       "Name": "EcologicCost Oildriller",
       "Name.eng": "Low friction flush head",
       "description.eng": "Gentle mining.",
@@ -2515,7 +2515,7 @@
       "effect.InActiveEcoEffect.text": "-30%"
     },
     {
-      "GUID": "61167",
+      "GUID": 61167,
       "Name": "RessourceUsage EcologicCost Oildriller",
       "Name.eng": "Loss-free primary extraction",
       "description.eng": "Prevents minor accidental spills.",
@@ -2533,7 +2533,7 @@
       "effect.InActiveEcoEffect.text": "-40%"
     },
     {
-      "GUID": "61168",
+      "GUID": 61168,
       "Name": "RessourceUsage EcologicCost Strong Oildriller",
       "Name.eng": "Crude oil sump recycling",
       "description.eng": "Uses all of the Resource.",
@@ -2551,7 +2551,7 @@
       "effect.InActiveEcoEffect.text": "-50%"
     },
     {
-      "GUID": "61169",
+      "GUID": 61169,
       "Name": "RessourceUsage Oilrig",
       "Name.eng": "Offshore deposits survey",
       "description.eng": "Reduced drilling failure rate.",
@@ -2563,7 +2563,7 @@
       "icon.overlay": "icon_30_477.png"
     },
     {
-      "GUID": "61170",
+      "GUID": 61170,
       "Name": "AccidentChance Oilrig",
       "Name.eng": "Self-locking pipe connection",
       "description.eng": "Stops the flow in case of accidents.",
@@ -2575,7 +2575,7 @@
       "icon.overlay": "icon_30_467.png"
     },
     {
-      "GUID": "61171",
+      "GUID": 61171,
       "Name": "RessourceUsage Accident Chance Oilrig",
       "Name.eng": "Failsafe drilling cap",
       "description.eng": "Can absorb large amounts of spillage.",
@@ -2587,7 +2587,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61172",
+      "GUID": 61172,
       "Name": "RessourceUsage Accident Chance Strong Oilrig",
       "Name.eng": "Blowout preventers",
       "description.eng": "Safety cap for drill holes.",
@@ -2599,7 +2599,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61173",
+      "GUID": 61173,
       "Name": "RessourceUsage SandExtractor",
       "Name.eng": "Sand grain sorting matrix",
       "description.eng": "Separates different grain sizes efficiently.",
@@ -2611,7 +2611,7 @@
       "icon.overlay": "icon_30_477.png"
     },
     {
-      "GUID": "61174",
+      "GUID": 61174,
       "Name": "EcologicCost SandExtractor",
       "Name.eng": "River water nutrient enrichment",
       "description.eng": "Automated water addition and distribution system.",
@@ -2629,7 +2629,7 @@
       "effect.InActiveEcoEffect.text": "-30%"
     },
     {
-      "GUID": "61175",
+      "GUID": 61175,
       "Name": "RessourceUsage EcologicCost SandExtractor",
       "Name.eng": "Sediment filtration",
       "description.eng": "Cleans the river bed.",
@@ -2647,7 +2647,7 @@
       "effect.InActiveEcoEffect.text": "-40%"
     },
     {
-      "GUID": "61176",
+      "GUID": 61176,
       "Name": "RessourceUsage EcologicCost Strong SandExtractor",
       "Name.eng": "Sand filter residue recycling",
       "description.eng": "Not a grain is lost.",
@@ -2665,7 +2665,7 @@
       "effect.InActiveEcoEffect.text": "-50%"
     },
     {
-      "GUID": "61177",
+      "GUID": 61177,
       "Name": "RessourceUsage GoldRefinery",
       "Name.eng": "Opto-electric Gold scale",
       "description.eng": "Reliably measures even the smallest amounts.",
@@ -2677,7 +2677,7 @@
       "icon.overlay": "icon_30_477.png"
     },
     {
-      "GUID": "61178",
+      "GUID": 61178,
       "Name": "EcologicCost GoldRefinery",
       "Name.eng": "Fully automatic filter cleaning",
       "description.eng": "Avoids costly shutdowns.",
@@ -2695,7 +2695,7 @@
       "effect.InActiveEcoEffect.text": "-30%"
     },
     {
-      "GUID": "61179",
+      "GUID": 61179,
       "Name": "RessourceUsage EcologicCost GoldRefinery",
       "Name.eng": "Cumulative Gold dust scanner",
       "description.eng": "Doesn't miss even a single atom of Gold.",
@@ -2713,7 +2713,7 @@
       "effect.InActiveEcoEffect.text": "-40%"
     },
     {
-      "GUID": "61180",
+      "GUID": 61180,
       "Name": "RessourceUsage EcologicCost Strong GoldRefinery",
       "Name.eng": "Gold filter residue recycling",
       "description.eng": "Several filter passes increase the yield.",
@@ -2731,7 +2731,7 @@
       "effect.InActiveEcoEffect.text": "-50%"
     },
     {
-      "GUID": "61181",
+      "GUID": 61181,
       "Name": "RessourceUsage LobsterFarm",
       "Name.eng": "Efficient breeding methodology",
       "description.eng": "Automated feeding stations.",
@@ -2743,7 +2743,7 @@
       "icon.overlay": "icon_30_477.png"
     },
     {
-      "GUID": "61182",
+      "GUID": 61182,
       "Name": "EcologicCost LobsterFarm",
       "Name.eng": "Aqua farm with outdoor area",
       "description.eng": "Free-range lobster...",
@@ -2761,7 +2761,7 @@
       "effect.InActiveEcoEffect.text": "-40%"
     },
     {
-      "GUID": "61183",
+      "GUID": 61183,
       "Name": "RessourceUsage EcologicCost LobsterFarm",
       "Name.eng": "Organic Lobster farming",
       "description.eng": "Sustainable population control.",
@@ -2779,7 +2779,7 @@
       "effect.InActiveEcoEffect.text": "-70%"
     },
     {
-      "GUID": "61184",
+      "GUID": 61184,
       "Name": "RessourceUsage EcologicCost Strong LobsterFarm",
       "Name.eng": "Total animal utilization",
       "description.eng": "The meat for gourmets, the rest to the fish meal factory...",
@@ -2797,7 +2797,7 @@
       "effect.InActiveEcoEffect.text": "-100%"
     },
     {
-      "GUID": "61185",
+      "GUID": 61185,
       "Name": "RessourceUsage Excavator",
       "Name.eng": "Selective mining",
       "description.eng": "Digs precisely and only according to plan.",
@@ -2809,7 +2809,7 @@
       "icon.overlay": "icon_30_477.png"
     },
     {
-      "GUID": "61186",
+      "GUID": 61186,
       "Name": "EcologicCost Excavator",
       "Name.eng": "Excavator drive exhaust after-treatment",
       "description.eng": "Reduces the emission profile.",
@@ -2827,7 +2827,7 @@
       "effect.InActiveEcoEffect.text": "-30%"
     },
     {
-      "GUID": "61187",
+      "GUID": 61187,
       "Name": "RessourceUsage EcologicCost Excavator",
       "Name.eng": "Soil reclamation plan",
       "description.eng": "Sensible post-mining land use.",
@@ -2845,7 +2845,7 @@
       "effect.InActiveEcoEffect.text": "-40%"
     },
     {
-      "GUID": "61188",
+      "GUID": 61188,
       "Name": "RessourceUsage EcologicCost Strong Excavator",
       "Name.eng": "Brown Coal tailing recycling",
       "description.eng": "Even Coal dust is precious!",
@@ -2863,7 +2863,7 @@
       "effect.InActiveEcoEffect.text": "-50%"
     },
     {
-      "GUID": "61359",
+      "GUID": 61359,
       "Name": "RessourceUsage BasaltRecycler",
       "Name.eng": "Refined Basalt screens",
       "description.eng": "Increases the amount of Material recovered.",
@@ -2875,7 +2875,7 @@
       "icon.overlay": "icon_30_477.png"
     },
     {
-      "GUID": "61360",
+      "GUID": 61360,
       "Name": "Upkeep BasaltRecycler",
       "Name.eng": "Improved blasting methodology",
       "description.eng": "Gentler Material splitting",
@@ -2887,7 +2887,7 @@
       "icon.overlay": "icon_30_466.png"
     },
     {
-      "GUID": "61361",
+      "GUID": 61361,
       "Name": "RessourceUsage Upkeep BasaltRecycler",
       "Name.eng": "Reinforced Basalt mills",
       "description.eng": "Faster grinding rates.",
@@ -2899,7 +2899,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61362",
+      "GUID": 61362,
       "Name": "RessourceUsage Upkeep Strong BasaltRecycler",
       "Name.eng": "Automated cracking procedure",
       "description.eng": "Sifting and sorting machine.",
@@ -2911,7 +2911,7 @@
       "icon.overlay": "icon_30_465.png"
     },
     {
-      "GUID": "61220",
+      "GUID": 61220,
       "Name": "MilitaryResearch",
       "Name.eng": "Basic Research projects Research",
       "description.eng": "A strong defense is essential in today's world.",
@@ -2922,7 +2922,7 @@
       "icon.overlay": "icon_30_480.png"
     },
     {
-      "GUID": "61219",
+      "GUID": 61219,
       "Name": "ProductionResearch",
       "Name.eng": "Production buildings Research",
       "description.eng": "Our Earth is rich in natural Resources\u2026 but they are not inexhaustible.",
@@ -2933,7 +2933,7 @@
       "icon.overlay": "icon_30_480.png"
     },
     {
-      "GUID": "61218",
+      "GUID": 61218,
       "Name": "SpecialResearch",
       "Name.eng": "Special buildings Research",
       "description.eng": "Warehousing and Logistics is an art in itself.",
@@ -2944,7 +2944,7 @@
       "icon.overlay": "icon_30_480.png"
     },
     {
-      "GUID": "61217",
+      "GUID": 61217,
       "Name": "PublicResearch",
       "Name.eng": "Public buildings Research",
       "description.eng": "Functioning public services are the pivotal point of every society.",
@@ -2955,7 +2955,7 @@
       "icon.overlay": "icon_30_480.png"
     },
     {
-      "GUID": "61216",
+      "GUID": 61216,
       "Name": "ResourceResearch",
       "Name.eng": "Fertilities & Resources Research",
       "description.eng": "Substitutes replacing organic Food.",
@@ -2966,7 +2966,7 @@
       "icon.overlay": "icon_30_480.png"
     },
     {
-      "GUID": "60944",
+      "GUID": 60944,
       "Name": "VehicleResearch",
       "Name.eng": "Units Research",
       "description.eng": "Advances in shipbuilding and aerodynamics.",
@@ -2977,7 +2977,7 @@
       "icon.overlay": "icon_30_480.png"
     },
     {
-      "GUID": "61215",
+      "GUID": 61215,
       "Name": "EcologicResearch",
       "Name.eng": "Ecobalance buildings Research",
       "description.eng": "Means and measures to counter the anthropogenic pollution of nature.",
@@ -2988,7 +2988,7 @@
       "icon.overlay": "icon_30_480.png"
     },
     {
-      "GUID": "61214",
+      "GUID": 61214,
       "Name": "EnergyResearch",
       "Name.eng": "Energy generation Research",
       "description.eng": "Energy generation and utilization.",

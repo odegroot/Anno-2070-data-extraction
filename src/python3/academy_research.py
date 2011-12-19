@@ -127,7 +127,7 @@ def _get_research_project_dict(project_asset, eng, category, subcategory=None):
     
     # GUID ----------------------------------
     GUID = project_asset.findtext('Values/Standard/GUID')
-    project['GUID'] = GUID
+    project['GUID'] = int(GUID)
     project['Name'] = project_asset.findtext('Values/Standard/Name')
     
     # Name.eng ------------------------------------
