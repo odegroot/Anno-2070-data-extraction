@@ -18,6 +18,7 @@ import xml.etree.ElementTree as ET
 __game_version  = "Anno 2070 v1.02"
 __model_version = "0.1"
 __out_encoding  = 'utf_8'
+
 __project_root  = os.path.join('..', '..')
 __rda_folder    = os.path.join(__project_root, "src", "rda")
 __out_folder    = os.path.join(__project_root, "target")
@@ -25,7 +26,17 @@ __features_xml  = os.path.join(__rda_folder, "patch3", "data", "config", "featur
 __guids_txt     = os.path.join(__rda_folder, "eng3", "data", "loca", "eng", "txt", "guids.txt")
 __icons_txt     = os.path.join(__rda_folder, "eng3", "data", "loca", "eng", "txt", "icons.txt")
 __interface_txt = os.path.join(__rda_folder, "eng3", "data", "loca", "eng", "txt", "interface.txt")
+
 __regex_guidname= re.compile(r'\[GUIDNAME (?P<GUID>\d+)\]')
+
+# Maps the ItemQuality in features.xml to the number of stars displayed in-game.
+__ItemQuality_stars = {
+    'D' : 0,
+    'C' : 1,
+    'B' : 2,
+    'A' : 3,
+    None: 3
+}
 
 #def parse_ProductGUIDs():
 #    ProductGUIDs = {}
@@ -158,10 +169,10 @@ def _get_research_project_dict(project_asset, eng, category, subcategory=None):
     project['GUID'] = project_asset.findtext('Values/Standard/GUID')
     project['Name'] = project_asset.findtext('Values/Standard/Name')
     
+    name_eng = eng[project['GUID']]
     # Localization strings can refer to each other. Follow these references and display the final result.
     # Replace "Blueprint: [GUIDNAME 10087]"
     # With    "Blueprint: Hydroelectric power plant"
-    name_eng = eng[project['GUID']]
     if (__regex_guidname.search(name_eng)):
         inner_GUID = __regex_guidname.search(name_eng).group('GUID')
         name_eng = __regex_guidname.sub(eng[inner_GUID], name_eng, count=1)
@@ -169,6 +180,9 @@ def _get_research_project_dict(project_asset, eng, category, subcategory=None):
     
     project['category'] = category
     if subcategory != None: project['subcategory'] = subcategory
+    
+    project['ItemQuality'] = project_asset.findtext('Values/Item/ItemQuality')
+    project['ItemQuality.stars'] = __ItemQuality_stars[project['ItemQuality']]
     
     return project
 
