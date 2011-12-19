@@ -57,7 +57,7 @@ subcategory: (optional)
   {
     "GUID": "61015",
     "Name": "ConstructionPlan HydroelectricPowerPlant",
-    "Name.eng": "Blueprint: [GUIDNAME 10087]",
+    "Name.eng": "Blueprint: Hydroelectric power plant",
     "category": "Energy",
     "subcategory": "HydroelectricPowerPlant"
   },
@@ -428,49 +428,49 @@ subcategory: (optional)
   {
     "GUID": "60972",
     "Name": "Speed CommandoShip",
-    "Name.eng": "[GUIDNAME 20023] Turbine revision",
+    "Name.eng": "Commando Ship Turbine revision",
     "category": "Vehicles",
     "subcategory": "CommandoShip"
   },
   {
     "GUID": "60973",
     "Name": "Damage CommandoShip",
-    "Name.eng": "[GUIDNAME 20023] Amuniton improvement",
+    "Name.eng": "Commando Ship Amuniton improvement",
     "category": "Vehicles",
     "subcategory": "CommandoShip"
   },
   {
     "GUID": "60974",
     "Name": "Capacity CommandoShip",
-    "Name.eng": "[GUIDNAME 20023] Cargo hold expansion",
+    "Name.eng": "Commando Ship Cargo hold expansion",
     "category": "Vehicles",
     "subcategory": "CommandoShip"
   },
   {
     "GUID": "60975",
     "Name": "Speed Damage CommandoShip",
-    "Name.eng": "[GUIDNAME 20023] Mission upgrade",
+    "Name.eng": "Commando Ship Mission upgrade",
     "category": "Vehicles",
     "subcategory": "CommandoShip"
   },
   {
     "GUID": "60976",
     "Name": "Speed Damage Strong CommandoShip",
-    "Name.eng": "[GUIDNAME 20023] Military overhaul",
+    "Name.eng": "Commando Ship Military overhaul",
     "category": "Vehicles",
     "subcategory": "CommandoShip"
   },
   {
     "GUID": "60977",
     "Name": "Speed Capacity CommandoShip",
-    "Name.eng": "[GUIDNAME 20023] Transport optimization",
+    "Name.eng": "Commando Ship Transport optimization",
     "category": "Vehicles",
     "subcategory": "CommandoShip"
   },
   {
     "GUID": "60978",
     "Name": "Speed Capacity Strong CommandoShip",
-    "Name.eng": "[GUIDNAME 20023] Trading diversification",
+    "Name.eng": "Commando Ship Trading diversification",
     "category": "Vehicles",
     "subcategory": "CommandoShip"
   },
@@ -484,308 +484,308 @@ subcategory: (optional)
   {
     "GUID": "60964",
     "Name": "Speed Hovercraft",
-    "Name.eng": "[GUIDNAME 20028] Engine optimization",
+    "Name.eng": "Hovercraft Engine optimization",
     "category": "Vehicles",
     "subcategory": "Hovercraft"
   },
   {
     "GUID": "60965",
     "Name": "Damage Hovercraft",
-    "Name.eng": "[GUIDNAME 20028] reinforced Gun barrels",
+    "Name.eng": "Hovercraft reinforced Gun barrels",
     "category": "Vehicles",
     "subcategory": "Hovercraft"
   },
   {
     "GUID": "60966",
     "Name": "Speed Damage Hovercraft",
-    "Name.eng": "[GUIDNAME 20028] Combat expansion",
+    "Name.eng": "Hovercraft Combat expansion",
     "category": "Vehicles",
     "subcategory": "Hovercraft"
   },
   {
     "GUID": "60967",
     "Name": "Speed Damage Hovercraft Strong",
-    "Name.eng": "[GUIDNAME 20028] Combat suite extension",
+    "Name.eng": "Hovercraft Combat suite extension",
     "category": "Vehicles",
     "subcategory": "Hovercraft"
   },
   {
     "GUID": "60979",
     "Name": "Speed Viper",
-    "Name.eng": "[GUIDNAME 20061] Engine room expansion",
+    "Name.eng": "Colossus Engine room expansion",
     "category": "Vehicles",
     "subcategory": "Viper"
   },
   {
     "GUID": "60980",
     "Name": "Damage Viper",
-    "Name.eng": "[GUIDNAME 20061] Artillery expansion",
+    "Name.eng": "Colossus Artillery expansion",
     "category": "Vehicles",
     "subcategory": "Viper"
   },
   {
     "GUID": "60981",
     "Name": "Speed Damage Viper",
-    "Name.eng": "[GUIDNAME 20061] Combat upgrade",
+    "Name.eng": "Colossus Combat upgrade",
     "category": "Vehicles",
     "subcategory": "Viper"
   },
   {
     "GUID": "60982",
     "Name": "Speed Damage Strong Viper",
-    "Name.eng": "[GUIDNAME 20061] Battle suite",
+    "Name.eng": "Colossus Battle suite",
     "category": "Vehicles",
     "subcategory": "Viper"
   },
   {
     "GUID": "60968",
     "Name": "Speed SmallTradingShip",
-    "Name.eng": "[GUIDNAME 20069] Engine optimization",
+    "Name.eng": "Freight ship Engine optimization",
     "category": "Vehicles",
     "subcategory": "SmallTradingShip"
   },
   {
     "GUID": "60969",
     "Name": "Capacity SmallTradingShip",
-    "Name.eng": "[GUIDNAME 20069] Capacity expansion",
+    "Name.eng": "Freight ship Capacity expansion",
     "category": "Vehicles",
     "subcategory": "SmallTradingShip"
   },
   {
     "GUID": "60970",
     "Name": "Speed Capacity SmallTradingShip",
-    "Name.eng": "[GUIDNAME 20069] Cargo service customization",
+    "Name.eng": "Freight ship Cargo service customization",
     "category": "Vehicles",
     "subcategory": "SmallTradingShip"
   },
   {
     "GUID": "60971",
     "Name": "Speed Capacity SmallTradingShip Strong",
-    "Name.eng": "[GUIDNAME 20069] Cargo specification",
+    "Name.eng": "Freight ship Cargo specification",
     "category": "Vehicles",
     "subcategory": "SmallTradingShip"
   },
   {
     "GUID": "60983",
     "Name": "Speed MediumTradingShip",
-    "Name.eng": "[GUIDNAME 20067] Engine room optimization",
+    "Name.eng": "Cargo liner Engine room optimization",
     "category": "Vehicles",
     "subcategory": "MediumTradingShip"
   },
   {
     "GUID": "60984",
     "Name": "Capacity MediumTradingShip",
-    "Name.eng": "[GUIDNAME 20067] Cargo capacity revision",
+    "Name.eng": "Cargo liner Cargo capacity revision",
     "category": "Vehicles",
     "subcategory": "MediumTradingShip"
   },
   {
     "GUID": "60985",
     "Name": "Speed Capacity MediumTradingShip",
-    "Name.eng": "[GUIDNAME 20067] Haulage equipment",
+    "Name.eng": "Cargo liner Haulage equipment",
     "category": "Vehicles",
     "subcategory": "MediumTradingShip"
   },
   {
     "GUID": "60986",
     "Name": "Speed Capacity Strong MediumTradingShip",
-    "Name.eng": "[GUIDNAME 20067] Cargo service upgrade",
+    "Name.eng": "Cargo liner Cargo service upgrade",
     "category": "Vehicles",
     "subcategory": "MediumTradingShip"
   },
   {
     "GUID": "60987",
     "Name": "Speed ContainerShip",
-    "Name.eng": "[GUIDNAME 20068] Turbine boost",
+    "Name.eng": "Container ship Turbine boost",
     "category": "Vehicles",
     "subcategory": "ContainerShip"
   },
   {
     "GUID": "60988",
     "Name": "Capacity ContainerShip",
-    "Name.eng": "[GUIDNAME 20068] Cargo hold expansion",
+    "Name.eng": "Container ship Cargo hold expansion",
     "category": "Vehicles",
     "subcategory": "ContainerShip"
   },
   {
     "GUID": "60989",
     "Name": "Speed Capacity ContainerShip",
-    "Name.eng": "[GUIDNAME 20068] Logistics revision",
+    "Name.eng": "Container ship Logistics revision",
     "category": "Vehicles",
     "subcategory": "ContainerShip"
   },
   {
     "GUID": "60990",
     "Name": "Speed Capacity Strong ContainerShip",
-    "Name.eng": "[GUIDNAME 20068] Haulage diversification",
+    "Name.eng": "Container ship Haulage diversification",
     "category": "Vehicles",
     "subcategory": "ContainerShip"
   },
   {
     "GUID": "60991",
     "Name": "Speed Trimaran",
-    "Name.eng": "[GUIDNAME 20000] Engine modernization",
+    "Name.eng": "T 38 Ocean Glider Engine modernization",
     "category": "Vehicles",
     "subcategory": "Trimaran"
   },
   {
     "GUID": "60992",
     "Name": "Capacity Trimaran",
-    "Name.eng": "[GUIDNAME 20000] Cargo capacity revision",
+    "Name.eng": "T 38 Ocean Glider Cargo capacity revision",
     "category": "Vehicles",
     "subcategory": "Trimaran"
   },
   {
     "GUID": "60993",
     "Name": "Speed Capacity Trimaran",
-    "Name.eng": "[GUIDNAME 20000] Cargo transport customization",
+    "Name.eng": "T 38 Ocean Glider Cargo transport customization",
     "category": "Vehicles",
     "subcategory": "Trimaran"
   },
   {
     "GUID": "60994",
     "Name": "Speed Capacity Strong Trimaran",
-    "Name.eng": "[GUIDNAME 20000] Logistic specification",
+    "Name.eng": "T 38 Ocean Glider Logistic specification",
     "category": "Vehicles",
     "subcategory": "Trimaran"
   },
   {
     "GUID": "60995",
     "Name": "Speed Submarine",
-    "Name.eng": "[GUIDNAME 20015] Fuel cell engine",
+    "Name.eng": "Deep Sea Hunter Fuel cell engine",
     "category": "Vehicles",
     "subcategory": "Submarine"
   },
   {
     "GUID": "60996",
     "Name": "Damage Submarine",
-    "Name.eng": "[GUIDNAME 20015] Torpedo enhancement",
+    "Name.eng": "Deep Sea Hunter Torpedo enhancement",
     "category": "Vehicles",
     "subcategory": "Submarine"
   },
   {
     "GUID": "60997",
     "Name": "Speed Damage Submarine",
-    "Name.eng": "[GUIDNAME 20015] Combat equipment",
+    "Name.eng": "Deep Sea Hunter Combat equipment",
     "category": "Vehicles",
     "subcategory": "Submarine"
   },
   {
     "GUID": "60998",
     "Name": "Speed Damage Strong Submarine",
-    "Name.eng": "[GUIDNAME 20015] Battle classification",
+    "Name.eng": "Deep Sea Hunter Battle classification",
     "category": "Vehicles",
     "subcategory": "Submarine"
   },
   {
     "GUID": "60999",
     "Name": "FuelConsumption Chopper",
-    "Name.eng": "[GUIDNAME 20014] Engine efficiency improvement",
+    "Name.eng": "Chopper Engine efficiency improvement",
     "category": "Vehicles",
     "subcategory": "Chopper"
   },
   {
     "GUID": "61000",
     "Name": "Damage Chopper",
-    "Name.eng": "[GUIDNAME 20014] Ammunition modernization",
+    "Name.eng": "Chopper Ammunition modernization",
     "category": "Vehicles",
     "subcategory": "Chopper"
   },
   {
     "GUID": "61001",
     "Name": "FuelConsumption Damage Chopper",
-    "Name.eng": "[GUIDNAME 20014] Combat upgrade",
+    "Name.eng": "Chopper Combat upgrade",
     "category": "Vehicles",
     "subcategory": "Chopper"
   },
   {
     "GUID": "61002",
     "Name": "FuelConsumption Damage Strong Chopper",
-    "Name.eng": "[GUIDNAME 20014] Hunter classification",
+    "Name.eng": "Chopper Hunter classification",
     "category": "Vehicles",
     "subcategory": "Chopper"
   },
   {
     "GUID": "61003",
     "Name": "FuelConsumtion TakeOverPlane",
-    "Name.eng": "[GUIDNAME 20016] Turbine optimization",
+    "Name.eng": "Hawk Turbine optimization",
     "category": "Vehicles",
     "subcategory": "TakeOverPlane"
   },
   {
     "GUID": "61004",
     "Name": "Damage TakeOverPlane",
-    "Name.eng": "[GUIDNAME 20016] Missile extension",
+    "Name.eng": "Hawk Missile extension",
     "category": "Vehicles",
     "subcategory": "TakeOverPlane"
   },
   {
     "GUID": "61005",
     "Name": "FuelConsumption Damage TakeOverPlane",
-    "Name.eng": "[GUIDNAME 20016] Mission optimization",
+    "Name.eng": "Hawk Mission optimization",
     "category": "Vehicles",
     "subcategory": "TakeOverPlane"
   },
   {
     "GUID": "61006",
     "Name": "Fuelconsumption Damage Strong TakeOverPlane",
-    "Name.eng": "[GUIDNAME 20016] Battle optimization",
+    "Name.eng": "Hawk Battle optimization",
     "category": "Vehicles",
     "subcategory": "TakeOverPlane"
   },
   {
     "GUID": "61007",
     "Name": "FuelConsumption Bomber",
-    "Name.eng": "[GUIDNAME 20027] Rotor revision",
+    "Name.eng": "FireBird Rotor revision",
     "category": "Vehicles",
     "subcategory": "Bomber"
   },
   {
     "GUID": "61008",
     "Name": "Damage Bomber",
-    "Name.eng": "[GUIDNAME 20027] Armament improvement",
+    "Name.eng": "FireBird Armament improvement",
     "category": "Vehicles",
     "subcategory": "Bomber"
   },
   {
     "GUID": "61009",
     "Name": "FuelConsumption Damage Bomber",
-    "Name.eng": "[GUIDNAME 20027] Mission equipment",
+    "Name.eng": "FireBird Mission equipment",
     "category": "Vehicles",
     "subcategory": "Bomber"
   },
   {
     "GUID": "61010",
     "Name": "FuelConsumption Damage Strong Bomber",
-    "Name.eng": "[GUIDNAME 20027] Battle specification",
+    "Name.eng": "FireBird Battle specification",
     "category": "Vehicles",
     "subcategory": "Bomber"
   },
   {
     "GUID": "61224",
     "Name": "Speed MediumWarShip",
-    "Name.eng": "[GUIDNAME 20117] Drive expansion",
+    "Name.eng": "Viper Drive expansion",
     "category": "Vehicles",
     "subcategory": "MediumWarShip"
   },
   {
     "GUID": "61225",
     "Name": "Damage MediumWarShip",
-    "Name.eng": "[GUIDNAME 20117] Armament enhancement",
+    "Name.eng": "Viper Armament enhancement",
     "category": "Vehicles",
     "subcategory": "MediumWarShip"
   },
   {
     "GUID": "61226",
     "Name": "Speed Damage MediumWarShip",
-    "Name.eng": "[GUIDNAME 20117] Maneuvering revision",
+    "Name.eng": "Viper Maneuvering revision",
     "category": "Vehicles",
     "subcategory": "MediumWarShip"
   },
   {
     "GUID": "61227",
     "Name": "Speed Damage Strong MediumWarShip",
-    "Name.eng": "[GUIDNAME 20117] Combat operations upgrade",
+    "Name.eng": "Viper Combat operations upgrade",
     "category": "Vehicles",
     "subcategory": "MediumWarShip"
   },
@@ -1581,49 +1581,49 @@ subcategory: (optional)
   {
     "GUID": "61220",
     "Name": "MilitaryResearch",
-    "Name.eng": "[GUIDNAME 1420011] Research",
+    "Name.eng": "Basic Research projects Research",
     "category": "Research"
   },
   {
     "GUID": "61219",
     "Name": "ProductionResearch",
-    "Name.eng": "[GUIDNAME 1420012] Research",
+    "Name.eng": "Production buildings Research",
     "category": "Research"
   },
   {
     "GUID": "61218",
     "Name": "SpecialResearch",
-    "Name.eng": "[GUIDNAME 1420015] Research",
+    "Name.eng": "Special buildings Research",
     "category": "Research"
   },
   {
     "GUID": "61217",
     "Name": "PublicResearch",
-    "Name.eng": "[GUIDNAME 1420013] Research",
+    "Name.eng": "Public buildings Research",
     "category": "Research"
   },
   {
     "GUID": "61216",
     "Name": "ResourceResearch",
-    "Name.eng": "[GUIDNAME 1420014] Research",
+    "Name.eng": "Fertilities & Resources Research",
     "category": "Research"
   },
   {
     "GUID": "60944",
     "Name": "VehicleResearch",
-    "Name.eng": "[GUIDNAME 1420016] Research",
+    "Name.eng": "Units Research",
     "category": "Research"
   },
   {
     "GUID": "61215",
     "Name": "EcologicResearch",
-    "Name.eng": "[GUIDNAME 1420009] Research",
+    "Name.eng": "Ecobalance buildings Research",
     "category": "Research"
   },
   {
     "GUID": "61214",
     "Name": "EnergyResearch",
-    "Name.eng": "[GUIDNAME 1420010] Research",
+    "Name.eng": "Energy generation Research",
     "category": "Research"
   }
 ]

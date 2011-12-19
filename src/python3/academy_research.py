@@ -11,6 +11,7 @@ import collections
 import configparser
 import json
 import os
+import re
 import textwrap
 import xml.etree.ElementTree as ET
 
@@ -21,8 +22,10 @@ __project_root  = os.path.join('..', '..')
 __rda_folder    = os.path.join(__project_root, "src", "rda")
 __out_folder    = os.path.join(__project_root, "target")
 __features_xml  = os.path.join(__rda_folder, "patch3", "data", "config", "features", "features.xml")
-__icons_txt     = os.path.join(__rda_folder, "eng3", "data", "loca", "eng", "txt", "icons.txt")
 __guids_txt     = os.path.join(__rda_folder, "eng3", "data", "loca", "eng", "txt", "guids.txt")
+__icons_txt     = os.path.join(__rda_folder, "eng3", "data", "loca", "eng", "txt", "icons.txt")
+__interface_txt = os.path.join(__rda_folder, "eng3", "data", "loca", "eng", "txt", "interface.txt")
+__regex_guidname= re.compile(r'\[GUIDNAME (?P<GUID>\d+)\]')
 
 #def parse_ProductGUIDs():
 #    ProductGUIDs = {}
@@ -45,7 +48,7 @@ __guids_txt     = os.path.join(__rda_folder, "eng3", "data", "loca", "eng", "txt
 #    return IconFileNames
 
 def main():
-    eng = _parse_anno_properties_file(__guids_txt)
+    eng = _get_localization('eng')
     research_projects = _get_research_project_dicts(eng)
     
     with open(_get_json_path(), mode="w", encoding=__out_encoding, newline='\n') as json_file:
@@ -154,24 +157,37 @@ def _get_research_project_dict(project_asset, eng, category, subcategory=None):
     
     project['GUID'] = project_asset.findtext('Values/Standard/GUID')
     project['Name'] = project_asset.findtext('Values/Standard/Name')
-    project['Name.eng'] = eng[project['GUID']]
+    
+    # Localization strings can refer to each other. Follow these references and display the final result.
+    # Replace "Blueprint: [GUIDNAME 10087]"
+    # With    "Blueprint: Hydroelectric power plant"
+    name_eng = eng[project['GUID']]
+    if (__regex_guidname.search(name_eng)):
+        inner_GUID = __regex_guidname.search(name_eng).group('GUID')
+        name_eng = __regex_guidname.sub(eng[inner_GUID], name_eng, count=1)
+    project['Name.eng'] = name_eng
     
     project['category'] = category
     if subcategory != None: project['subcategory'] = subcategory
     
     return project
 
-def _parse_anno_properties_file(path):
+def _get_localization(lang):
     '''
-    Parses an Anno 2070 properties file, such as guids.txt.
+    Parses an Anno 2070 properties guids_file, such as guids.txt.
     
-    Returns a dictionary of the key/value pairs defined in the file.
+    Returns a dictionary of the key/value pairs defined in the guids_file.
     '''
+    if (lang != 'eng'):
+        raise Exception('Only English localization is currently supported.')
+    
     # The text files are encoded in UTF-16. Its endianness is automatically detected by open(), using the BOM.
-    file = open(path, encoding="utf_16")
+    guids_file     = open(__guids_txt    , encoding="utf_16")
+    interface_file = open(__interface_txt, encoding="utf_16")
     
     config = configparser.ConfigParser()
-    config.read_file(_add_section_header(file, 'DEFAULT'), source=__guids_txt)
+    config.read_file(_add_section_header(guids_file    , 'DEFAULT'), source=__guids_txt)
+    config.read_file(_add_section_header(interface_file, 'DEFAULT'), source=__interface_txt)
     return config['DEFAULT']
 
 def _add_section_header(properties_file, header_name):
