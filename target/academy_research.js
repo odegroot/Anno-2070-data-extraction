@@ -3,7 +3,6 @@
 // See https://github.com/odegroot/Anno-2070-data-extraction
 // 
 // Game version: Anno 2070 v1.02
-// Model version: 0.1
 
 /*
 =====================

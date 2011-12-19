@@ -17,7 +17,6 @@ import textwrap
 import xml.etree.ElementTree as ET
 
 __game_version  = "Anno 2070 v1.02"
-__model_version = "0.1"
 __out_encoding  = 'utf_8'
 
 __project_root  = os.path.join('..', '..')
@@ -49,7 +48,6 @@ def main():
         json_file.write('// See https://github.com/odegroot/Anno-2070-data-extraction\n')
         json_file.write('// \n')
         json_file.write('// Game version: ' + __game_version + '\n')
-        json_file.write('// Model version: ' + __model_version + '\n')
         
         json_file.write(textwrap.dedent('''
             /*
@@ -124,7 +122,7 @@ def _get_json_path():
     '''
     # this_py_filename.rpartition('.') --> (filename_without_extension, '.', 'py')
     filename_without_extension = _get_current_py_filename().rpartition('.')[0]
-    json_filename = "{}_v{}.js".format(filename_without_extension, __model_version)
+    json_filename = filename_without_extension + '.js'
     json_path = os.path.join(__out_folder, json_filename)
     
     return json_path
