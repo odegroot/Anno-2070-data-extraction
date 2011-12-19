@@ -24,13 +24,33 @@ subcategory (optional):
 
 ItemQuality:
     The quality of the research project, expressed as a letter. Possible values: A, B, C, D, null. A is the highest, D is the lowest. Null is equivalent to A.
-ItemQuality.stars:
+ItemQuality.stars (redundant, derived from ItemQuality):
     The quality of the research project, expressed as the number of gold stars . Possible values: 0, 1, 2, 3.
 
 icon.base:
     Filename of the base icon of the research project.
 icon.overlay (optional):
     Filename of the overlay icon of the research project.
+
+effect.ActiveEcoEffect.Value (int):
+effect.ActiveEcoEffect.Percental (bool):
+effect.ActiveEcoEffect.text (redundant, derived from Value + Percental):
+effect.InActiveEcoEffect.Value (int):
+effect.InActiveEcoEffect.Percental (bool):
+effect.InActiveEcoEffect.text (redundant, derived from Value + Percental):
+    Eco effect of the technology produced by this research project.
+
+    Value/Percental/text are probably best explained by example:
+    |-------|-----------|------|---------------|----------------|
+    | Value | Percental | text | normal effect | boosted effect |
+    |-------|-----------|------|---------------|----------------|
+    |  -50  |   true    | -50% |     -30       |      -15       |
+    |  -50  |   false   | -50  |     -30       |      -80       |
+    |   50  |   true    | +50% |      30       |       45       |
+    |   50  |   false   | +50  |      30       |       80       |
+    |-------|-----------|------|---------------|----------------|
+
+    The exact meaning of active vs. inactive is not known. All known projects have identical values for active and inactive. 
 
 =====================
 */
@@ -58,7 +78,13 @@ icon.overlay (optional):
     "ItemQuality": "C",
     "ItemQuality.stars": 1,
     "icon.base": "icon_30_0.png",
-    "icon.overlay": "icon_30_464.png"
+    "icon.overlay": "icon_30_464.png",
+    "effect.ActiveEcoEffect.Value": -30,
+    "effect.ActiveEcoEffect.Percental": true,
+    "effect.ActiveEcoEffect.text": "-30%",
+    "effect.InActiveEcoEffect.Value": -30,
+    "effect.InActiveEcoEffect.Percental": true,
+    "effect.InActiveEcoEffect.text": "-30%"
   },
   {
     "GUID": "61013",
@@ -70,7 +96,13 @@ icon.overlay (optional):
     "ItemQuality": "B",
     "ItemQuality.stars": 2,
     "icon.base": "icon_30_0.png",
-    "icon.overlay": "icon_30_465.png"
+    "icon.overlay": "icon_30_465.png",
+    "effect.ActiveEcoEffect.Value": -40,
+    "effect.ActiveEcoEffect.Percental": true,
+    "effect.ActiveEcoEffect.text": "-40%",
+    "effect.InActiveEcoEffect.Value": -40,
+    "effect.InActiveEcoEffect.Percental": true,
+    "effect.InActiveEcoEffect.text": "-40%"
   },
   {
     "GUID": "61014",
@@ -82,7 +114,13 @@ icon.overlay (optional):
     "ItemQuality": null,
     "ItemQuality.stars": 3,
     "icon.base": "icon_30_0.png",
-    "icon.overlay": "icon_30_465.png"
+    "icon.overlay": "icon_30_465.png",
+    "effect.ActiveEcoEffect.Value": -50,
+    "effect.ActiveEcoEffect.Percental": true,
+    "effect.ActiveEcoEffect.text": "-50%",
+    "effect.InActiveEcoEffect.Value": -50,
+    "effect.InActiveEcoEffect.Percental": true,
+    "effect.InActiveEcoEffect.text": "-50%"
   },
   {
     "GUID": "61015",
@@ -118,7 +156,13 @@ icon.overlay (optional):
     "ItemQuality": "C",
     "ItemQuality.stars": 1,
     "icon.base": "icon_30_1.png",
-    "icon.overlay": "icon_30_464.png"
+    "icon.overlay": "icon_30_464.png",
+    "effect.ActiveEcoEffect.Value": -30,
+    "effect.ActiveEcoEffect.Percental": true,
+    "effect.ActiveEcoEffect.text": "-30%",
+    "effect.InActiveEcoEffect.Value": -30,
+    "effect.InActiveEcoEffect.Percental": true,
+    "effect.InActiveEcoEffect.text": "-30%"
   },
   {
     "GUID": "61018",
@@ -130,7 +174,13 @@ icon.overlay (optional):
     "ItemQuality": "B",
     "ItemQuality.stars": 2,
     "icon.base": "icon_30_1.png",
-    "icon.overlay": "icon_30_465.png"
+    "icon.overlay": "icon_30_465.png",
+    "effect.ActiveEcoEffect.Value": -40,
+    "effect.ActiveEcoEffect.Percental": true,
+    "effect.ActiveEcoEffect.text": "-40%",
+    "effect.InActiveEcoEffect.Value": -40,
+    "effect.InActiveEcoEffect.Percental": true,
+    "effect.InActiveEcoEffect.text": "-40%"
   },
   {
     "GUID": "61019",
@@ -142,7 +192,13 @@ icon.overlay (optional):
     "ItemQuality": null,
     "ItemQuality.stars": 3,
     "icon.base": "icon_30_1.png",
-    "icon.overlay": "icon_30_465.png"
+    "icon.overlay": "icon_30_465.png",
+    "effect.ActiveEcoEffect.Value": -50,
+    "effect.ActiveEcoEffect.Percental": true,
+    "effect.ActiveEcoEffect.text": "-50%",
+    "effect.InActiveEcoEffect.Value": -50,
+    "effect.InActiveEcoEffect.Percental": true,
+    "effect.InActiveEcoEffect.text": "-50%"
   },
   {
     "GUID": "61033",
@@ -394,7 +450,13 @@ icon.overlay (optional):
     "ItemQuality": "C",
     "ItemQuality.stars": 1,
     "icon.base": "icon_30_22.png",
-    "icon.overlay": "icon_30_464.png"
+    "icon.overlay": "icon_30_464.png",
+    "effect.ActiveEcoEffect.Value": 20,
+    "effect.ActiveEcoEffect.Percental": true,
+    "effect.ActiveEcoEffect.text": "+20%",
+    "effect.InActiveEcoEffect.Value": 20,
+    "effect.InActiveEcoEffect.Percental": true,
+    "effect.InActiveEcoEffect.text": "+20%"
   },
   {
     "GUID": "61062",
@@ -418,7 +480,13 @@ icon.overlay (optional):
     "ItemQuality": "B",
     "ItemQuality.stars": 2,
     "icon.base": "icon_30_22.png",
-    "icon.overlay": "icon_30_465.png"
+    "icon.overlay": "icon_30_465.png",
+    "effect.ActiveEcoEffect.Value": 30,
+    "effect.ActiveEcoEffect.Percental": true,
+    "effect.ActiveEcoEffect.text": "+30%",
+    "effect.InActiveEcoEffect.Value": 30,
+    "effect.InActiveEcoEffect.Percental": true,
+    "effect.InActiveEcoEffect.text": "+30%"
   },
   {
     "GUID": "61064",
@@ -430,7 +498,13 @@ icon.overlay (optional):
     "ItemQuality": null,
     "ItemQuality.stars": 3,
     "icon.base": "icon_30_22.png",
-    "icon.overlay": "icon_30_465.png"
+    "icon.overlay": "icon_30_465.png",
+    "effect.ActiveEcoEffect.Value": 40,
+    "effect.ActiveEcoEffect.Percental": true,
+    "effect.ActiveEcoEffect.text": "+40%",
+    "effect.InActiveEcoEffect.Value": 40,
+    "effect.InActiveEcoEffect.Percental": true,
+    "effect.InActiveEcoEffect.text": "+40%"
   },
   {
     "GUID": "61065",
@@ -2153,7 +2227,13 @@ icon.overlay (optional):
     "ItemQuality": "C",
     "ItemQuality.stars": 1,
     "icon.base": "icon_30_133.png",
-    "icon.overlay": "icon_30_464.png"
+    "icon.overlay": "icon_30_464.png",
+    "effect.ActiveEcoEffect.Value": -50,
+    "effect.ActiveEcoEffect.Percental": true,
+    "effect.ActiveEcoEffect.text": "-50%",
+    "effect.InActiveEcoEffect.Value": -50,
+    "effect.InActiveEcoEffect.Percental": true,
+    "effect.InActiveEcoEffect.text": "-50%"
   },
   {
     "GUID": "61147",
@@ -2165,7 +2245,13 @@ icon.overlay (optional):
     "ItemQuality": "B",
     "ItemQuality.stars": 2,
     "icon.base": "icon_30_133.png",
-    "icon.overlay": "icon_30_465.png"
+    "icon.overlay": "icon_30_465.png",
+    "effect.ActiveEcoEffect.Value": -100,
+    "effect.ActiveEcoEffect.Percental": true,
+    "effect.ActiveEcoEffect.text": "-100%",
+    "effect.InActiveEcoEffect.Value": -100,
+    "effect.InActiveEcoEffect.Percental": true,
+    "effect.InActiveEcoEffect.text": "-100%"
   },
   {
     "GUID": "61148",
@@ -2177,7 +2263,13 @@ icon.overlay (optional):
     "ItemQuality": null,
     "ItemQuality.stars": 3,
     "icon.base": "icon_30_133.png",
-    "icon.overlay": "icon_30_465.png"
+    "icon.overlay": "icon_30_465.png",
+    "effect.ActiveEcoEffect.Value": -100,
+    "effect.ActiveEcoEffect.Percental": true,
+    "effect.ActiveEcoEffect.text": "-100%",
+    "effect.InActiveEcoEffect.Value": -100,
+    "effect.InActiveEcoEffect.Percental": true,
+    "effect.InActiveEcoEffect.text": "-100%"
   },
   {
     "GUID": "61149",
@@ -2201,7 +2293,13 @@ icon.overlay (optional):
     "ItemQuality": "C",
     "ItemQuality.stars": 1,
     "icon.base": "icon_30_134.png",
-    "icon.overlay": "icon_30_464.png"
+    "icon.overlay": "icon_30_464.png",
+    "effect.ActiveEcoEffect.Value": -50,
+    "effect.ActiveEcoEffect.Percental": true,
+    "effect.ActiveEcoEffect.text": "-50%",
+    "effect.InActiveEcoEffect.Value": -50,
+    "effect.InActiveEcoEffect.Percental": true,
+    "effect.InActiveEcoEffect.text": "-50%"
   },
   {
     "GUID": "61151",
@@ -2213,7 +2311,13 @@ icon.overlay (optional):
     "ItemQuality": "B",
     "ItemQuality.stars": 2,
     "icon.base": "icon_30_134.png",
-    "icon.overlay": "icon_30_465.png"
+    "icon.overlay": "icon_30_465.png",
+    "effect.ActiveEcoEffect.Value": -100,
+    "effect.ActiveEcoEffect.Percental": true,
+    "effect.ActiveEcoEffect.text": "-100%",
+    "effect.InActiveEcoEffect.Value": -100,
+    "effect.InActiveEcoEffect.Percental": true,
+    "effect.InActiveEcoEffect.text": "-100%"
   },
   {
     "GUID": "61152",
@@ -2225,7 +2329,13 @@ icon.overlay (optional):
     "ItemQuality": null,
     "ItemQuality.stars": 3,
     "icon.base": "icon_30_134.png",
-    "icon.overlay": "icon_30_465.png"
+    "icon.overlay": "icon_30_465.png",
+    "effect.ActiveEcoEffect.Value": -100,
+    "effect.ActiveEcoEffect.Percental": true,
+    "effect.ActiveEcoEffect.text": "-100%",
+    "effect.InActiveEcoEffect.Value": -100,
+    "effect.InActiveEcoEffect.Percental": true,
+    "effect.InActiveEcoEffect.text": "-100%"
   },
   {
     "GUID": "61153",
@@ -2249,7 +2359,13 @@ icon.overlay (optional):
     "ItemQuality": "C",
     "ItemQuality.stars": 1,
     "icon.base": "icon_30_135.png",
-    "icon.overlay": "icon_30_464.png"
+    "icon.overlay": "icon_30_464.png",
+    "effect.ActiveEcoEffect.Value": -50,
+    "effect.ActiveEcoEffect.Percental": true,
+    "effect.ActiveEcoEffect.text": "-50%",
+    "effect.InActiveEcoEffect.Value": -50,
+    "effect.InActiveEcoEffect.Percental": true,
+    "effect.InActiveEcoEffect.text": "-50%"
   },
   {
     "GUID": "61155",
@@ -2261,7 +2377,13 @@ icon.overlay (optional):
     "ItemQuality": "B",
     "ItemQuality.stars": 2,
     "icon.base": "icon_30_135.png",
-    "icon.overlay": "icon_30_465.png"
+    "icon.overlay": "icon_30_465.png",
+    "effect.ActiveEcoEffect.Value": -100,
+    "effect.ActiveEcoEffect.Percental": true,
+    "effect.ActiveEcoEffect.text": "-100%",
+    "effect.InActiveEcoEffect.Value": -100,
+    "effect.InActiveEcoEffect.Percental": true,
+    "effect.InActiveEcoEffect.text": "-100%"
   },
   {
     "GUID": "61156",
@@ -2273,7 +2395,13 @@ icon.overlay (optional):
     "ItemQuality": null,
     "ItemQuality.stars": 3,
     "icon.base": "icon_30_135.png",
-    "icon.overlay": "icon_30_465.png"
+    "icon.overlay": "icon_30_465.png",
+    "effect.ActiveEcoEffect.Value": -100,
+    "effect.ActiveEcoEffect.Percental": true,
+    "effect.ActiveEcoEffect.text": "-100%",
+    "effect.InActiveEcoEffect.Value": -100,
+    "effect.InActiveEcoEffect.Percental": true,
+    "effect.InActiveEcoEffect.text": "-100%"
   },
   {
     "GUID": "61157",
@@ -2297,7 +2425,13 @@ icon.overlay (optional):
     "ItemQuality": "C",
     "ItemQuality.stars": 1,
     "icon.base": "icon_30_136.png",
-    "icon.overlay": "icon_30_464.png"
+    "icon.overlay": "icon_30_464.png",
+    "effect.ActiveEcoEffect.Value": -50,
+    "effect.ActiveEcoEffect.Percental": true,
+    "effect.ActiveEcoEffect.text": "-50%",
+    "effect.InActiveEcoEffect.Value": -50,
+    "effect.InActiveEcoEffect.Percental": true,
+    "effect.InActiveEcoEffect.text": "-50%"
   },
   {
     "GUID": "61159",
@@ -2309,7 +2443,13 @@ icon.overlay (optional):
     "ItemQuality": "B",
     "ItemQuality.stars": 2,
     "icon.base": "icon_30_136.png",
-    "icon.overlay": "icon_30_465.png"
+    "icon.overlay": "icon_30_465.png",
+    "effect.ActiveEcoEffect.Value": -100,
+    "effect.ActiveEcoEffect.Percental": true,
+    "effect.ActiveEcoEffect.text": "-100%",
+    "effect.InActiveEcoEffect.Value": -100,
+    "effect.InActiveEcoEffect.Percental": true,
+    "effect.InActiveEcoEffect.text": "-100%"
   },
   {
     "GUID": "61160",
@@ -2321,7 +2461,13 @@ icon.overlay (optional):
     "ItemQuality": null,
     "ItemQuality.stars": 3,
     "icon.base": "icon_30_136.png",
-    "icon.overlay": "icon_30_465.png"
+    "icon.overlay": "icon_30_465.png",
+    "effect.ActiveEcoEffect.Value": -100,
+    "effect.ActiveEcoEffect.Percental": true,
+    "effect.ActiveEcoEffect.text": "-100%",
+    "effect.InActiveEcoEffect.Value": -100,
+    "effect.InActiveEcoEffect.Percental": true,
+    "effect.InActiveEcoEffect.text": "-100%"
   },
   {
     "GUID": "61161",
@@ -2345,7 +2491,13 @@ icon.overlay (optional):
     "ItemQuality": "C",
     "ItemQuality.stars": 1,
     "icon.base": "icon_30_137.png",
-    "icon.overlay": "icon_30_464.png"
+    "icon.overlay": "icon_30_464.png",
+    "effect.ActiveEcoEffect.Value": -30,
+    "effect.ActiveEcoEffect.Percental": true,
+    "effect.ActiveEcoEffect.text": "-30%",
+    "effect.InActiveEcoEffect.Value": -30,
+    "effect.InActiveEcoEffect.Percental": true,
+    "effect.InActiveEcoEffect.text": "-30%"
   },
   {
     "GUID": "61163",
@@ -2357,7 +2509,13 @@ icon.overlay (optional):
     "ItemQuality": "B",
     "ItemQuality.stars": 2,
     "icon.base": "icon_30_137.png",
-    "icon.overlay": "icon_30_465.png"
+    "icon.overlay": "icon_30_465.png",
+    "effect.ActiveEcoEffect.Value": -50,
+    "effect.ActiveEcoEffect.Percental": true,
+    "effect.ActiveEcoEffect.text": "-50%",
+    "effect.InActiveEcoEffect.Value": -50,
+    "effect.InActiveEcoEffect.Percental": true,
+    "effect.InActiveEcoEffect.text": "-50%"
   },
   {
     "GUID": "61164",
@@ -2369,7 +2527,13 @@ icon.overlay (optional):
     "ItemQuality": null,
     "ItemQuality.stars": 3,
     "icon.base": "icon_30_137.png",
-    "icon.overlay": "icon_30_465.png"
+    "icon.overlay": "icon_30_465.png",
+    "effect.ActiveEcoEffect.Value": -70,
+    "effect.ActiveEcoEffect.Percental": true,
+    "effect.ActiveEcoEffect.text": "-70%",
+    "effect.InActiveEcoEffect.Value": -70,
+    "effect.InActiveEcoEffect.Percental": true,
+    "effect.InActiveEcoEffect.text": "-70%"
   },
   {
     "GUID": "61165",
@@ -2393,7 +2557,13 @@ icon.overlay (optional):
     "ItemQuality": "C",
     "ItemQuality.stars": 1,
     "icon.base": "icon_30_138.png",
-    "icon.overlay": "icon_30_464.png"
+    "icon.overlay": "icon_30_464.png",
+    "effect.ActiveEcoEffect.Value": -30,
+    "effect.ActiveEcoEffect.Percental": true,
+    "effect.ActiveEcoEffect.text": "-30%",
+    "effect.InActiveEcoEffect.Value": -30,
+    "effect.InActiveEcoEffect.Percental": true,
+    "effect.InActiveEcoEffect.text": "-30%"
   },
   {
     "GUID": "61167",
@@ -2405,7 +2575,13 @@ icon.overlay (optional):
     "ItemQuality": "B",
     "ItemQuality.stars": 2,
     "icon.base": "icon_30_138.png",
-    "icon.overlay": "icon_30_465.png"
+    "icon.overlay": "icon_30_465.png",
+    "effect.ActiveEcoEffect.Value": -40,
+    "effect.ActiveEcoEffect.Percental": true,
+    "effect.ActiveEcoEffect.text": "-40%",
+    "effect.InActiveEcoEffect.Value": -40,
+    "effect.InActiveEcoEffect.Percental": true,
+    "effect.InActiveEcoEffect.text": "-40%"
   },
   {
     "GUID": "61168",
@@ -2417,7 +2593,13 @@ icon.overlay (optional):
     "ItemQuality": null,
     "ItemQuality.stars": 3,
     "icon.base": "icon_30_138.png",
-    "icon.overlay": "icon_30_465.png"
+    "icon.overlay": "icon_30_465.png",
+    "effect.ActiveEcoEffect.Value": -50,
+    "effect.ActiveEcoEffect.Percental": true,
+    "effect.ActiveEcoEffect.text": "-50%",
+    "effect.InActiveEcoEffect.Value": -50,
+    "effect.InActiveEcoEffect.Percental": true,
+    "effect.InActiveEcoEffect.text": "-50%"
   },
   {
     "GUID": "61169",
@@ -2489,7 +2671,13 @@ icon.overlay (optional):
     "ItemQuality": "C",
     "ItemQuality.stars": 1,
     "icon.base": "icon_30_139.png",
-    "icon.overlay": "icon_30_464.png"
+    "icon.overlay": "icon_30_464.png",
+    "effect.ActiveEcoEffect.Value": -30,
+    "effect.ActiveEcoEffect.Percental": true,
+    "effect.ActiveEcoEffect.text": "-30%",
+    "effect.InActiveEcoEffect.Value": -30,
+    "effect.InActiveEcoEffect.Percental": true,
+    "effect.InActiveEcoEffect.text": "-30%"
   },
   {
     "GUID": "61175",
@@ -2501,7 +2689,13 @@ icon.overlay (optional):
     "ItemQuality": "B",
     "ItemQuality.stars": 2,
     "icon.base": "icon_30_139.png",
-    "icon.overlay": "icon_30_465.png"
+    "icon.overlay": "icon_30_465.png",
+    "effect.ActiveEcoEffect.Value": -40,
+    "effect.ActiveEcoEffect.Percental": true,
+    "effect.ActiveEcoEffect.text": "-40%",
+    "effect.InActiveEcoEffect.Value": -40,
+    "effect.InActiveEcoEffect.Percental": true,
+    "effect.InActiveEcoEffect.text": "-40%"
   },
   {
     "GUID": "61176",
@@ -2513,7 +2707,13 @@ icon.overlay (optional):
     "ItemQuality": null,
     "ItemQuality.stars": 3,
     "icon.base": "icon_30_139.png",
-    "icon.overlay": "icon_30_465.png"
+    "icon.overlay": "icon_30_465.png",
+    "effect.ActiveEcoEffect.Value": -50,
+    "effect.ActiveEcoEffect.Percental": true,
+    "effect.ActiveEcoEffect.text": "-50%",
+    "effect.InActiveEcoEffect.Value": -50,
+    "effect.InActiveEcoEffect.Percental": true,
+    "effect.InActiveEcoEffect.text": "-50%"
   },
   {
     "GUID": "61177",
@@ -2537,7 +2737,13 @@ icon.overlay (optional):
     "ItemQuality": "C",
     "ItemQuality.stars": 1,
     "icon.base": "icon_30_140.png",
-    "icon.overlay": "icon_30_464.png"
+    "icon.overlay": "icon_30_464.png",
+    "effect.ActiveEcoEffect.Value": -30,
+    "effect.ActiveEcoEffect.Percental": true,
+    "effect.ActiveEcoEffect.text": "-30%",
+    "effect.InActiveEcoEffect.Value": -30,
+    "effect.InActiveEcoEffect.Percental": true,
+    "effect.InActiveEcoEffect.text": "-30%"
   },
   {
     "GUID": "61179",
@@ -2549,7 +2755,13 @@ icon.overlay (optional):
     "ItemQuality": "B",
     "ItemQuality.stars": 2,
     "icon.base": "icon_30_140.png",
-    "icon.overlay": "icon_30_465.png"
+    "icon.overlay": "icon_30_465.png",
+    "effect.ActiveEcoEffect.Value": -40,
+    "effect.ActiveEcoEffect.Percental": true,
+    "effect.ActiveEcoEffect.text": "-40%",
+    "effect.InActiveEcoEffect.Value": -40,
+    "effect.InActiveEcoEffect.Percental": true,
+    "effect.InActiveEcoEffect.text": "-40%"
   },
   {
     "GUID": "61180",
@@ -2561,7 +2773,13 @@ icon.overlay (optional):
     "ItemQuality": null,
     "ItemQuality.stars": 3,
     "icon.base": "icon_30_140.png",
-    "icon.overlay": "icon_30_465.png"
+    "icon.overlay": "icon_30_465.png",
+    "effect.ActiveEcoEffect.Value": -50,
+    "effect.ActiveEcoEffect.Percental": true,
+    "effect.ActiveEcoEffect.text": "-50%",
+    "effect.InActiveEcoEffect.Value": -50,
+    "effect.InActiveEcoEffect.Percental": true,
+    "effect.InActiveEcoEffect.text": "-50%"
   },
   {
     "GUID": "61181",
@@ -2585,7 +2803,13 @@ icon.overlay (optional):
     "ItemQuality": "C",
     "ItemQuality.stars": 1,
     "icon.base": "icon_30_141.png",
-    "icon.overlay": "icon_30_464.png"
+    "icon.overlay": "icon_30_464.png",
+    "effect.ActiveEcoEffect.Value": -40,
+    "effect.ActiveEcoEffect.Percental": true,
+    "effect.ActiveEcoEffect.text": "-40%",
+    "effect.InActiveEcoEffect.Value": -40,
+    "effect.InActiveEcoEffect.Percental": true,
+    "effect.InActiveEcoEffect.text": "-40%"
   },
   {
     "GUID": "61183",
@@ -2597,7 +2821,13 @@ icon.overlay (optional):
     "ItemQuality": "B",
     "ItemQuality.stars": 2,
     "icon.base": "icon_30_141.png",
-    "icon.overlay": "icon_30_465.png"
+    "icon.overlay": "icon_30_465.png",
+    "effect.ActiveEcoEffect.Value": -70,
+    "effect.ActiveEcoEffect.Percental": true,
+    "effect.ActiveEcoEffect.text": "-70%",
+    "effect.InActiveEcoEffect.Value": -70,
+    "effect.InActiveEcoEffect.Percental": true,
+    "effect.InActiveEcoEffect.text": "-70%"
   },
   {
     "GUID": "61184",
@@ -2609,7 +2839,13 @@ icon.overlay (optional):
     "ItemQuality": null,
     "ItemQuality.stars": 3,
     "icon.base": "icon_30_141.png",
-    "icon.overlay": "icon_30_465.png"
+    "icon.overlay": "icon_30_465.png",
+    "effect.ActiveEcoEffect.Value": -100,
+    "effect.ActiveEcoEffect.Percental": true,
+    "effect.ActiveEcoEffect.text": "-100%",
+    "effect.InActiveEcoEffect.Value": -100,
+    "effect.InActiveEcoEffect.Percental": true,
+    "effect.InActiveEcoEffect.text": "-100%"
   },
   {
     "GUID": "61185",
@@ -2633,7 +2869,13 @@ icon.overlay (optional):
     "ItemQuality": "C",
     "ItemQuality.stars": 1,
     "icon.base": "icon_30_0.png",
-    "icon.overlay": "icon_30_464.png"
+    "icon.overlay": "icon_30_464.png",
+    "effect.ActiveEcoEffect.Value": -30,
+    "effect.ActiveEcoEffect.Percental": true,
+    "effect.ActiveEcoEffect.text": "-30%",
+    "effect.InActiveEcoEffect.Value": -30,
+    "effect.InActiveEcoEffect.Percental": true,
+    "effect.InActiveEcoEffect.text": "-30%"
   },
   {
     "GUID": "61187",
@@ -2645,7 +2887,13 @@ icon.overlay (optional):
     "ItemQuality": "B",
     "ItemQuality.stars": 2,
     "icon.base": "icon_30_0.png",
-    "icon.overlay": "icon_30_465.png"
+    "icon.overlay": "icon_30_465.png",
+    "effect.ActiveEcoEffect.Value": -40,
+    "effect.ActiveEcoEffect.Percental": true,
+    "effect.ActiveEcoEffect.text": "-40%",
+    "effect.InActiveEcoEffect.Value": -40,
+    "effect.InActiveEcoEffect.Percental": true,
+    "effect.InActiveEcoEffect.text": "-40%"
   },
   {
     "GUID": "61188",
@@ -2657,7 +2905,13 @@ icon.overlay (optional):
     "ItemQuality": null,
     "ItemQuality.stars": 3,
     "icon.base": "icon_30_0.png",
-    "icon.overlay": "icon_30_465.png"
+    "icon.overlay": "icon_30_465.png",
+    "effect.ActiveEcoEffect.Value": -50,
+    "effect.ActiveEcoEffect.Percental": true,
+    "effect.ActiveEcoEffect.text": "-50%",
+    "effect.InActiveEcoEffect.Value": -50,
+    "effect.InActiveEcoEffect.Percental": true,
+    "effect.InActiveEcoEffect.text": "-50%"
   },
   {
     "GUID": "61359",

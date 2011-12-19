@@ -71,13 +71,33 @@ def main():
             
             ItemQuality:
                 The quality of the research project, expressed as a letter. Possible values: A, B, C, D, null. A is the highest, D is the lowest. Null is equivalent to A.
-            ItemQuality.stars:
+            ItemQuality.stars (redundant, derived from ItemQuality):
                 The quality of the research project, expressed as the number of gold stars . Possible values: 0, 1, 2, 3.
             
             icon.base:
                 Filename of the base icon of the research project.
             icon.overlay (optional):
                 Filename of the overlay icon of the research project.
+                
+            effect.ActiveEcoEffect.Value (int):
+            effect.ActiveEcoEffect.Percental (bool):
+            effect.ActiveEcoEffect.text (redundant, derived from Value + Percental):
+            effect.InActiveEcoEffect.Value (int):
+            effect.InActiveEcoEffect.Percental (bool):
+            effect.InActiveEcoEffect.text (redundant, derived from Value + Percental):
+                Eco effect of the technology produced by this research project.
+                
+                Value/Percental/text are probably best explained by example:
+                |-------|-----------|------|---------------|----------------|
+                | Value | Percental | text | normal effect | boosted effect |
+                |-------|-----------|------|---------------|----------------|
+                |  -50  |   true    | -50% |     -30       |      -15       |
+                |  -50  |   false   | -50  |     -30       |      -80       |
+                |   50  |   true    | +50% |      30       |       45       |
+                |   50  |   false   | +50  |      30       |       80       |
+                |-------|-----------|------|---------------|----------------|
+                
+                The exact meaning of active vs. inactive is not known. All known projects have identical values for active and inactive. 
             
             =====================
             */\n\n'''
@@ -157,10 +177,12 @@ def _get_research_project_dict(project_asset, eng, category, subcategory=None):
     '''
     project = collections.OrderedDict() # OrderedDict preserves the order of the keys by the order in which they are inserted. A regular dict does not do this. 
     
+    # GUID ----------------------------------
     GUID = project_asset.findtext('Values/Standard/GUID')
     project['GUID'] = GUID
     project['Name'] = project_asset.findtext('Values/Standard/Name')
     
+    # Name.eng ------------------------------------
     name_eng = eng[GUID]
     # Localization strings can refer to each other. Follow these references and display the final result.
     # Replace "Blueprint: [GUIDNAME 10087]"
@@ -169,20 +191,49 @@ def _get_research_project_dict(project_asset, eng, category, subcategory=None):
         inner_GUID = __regex_guidname.search(name_eng).group('GUID')
         name_eng = __regex_guidname.sub(eng[inner_GUID], name_eng, count=1)
     project['Name.eng'] = name_eng
+    # description.eng -----------------------------------------
     # The tooltip descriptions are linked to GUIDs that are in the 10,000,000 - 19,999,999 range.
     # It appears that the game simply adds 10M to the normal GUID, but I have not found an explicit confirmation of this.
     # So I'm just assuming that this is the case.
     project['description.eng'] = eng[str(int(GUID)+10000000)]
     
+    # category ------------------------------------------------
     project['category'] = category
+    # subcategory ---------------------------------------------
     if subcategory != None: project['subcategory'] = subcategory
     
+    # ItemQuality -----------------------------------------------
     project['ItemQuality'] = project_asset.findtext('Values/Item/ItemQuality')
+    # ItemQuality.stars -----------------------------------------
     project['ItemQuality.stars'] = __ItemQuality_stars[project['ItemQuality']]
     
+    # icon.base -----------------------------------------------
     project['icon.base'] = __guid_to_icon[GUID]['icon.base']
+    # icon.overlay --------------------------------------------
     if 'icon.overlay' in __guid_to_icon[GUID]:
         project['icon.overlay'] = __guid_to_icon[GUID]['icon.overlay']
+    
+    # effect.ActiveEcoEffect.* --------------------------------------
+    if project_asset.find('Values/MaintenanceCostUpgrade/ActiveEcoEffect') != None:
+        value = int(project_asset.findtext('Values/MaintenanceCostUpgrade/ActiveEcoEffect/Value'))
+        if project_asset.findtext('Values/MaintenanceCostUpgrade/ActiveEcoEffect/Percental') == '1':
+            percental = True
+        else:
+            raise Exception(GUID + ' seems to have non-percental eco effect. Please double-check this and then remove this exception.')
+        project['effect.ActiveEcoEffect.Value'] = value
+        project['effect.ActiveEcoEffect.Percental'] = percental
+        project['effect.ActiveEcoEffect.text'] = "{:+}".format(value) + ('%' if percental else '')
+    
+    # effect.InActiveEcoEffect.* ---------------------------------------------
+    if project_asset.findtext('Values/MaintenanceCostUpgrade/InActiveEcoEffect') != None:
+        value = int(project_asset.findtext('Values/MaintenanceCostUpgrade/InActiveEcoEffect/Value'))
+        if project_asset.findtext('Values/MaintenanceCostUpgrade/InActiveEcoEffect/Percental') == '1':
+            percental = True
+        else:
+            raise Exception(GUID + ' seems to have non-percental eco effect. Please double-check this and then remove this exception.')
+        project['effect.InActiveEcoEffect.Value'] = value
+        project['effect.InActiveEcoEffect.Percental'] = percental
+        project['effect.InActiveEcoEffect.text'] = "{:+}".format(value) + ('%' if percental else '')
     
     return project
 
