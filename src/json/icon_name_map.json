@@ -1,0 +1,10 @@
+{
+  "description": "This file maps icon numbers to the corresponding icon names on anno2070.wikia.com. See also: http://anno2070.wikia.com/wiki/Icon_Naming_Convention",
+  "data": {
+    "icon_27_4.png": "Fish.png",
+    "icon_27_133.png": "Rice.png",
+    "icon_27_12.png": "Coal-power-stn-icon.png",
+    "icon_30_22.png": "Waste compactor item.png",
+    "icon_30_465.png": "Multiple effects.png"
+  }
+}
