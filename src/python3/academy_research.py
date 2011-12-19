@@ -161,29 +161,35 @@ def _get_research_project_dict(project_asset, eng, category, subcategory=None):
     if 'icon.overlay' in __guid_to_icon[GUID]:
         project['icon.overlay'] = __guid_to_icon[GUID]['icon.overlay']
     
-    # effect.ActiveEcoEffect.* --------------------------------------
-    if project_asset.find('Values/MaintenanceCostUpgrade/ActiveEcoEffect') != None:
-        value = int(project_asset.findtext('Values/MaintenanceCostUpgrade/ActiveEcoEffect/Value'))
-        if project_asset.findtext('Values/MaintenanceCostUpgrade/ActiveEcoEffect/Percental') == '1':
-            percental = True
-        else:
-            raise Exception(GUID + ' seems to have non-percental eco effect. Please double-check this and then remove this exception.')
-        project['effect.ActiveEcoEffect.Value'] = value
-        project['effect.ActiveEcoEffect.Percental'] = percental
-        project['effect.ActiveEcoEffect.text'] = "{:+}".format(value) + ('%' if percental else '')
-    
+    # effect.ActiveEcoEffect.* ---------------------------------------------
+    add_effect(project, project_asset.find('Values/MaintenanceCostUpgrade/ActiveEcoEffect'))
     # effect.InActiveEcoEffect.* ---------------------------------------------
-    if project_asset.findtext('Values/MaintenanceCostUpgrade/InActiveEcoEffect') != None:
-        value = int(project_asset.findtext('Values/MaintenanceCostUpgrade/InActiveEcoEffect/Value'))
-        if project_asset.findtext('Values/MaintenanceCostUpgrade/InActiveEcoEffect/Percental') == '1':
-            percental = True
-        else:
-            raise Exception(GUID + ' seems to have non-percental eco effect. Please double-check this and then remove this exception.')
-        project['effect.InActiveEcoEffect.Value'] = value
-        project['effect.InActiveEcoEffect.Percental'] = percental
-        project['effect.InActiveEcoEffect.text'] = "{:+}".format(value) + ('%' if percental else '')
+    add_effect(project, project_asset.find('Values/MaintenanceCostUpgrade/InActiveEcoEffect'))
+    # effect.ActiveEnergyCost.* ---------------------------------------------
+    add_effect(project, project_asset.find('Values/MaintenanceCostUpgrade/ActiveEnergyCost'))
+    # effect.InActiveEnergyCost.* ---------------------------------------------
+    add_effect(project, project_asset.find('Values/MaintenanceCostUpgrade/InActiveEnergyCost'))
     
     return project
+
+def add_effect(project, xml_element):
+    if xml_element == None:
+        return
+    
+    tag = xml_element.tag
+    value = int(xml_element.findtext('Value'))
+    if xml_element.findtext('Percental') == '1':
+        percental = True
+    elif xml_element.findtext('Percental') == '0':
+        percental = False
+    elif xml_element.findtext('Percental') == None:
+        percental= False
+    else:
+        raise Exception(project['GUID'] + ' has unsupported value for <Percental>: ' + xml_element.findtext('Percental'))
+    project['effect.{}.Value'.format(tag)] = value
+    project['effect.{}.Percental'.format(tag)] = percental
+    project['effect.{}.text'.format(tag)] = "{:+}".format(value) + ('%' if percental else '')
+    
 
 def _get_localization(lang):
     '''

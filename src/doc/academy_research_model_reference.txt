@@ -42,4 +42,12 @@ effect.InActiveEcoEffect.text (redundant, derived from Value + Percental):
     │   50  │   false   │ +50  │      30       │       80       │
     └───────┴───────────┴──────┴───────────────┴────────────────┘
     
-    The exact meaning of active vs. inactive is not known. All known projects have identical values for active and inactive. 
+    The exact meaning of active vs. inactive is not known. All known projects have identical values for active and inactive.
+
+effect.ActiveEnergyCost.Value (int):
+effect.ActiveEnergyCost.Percental (bool):
+effect.ActiveEnergyCost.text (redundant, derived from Value + Percental):
+effect.InActiveEnergyCost.Value (int):
+effect.InActiveEnergyCost.Percental (bool):
+effect.InActiveEnergyCost.text (redundant, derived from Value + Percental):
+	The same as ActiveEcoEffect/InActiveEcoEffect, but for Energy production/consumption.
