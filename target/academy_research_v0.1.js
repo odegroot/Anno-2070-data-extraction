@@ -19,8 +19,18 @@ Name.eng:
 
 category:
     Each project belongs to one of the following categories: Energy, Ecologic, Vehicles, Seed, Public, Special, Production, Research
-subcategory: (optional)
+subcategory (optional):
     Technologies are grouped by the building or unit that they affect. Example: Energy -> CoalPowerPlant -> Productivity CoalPowerPlant
+
+ItemQuality:
+    The quality of the research project, expressed as a letter. Possible values: A, B, C, D, null. A is the highest, D is the lowest. Null is equivalent to A.
+ItemQuality.stars:
+    The quality of the research project, expressed as the number of gold stars . Possible values: 0, 1, 2, 3.
+
+icon.base:
+    Filename of the base icon of the research project.
+icon.overlay (optional):
+    Filename of the overlay icon of the research project.
 
 =====================
 */
@@ -33,7 +43,9 @@ subcategory: (optional)
     "category": "Energy",
     "subcategory": "CoalPowerPlant",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_0.png",
+    "icon.overlay": "icon_30_463.png"
   },
   {
     "GUID": "61012",
@@ -42,7 +54,9 @@ subcategory: (optional)
     "category": "Energy",
     "subcategory": "CoalPowerPlant",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_0.png",
+    "icon.overlay": "icon_30_464.png"
   },
   {
     "GUID": "61013",
@@ -51,7 +65,9 @@ subcategory: (optional)
     "category": "Energy",
     "subcategory": "CoalPowerPlant",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_0.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61014",
@@ -60,7 +76,9 @@ subcategory: (optional)
     "category": "Energy",
     "subcategory": "CoalPowerPlant",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_0.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61015",
@@ -69,7 +87,9 @@ subcategory: (optional)
     "category": "Energy",
     "subcategory": "HydroelectricPowerPlant",
     "ItemQuality": "D",
-    "ItemQuality.stars": 0
+    "ItemQuality.stars": 0,
+    "icon.base": "icon_30_1.png",
+    "icon.overlay": "icon_30_462.png"
   },
   {
     "GUID": "61016",
@@ -78,7 +98,9 @@ subcategory: (optional)
     "category": "Energy",
     "subcategory": "HydroelectricPowerPlant",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_1.png",
+    "icon.overlay": "icon_30_463.png"
   },
   {
     "GUID": "61017",
@@ -87,7 +109,9 @@ subcategory: (optional)
     "category": "Energy",
     "subcategory": "HydroelectricPowerPlant",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_1.png",
+    "icon.overlay": "icon_30_464.png"
   },
   {
     "GUID": "61018",
@@ -96,7 +120,9 @@ subcategory: (optional)
     "category": "Energy",
     "subcategory": "HydroelectricPowerPlant",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_1.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61019",
@@ -105,7 +131,9 @@ subcategory: (optional)
     "category": "Energy",
     "subcategory": "HydroelectricPowerPlant",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_1.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61033",
@@ -114,7 +142,9 @@ subcategory: (optional)
     "category": "Energy",
     "subcategory": "NuclearPowerPlant",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_2.png",
+    "icon.overlay": "icon_30_466.png"
   },
   {
     "GUID": "61034",
@@ -123,7 +153,9 @@ subcategory: (optional)
     "category": "Energy",
     "subcategory": "NuclearPowerPlant",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_2.png",
+    "icon.overlay": "icon_30_467.png"
   },
   {
     "GUID": "61035",
@@ -132,7 +164,9 @@ subcategory: (optional)
     "category": "Energy",
     "subcategory": "NuclearPowerPlant",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_2.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61036",
@@ -141,7 +175,9 @@ subcategory: (optional)
     "category": "Energy",
     "subcategory": "NuclearPowerPlant",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_2.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61038",
@@ -150,7 +186,9 @@ subcategory: (optional)
     "category": "Energy",
     "subcategory": "Windpark",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_3.png",
+    "icon.overlay": "icon_30_468.png"
   },
   {
     "GUID": "61037",
@@ -159,7 +197,9 @@ subcategory: (optional)
     "category": "Energy",
     "subcategory": "Windpark",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_3.png",
+    "icon.overlay": "icon_30_466.png"
   },
   {
     "GUID": "61039",
@@ -168,7 +208,9 @@ subcategory: (optional)
     "category": "Energy",
     "subcategory": "Windpark",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_3.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61040",
@@ -177,7 +219,9 @@ subcategory: (optional)
     "category": "Energy",
     "subcategory": "Windpark",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_3.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61041",
@@ -186,7 +230,9 @@ subcategory: (optional)
     "category": "Energy",
     "subcategory": "OffshoreWindpark",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_4.png",
+    "icon.overlay": "icon_30_466.png"
   },
   {
     "GUID": "61042",
@@ -195,7 +241,9 @@ subcategory: (optional)
     "category": "Energy",
     "subcategory": "OffshoreWindpark",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_4.png",
+    "icon.overlay": "icon_30_468.png"
   },
   {
     "GUID": "61043",
@@ -204,7 +252,9 @@ subcategory: (optional)
     "category": "Energy",
     "subcategory": "OffshoreWindpark",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_4.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61044",
@@ -213,7 +263,9 @@ subcategory: (optional)
     "category": "Energy",
     "subcategory": "OffshoreWindpark",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_4.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61045",
@@ -222,7 +274,9 @@ subcategory: (optional)
     "category": "Energy",
     "subcategory": "CogenerationPowerPlant",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_5.png",
+    "icon.overlay": "icon_30_466.png"
   },
   {
     "GUID": "61046",
@@ -231,7 +285,9 @@ subcategory: (optional)
     "category": "Energy",
     "subcategory": "CogenerationPowerPlant",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_5.png",
+    "icon.overlay": "icon_30_463.png"
   },
   {
     "GUID": "61047",
@@ -240,7 +296,9 @@ subcategory: (optional)
     "category": "Energy",
     "subcategory": "CogenerationPowerPlant",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_5.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61048",
@@ -249,7 +307,9 @@ subcategory: (optional)
     "category": "Energy",
     "subcategory": "CogenerationPowerPlant",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_5.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61049",
@@ -258,7 +318,9 @@ subcategory: (optional)
     "category": "Energy",
     "subcategory": "SolarTower",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_6.png",
+    "icon.overlay": "icon_30_466.png"
   },
   {
     "GUID": "61050",
@@ -267,7 +329,9 @@ subcategory: (optional)
     "category": "Energy",
     "subcategory": "SolarTower",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_6.png",
+    "icon.overlay": "icon_30_463.png"
   },
   {
     "GUID": "61051",
@@ -276,7 +340,9 @@ subcategory: (optional)
     "category": "Energy",
     "subcategory": "SolarTower",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_6.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61052",
@@ -285,7 +351,9 @@ subcategory: (optional)
     "category": "Energy",
     "subcategory": "SolarTower",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_6.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61061",
@@ -294,7 +362,9 @@ subcategory: (optional)
     "category": "Ecologic",
     "subcategory": "WasteIncinerator",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_22.png",
+    "icon.overlay": "icon_30_464.png"
   },
   {
     "GUID": "61062",
@@ -303,7 +373,9 @@ subcategory: (optional)
     "category": "Ecologic",
     "subcategory": "WasteIncinerator",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_22.png",
+    "icon.overlay": "icon_30_469.png"
   },
   {
     "GUID": "61063",
@@ -312,7 +384,9 @@ subcategory: (optional)
     "category": "Ecologic",
     "subcategory": "WasteIncinerator",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_22.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61064",
@@ -321,7 +395,9 @@ subcategory: (optional)
     "category": "Ecologic",
     "subcategory": "WasteIncinerator",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_22.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61065",
@@ -330,7 +406,9 @@ subcategory: (optional)
     "category": "Ecologic",
     "subcategory": "FinalStorage",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_23.png",
+    "icon.overlay": "icon_30_466.png"
   },
   {
     "GUID": "61066",
@@ -339,7 +417,9 @@ subcategory: (optional)
     "category": "Ecologic",
     "subcategory": "FinalStorage",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_23.png",
+    "icon.overlay": "icon_30_469.png"
   },
   {
     "GUID": "61067",
@@ -348,7 +428,9 @@ subcategory: (optional)
     "category": "Ecologic",
     "subcategory": "FinalStorage",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_23.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61068",
@@ -357,7 +439,9 @@ subcategory: (optional)
     "category": "Ecologic",
     "subcategory": "FinalStorage",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_23.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61069",
@@ -366,7 +450,9 @@ subcategory: (optional)
     "category": "Ecologic",
     "subcategory": "WeatherControlStation",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_24.png",
+    "icon.overlay": "icon_30_468.png"
   },
   {
     "GUID": "61070",
@@ -375,7 +461,9 @@ subcategory: (optional)
     "category": "Ecologic",
     "subcategory": "WeatherControlStation",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_24.png",
+    "icon.overlay": "icon_30_466.png"
   },
   {
     "GUID": "61071",
@@ -384,7 +472,9 @@ subcategory: (optional)
     "category": "Ecologic",
     "subcategory": "WeatherControlStation",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_24.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61072",
@@ -393,7 +483,9 @@ subcategory: (optional)
     "category": "Ecologic",
     "subcategory": "WeatherControlStation",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_24.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61073",
@@ -402,7 +494,9 @@ subcategory: (optional)
     "category": "Ecologic",
     "subcategory": "MonitoringStation",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_25.png",
+    "icon.overlay": "icon_30_466.png"
   },
   {
     "GUID": "61074",
@@ -411,7 +505,9 @@ subcategory: (optional)
     "category": "Ecologic",
     "subcategory": "MonitoringStation",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_25.png",
+    "icon.overlay": "icon_30_469.png"
   },
   {
     "GUID": "61075",
@@ -420,7 +516,9 @@ subcategory: (optional)
     "category": "Ecologic",
     "subcategory": "MonitoringStation",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_25.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61076",
@@ -429,7 +527,9 @@ subcategory: (optional)
     "category": "Ecologic",
     "subcategory": "MonitoringStation",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_25.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61078",
@@ -438,7 +538,9 @@ subcategory: (optional)
     "category": "Ecologic",
     "subcategory": "OzoneMaker",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_26.png",
+    "icon.overlay": "icon_30_469.png"
   },
   {
     "GUID": "61077",
@@ -447,7 +549,9 @@ subcategory: (optional)
     "category": "Ecologic",
     "subcategory": "OzoneMaker",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_26.png",
+    "icon.overlay": "icon_30_468.png"
   },
   {
     "GUID": "61079",
@@ -456,7 +560,9 @@ subcategory: (optional)
     "category": "Ecologic",
     "subcategory": "OzoneMaker",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_26.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61080",
@@ -465,7 +571,9 @@ subcategory: (optional)
     "category": "Ecologic",
     "subcategory": "OzoneMaker",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_26.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61081",
@@ -474,7 +582,9 @@ subcategory: (optional)
     "category": "Ecologic",
     "subcategory": "RiverFilterPlant",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_27.png",
+    "icon.overlay": "icon_30_466.png"
   },
   {
     "GUID": "61082",
@@ -483,7 +593,9 @@ subcategory: (optional)
     "category": "Ecologic",
     "subcategory": "RiverFilterPlant",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_27.png",
+    "icon.overlay": "icon_30_469.png"
   },
   {
     "GUID": "61083",
@@ -492,7 +604,9 @@ subcategory: (optional)
     "category": "Ecologic",
     "subcategory": "RiverFilterPlant",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_27.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61084",
@@ -501,7 +615,9 @@ subcategory: (optional)
     "category": "Ecologic",
     "subcategory": "RiverFilterPlant",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_27.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61364",
@@ -510,7 +626,9 @@ subcategory: (optional)
     "category": "Ecologic",
     "subcategory": "DeacidicationStation",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_28.png",
+    "icon.overlay": "icon_30_468.png"
   },
   {
     "GUID": "61365",
@@ -519,7 +637,9 @@ subcategory: (optional)
     "category": "Ecologic",
     "subcategory": "DeacidicationStation",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_28.png",
+    "icon.overlay": "icon_30_469.png"
   },
   {
     "GUID": "61366",
@@ -528,7 +648,9 @@ subcategory: (optional)
     "category": "Ecologic",
     "subcategory": "DeacidicationStation",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_28.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61367",
@@ -537,7 +659,9 @@ subcategory: (optional)
     "category": "Ecologic",
     "subcategory": "DeacidicationStation",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_28.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "60972",
@@ -546,7 +670,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "CommandoShip",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_44.png",
+    "icon.overlay": "icon_30_470.png"
   },
   {
     "GUID": "60973",
@@ -555,7 +681,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "CommandoShip",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_44.png",
+    "icon.overlay": "icon_30_471.png"
   },
   {
     "GUID": "60974",
@@ -564,7 +692,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "CommandoShip",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_44.png",
+    "icon.overlay": "icon_30_472.png"
   },
   {
     "GUID": "60975",
@@ -573,7 +703,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "CommandoShip",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_44.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "60976",
@@ -582,7 +714,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "CommandoShip",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_44.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "60977",
@@ -591,7 +725,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "CommandoShip",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_44.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "60978",
@@ -600,7 +736,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "CommandoShip",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_44.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61228",
@@ -609,7 +747,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "CommandoShip",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_44.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "60964",
@@ -618,7 +758,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "Hovercraft",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_45.png",
+    "icon.overlay": "icon_30_470.png"
   },
   {
     "GUID": "60965",
@@ -627,7 +769,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "Hovercraft",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_45.png",
+    "icon.overlay": "icon_30_471.png"
   },
   {
     "GUID": "60966",
@@ -636,7 +780,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "Hovercraft",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_45.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "60967",
@@ -645,7 +791,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "Hovercraft",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_45.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "60979",
@@ -654,7 +802,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "Viper",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_46.png",
+    "icon.overlay": "icon_30_470.png"
   },
   {
     "GUID": "60980",
@@ -663,7 +813,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "Viper",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_46.png",
+    "icon.overlay": "icon_30_471.png"
   },
   {
     "GUID": "60981",
@@ -672,7 +824,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "Viper",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_46.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "60982",
@@ -681,7 +835,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "Viper",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_46.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "60968",
@@ -690,7 +846,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "SmallTradingShip",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_47.png",
+    "icon.overlay": "icon_30_470.png"
   },
   {
     "GUID": "60969",
@@ -699,7 +857,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "SmallTradingShip",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_47.png",
+    "icon.overlay": "icon_30_472.png"
   },
   {
     "GUID": "60970",
@@ -708,7 +868,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "SmallTradingShip",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_47.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "60971",
@@ -717,7 +879,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "SmallTradingShip",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_47.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "60983",
@@ -726,7 +890,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "MediumTradingShip",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_48.png",
+    "icon.overlay": "icon_30_470.png"
   },
   {
     "GUID": "60984",
@@ -735,7 +901,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "MediumTradingShip",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_48.png",
+    "icon.overlay": "icon_30_472.png"
   },
   {
     "GUID": "60985",
@@ -744,7 +912,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "MediumTradingShip",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_48.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "60986",
@@ -753,7 +923,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "MediumTradingShip",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_48.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "60987",
@@ -762,7 +934,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "ContainerShip",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_49.png",
+    "icon.overlay": "icon_30_470.png"
   },
   {
     "GUID": "60988",
@@ -771,7 +945,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "ContainerShip",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_49.png",
+    "icon.overlay": "icon_30_472.png"
   },
   {
     "GUID": "60989",
@@ -780,7 +956,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "ContainerShip",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_49.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "60990",
@@ -789,7 +967,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "ContainerShip",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_49.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "60991",
@@ -798,7 +978,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "Trimaran",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_50.png",
+    "icon.overlay": "icon_30_470.png"
   },
   {
     "GUID": "60992",
@@ -807,7 +989,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "Trimaran",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_50.png",
+    "icon.overlay": "icon_30_472.png"
   },
   {
     "GUID": "60993",
@@ -816,7 +1000,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "Trimaran",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_50.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "60994",
@@ -825,7 +1011,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "Trimaran",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_50.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "60995",
@@ -834,7 +1022,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "Submarine",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_51.png",
+    "icon.overlay": "icon_30_470.png"
   },
   {
     "GUID": "60996",
@@ -843,7 +1033,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "Submarine",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_51.png",
+    "icon.overlay": "icon_30_471.png"
   },
   {
     "GUID": "60997",
@@ -852,7 +1044,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "Submarine",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_51.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "60998",
@@ -861,7 +1055,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "Submarine",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_51.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "60999",
@@ -870,7 +1066,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "Chopper",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_52.png",
+    "icon.overlay": "icon_30_473.png"
   },
   {
     "GUID": "61000",
@@ -879,7 +1077,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "Chopper",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_52.png",
+    "icon.overlay": "icon_30_471.png"
   },
   {
     "GUID": "61001",
@@ -888,7 +1088,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "Chopper",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_52.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61002",
@@ -897,7 +1099,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "Chopper",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_52.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61003",
@@ -906,7 +1110,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "TakeOverPlane",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_53.png",
+    "icon.overlay": "icon_30_473.png"
   },
   {
     "GUID": "61004",
@@ -915,7 +1121,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "TakeOverPlane",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_53.png",
+    "icon.overlay": "icon_30_471.png"
   },
   {
     "GUID": "61005",
@@ -924,7 +1132,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "TakeOverPlane",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_53.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61006",
@@ -933,7 +1143,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "TakeOverPlane",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_53.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61007",
@@ -942,7 +1154,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "Bomber",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_54.png",
+    "icon.overlay": "icon_30_473.png"
   },
   {
     "GUID": "61008",
@@ -951,7 +1165,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "Bomber",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_54.png",
+    "icon.overlay": "icon_30_471.png"
   },
   {
     "GUID": "61009",
@@ -960,7 +1176,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "Bomber",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_54.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61010",
@@ -969,7 +1187,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "Bomber",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_54.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61224",
@@ -978,7 +1198,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "MediumWarShip",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_56.png",
+    "icon.overlay": "icon_30_470.png"
   },
   {
     "GUID": "61225",
@@ -987,7 +1209,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "MediumWarShip",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_56.png",
+    "icon.overlay": "icon_30_471.png"
   },
   {
     "GUID": "61226",
@@ -996,7 +1220,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "MediumWarShip",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_56.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61227",
@@ -1005,7 +1231,9 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "MediumWarShip",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_56.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61282",
@@ -1014,7 +1242,8 @@ subcategory: (optional)
     "category": "Vehicles",
     "subcategory": "Ark",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_20.png"
   },
   {
     "GUID": "60949",
@@ -1022,7 +1251,9 @@ subcategory: (optional)
     "Name.eng": "Rice substitute",
     "category": "Seed",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_66.png",
+    "icon.overlay": "icon_30_474.png"
   },
   {
     "GUID": "60950",
@@ -1030,7 +1261,9 @@ subcategory: (optional)
     "Name.eng": "Sugar beet replica",
     "category": "Seed",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_67.png",
+    "icon.overlay": "icon_30_474.png"
   },
   {
     "GUID": "60951",
@@ -1038,7 +1271,9 @@ subcategory: (optional)
     "Name.eng": "Tea substitute",
     "category": "Seed",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_68.png",
+    "icon.overlay": "icon_30_474.png"
   },
   {
     "GUID": "60953",
@@ -1046,7 +1281,9 @@ subcategory: (optional)
     "Name.eng": "Vegetable replicas",
     "category": "Seed",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_69.png",
+    "icon.overlay": "icon_30_474.png"
   },
   {
     "GUID": "60954",
@@ -1054,7 +1291,9 @@ subcategory: (optional)
     "Name.eng": "Fruit synthesis",
     "category": "Seed",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_70.png",
+    "icon.overlay": "icon_30_474.png"
   },
   {
     "GUID": "60955",
@@ -1062,7 +1301,9 @@ subcategory: (optional)
     "Name.eng": "Grain analog",
     "category": "Seed",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_71.png",
+    "icon.overlay": "icon_30_474.png"
   },
   {
     "GUID": "60956",
@@ -1070,7 +1311,9 @@ subcategory: (optional)
     "Name.eng": "Modified Corn",
     "category": "Seed",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_72.png",
+    "icon.overlay": "icon_30_474.png"
   },
   {
     "GUID": "60957",
@@ -1078,7 +1321,9 @@ subcategory: (optional)
     "Name.eng": "Seed replica",
     "category": "Seed",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_73.png",
+    "icon.overlay": "icon_30_474.png"
   },
   {
     "GUID": "60958",
@@ -1086,7 +1331,9 @@ subcategory: (optional)
     "Name.eng": "Synthetic Wine grape seed",
     "category": "Seed",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_74.png",
+    "icon.overlay": "icon_30_474.png"
   },
   {
     "GUID": "60959",
@@ -1094,7 +1341,9 @@ subcategory: (optional)
     "Name.eng": "Artificial Truffle strain",
     "category": "Seed",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_75.png",
+    "icon.overlay": "icon_30_474.png"
   },
   {
     "GUID": "61221",
@@ -1102,7 +1351,9 @@ subcategory: (optional)
     "Name.eng": "Aurogenic Chemicals",
     "category": "Seed",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_142.png",
+    "icon.overlay": "icon_30_477.png"
   },
   {
     "GUID": "61222",
@@ -1110,7 +1361,9 @@ subcategory: (optional)
     "Name.eng": "Uranogenic Chemicals",
     "category": "Seed",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_142.png",
+    "icon.overlay": "icon_30_477.png"
   },
   {
     "GUID": "61223",
@@ -1118,7 +1371,9 @@ subcategory: (optional)
     "Name.eng": "Cuprogenic Chemicals",
     "category": "Seed",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_142.png",
+    "icon.overlay": "icon_30_477.png"
   },
   {
     "GUID": "61336",
@@ -1126,7 +1381,9 @@ subcategory: (optional)
     "Name.eng": "Ferrogenic Chemicals",
     "category": "Seed",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_142.png",
+    "icon.overlay": "icon_30_477.png"
   },
   {
     "GUID": "61337",
@@ -1134,7 +1391,9 @@ subcategory: (optional)
     "Name.eng": "Manganogenic Chemicals",
     "category": "Seed",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_142.png",
+    "icon.overlay": "icon_30_477.png"
   },
   {
     "GUID": "61338",
@@ -1142,7 +1401,9 @@ subcategory: (optional)
     "Name.eng": "Carbonogenic Chemicals",
     "category": "Seed",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_142.png",
+    "icon.overlay": "icon_30_477.png"
   },
   {
     "GUID": "61105",
@@ -1151,7 +1412,9 @@ subcategory: (optional)
     "category": "Public",
     "subcategory": "Community",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_91.png",
+    "icon.overlay": "icon_30_469.png"
   },
   {
     "GUID": "61106",
@@ -1160,7 +1423,9 @@ subcategory: (optional)
     "category": "Public",
     "subcategory": "Community",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_91.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61107",
@@ -1169,7 +1434,9 @@ subcategory: (optional)
     "category": "Public",
     "subcategory": "Community",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_91.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61108",
@@ -1178,7 +1445,9 @@ subcategory: (optional)
     "category": "Public",
     "subcategory": "Information",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_92.png",
+    "icon.overlay": "icon_30_468.png"
   },
   {
     "GUID": "61109",
@@ -1187,7 +1456,9 @@ subcategory: (optional)
     "category": "Public",
     "subcategory": "Information",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_92.png",
+    "icon.overlay": "icon_30_469.png"
   },
   {
     "GUID": "61110",
@@ -1196,7 +1467,9 @@ subcategory: (optional)
     "category": "Public",
     "subcategory": "Information",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_92.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61111",
@@ -1205,7 +1478,9 @@ subcategory: (optional)
     "category": "Public",
     "subcategory": "Information",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_92.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61112",
@@ -1214,7 +1489,9 @@ subcategory: (optional)
     "category": "Public",
     "subcategory": "Activity",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_93.png",
+    "icon.overlay": "icon_30_468.png"
   },
   {
     "GUID": "61113",
@@ -1223,7 +1500,9 @@ subcategory: (optional)
     "category": "Public",
     "subcategory": "Activity",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_93.png",
+    "icon.overlay": "icon_30_469.png"
   },
   {
     "GUID": "61114",
@@ -1232,7 +1511,9 @@ subcategory: (optional)
     "category": "Public",
     "subcategory": "Activity",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_93.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61115",
@@ -1241,7 +1522,9 @@ subcategory: (optional)
     "category": "Public",
     "subcategory": "Activity",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_93.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61116",
@@ -1250,7 +1533,9 @@ subcategory: (optional)
     "category": "Public",
     "subcategory": "Participation",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_94.png",
+    "icon.overlay": "icon_30_468.png"
   },
   {
     "GUID": "61117",
@@ -1259,7 +1544,9 @@ subcategory: (optional)
     "category": "Public",
     "subcategory": "Participation",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_94.png",
+    "icon.overlay": "icon_30_469.png"
   },
   {
     "GUID": "61118",
@@ -1268,7 +1555,9 @@ subcategory: (optional)
     "category": "Public",
     "subcategory": "Participation",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_94.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61119",
@@ -1277,7 +1566,9 @@ subcategory: (optional)
     "category": "Public",
     "subcategory": "Participation",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_94.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61128",
@@ -1286,7 +1577,9 @@ subcategory: (optional)
     "category": "Public",
     "subcategory": "Laboratory",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_95.png",
+    "icon.overlay": "icon_30_467.png"
   },
   {
     "GUID": "61129",
@@ -1295,7 +1588,9 @@ subcategory: (optional)
     "category": "Public",
     "subcategory": "Laboratory",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_95.png",
+    "icon.overlay": "icon_30_467.png"
   },
   {
     "GUID": "61130",
@@ -1304,7 +1599,9 @@ subcategory: (optional)
     "category": "Public",
     "subcategory": "Laboratory",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_95.png",
+    "icon.overlay": "icon_30_467.png"
   },
   {
     "GUID": "61132",
@@ -1313,7 +1610,9 @@ subcategory: (optional)
     "category": "Special",
     "subcategory": "Trade",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_110.png",
+    "icon.overlay": "icon_30_466.png"
   },
   {
     "GUID": "61133",
@@ -1322,7 +1621,9 @@ subcategory: (optional)
     "category": "Special",
     "subcategory": "Trade",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_110.png",
+    "icon.overlay": "icon_30_475.png"
   },
   {
     "GUID": "61134",
@@ -1331,7 +1632,9 @@ subcategory: (optional)
     "category": "Special",
     "subcategory": "Trade",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_110.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61135",
@@ -1340,7 +1643,9 @@ subcategory: (optional)
     "category": "Special",
     "subcategory": "Trade",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_110.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61136",
@@ -1349,7 +1654,9 @@ subcategory: (optional)
     "category": "Special",
     "subcategory": "Trade",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_110.png",
+    "icon.overlay": "icon_30_476.png"
   },
   {
     "GUID": "61137",
@@ -1358,7 +1665,9 @@ subcategory: (optional)
     "category": "Special",
     "subcategory": "Trade",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_110.png",
+    "icon.overlay": "icon_30_472.png"
   },
   {
     "GUID": "61138",
@@ -1367,7 +1676,9 @@ subcategory: (optional)
     "category": "Special",
     "subcategory": "Trade",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_110.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61139",
@@ -1376,7 +1687,9 @@ subcategory: (optional)
     "category": "Special",
     "subcategory": "Trade",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_110.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61202",
@@ -1385,7 +1698,9 @@ subcategory: (optional)
     "category": "Special",
     "subcategory": "Military",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_154.png",
+    "icon.overlay": "icon_30_468.png"
   },
   {
     "GUID": "61203",
@@ -1394,7 +1709,9 @@ subcategory: (optional)
     "category": "Special",
     "subcategory": "Military",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_154.png",
+    "icon.overlay": "icon_30_471.png"
   },
   {
     "GUID": "61204",
@@ -1403,7 +1720,9 @@ subcategory: (optional)
     "category": "Special",
     "subcategory": "Military",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_154.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61205",
@@ -1412,7 +1731,9 @@ subcategory: (optional)
     "category": "Special",
     "subcategory": "Military",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_154.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61206",
@@ -1421,7 +1742,9 @@ subcategory: (optional)
     "category": "Special",
     "subcategory": "Military",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_154.png",
+    "icon.overlay": "icon_30_476.png"
   },
   {
     "GUID": "61207",
@@ -1430,7 +1753,9 @@ subcategory: (optional)
     "category": "Special",
     "subcategory": "Military",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_154.png",
+    "icon.overlay": "icon_30_466.png"
   },
   {
     "GUID": "61208",
@@ -1439,7 +1764,9 @@ subcategory: (optional)
     "category": "Special",
     "subcategory": "Military",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_154.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61209",
@@ -1448,7 +1775,9 @@ subcategory: (optional)
     "category": "Special",
     "subcategory": "Military",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_154.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61092",
@@ -1457,7 +1786,9 @@ subcategory: (optional)
     "category": "Special",
     "subcategory": "FireStation",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_88.png",
+    "icon.overlay": "icon_30_468.png"
   },
   {
     "GUID": "61093",
@@ -1466,7 +1797,9 @@ subcategory: (optional)
     "category": "Special",
     "subcategory": "FireStation",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_88.png",
+    "icon.overlay": "icon_30_463.png"
   },
   {
     "GUID": "61094",
@@ -1475,7 +1808,9 @@ subcategory: (optional)
     "category": "Special",
     "subcategory": "FireStation",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_88.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61095",
@@ -1484,7 +1819,9 @@ subcategory: (optional)
     "category": "Special",
     "subcategory": "FireStation",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_88.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61096",
@@ -1493,7 +1830,9 @@ subcategory: (optional)
     "category": "Special",
     "subcategory": "Hospital",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_89.png",
+    "icon.overlay": "icon_30_468.png"
   },
   {
     "GUID": "61097",
@@ -1502,7 +1841,9 @@ subcategory: (optional)
     "category": "Special",
     "subcategory": "Hospital",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_89.png",
+    "icon.overlay": "icon_30_463.png"
   },
   {
     "GUID": "61098",
@@ -1511,7 +1852,9 @@ subcategory: (optional)
     "category": "Special",
     "subcategory": "Hospital",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_89.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61099",
@@ -1520,7 +1863,9 @@ subcategory: (optional)
     "category": "Special",
     "subcategory": "Hospital",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_89.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61100",
@@ -1529,7 +1874,9 @@ subcategory: (optional)
     "category": "Special",
     "subcategory": "PoliceStation",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_90.png",
+    "icon.overlay": "icon_30_468.png"
   },
   {
     "GUID": "61101",
@@ -1538,7 +1885,9 @@ subcategory: (optional)
     "category": "Special",
     "subcategory": "PoliceStation",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_90.png",
+    "icon.overlay": "icon_30_463.png"
   },
   {
     "GUID": "61102",
@@ -1547,7 +1896,9 @@ subcategory: (optional)
     "category": "Special",
     "subcategory": "PoliceStation",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_90.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61103",
@@ -1556,7 +1907,9 @@ subcategory: (optional)
     "category": "Special",
     "subcategory": "PoliceStation",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_90.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61141",
@@ -1565,7 +1918,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "BasaltCrusher",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_132.png",
+    "icon.overlay": "icon_30_477.png"
   },
   {
     "GUID": "61142",
@@ -1574,7 +1929,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "BasaltCrusher",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_132.png",
+    "icon.overlay": "icon_30_466.png"
   },
   {
     "GUID": "61143",
@@ -1583,7 +1940,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "BasaltCrusher",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_132.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61144",
@@ -1592,7 +1951,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "BasaltCrusher",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_132.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61145",
@@ -1601,7 +1962,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "CoalMine",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_133.png",
+    "icon.overlay": "icon_30_477.png"
   },
   {
     "GUID": "61146",
@@ -1610,7 +1973,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "CoalMine",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_133.png",
+    "icon.overlay": "icon_30_464.png"
   },
   {
     "GUID": "61147",
@@ -1619,7 +1984,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "CoalMine",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_133.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61148",
@@ -1628,7 +1995,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "CoalMine",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_133.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61149",
@@ -1637,7 +2006,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "IronMine",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_134.png",
+    "icon.overlay": "icon_30_477.png"
   },
   {
     "GUID": "61150",
@@ -1646,7 +2017,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "IronMine",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_134.png",
+    "icon.overlay": "icon_30_464.png"
   },
   {
     "GUID": "61151",
@@ -1655,7 +2028,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "IronMine",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_134.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61152",
@@ -1664,7 +2039,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "IronMine",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_134.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61153",
@@ -1673,7 +2050,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "CopperMine",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_135.png",
+    "icon.overlay": "icon_30_477.png"
   },
   {
     "GUID": "61154",
@@ -1682,7 +2061,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "CopperMine",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_135.png",
+    "icon.overlay": "icon_30_464.png"
   },
   {
     "GUID": "61155",
@@ -1691,7 +2072,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "CopperMine",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_135.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61156",
@@ -1700,7 +2083,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "CopperMine",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_135.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61157",
@@ -1709,7 +2094,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "LimestoneMine",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_136.png",
+    "icon.overlay": "icon_30_477.png"
   },
   {
     "GUID": "61158",
@@ -1718,7 +2105,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "LimestoneMine",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_136.png",
+    "icon.overlay": "icon_30_464.png"
   },
   {
     "GUID": "61159",
@@ -1727,7 +2116,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "LimestoneMine",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_136.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61160",
@@ -1736,7 +2127,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "LimestoneMine",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_136.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61161",
@@ -1745,7 +2138,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "UraniumMine",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_137.png",
+    "icon.overlay": "icon_30_477.png"
   },
   {
     "GUID": "61162",
@@ -1754,7 +2149,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "UraniumMine",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_137.png",
+    "icon.overlay": "icon_30_464.png"
   },
   {
     "GUID": "61163",
@@ -1763,7 +2160,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "UraniumMine",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_137.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61164",
@@ -1772,7 +2171,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "UraniumMine",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_137.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61165",
@@ -1781,7 +2182,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "Oildriller",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_138.png",
+    "icon.overlay": "icon_30_477.png"
   },
   {
     "GUID": "61166",
@@ -1790,7 +2193,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "Oildriller",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_138.png",
+    "icon.overlay": "icon_30_464.png"
   },
   {
     "GUID": "61167",
@@ -1799,7 +2204,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "Oildriller",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_138.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61168",
@@ -1808,7 +2215,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "Oildriller",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_138.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61169",
@@ -1817,7 +2226,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "Oilrig",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_138.png",
+    "icon.overlay": "icon_30_477.png"
   },
   {
     "GUID": "61170",
@@ -1826,7 +2237,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "Oilrig",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_138.png",
+    "icon.overlay": "icon_30_467.png"
   },
   {
     "GUID": "61171",
@@ -1835,7 +2248,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "Oilrig",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_138.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61172",
@@ -1844,7 +2259,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "Oilrig",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_138.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61173",
@@ -1853,7 +2270,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "SandExtractor",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_139.png",
+    "icon.overlay": "icon_30_477.png"
   },
   {
     "GUID": "61174",
@@ -1862,7 +2281,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "SandExtractor",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_139.png",
+    "icon.overlay": "icon_30_464.png"
   },
   {
     "GUID": "61175",
@@ -1871,7 +2292,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "SandExtractor",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_139.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61176",
@@ -1880,7 +2303,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "SandExtractor",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_139.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61177",
@@ -1889,7 +2314,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "GoldRefinery",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_140.png",
+    "icon.overlay": "icon_30_477.png"
   },
   {
     "GUID": "61178",
@@ -1898,7 +2325,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "GoldRefinery",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_140.png",
+    "icon.overlay": "icon_30_464.png"
   },
   {
     "GUID": "61179",
@@ -1907,7 +2336,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "GoldRefinery",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_140.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61180",
@@ -1916,7 +2347,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "GoldRefinery",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_140.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61181",
@@ -1925,7 +2358,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "LobsterFarm",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_141.png",
+    "icon.overlay": "icon_30_477.png"
   },
   {
     "GUID": "61182",
@@ -1934,7 +2369,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "LobsterFarm",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_141.png",
+    "icon.overlay": "icon_30_464.png"
   },
   {
     "GUID": "61183",
@@ -1943,7 +2380,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "LobsterFarm",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_141.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61184",
@@ -1952,7 +2391,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "LobsterFarm",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_141.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61185",
@@ -1961,7 +2402,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "Excavator",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_0.png",
+    "icon.overlay": "icon_30_477.png"
   },
   {
     "GUID": "61186",
@@ -1970,7 +2413,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "Excavator",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_0.png",
+    "icon.overlay": "icon_30_464.png"
   },
   {
     "GUID": "61187",
@@ -1979,7 +2424,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "Excavator",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_0.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61188",
@@ -1988,7 +2435,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "Excavator",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_0.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61359",
@@ -1997,7 +2446,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "BasaltRecycler",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_132.png",
+    "icon.overlay": "icon_30_477.png"
   },
   {
     "GUID": "61360",
@@ -2006,7 +2457,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "BasaltRecycler",
     "ItemQuality": "C",
-    "ItemQuality.stars": 1
+    "ItemQuality.stars": 1,
+    "icon.base": "icon_30_132.png",
+    "icon.overlay": "icon_30_466.png"
   },
   {
     "GUID": "61361",
@@ -2015,7 +2468,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "BasaltRecycler",
     "ItemQuality": "B",
-    "ItemQuality.stars": 2
+    "ItemQuality.stars": 2,
+    "icon.base": "icon_30_132.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61362",
@@ -2024,7 +2479,9 @@ subcategory: (optional)
     "category": "Production",
     "subcategory": "BasaltRecycler",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_132.png",
+    "icon.overlay": "icon_30_465.png"
   },
   {
     "GUID": "61220",
@@ -2032,7 +2489,9 @@ subcategory: (optional)
     "Name.eng": "Basic Research projects Research",
     "category": "Research",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_154.png",
+    "icon.overlay": "icon_30_480.png"
   },
   {
     "GUID": "61219",
@@ -2040,7 +2499,9 @@ subcategory: (optional)
     "Name.eng": "Production buildings Research",
     "category": "Research",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_160.png",
+    "icon.overlay": "icon_30_480.png"
   },
   {
     "GUID": "61218",
@@ -2048,7 +2509,9 @@ subcategory: (optional)
     "Name.eng": "Special buildings Research",
     "category": "Research",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_110.png",
+    "icon.overlay": "icon_30_480.png"
   },
   {
     "GUID": "61217",
@@ -2056,7 +2519,9 @@ subcategory: (optional)
     "Name.eng": "Public buildings Research",
     "category": "Research",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_158.png",
+    "icon.overlay": "icon_30_480.png"
   },
   {
     "GUID": "61216",
@@ -2064,7 +2529,9 @@ subcategory: (optional)
     "Name.eng": "Fertilities & Resources Research",
     "category": "Research",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_157.png",
+    "icon.overlay": "icon_30_480.png"
   },
   {
     "GUID": "60944",
@@ -2072,7 +2539,9 @@ subcategory: (optional)
     "Name.eng": "Units Research",
     "category": "Research",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_55.png",
+    "icon.overlay": "icon_30_480.png"
   },
   {
     "GUID": "61215",
@@ -2080,7 +2549,9 @@ subcategory: (optional)
     "Name.eng": "Ecobalance buildings Research",
     "category": "Research",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_156.png",
+    "icon.overlay": "icon_30_480.png"
   },
   {
     "GUID": "61214",
@@ -2088,6 +2559,8 @@ subcategory: (optional)
     "Name.eng": "Energy generation Research",
     "category": "Research",
     "ItemQuality": null,
-    "ItemQuality.stars": 3
+    "ItemQuality.stars": 3,
+    "icon.base": "icon_30_155.png",
+    "icon.overlay": "icon_30_480.png"
   }
 ]

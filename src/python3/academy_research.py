@@ -9,6 +9,7 @@ Created on Dec 18, 2011
 
 import collections
 import configparser
+import guid_to_icon
 import json
 import os
 import re
@@ -28,6 +29,8 @@ __interface_txt = os.path.join(__rda_folder, "eng3", "data", "loca", "eng", "txt
 
 __regex_guidname= re.compile(r'\[GUIDNAME (?P<GUID>\d+)\]')
 
+__guid_to_icon = guid_to_icon.get_guid_to_icon_dict()
+
 # Maps the ItemQuality in features.xml to the number of stars displayed in-game.
 __ItemQuality_stars = {
     'D' : 0,
@@ -36,26 +39,6 @@ __ItemQuality_stars = {
     'A' : 3,
     None: 3
 }
-
-#def parse_ProductGUIDs():
-#    ProductGUIDs = {}
-#    
-#    for p in ET.parse(__properties_xml).findall(".//ProductIconGUID/*"):
-#        if p.tag != "icon":
-#            ProductGUIDs[p.tag] = int(p.find("icon").text)
-#    return ProductGUIDs
-
-#def parse_IconFileNames():
-#    IconFileNames = {}
-#    
-#    for i in ET.parse(__icons_xml).findall("i"):
-#            IconFileID = i.find("Icons/i/IconFileID").text
-#            try:
-#                IconIndex = str(int(i.find("Icons/i/IconIndex").text))
-#            except:
-#                IconIndex = "1"
-#            IconFileNames[int(i.find("GUID").text)] = icons_prefix + IconFileID + icons_midfix + IconIndex + icons_postfix
-#    return IconFileNames
 
 def main():
     eng = _get_localization('eng')
@@ -84,13 +67,18 @@ def main():
             
             category:
                 Each project belongs to one of the following categories: Energy, Ecologic, Vehicles, Seed, Public, Special, Production, Research
-            subcategory: (optional)
+            subcategory (optional):
                 Technologies are grouped by the building or unit that they affect. Example: Energy -> CoalPowerPlant -> Productivity CoalPowerPlant
             
             ItemQuality:
                 The quality of the research project, expressed as a letter. Possible values: A, B, C, D, null. A is the highest, D is the lowest. Null is equivalent to A.
             ItemQuality.stars:
                 The quality of the research project, expressed as the number of gold stars . Possible values: 0, 1, 2, 3.
+            
+            icon.base:
+                Filename of the base icon of the research project.
+            icon.overlay (optional):
+                Filename of the overlay icon of the research project.
             
             =====================
             */\n\n'''
@@ -170,10 +158,11 @@ def _get_research_project_dict(project_asset, eng, category, subcategory=None):
     '''
     project = collections.OrderedDict() # OrderedDict preserves the order of the keys by the order in which they are inserted. A regular dict does not do this. 
     
-    project['GUID'] = project_asset.findtext('Values/Standard/GUID')
+    GUID = project_asset.findtext('Values/Standard/GUID')
+    project['GUID'] = GUID
     project['Name'] = project_asset.findtext('Values/Standard/Name')
     
-    name_eng = eng[project['GUID']]
+    name_eng = eng[GUID]
     # Localization strings can refer to each other. Follow these references and display the final result.
     # Replace "Blueprint: [GUIDNAME 10087]"
     # With    "Blueprint: Hydroelectric power plant"
@@ -188,7 +177,9 @@ def _get_research_project_dict(project_asset, eng, category, subcategory=None):
     project['ItemQuality'] = project_asset.findtext('Values/Item/ItemQuality')
     project['ItemQuality.stars'] = __ItemQuality_stars[project['ItemQuality']]
     
-#    project[''] = ''
+    project['icon.base'] = __guid_to_icon[GUID]['icon.base']
+    if 'icon.overlay' in __guid_to_icon[GUID]:
+        project['icon.overlay'] = __guid_to_icon[GUID]['icon.overlay']
     
     return project
 
