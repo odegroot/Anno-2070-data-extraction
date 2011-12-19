@@ -39,7 +39,7 @@ __ItemQuality_stars = {
 }
 
 def main():
-    eng = _get_localization('eng')
+    eng = get_localization('eng')
     
     out_json = collections.OrderedDict()
     out_json['encoding'] = __out_encoding
@@ -47,7 +47,7 @@ def main():
     out_json['source.url'] = 'https://github.com/odegroot/Anno-2070-data-extraction'
     out_json['game_version'] = __game_version
     out_json['model_reference'] = __model_ref_txt
-    out_json['data'] = _get_research_project_dicts(eng)
+    out_json['data'] = get_research_project_dicts(eng)
     
     with open(_get_json_path(), mode="w", encoding=__out_encoding, newline='\n') as json_file:
         json.dump(out_json, fp=json_file, indent=2, separators=(',', ': ')) # separators: replace ', ' with ',' to prevent trailing whitespace.
@@ -76,7 +76,7 @@ def _get_json_path():
     
     return json_path
 
-def _get_research_project_dicts(eng):
+def get_research_project_dicts(eng):
     '''
     Returns a list of dictionaries. Each dictionary represents one academy research project.
     
@@ -112,7 +112,7 @@ def _get_research_project_dicts(eng):
                 projects.append(_get_research_project_dict(project_asset, eng, category, subcategory))
                 category_project_count += 1
         
-        print('Category {:10} has {:>2} projects.'.format(category, category_project_count))
+        # print('Category {:10} has {:>2} projects.'.format(category, category_project_count))
     
     return projects
 
@@ -191,7 +191,7 @@ def add_effect(project, xml_element):
     project['effect.{}.text'.format(tag)] = "{:+}".format(value) + ('%' if percental else '')
     
 
-def _get_localization(lang):
+def get_localization(lang):
     '''
     Parses an Anno 2070 properties guids_file, such as guids.txt.
     
