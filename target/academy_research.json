@@ -15,7 +15,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_0.png",
-      "icon.overlay": "icon_30_463.png"
+      "icon.overlay": "icon_30_463.png",
+      "affects.GUIDs": [
+        10025
+      ]
     },
     {
       "GUID": 61012,
@@ -28,6 +31,9 @@
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_0.png",
       "icon.overlay": "icon_30_464.png",
+      "affects.GUIDs": [
+        10025
+      ],
       "effect.ActiveEcoEffect.Value": -30,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-30%",
@@ -46,6 +52,9 @@
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_0.png",
       "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10025
+      ],
       "effect.ActiveEcoEffect.Value": -40,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-40%",
@@ -64,6 +73,9 @@
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_0.png",
       "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10025
+      ],
       "effect.ActiveEcoEffect.Value": -50,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-50%",
@@ -93,7 +105,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_1.png",
-      "icon.overlay": "icon_30_463.png"
+      "icon.overlay": "icon_30_463.png",
+      "affects.GUIDs": [
+        10087
+      ]
     },
     {
       "GUID": 61017,
@@ -106,6 +121,9 @@
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_1.png",
       "icon.overlay": "icon_30_464.png",
+      "affects.GUIDs": [
+        10087
+      ],
       "effect.ActiveEcoEffect.Value": -30,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-30%",
@@ -124,6 +142,9 @@
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_1.png",
       "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10087
+      ],
       "effect.ActiveEcoEffect.Value": -40,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-40%",
@@ -142,6 +163,9 @@
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_1.png",
       "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10087
+      ],
       "effect.ActiveEcoEffect.Value": -50,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-50%",
@@ -159,7 +183,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_2.png",
-      "icon.overlay": "icon_30_466.png"
+      "icon.overlay": "icon_30_466.png",
+      "affects.GUIDs": [
+        10050
+      ]
     },
     {
       "GUID": 61034,
@@ -171,7 +198,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_2.png",
-      "icon.overlay": "icon_30_467.png"
+      "icon.overlay": "icon_30_467.png",
+      "affects.GUIDs": [
+        10050
+      ]
     },
     {
       "GUID": 61035,
@@ -183,7 +213,10 @@
       "ItemQuality": "B",
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_2.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10050
+      ]
     },
     {
       "GUID": 61036,
@@ -195,7 +228,10 @@
       "ItemQuality": null,
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_2.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10050
+      ]
     },
     {
       "GUID": 61038,
@@ -207,7 +243,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_3.png",
-      "icon.overlay": "icon_30_468.png"
+      "icon.overlay": "icon_30_468.png",
+      "affects.GUIDs": [
+        10029
+      ]
     },
     {
       "GUID": 61037,
@@ -219,7 +258,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_3.png",
-      "icon.overlay": "icon_30_466.png"
+      "icon.overlay": "icon_30_466.png",
+      "affects.GUIDs": [
+        10029
+      ]
     },
     {
       "GUID": 61039,
@@ -231,7 +273,10 @@
       "ItemQuality": "B",
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_3.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10029
+      ]
     },
     {
       "GUID": 61040,
@@ -243,7 +288,10 @@
       "ItemQuality": null,
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_3.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10029
+      ]
     },
     {
       "GUID": 61041,
@@ -255,7 +303,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_4.png",
-      "icon.overlay": "icon_30_466.png"
+      "icon.overlay": "icon_30_466.png",
+      "affects.GUIDs": [
+        10082
+      ]
     },
     {
       "GUID": 61042,
@@ -267,7 +318,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_4.png",
-      "icon.overlay": "icon_30_468.png"
+      "icon.overlay": "icon_30_468.png",
+      "affects.GUIDs": [
+        10082
+      ]
     },
     {
       "GUID": 61043,
@@ -279,7 +333,10 @@
       "ItemQuality": "B",
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_4.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10082
+      ]
     },
     {
       "GUID": 61044,
@@ -291,7 +348,10 @@
       "ItemQuality": null,
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_4.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10082
+      ]
     },
     {
       "GUID": 61045,
@@ -303,7 +363,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_5.png",
-      "icon.overlay": "icon_30_466.png"
+      "icon.overlay": "icon_30_466.png",
+      "affects.GUIDs": [
+        10173
+      ]
     },
     {
       "GUID": 61046,
@@ -315,7 +378,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_5.png",
-      "icon.overlay": "icon_30_463.png"
+      "icon.overlay": "icon_30_463.png",
+      "affects.GUIDs": [
+        10173
+      ]
     },
     {
       "GUID": 61047,
@@ -327,7 +393,10 @@
       "ItemQuality": "B",
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_5.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10173
+      ]
     },
     {
       "GUID": 61048,
@@ -339,7 +408,10 @@
       "ItemQuality": null,
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_5.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10173
+      ]
     },
     {
       "GUID": 61049,
@@ -351,7 +423,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_6.png",
-      "icon.overlay": "icon_30_466.png"
+      "icon.overlay": "icon_30_466.png",
+      "affects.GUIDs": [
+        10070
+      ]
     },
     {
       "GUID": 61050,
@@ -363,7 +438,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_6.png",
-      "icon.overlay": "icon_30_463.png"
+      "icon.overlay": "icon_30_463.png",
+      "affects.GUIDs": [
+        10070
+      ]
     },
     {
       "GUID": 61051,
@@ -375,7 +453,10 @@
       "ItemQuality": "B",
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_6.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10070
+      ]
     },
     {
       "GUID": 61052,
@@ -387,7 +468,10 @@
       "ItemQuality": null,
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_6.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10070
+      ]
     },
     {
       "GUID": 61061,
@@ -400,6 +484,9 @@
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_22.png",
       "icon.overlay": "icon_30_464.png",
+      "affects.GUIDs": [
+        10170
+      ],
       "effect.ActiveEcoEffect.Value": 20,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "+20%",
@@ -418,6 +505,9 @@
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_22.png",
       "icon.overlay": "icon_30_469.png",
+      "affects.GUIDs": [
+        10170
+      ],
       "effect.ActiveEnergyCost.Value": -30,
       "effect.ActiveEnergyCost.Percental": true,
       "effect.ActiveEnergyCost.text": "-30%",
@@ -436,6 +526,9 @@
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_22.png",
       "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10170
+      ],
       "effect.ActiveEcoEffect.Value": 30,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "+30%",
@@ -460,6 +553,9 @@
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_22.png",
       "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10170
+      ],
       "effect.ActiveEcoEffect.Value": 40,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "+40%",
@@ -483,7 +579,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_23.png",
-      "icon.overlay": "icon_30_466.png"
+      "icon.overlay": "icon_30_466.png",
+      "affects.GUIDs": [
+        10169
+      ]
     },
     {
       "GUID": 61066,
@@ -496,6 +595,9 @@
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_23.png",
       "icon.overlay": "icon_30_469.png",
+      "affects.GUIDs": [
+        10169
+      ],
       "effect.ActiveEnergyCost.Value": -30,
       "effect.ActiveEnergyCost.Percental": true,
       "effect.ActiveEnergyCost.text": "-30%",
@@ -514,6 +616,9 @@
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_23.png",
       "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10169
+      ],
       "effect.ActiveEnergyCost.Value": -40,
       "effect.ActiveEnergyCost.Percental": true,
       "effect.ActiveEnergyCost.text": "-40%",
@@ -532,6 +637,9 @@
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_23.png",
       "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10169
+      ],
       "effect.ActiveEnergyCost.Value": -50,
       "effect.ActiveEnergyCost.Percental": true,
       "effect.ActiveEnergyCost.text": "-50%",
@@ -549,7 +657,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_24.png",
-      "icon.overlay": "icon_30_468.png"
+      "icon.overlay": "icon_30_468.png",
+      "affects.GUIDs": [
+        10193
+      ]
     },
     {
       "GUID": 61070,
@@ -561,7 +672,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_24.png",
-      "icon.overlay": "icon_30_466.png"
+      "icon.overlay": "icon_30_466.png",
+      "affects.GUIDs": [
+        10193
+      ]
     },
     {
       "GUID": 61071,
@@ -573,7 +687,10 @@
       "ItemQuality": "B",
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_24.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10193
+      ]
     },
     {
       "GUID": 61072,
@@ -585,7 +702,10 @@
       "ItemQuality": null,
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_24.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10193
+      ]
     },
     {
       "GUID": 61073,
@@ -597,7 +717,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_25.png",
-      "icon.overlay": "icon_30_466.png"
+      "icon.overlay": "icon_30_466.png",
+      "affects.GUIDs": [
+        10192
+      ]
     },
     {
       "GUID": 61074,
@@ -610,6 +733,9 @@
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_25.png",
       "icon.overlay": "icon_30_469.png",
+      "affects.GUIDs": [
+        10192
+      ],
       "effect.ActiveEnergyCost.Value": -30,
       "effect.ActiveEnergyCost.Percental": true,
       "effect.ActiveEnergyCost.text": "-30%",
@@ -628,6 +754,9 @@
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_25.png",
       "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10192
+      ],
       "effect.ActiveEnergyCost.Value": -40,
       "effect.ActiveEnergyCost.Percental": true,
       "effect.ActiveEnergyCost.text": "-40%",
@@ -646,6 +775,9 @@
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_25.png",
       "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10192
+      ],
       "effect.ActiveEnergyCost.Value": -50,
       "effect.ActiveEnergyCost.Percental": true,
       "effect.ActiveEnergyCost.text": "-50%",
@@ -664,6 +796,9 @@
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_26.png",
       "icon.overlay": "icon_30_469.png",
+      "affects.GUIDs": [
+        10061
+      ],
       "effect.ActiveEnergyCost.Value": -30,
       "effect.ActiveEnergyCost.Percental": true,
       "effect.ActiveEnergyCost.text": "-30%",
@@ -681,7 +816,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_26.png",
-      "icon.overlay": "icon_30_468.png"
+      "icon.overlay": "icon_30_468.png",
+      "affects.GUIDs": [
+        10061
+      ]
     },
     {
       "GUID": 61079,
@@ -694,6 +832,9 @@
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_26.png",
       "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10061
+      ],
       "effect.ActiveEnergyCost.Value": -40,
       "effect.ActiveEnergyCost.Percental": true,
       "effect.ActiveEnergyCost.text": "-40%",
@@ -712,6 +853,9 @@
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_26.png",
       "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10061
+      ],
       "effect.ActiveEnergyCost.Value": -50,
       "effect.ActiveEnergyCost.Percental": true,
       "effect.ActiveEnergyCost.text": "-50%",
@@ -729,7 +873,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_27.png",
-      "icon.overlay": "icon_30_466.png"
+      "icon.overlay": "icon_30_466.png",
+      "affects.GUIDs": [
+        10123
+      ]
     },
     {
       "GUID": 61082,
@@ -742,6 +889,9 @@
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_27.png",
       "icon.overlay": "icon_30_469.png",
+      "affects.GUIDs": [
+        10123
+      ],
       "effect.ActiveEnergyCost.Value": -30,
       "effect.ActiveEnergyCost.Percental": true,
       "effect.ActiveEnergyCost.text": "-30%",
@@ -760,6 +910,9 @@
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_27.png",
       "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10123
+      ],
       "effect.ActiveEnergyCost.Value": -40,
       "effect.ActiveEnergyCost.Percental": true,
       "effect.ActiveEnergyCost.text": "-40%",
@@ -778,6 +931,9 @@
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_27.png",
       "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10123
+      ],
       "effect.ActiveEnergyCost.Value": -50,
       "effect.ActiveEnergyCost.Percental": true,
       "effect.ActiveEnergyCost.text": "-50%",
@@ -795,7 +951,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_28.png",
-      "icon.overlay": "icon_30_468.png"
+      "icon.overlay": "icon_30_468.png",
+      "affects.GUIDs": [
+        10267
+      ]
     },
     {
       "GUID": 61365,
@@ -808,6 +967,9 @@
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_28.png",
       "icon.overlay": "icon_30_469.png",
+      "affects.GUIDs": [
+        10267
+      ],
       "effect.ActiveEnergyCost.Value": -20,
       "effect.ActiveEnergyCost.Percental": true,
       "effect.ActiveEnergyCost.text": "-20%",
@@ -826,6 +988,9 @@
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_28.png",
       "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10267
+      ],
       "effect.ActiveEnergyCost.Value": -30,
       "effect.ActiveEnergyCost.Percental": true,
       "effect.ActiveEnergyCost.text": "-30%",
@@ -844,6 +1009,9 @@
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_28.png",
       "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10267
+      ],
       "effect.ActiveEnergyCost.Value": -40,
       "effect.ActiveEnergyCost.Percental": true,
       "effect.ActiveEnergyCost.text": "-40%",
@@ -861,7 +1029,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_44.png",
-      "icon.overlay": "icon_30_470.png"
+      "icon.overlay": "icon_30_470.png",
+      "affects.GUIDs": [
+        20023
+      ]
     },
     {
       "GUID": 60973,
@@ -873,7 +1044,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_44.png",
-      "icon.overlay": "icon_30_471.png"
+      "icon.overlay": "icon_30_471.png",
+      "affects.GUIDs": [
+        20023
+      ]
     },
     {
       "GUID": 60974,
@@ -885,7 +1059,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_44.png",
-      "icon.overlay": "icon_30_472.png"
+      "icon.overlay": "icon_30_472.png",
+      "affects.GUIDs": [
+        20023
+      ]
     },
     {
       "GUID": 60975,
@@ -897,7 +1074,10 @@
       "ItemQuality": "B",
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_44.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        20023
+      ]
     },
     {
       "GUID": 60976,
@@ -909,7 +1089,10 @@
       "ItemQuality": null,
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_44.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        20023
+      ]
     },
     {
       "GUID": 60977,
@@ -921,7 +1104,10 @@
       "ItemQuality": "B",
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_44.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        20023
+      ]
     },
     {
       "GUID": 60978,
@@ -933,7 +1119,10 @@
       "ItemQuality": null,
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_44.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        20023
+      ]
     },
     {
       "GUID": 61228,
@@ -945,7 +1134,10 @@
       "ItemQuality": null,
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_44.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        20023
+      ]
     },
     {
       "GUID": 60964,
@@ -957,7 +1149,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_45.png",
-      "icon.overlay": "icon_30_470.png"
+      "icon.overlay": "icon_30_470.png",
+      "affects.GUIDs": [
+        20028
+      ]
     },
     {
       "GUID": 60965,
@@ -969,7 +1164,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_45.png",
-      "icon.overlay": "icon_30_471.png"
+      "icon.overlay": "icon_30_471.png",
+      "affects.GUIDs": [
+        20028
+      ]
     },
     {
       "GUID": 60966,
@@ -981,7 +1179,10 @@
       "ItemQuality": "B",
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_45.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        20028
+      ]
     },
     {
       "GUID": 60967,
@@ -993,7 +1194,10 @@
       "ItemQuality": null,
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_45.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        20028
+      ]
     },
     {
       "GUID": 60979,
@@ -1005,7 +1209,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_46.png",
-      "icon.overlay": "icon_30_470.png"
+      "icon.overlay": "icon_30_470.png",
+      "affects.GUIDs": [
+        20061
+      ]
     },
     {
       "GUID": 60980,
@@ -1017,7 +1224,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_46.png",
-      "icon.overlay": "icon_30_471.png"
+      "icon.overlay": "icon_30_471.png",
+      "affects.GUIDs": [
+        20061
+      ]
     },
     {
       "GUID": 60981,
@@ -1029,7 +1239,10 @@
       "ItemQuality": "B",
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_46.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        20061
+      ]
     },
     {
       "GUID": 60982,
@@ -1041,7 +1254,10 @@
       "ItemQuality": null,
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_46.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        20061
+      ]
     },
     {
       "GUID": 60968,
@@ -1053,7 +1269,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_47.png",
-      "icon.overlay": "icon_30_470.png"
+      "icon.overlay": "icon_30_470.png",
+      "affects.GUIDs": [
+        20069
+      ]
     },
     {
       "GUID": 60969,
@@ -1065,7 +1284,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_47.png",
-      "icon.overlay": "icon_30_472.png"
+      "icon.overlay": "icon_30_472.png",
+      "affects.GUIDs": [
+        20069
+      ]
     },
     {
       "GUID": 60970,
@@ -1077,7 +1299,10 @@
       "ItemQuality": "B",
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_47.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        20069
+      ]
     },
     {
       "GUID": 60971,
@@ -1089,7 +1314,10 @@
       "ItemQuality": null,
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_47.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        20069
+      ]
     },
     {
       "GUID": 60983,
@@ -1101,7 +1329,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_48.png",
-      "icon.overlay": "icon_30_470.png"
+      "icon.overlay": "icon_30_470.png",
+      "affects.GUIDs": [
+        20067
+      ]
     },
     {
       "GUID": 60984,
@@ -1113,7 +1344,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_48.png",
-      "icon.overlay": "icon_30_472.png"
+      "icon.overlay": "icon_30_472.png",
+      "affects.GUIDs": [
+        20067
+      ]
     },
     {
       "GUID": 60985,
@@ -1125,7 +1359,10 @@
       "ItemQuality": "B",
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_48.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        20067
+      ]
     },
     {
       "GUID": 60986,
@@ -1137,7 +1374,10 @@
       "ItemQuality": null,
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_48.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        20067
+      ]
     },
     {
       "GUID": 60987,
@@ -1149,7 +1389,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_49.png",
-      "icon.overlay": "icon_30_470.png"
+      "icon.overlay": "icon_30_470.png",
+      "affects.GUIDs": [
+        20068
+      ]
     },
     {
       "GUID": 60988,
@@ -1161,7 +1404,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_49.png",
-      "icon.overlay": "icon_30_472.png"
+      "icon.overlay": "icon_30_472.png",
+      "affects.GUIDs": [
+        20068
+      ]
     },
     {
       "GUID": 60989,
@@ -1173,7 +1419,10 @@
       "ItemQuality": "B",
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_49.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        20068
+      ]
     },
     {
       "GUID": 60990,
@@ -1185,7 +1434,10 @@
       "ItemQuality": null,
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_49.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        20068
+      ]
     },
     {
       "GUID": 60991,
@@ -1197,7 +1449,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_50.png",
-      "icon.overlay": "icon_30_470.png"
+      "icon.overlay": "icon_30_470.png",
+      "affects.GUIDs": [
+        20000
+      ]
     },
     {
       "GUID": 60992,
@@ -1209,7 +1464,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_50.png",
-      "icon.overlay": "icon_30_472.png"
+      "icon.overlay": "icon_30_472.png",
+      "affects.GUIDs": [
+        20000
+      ]
     },
     {
       "GUID": 60993,
@@ -1221,7 +1479,10 @@
       "ItemQuality": "B",
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_50.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        20000
+      ]
     },
     {
       "GUID": 60994,
@@ -1233,7 +1494,10 @@
       "ItemQuality": null,
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_50.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        20000
+      ]
     },
     {
       "GUID": 60995,
@@ -1245,7 +1509,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_51.png",
-      "icon.overlay": "icon_30_470.png"
+      "icon.overlay": "icon_30_470.png",
+      "affects.GUIDs": [
+        20015
+      ]
     },
     {
       "GUID": 60996,
@@ -1257,7 +1524,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_51.png",
-      "icon.overlay": "icon_30_471.png"
+      "icon.overlay": "icon_30_471.png",
+      "affects.GUIDs": [
+        20015
+      ]
     },
     {
       "GUID": 60997,
@@ -1269,7 +1539,10 @@
       "ItemQuality": "B",
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_51.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        20015
+      ]
     },
     {
       "GUID": 60998,
@@ -1281,7 +1554,10 @@
       "ItemQuality": null,
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_51.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        20015
+      ]
     },
     {
       "GUID": 60999,
@@ -1293,7 +1569,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_52.png",
-      "icon.overlay": "icon_30_473.png"
+      "icon.overlay": "icon_30_473.png",
+      "affects.GUIDs": [
+        20014
+      ]
     },
     {
       "GUID": 61000,
@@ -1305,7 +1584,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_52.png",
-      "icon.overlay": "icon_30_471.png"
+      "icon.overlay": "icon_30_471.png",
+      "affects.GUIDs": [
+        20014
+      ]
     },
     {
       "GUID": 61001,
@@ -1317,7 +1599,10 @@
       "ItemQuality": "B",
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_52.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        20014
+      ]
     },
     {
       "GUID": 61002,
@@ -1329,7 +1614,10 @@
       "ItemQuality": null,
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_52.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        20014
+      ]
     },
     {
       "GUID": 61003,
@@ -1341,7 +1629,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_53.png",
-      "icon.overlay": "icon_30_473.png"
+      "icon.overlay": "icon_30_473.png",
+      "affects.GUIDs": [
+        20016
+      ]
     },
     {
       "GUID": 61004,
@@ -1353,7 +1644,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_53.png",
-      "icon.overlay": "icon_30_471.png"
+      "icon.overlay": "icon_30_471.png",
+      "affects.GUIDs": [
+        20016
+      ]
     },
     {
       "GUID": 61005,
@@ -1365,7 +1659,10 @@
       "ItemQuality": "B",
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_53.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        20016
+      ]
     },
     {
       "GUID": 61006,
@@ -1377,7 +1674,10 @@
       "ItemQuality": null,
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_53.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        20016
+      ]
     },
     {
       "GUID": 61007,
@@ -1389,7 +1689,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_54.png",
-      "icon.overlay": "icon_30_473.png"
+      "icon.overlay": "icon_30_473.png",
+      "affects.GUIDs": [
+        20027
+      ]
     },
     {
       "GUID": 61008,
@@ -1401,7 +1704,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_54.png",
-      "icon.overlay": "icon_30_471.png"
+      "icon.overlay": "icon_30_471.png",
+      "affects.GUIDs": [
+        20027
+      ]
     },
     {
       "GUID": 61009,
@@ -1413,7 +1719,10 @@
       "ItemQuality": "B",
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_54.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        20027
+      ]
     },
     {
       "GUID": 61010,
@@ -1425,7 +1734,10 @@
       "ItemQuality": null,
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_54.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        20027
+      ]
     },
     {
       "GUID": 61224,
@@ -1437,7 +1749,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_56.png",
-      "icon.overlay": "icon_30_470.png"
+      "icon.overlay": "icon_30_470.png",
+      "affects.GUIDs": [
+        20117
+      ]
     },
     {
       "GUID": 61225,
@@ -1449,7 +1764,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_56.png",
-      "icon.overlay": "icon_30_471.png"
+      "icon.overlay": "icon_30_471.png",
+      "affects.GUIDs": [
+        20117
+      ]
     },
     {
       "GUID": 61226,
@@ -1461,7 +1779,10 @@
       "ItemQuality": "B",
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_56.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        20117
+      ]
     },
     {
       "GUID": 61227,
@@ -1473,7 +1794,10 @@
       "ItemQuality": null,
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_56.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        20117
+      ]
     },
     {
       "GUID": 61282,
@@ -1924,7 +2248,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_95.png",
-      "icon.overlay": "icon_30_467.png"
+      "icon.overlay": "icon_30_467.png",
+      "affects.GUIDs": [
+        10077
+      ]
     },
     {
       "GUID": 61129,
@@ -1936,7 +2263,10 @@
       "ItemQuality": "B",
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_95.png",
-      "icon.overlay": "icon_30_467.png"
+      "icon.overlay": "icon_30_467.png",
+      "affects.GUIDs": [
+        10077
+      ]
     },
     {
       "GUID": 61130,
@@ -1948,7 +2278,10 @@
       "ItemQuality": null,
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_95.png",
-      "icon.overlay": "icon_30_467.png"
+      "icon.overlay": "icon_30_467.png",
+      "affects.GUIDs": [
+        10077
+      ]
     },
     {
       "GUID": 61132,
@@ -2056,7 +2389,13 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_154.png",
-      "icon.overlay": "icon_30_468.png"
+      "icon.overlay": "icon_30_468.png",
+      "affects.GUIDs": [
+        10099,
+        10125,
+        10101,
+        10124
+      ]
     },
     {
       "GUID": 61203,
@@ -2068,7 +2407,13 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_154.png",
-      "icon.overlay": "icon_30_471.png"
+      "icon.overlay": "icon_30_471.png",
+      "affects.GUIDs": [
+        10099,
+        10125,
+        10101,
+        10124
+      ]
     },
     {
       "GUID": 61204,
@@ -2080,7 +2425,13 @@
       "ItemQuality": "B",
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_154.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10099,
+        10125,
+        10101,
+        10124
+      ]
     },
     {
       "GUID": 61205,
@@ -2092,7 +2443,13 @@
       "ItemQuality": null,
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_154.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10099,
+        10125,
+        10101,
+        10124
+      ]
     },
     {
       "GUID": 61206,
@@ -2104,7 +2461,13 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_154.png",
-      "icon.overlay": "icon_30_476.png"
+      "icon.overlay": "icon_30_476.png",
+      "affects.GUIDs": [
+        10099,
+        10125,
+        10101,
+        10124
+      ]
     },
     {
       "GUID": 61207,
@@ -2116,7 +2479,13 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_154.png",
-      "icon.overlay": "icon_30_466.png"
+      "icon.overlay": "icon_30_466.png",
+      "affects.GUIDs": [
+        10099,
+        10125,
+        10101,
+        10124
+      ]
     },
     {
       "GUID": 61208,
@@ -2128,7 +2497,13 @@
       "ItemQuality": "B",
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_154.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10099,
+        10125,
+        10101,
+        10124
+      ]
     },
     {
       "GUID": 61209,
@@ -2140,7 +2515,13 @@
       "ItemQuality": null,
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_154.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10099,
+        10125,
+        10101,
+        10124
+      ]
     },
     {
       "GUID": 61092,
@@ -2152,7 +2533,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_88.png",
-      "icon.overlay": "icon_30_468.png"
+      "icon.overlay": "icon_30_468.png",
+      "affects.GUIDs": [
+        10130
+      ]
     },
     {
       "GUID": 61093,
@@ -2164,7 +2548,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_88.png",
-      "icon.overlay": "icon_30_463.png"
+      "icon.overlay": "icon_30_463.png",
+      "affects.GUIDs": [
+        10130
+      ]
     },
     {
       "GUID": 61094,
@@ -2176,7 +2563,10 @@
       "ItemQuality": "B",
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_88.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10130
+      ]
     },
     {
       "GUID": 61095,
@@ -2188,7 +2578,10 @@
       "ItemQuality": null,
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_88.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10130
+      ]
     },
     {
       "GUID": 61096,
@@ -2200,7 +2593,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_89.png",
-      "icon.overlay": "icon_30_468.png"
+      "icon.overlay": "icon_30_468.png",
+      "affects.GUIDs": [
+        10128
+      ]
     },
     {
       "GUID": 61097,
@@ -2212,7 +2608,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_89.png",
-      "icon.overlay": "icon_30_463.png"
+      "icon.overlay": "icon_30_463.png",
+      "affects.GUIDs": [
+        10128
+      ]
     },
     {
       "GUID": 61098,
@@ -2224,7 +2623,10 @@
       "ItemQuality": "B",
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_89.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10128
+      ]
     },
     {
       "GUID": 61099,
@@ -2236,7 +2638,10 @@
       "ItemQuality": null,
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_89.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10128
+      ]
     },
     {
       "GUID": 61100,
@@ -2248,7 +2653,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_90.png",
-      "icon.overlay": "icon_30_468.png"
+      "icon.overlay": "icon_30_468.png",
+      "affects.GUIDs": [
+        10129
+      ]
     },
     {
       "GUID": 61101,
@@ -2260,7 +2668,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_90.png",
-      "icon.overlay": "icon_30_463.png"
+      "icon.overlay": "icon_30_463.png",
+      "affects.GUIDs": [
+        10129
+      ]
     },
     {
       "GUID": 61102,
@@ -2272,7 +2683,10 @@
       "ItemQuality": "B",
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_90.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10129
+      ]
     },
     {
       "GUID": 61103,
@@ -2284,7 +2698,10 @@
       "ItemQuality": null,
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_90.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10129
+      ]
     },
     {
       "GUID": 61141,
@@ -2296,7 +2713,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_132.png",
-      "icon.overlay": "icon_30_477.png"
+      "icon.overlay": "icon_30_477.png",
+      "affects.GUIDs": [
+        10261
+      ]
     },
     {
       "GUID": 61142,
@@ -2308,7 +2728,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_132.png",
-      "icon.overlay": "icon_30_466.png"
+      "icon.overlay": "icon_30_466.png",
+      "affects.GUIDs": [
+        10261
+      ]
     },
     {
       "GUID": 61143,
@@ -2320,7 +2743,10 @@
       "ItemQuality": "B",
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_132.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10261
+      ]
     },
     {
       "GUID": 61144,
@@ -2332,7 +2758,10 @@
       "ItemQuality": null,
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_132.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10261
+      ]
     },
     {
       "GUID": 61145,
@@ -2344,7 +2773,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_133.png",
-      "icon.overlay": "icon_30_477.png"
+      "icon.overlay": "icon_30_477.png",
+      "affects.GUIDs": [
+        10098
+      ]
     },
     {
       "GUID": 61146,
@@ -2357,6 +2789,9 @@
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_133.png",
       "icon.overlay": "icon_30_464.png",
+      "affects.GUIDs": [
+        10098
+      ],
       "effect.ActiveEcoEffect.Value": -50,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-50%",
@@ -2375,6 +2810,9 @@
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_133.png",
       "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10098
+      ],
       "effect.ActiveEcoEffect.Value": -100,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-100%",
@@ -2393,6 +2831,9 @@
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_133.png",
       "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10098
+      ],
       "effect.ActiveEcoEffect.Value": -100,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-100%",
@@ -2410,7 +2851,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_134.png",
-      "icon.overlay": "icon_30_477.png"
+      "icon.overlay": "icon_30_477.png",
+      "affects.GUIDs": [
+        10054
+      ]
     },
     {
       "GUID": 61150,
@@ -2423,6 +2867,9 @@
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_134.png",
       "icon.overlay": "icon_30_464.png",
+      "affects.GUIDs": [
+        10054
+      ],
       "effect.ActiveEcoEffect.Value": -50,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-50%",
@@ -2441,6 +2888,9 @@
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_134.png",
       "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10054
+      ],
       "effect.ActiveEcoEffect.Value": -100,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-100%",
@@ -2459,6 +2909,9 @@
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_134.png",
       "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10054
+      ],
       "effect.ActiveEcoEffect.Value": -100,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-100%",
@@ -2476,7 +2929,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_135.png",
-      "icon.overlay": "icon_30_477.png"
+      "icon.overlay": "icon_30_477.png",
+      "affects.GUIDs": [
+        10200
+      ]
     },
     {
       "GUID": 61154,
@@ -2489,6 +2945,9 @@
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_135.png",
       "icon.overlay": "icon_30_464.png",
+      "affects.GUIDs": [
+        10200
+      ],
       "effect.ActiveEcoEffect.Value": -50,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-50%",
@@ -2507,6 +2966,9 @@
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_135.png",
       "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10200
+      ],
       "effect.ActiveEcoEffect.Value": -100,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-100%",
@@ -2525,6 +2987,9 @@
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_135.png",
       "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10200
+      ],
       "effect.ActiveEcoEffect.Value": -100,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-100%",
@@ -2542,7 +3007,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_136.png",
-      "icon.overlay": "icon_30_477.png"
+      "icon.overlay": "icon_30_477.png",
+      "affects.GUIDs": [
+        10083
+      ]
     },
     {
       "GUID": 61158,
@@ -2555,6 +3023,9 @@
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_136.png",
       "icon.overlay": "icon_30_464.png",
+      "affects.GUIDs": [
+        10083
+      ],
       "effect.ActiveEcoEffect.Value": -50,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-50%",
@@ -2573,6 +3044,9 @@
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_136.png",
       "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10083
+      ],
       "effect.ActiveEcoEffect.Value": -100,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-100%",
@@ -2591,6 +3065,9 @@
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_136.png",
       "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10083
+      ],
       "effect.ActiveEcoEffect.Value": -100,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-100%",
@@ -2608,7 +3085,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_137.png",
-      "icon.overlay": "icon_30_477.png"
+      "icon.overlay": "icon_30_477.png",
+      "affects.GUIDs": [
+        10052
+      ]
     },
     {
       "GUID": 61162,
@@ -2621,6 +3101,9 @@
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_137.png",
       "icon.overlay": "icon_30_464.png",
+      "affects.GUIDs": [
+        10052
+      ],
       "effect.ActiveEcoEffect.Value": -30,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-30%",
@@ -2639,6 +3122,9 @@
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_137.png",
       "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10052
+      ],
       "effect.ActiveEcoEffect.Value": -50,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-50%",
@@ -2657,6 +3143,9 @@
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_137.png",
       "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10052
+      ],
       "effect.ActiveEcoEffect.Value": -70,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-70%",
@@ -2674,7 +3163,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_138.png",
-      "icon.overlay": "icon_30_477.png"
+      "icon.overlay": "icon_30_477.png",
+      "affects.GUIDs": [
+        10149
+      ]
     },
     {
       "GUID": 61166,
@@ -2687,6 +3179,9 @@
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_138.png",
       "icon.overlay": "icon_30_464.png",
+      "affects.GUIDs": [
+        10149
+      ],
       "effect.ActiveEcoEffect.Value": -30,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-30%",
@@ -2705,6 +3200,9 @@
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_138.png",
       "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10149
+      ],
       "effect.ActiveEcoEffect.Value": -40,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-40%",
@@ -2723,6 +3221,9 @@
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_138.png",
       "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10149
+      ],
       "effect.ActiveEcoEffect.Value": -50,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-50%",
@@ -2740,7 +3241,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_138.png",
-      "icon.overlay": "icon_30_477.png"
+      "icon.overlay": "icon_30_477.png",
+      "affects.GUIDs": [
+        10075
+      ]
     },
     {
       "GUID": 61170,
@@ -2752,7 +3256,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_138.png",
-      "icon.overlay": "icon_30_467.png"
+      "icon.overlay": "icon_30_467.png",
+      "affects.GUIDs": [
+        10075
+      ]
     },
     {
       "GUID": 61171,
@@ -2764,7 +3271,10 @@
       "ItemQuality": "B",
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_138.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10075
+      ]
     },
     {
       "GUID": 61172,
@@ -2776,7 +3286,10 @@
       "ItemQuality": null,
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_138.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10075
+      ]
     },
     {
       "GUID": 61173,
@@ -2788,7 +3301,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_139.png",
-      "icon.overlay": "icon_30_477.png"
+      "icon.overlay": "icon_30_477.png",
+      "affects.GUIDs": [
+        10080
+      ]
     },
     {
       "GUID": 61174,
@@ -2801,6 +3317,9 @@
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_139.png",
       "icon.overlay": "icon_30_464.png",
+      "affects.GUIDs": [
+        10080
+      ],
       "effect.ActiveEcoEffect.Value": -30,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-30%",
@@ -2819,6 +3338,9 @@
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_139.png",
       "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10080
+      ],
       "effect.ActiveEcoEffect.Value": -40,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-40%",
@@ -2837,6 +3359,9 @@
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_139.png",
       "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10080
+      ],
       "effect.ActiveEcoEffect.Value": -50,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-50%",
@@ -2854,7 +3379,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_140.png",
-      "icon.overlay": "icon_30_477.png"
+      "icon.overlay": "icon_30_477.png",
+      "affects.GUIDs": [
+        10161
+      ]
     },
     {
       "GUID": 61178,
@@ -2867,6 +3395,9 @@
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_140.png",
       "icon.overlay": "icon_30_464.png",
+      "affects.GUIDs": [
+        10161
+      ],
       "effect.ActiveEcoEffect.Value": -30,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-30%",
@@ -2885,6 +3416,9 @@
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_140.png",
       "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10161
+      ],
       "effect.ActiveEcoEffect.Value": -40,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-40%",
@@ -2903,6 +3437,9 @@
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_140.png",
       "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10161
+      ],
       "effect.ActiveEcoEffect.Value": -50,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-50%",
@@ -2920,7 +3457,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_141.png",
-      "icon.overlay": "icon_30_477.png"
+      "icon.overlay": "icon_30_477.png",
+      "affects.GUIDs": [
+        10153
+      ]
     },
     {
       "GUID": 61182,
@@ -2933,6 +3473,9 @@
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_141.png",
       "icon.overlay": "icon_30_464.png",
+      "affects.GUIDs": [
+        10153
+      ],
       "effect.ActiveEcoEffect.Value": -40,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-40%",
@@ -2951,6 +3494,9 @@
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_141.png",
       "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10153
+      ],
       "effect.ActiveEcoEffect.Value": -70,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-70%",
@@ -2969,6 +3515,9 @@
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_141.png",
       "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10153
+      ],
       "effect.ActiveEcoEffect.Value": -100,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-100%",
@@ -2986,7 +3535,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_0.png",
-      "icon.overlay": "icon_30_477.png"
+      "icon.overlay": "icon_30_477.png",
+      "affects.GUIDs": [
+        10024
+      ]
     },
     {
       "GUID": 61186,
@@ -2999,6 +3551,9 @@
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_0.png",
       "icon.overlay": "icon_30_464.png",
+      "affects.GUIDs": [
+        10024
+      ],
       "effect.ActiveEcoEffect.Value": -30,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-30%",
@@ -3017,6 +3572,9 @@
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_0.png",
       "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10024
+      ],
       "effect.ActiveEcoEffect.Value": -40,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-40%",
@@ -3035,6 +3593,9 @@
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_0.png",
       "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10024
+      ],
       "effect.ActiveEcoEffect.Value": -50,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-50%",
@@ -3052,7 +3613,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_132.png",
-      "icon.overlay": "icon_30_477.png"
+      "icon.overlay": "icon_30_477.png",
+      "affects.GUIDs": [
+        10102
+      ]
     },
     {
       "GUID": 61360,
@@ -3064,7 +3628,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_132.png",
-      "icon.overlay": "icon_30_466.png"
+      "icon.overlay": "icon_30_466.png",
+      "affects.GUIDs": [
+        10102
+      ]
     },
     {
       "GUID": 61361,
@@ -3076,7 +3643,10 @@
       "ItemQuality": "B",
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_132.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10102
+      ]
     },
     {
       "GUID": 61362,
@@ -3088,7 +3658,10 @@
       "ItemQuality": null,
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_132.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "affects.GUIDs": [
+        10102
+      ]
     },
     {
       "GUID": 61220,

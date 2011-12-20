@@ -161,6 +161,11 @@ def _get_research_project_dict(project_asset, eng, category, subcategory=None):
     if 'icon.overlay' in __guid_to_icon[GUID]:
         project['icon.overlay'] = __guid_to_icon[GUID]['icon.overlay']
     
+    # affects.GUIDs -------------------------------------------------------
+    affected_GUIDs = project_asset.findall('Values/Upgrade/TargetGUIDs/Item/UpgradeGUID')
+    if len(affected_GUIDs) > 0:
+        project['affects.GUIDs'] = [int(affected_GUID.text) for affected_GUID in affected_GUIDs]
+    
     # effect.ActiveEcoEffect.* ---------------------------------------------
     add_effect(project, project_asset.find('Values/MaintenanceCostUpgrade/ActiveEcoEffect'))
     # effect.InActiveEcoEffect.* ---------------------------------------------

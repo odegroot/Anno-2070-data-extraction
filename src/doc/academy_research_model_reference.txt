@@ -24,6 +24,10 @@ icon.base:
 icon.overlay (optional):
     Filename of the overlay icon of the research project.
     
+affects.GUIDs (optional):
+    A list of the GUIDs buildings/units/etc. affected by this technology.
+    This property is either absent or has at least one GUID. It is never empty.  
+    
 effect.ActiveEcoEffect.Value (int):
 effect.ActiveEcoEffect.Percental (bool):
 effect.ActiveEcoEffect.text (redundant, derived from Value + Percental):
