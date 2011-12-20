@@ -18,6 +18,9 @@
       "icon.overlay": "icon_30_463.png",
       "affects.GUIDs": [
         10025
+      ],
+      "affects.engs": [
+        "Coal power station"
       ]
     },
     {
@@ -33,6 +36,9 @@
       "icon.overlay": "icon_30_464.png",
       "affects.GUIDs": [
         10025
+      ],
+      "affects.engs": [
+        "Coal power station"
       ],
       "effect.ActiveEcoEffect.Value": -30,
       "effect.ActiveEcoEffect.Percental": true,
@@ -55,6 +61,9 @@
       "affects.GUIDs": [
         10025
       ],
+      "affects.engs": [
+        "Coal power station"
+      ],
       "effect.ActiveEcoEffect.Value": -40,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-40%",
@@ -75,6 +84,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         10025
+      ],
+      "affects.engs": [
+        "Coal power station"
       ],
       "effect.ActiveEcoEffect.Value": -50,
       "effect.ActiveEcoEffect.Percental": true,
@@ -108,6 +120,9 @@
       "icon.overlay": "icon_30_463.png",
       "affects.GUIDs": [
         10087
+      ],
+      "affects.engs": [
+        "Hydroelectric power plant"
       ]
     },
     {
@@ -123,6 +138,9 @@
       "icon.overlay": "icon_30_464.png",
       "affects.GUIDs": [
         10087
+      ],
+      "affects.engs": [
+        "Hydroelectric power plant"
       ],
       "effect.ActiveEcoEffect.Value": -30,
       "effect.ActiveEcoEffect.Percental": true,
@@ -145,6 +163,9 @@
       "affects.GUIDs": [
         10087
       ],
+      "affects.engs": [
+        "Hydroelectric power plant"
+      ],
       "effect.ActiveEcoEffect.Value": -40,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-40%",
@@ -166,6 +187,9 @@
       "affects.GUIDs": [
         10087
       ],
+      "affects.engs": [
+        "Hydroelectric power plant"
+      ],
       "effect.ActiveEcoEffect.Value": -50,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-50%",
@@ -186,6 +210,9 @@
       "icon.overlay": "icon_30_466.png",
       "affects.GUIDs": [
         10050
+      ],
+      "affects.engs": [
+        "Nuclear power plant"
       ]
     },
     {
@@ -201,6 +228,9 @@
       "icon.overlay": "icon_30_467.png",
       "affects.GUIDs": [
         10050
+      ],
+      "affects.engs": [
+        "Nuclear power plant"
       ]
     },
     {
@@ -216,6 +246,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         10050
+      ],
+      "affects.engs": [
+        "Nuclear power plant"
       ]
     },
     {
@@ -231,6 +264,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         10050
+      ],
+      "affects.engs": [
+        "Nuclear power plant"
       ]
     },
     {
@@ -246,6 +282,9 @@
       "icon.overlay": "icon_30_468.png",
       "affects.GUIDs": [
         10029
+      ],
+      "affects.engs": [
+        "Wind park"
       ]
     },
     {
@@ -261,6 +300,9 @@
       "icon.overlay": "icon_30_466.png",
       "affects.GUIDs": [
         10029
+      ],
+      "affects.engs": [
+        "Wind park"
       ]
     },
     {
@@ -276,6 +318,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         10029
+      ],
+      "affects.engs": [
+        "Wind park"
       ]
     },
     {
@@ -291,6 +336,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         10029
+      ],
+      "affects.engs": [
+        "Wind park"
       ]
     },
     {
@@ -306,6 +354,9 @@
       "icon.overlay": "icon_30_466.png",
       "affects.GUIDs": [
         10082
+      ],
+      "affects.engs": [
+        "Offshore wind park"
       ]
     },
     {
@@ -321,6 +372,9 @@
       "icon.overlay": "icon_30_468.png",
       "affects.GUIDs": [
         10082
+      ],
+      "affects.engs": [
+        "Offshore wind park"
       ]
     },
     {
@@ -336,6 +390,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         10082
+      ],
+      "affects.engs": [
+        "Offshore wind park"
       ]
     },
     {
@@ -351,6 +408,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         10082
+      ],
+      "affects.engs": [
+        "Offshore wind park"
       ]
     },
     {
@@ -366,6 +426,9 @@
       "icon.overlay": "icon_30_466.png",
       "affects.GUIDs": [
         10173
+      ],
+      "affects.engs": [
+        "Thermal power station"
       ]
     },
     {
@@ -381,6 +444,9 @@
       "icon.overlay": "icon_30_463.png",
       "affects.GUIDs": [
         10173
+      ],
+      "affects.engs": [
+        "Thermal power station"
       ]
     },
     {
@@ -396,6 +462,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         10173
+      ],
+      "affects.engs": [
+        "Thermal power station"
       ]
     },
     {
@@ -411,6 +480,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         10173
+      ],
+      "affects.engs": [
+        "Thermal power station"
       ]
     },
     {
@@ -426,6 +498,9 @@
       "icon.overlay": "icon_30_466.png",
       "affects.GUIDs": [
         10070
+      ],
+      "affects.engs": [
+        "Solar tower generator"
       ]
     },
     {
@@ -441,6 +516,9 @@
       "icon.overlay": "icon_30_463.png",
       "affects.GUIDs": [
         10070
+      ],
+      "affects.engs": [
+        "Solar tower generator"
       ]
     },
     {
@@ -456,6 +534,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         10070
+      ],
+      "affects.engs": [
+        "Solar tower generator"
       ]
     },
     {
@@ -471,6 +552,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         10070
+      ],
+      "affects.engs": [
+        "Solar tower generator"
       ]
     },
     {
@@ -486,6 +570,9 @@
       "icon.overlay": "icon_30_464.png",
       "affects.GUIDs": [
         10170
+      ],
+      "affects.engs": [
+        "Waste compactor"
       ],
       "effect.ActiveEcoEffect.Value": 20,
       "effect.ActiveEcoEffect.Percental": true,
@@ -508,6 +595,9 @@
       "affects.GUIDs": [
         10170
       ],
+      "affects.engs": [
+        "Waste compactor"
+      ],
       "effect.ActiveEnergyCost.Value": -30,
       "effect.ActiveEnergyCost.Percental": true,
       "effect.ActiveEnergyCost.text": "-30%",
@@ -528,6 +618,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         10170
+      ],
+      "affects.engs": [
+        "Waste compactor"
       ],
       "effect.ActiveEcoEffect.Value": 30,
       "effect.ActiveEcoEffect.Percental": true,
@@ -556,6 +649,9 @@
       "affects.GUIDs": [
         10170
       ],
+      "affects.engs": [
+        "Waste compactor"
+      ],
       "effect.ActiveEcoEffect.Value": 40,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "+40%",
@@ -582,6 +678,9 @@
       "icon.overlay": "icon_30_466.png",
       "affects.GUIDs": [
         10169
+      ],
+      "affects.engs": [
+        "CO2 reservoir"
       ]
     },
     {
@@ -597,6 +696,9 @@
       "icon.overlay": "icon_30_469.png",
       "affects.GUIDs": [
         10169
+      ],
+      "affects.engs": [
+        "CO2 reservoir"
       ],
       "effect.ActiveEnergyCost.Value": -30,
       "effect.ActiveEnergyCost.Percental": true,
@@ -619,6 +721,9 @@
       "affects.GUIDs": [
         10169
       ],
+      "affects.engs": [
+        "CO2 reservoir"
+      ],
       "effect.ActiveEnergyCost.Value": -40,
       "effect.ActiveEnergyCost.Percental": true,
       "effect.ActiveEnergyCost.text": "-40%",
@@ -640,6 +745,9 @@
       "affects.GUIDs": [
         10169
       ],
+      "affects.engs": [
+        "CO2 reservoir"
+      ],
       "effect.ActiveEnergyCost.Value": -50,
       "effect.ActiveEnergyCost.Percental": true,
       "effect.ActiveEnergyCost.text": "-50%",
@@ -660,6 +768,9 @@
       "icon.overlay": "icon_30_468.png",
       "affects.GUIDs": [
         10193
+      ],
+      "affects.engs": [
+        "Weather control station"
       ]
     },
     {
@@ -675,6 +786,9 @@
       "icon.overlay": "icon_30_466.png",
       "affects.GUIDs": [
         10193
+      ],
+      "affects.engs": [
+        "Weather control station"
       ]
     },
     {
@@ -690,6 +804,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         10193
+      ],
+      "affects.engs": [
+        "Weather control station"
       ]
     },
     {
@@ -705,6 +822,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         10193
+      ],
+      "affects.engs": [
+        "Weather control station"
       ]
     },
     {
@@ -720,6 +840,9 @@
       "icon.overlay": "icon_30_466.png",
       "affects.GUIDs": [
         10192
+      ],
+      "affects.engs": [
+        "Monitoring station"
       ]
     },
     {
@@ -735,6 +858,9 @@
       "icon.overlay": "icon_30_469.png",
       "affects.GUIDs": [
         10192
+      ],
+      "affects.engs": [
+        "Monitoring station"
       ],
       "effect.ActiveEnergyCost.Value": -30,
       "effect.ActiveEnergyCost.Percental": true,
@@ -757,6 +883,9 @@
       "affects.GUIDs": [
         10192
       ],
+      "affects.engs": [
+        "Monitoring station"
+      ],
       "effect.ActiveEnergyCost.Value": -40,
       "effect.ActiveEnergyCost.Percental": true,
       "effect.ActiveEnergyCost.text": "-40%",
@@ -777,6 +906,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         10192
+      ],
+      "affects.engs": [
+        "Monitoring station"
       ],
       "effect.ActiveEnergyCost.Value": -50,
       "effect.ActiveEnergyCost.Percental": true,
@@ -799,6 +931,9 @@
       "affects.GUIDs": [
         10061
       ],
+      "affects.engs": [
+        "Ozone Maker station"
+      ],
       "effect.ActiveEnergyCost.Value": -30,
       "effect.ActiveEnergyCost.Percental": true,
       "effect.ActiveEnergyCost.text": "-30%",
@@ -819,6 +954,9 @@
       "icon.overlay": "icon_30_468.png",
       "affects.GUIDs": [
         10061
+      ],
+      "affects.engs": [
+        "Ozone Maker station"
       ]
     },
     {
@@ -834,6 +972,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         10061
+      ],
+      "affects.engs": [
+        "Ozone Maker station"
       ],
       "effect.ActiveEnergyCost.Value": -40,
       "effect.ActiveEnergyCost.Percental": true,
@@ -856,6 +997,9 @@
       "affects.GUIDs": [
         10061
       ],
+      "affects.engs": [
+        "Ozone Maker station"
+      ],
       "effect.ActiveEnergyCost.Value": -50,
       "effect.ActiveEnergyCost.Percental": true,
       "effect.ActiveEnergyCost.text": "-50%",
@@ -876,6 +1020,9 @@
       "icon.overlay": "icon_30_466.png",
       "affects.GUIDs": [
         10123
+      ],
+      "affects.engs": [
+        "River sewage treatment plant"
       ]
     },
     {
@@ -891,6 +1038,9 @@
       "icon.overlay": "icon_30_469.png",
       "affects.GUIDs": [
         10123
+      ],
+      "affects.engs": [
+        "River sewage treatment plant"
       ],
       "effect.ActiveEnergyCost.Value": -30,
       "effect.ActiveEnergyCost.Percental": true,
@@ -913,6 +1063,9 @@
       "affects.GUIDs": [
         10123
       ],
+      "affects.engs": [
+        "River sewage treatment plant"
+      ],
       "effect.ActiveEnergyCost.Value": -40,
       "effect.ActiveEnergyCost.Percental": true,
       "effect.ActiveEnergyCost.text": "-40%",
@@ -934,6 +1087,9 @@
       "affects.GUIDs": [
         10123
       ],
+      "affects.engs": [
+        "River sewage treatment plant"
+      ],
       "effect.ActiveEnergyCost.Value": -50,
       "effect.ActiveEnergyCost.Percental": true,
       "effect.ActiveEnergyCost.text": "-50%",
@@ -954,6 +1110,9 @@
       "icon.overlay": "icon_30_468.png",
       "affects.GUIDs": [
         10267
+      ],
+      "affects.engs": [
+        "Deacidification station"
       ]
     },
     {
@@ -969,6 +1128,9 @@
       "icon.overlay": "icon_30_469.png",
       "affects.GUIDs": [
         10267
+      ],
+      "affects.engs": [
+        "Deacidification station"
       ],
       "effect.ActiveEnergyCost.Value": -20,
       "effect.ActiveEnergyCost.Percental": true,
@@ -991,6 +1153,9 @@
       "affects.GUIDs": [
         10267
       ],
+      "affects.engs": [
+        "Deacidification station"
+      ],
       "effect.ActiveEnergyCost.Value": -30,
       "effect.ActiveEnergyCost.Percental": true,
       "effect.ActiveEnergyCost.text": "-30%",
@@ -1012,6 +1177,9 @@
       "affects.GUIDs": [
         10267
       ],
+      "affects.engs": [
+        "Deacidification station"
+      ],
       "effect.ActiveEnergyCost.Value": -40,
       "effect.ActiveEnergyCost.Percental": true,
       "effect.ActiveEnergyCost.text": "-40%",
@@ -1032,6 +1200,9 @@
       "icon.overlay": "icon_30_470.png",
       "affects.GUIDs": [
         20023
+      ],
+      "affects.engs": [
+        "Commando Ship"
       ]
     },
     {
@@ -1047,6 +1218,9 @@
       "icon.overlay": "icon_30_471.png",
       "affects.GUIDs": [
         20023
+      ],
+      "affects.engs": [
+        "Commando Ship"
       ]
     },
     {
@@ -1062,6 +1236,9 @@
       "icon.overlay": "icon_30_472.png",
       "affects.GUIDs": [
         20023
+      ],
+      "affects.engs": [
+        "Commando Ship"
       ]
     },
     {
@@ -1077,6 +1254,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         20023
+      ],
+      "affects.engs": [
+        "Commando Ship"
       ]
     },
     {
@@ -1092,6 +1272,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         20023
+      ],
+      "affects.engs": [
+        "Commando Ship"
       ]
     },
     {
@@ -1107,6 +1290,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         20023
+      ],
+      "affects.engs": [
+        "Commando Ship"
       ]
     },
     {
@@ -1122,6 +1308,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         20023
+      ],
+      "affects.engs": [
+        "Commando Ship"
       ]
     },
     {
@@ -1137,6 +1326,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         20023
+      ],
+      "affects.engs": [
+        "Commando Ship"
       ]
     },
     {
@@ -1152,6 +1344,9 @@
       "icon.overlay": "icon_30_470.png",
       "affects.GUIDs": [
         20028
+      ],
+      "affects.engs": [
+        "Hovercraft"
       ]
     },
     {
@@ -1167,6 +1362,9 @@
       "icon.overlay": "icon_30_471.png",
       "affects.GUIDs": [
         20028
+      ],
+      "affects.engs": [
+        "Hovercraft"
       ]
     },
     {
@@ -1182,6 +1380,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         20028
+      ],
+      "affects.engs": [
+        "Hovercraft"
       ]
     },
     {
@@ -1197,6 +1398,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         20028
+      ],
+      "affects.engs": [
+        "Hovercraft"
       ]
     },
     {
@@ -1212,6 +1416,9 @@
       "icon.overlay": "icon_30_470.png",
       "affects.GUIDs": [
         20061
+      ],
+      "affects.engs": [
+        "Colossus"
       ]
     },
     {
@@ -1227,6 +1434,9 @@
       "icon.overlay": "icon_30_471.png",
       "affects.GUIDs": [
         20061
+      ],
+      "affects.engs": [
+        "Colossus"
       ]
     },
     {
@@ -1242,6 +1452,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         20061
+      ],
+      "affects.engs": [
+        "Colossus"
       ]
     },
     {
@@ -1257,6 +1470,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         20061
+      ],
+      "affects.engs": [
+        "Colossus"
       ]
     },
     {
@@ -1272,6 +1488,9 @@
       "icon.overlay": "icon_30_470.png",
       "affects.GUIDs": [
         20069
+      ],
+      "affects.engs": [
+        "Freight ship"
       ]
     },
     {
@@ -1287,6 +1506,9 @@
       "icon.overlay": "icon_30_472.png",
       "affects.GUIDs": [
         20069
+      ],
+      "affects.engs": [
+        "Freight ship"
       ]
     },
     {
@@ -1302,6 +1524,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         20069
+      ],
+      "affects.engs": [
+        "Freight ship"
       ]
     },
     {
@@ -1317,6 +1542,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         20069
+      ],
+      "affects.engs": [
+        "Freight ship"
       ]
     },
     {
@@ -1332,6 +1560,9 @@
       "icon.overlay": "icon_30_470.png",
       "affects.GUIDs": [
         20067
+      ],
+      "affects.engs": [
+        "Cargo liner"
       ]
     },
     {
@@ -1347,6 +1578,9 @@
       "icon.overlay": "icon_30_472.png",
       "affects.GUIDs": [
         20067
+      ],
+      "affects.engs": [
+        "Cargo liner"
       ]
     },
     {
@@ -1362,6 +1596,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         20067
+      ],
+      "affects.engs": [
+        "Cargo liner"
       ]
     },
     {
@@ -1377,6 +1614,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         20067
+      ],
+      "affects.engs": [
+        "Cargo liner"
       ]
     },
     {
@@ -1392,6 +1632,9 @@
       "icon.overlay": "icon_30_470.png",
       "affects.GUIDs": [
         20068
+      ],
+      "affects.engs": [
+        "Container ship"
       ]
     },
     {
@@ -1407,6 +1650,9 @@
       "icon.overlay": "icon_30_472.png",
       "affects.GUIDs": [
         20068
+      ],
+      "affects.engs": [
+        "Container ship"
       ]
     },
     {
@@ -1422,6 +1668,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         20068
+      ],
+      "affects.engs": [
+        "Container ship"
       ]
     },
     {
@@ -1437,6 +1686,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         20068
+      ],
+      "affects.engs": [
+        "Container ship"
       ]
     },
     {
@@ -1452,6 +1704,9 @@
       "icon.overlay": "icon_30_470.png",
       "affects.GUIDs": [
         20000
+      ],
+      "affects.engs": [
+        "T 38 Ocean Glider"
       ]
     },
     {
@@ -1467,6 +1722,9 @@
       "icon.overlay": "icon_30_472.png",
       "affects.GUIDs": [
         20000
+      ],
+      "affects.engs": [
+        "T 38 Ocean Glider"
       ]
     },
     {
@@ -1482,6 +1740,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         20000
+      ],
+      "affects.engs": [
+        "T 38 Ocean Glider"
       ]
     },
     {
@@ -1497,6 +1758,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         20000
+      ],
+      "affects.engs": [
+        "T 38 Ocean Glider"
       ]
     },
     {
@@ -1512,6 +1776,9 @@
       "icon.overlay": "icon_30_470.png",
       "affects.GUIDs": [
         20015
+      ],
+      "affects.engs": [
+        "Deep Sea Hunter"
       ]
     },
     {
@@ -1527,6 +1794,9 @@
       "icon.overlay": "icon_30_471.png",
       "affects.GUIDs": [
         20015
+      ],
+      "affects.engs": [
+        "Deep Sea Hunter"
       ]
     },
     {
@@ -1542,6 +1812,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         20015
+      ],
+      "affects.engs": [
+        "Deep Sea Hunter"
       ]
     },
     {
@@ -1557,6 +1830,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         20015
+      ],
+      "affects.engs": [
+        "Deep Sea Hunter"
       ]
     },
     {
@@ -1572,6 +1848,9 @@
       "icon.overlay": "icon_30_473.png",
       "affects.GUIDs": [
         20014
+      ],
+      "affects.engs": [
+        "Chopper"
       ]
     },
     {
@@ -1587,6 +1866,9 @@
       "icon.overlay": "icon_30_471.png",
       "affects.GUIDs": [
         20014
+      ],
+      "affects.engs": [
+        "Chopper"
       ]
     },
     {
@@ -1602,6 +1884,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         20014
+      ],
+      "affects.engs": [
+        "Chopper"
       ]
     },
     {
@@ -1617,6 +1902,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         20014
+      ],
+      "affects.engs": [
+        "Chopper"
       ]
     },
     {
@@ -1632,6 +1920,9 @@
       "icon.overlay": "icon_30_473.png",
       "affects.GUIDs": [
         20016
+      ],
+      "affects.engs": [
+        "Hawk"
       ]
     },
     {
@@ -1647,6 +1938,9 @@
       "icon.overlay": "icon_30_471.png",
       "affects.GUIDs": [
         20016
+      ],
+      "affects.engs": [
+        "Hawk"
       ]
     },
     {
@@ -1662,6 +1956,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         20016
+      ],
+      "affects.engs": [
+        "Hawk"
       ]
     },
     {
@@ -1677,6 +1974,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         20016
+      ],
+      "affects.engs": [
+        "Hawk"
       ]
     },
     {
@@ -1692,6 +1992,9 @@
       "icon.overlay": "icon_30_473.png",
       "affects.GUIDs": [
         20027
+      ],
+      "affects.engs": [
+        "FireBird"
       ]
     },
     {
@@ -1707,6 +2010,9 @@
       "icon.overlay": "icon_30_471.png",
       "affects.GUIDs": [
         20027
+      ],
+      "affects.engs": [
+        "FireBird"
       ]
     },
     {
@@ -1722,6 +2028,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         20027
+      ],
+      "affects.engs": [
+        "FireBird"
       ]
     },
     {
@@ -1737,6 +2046,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         20027
+      ],
+      "affects.engs": [
+        "FireBird"
       ]
     },
     {
@@ -1752,6 +2064,9 @@
       "icon.overlay": "icon_30_470.png",
       "affects.GUIDs": [
         20117
+      ],
+      "affects.engs": [
+        "Viper"
       ]
     },
     {
@@ -1767,6 +2082,9 @@
       "icon.overlay": "icon_30_471.png",
       "affects.GUIDs": [
         20117
+      ],
+      "affects.engs": [
+        "Viper"
       ]
     },
     {
@@ -1782,6 +2100,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         20117
+      ],
+      "affects.engs": [
+        "Viper"
       ]
     },
     {
@@ -1797,6 +2118,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         20117
+      ],
+      "affects.engs": [
+        "Viper"
       ]
     },
     {
@@ -2251,6 +2575,9 @@
       "icon.overlay": "icon_30_467.png",
       "affects.GUIDs": [
         10077
+      ],
+      "affects.engs": [
+        "Laboratory"
       ]
     },
     {
@@ -2266,6 +2593,9 @@
       "icon.overlay": "icon_30_467.png",
       "affects.GUIDs": [
         10077
+      ],
+      "affects.engs": [
+        "Laboratory"
       ]
     },
     {
@@ -2281,6 +2611,9 @@
       "icon.overlay": "icon_30_467.png",
       "affects.GUIDs": [
         10077
+      ],
+      "affects.engs": [
+        "Laboratory"
       ]
     },
     {
@@ -2395,6 +2728,12 @@
         10125,
         10101,
         10124
+      ],
+      "affects.engs": [
+        "Flak",
+        "Offshore defense",
+        "Harbor defense turret",
+        "Mobile Harbor defenses"
       ]
     },
     {
@@ -2413,6 +2752,12 @@
         10125,
         10101,
         10124
+      ],
+      "affects.engs": [
+        "Flak",
+        "Offshore defense",
+        "Harbor defense turret",
+        "Mobile Harbor defenses"
       ]
     },
     {
@@ -2431,6 +2776,12 @@
         10125,
         10101,
         10124
+      ],
+      "affects.engs": [
+        "Flak",
+        "Offshore defense",
+        "Harbor defense turret",
+        "Mobile Harbor defenses"
       ]
     },
     {
@@ -2449,6 +2800,12 @@
         10125,
         10101,
         10124
+      ],
+      "affects.engs": [
+        "Flak",
+        "Offshore defense",
+        "Harbor defense turret",
+        "Mobile Harbor defenses"
       ]
     },
     {
@@ -2467,6 +2824,12 @@
         10125,
         10101,
         10124
+      ],
+      "affects.engs": [
+        "Flak",
+        "Offshore defense",
+        "Harbor defense turret",
+        "Mobile Harbor defenses"
       ]
     },
     {
@@ -2485,6 +2848,12 @@
         10125,
         10101,
         10124
+      ],
+      "affects.engs": [
+        "Flak",
+        "Offshore defense",
+        "Harbor defense turret",
+        "Mobile Harbor defenses"
       ]
     },
     {
@@ -2503,6 +2872,12 @@
         10125,
         10101,
         10124
+      ],
+      "affects.engs": [
+        "Flak",
+        "Offshore defense",
+        "Harbor defense turret",
+        "Mobile Harbor defenses"
       ]
     },
     {
@@ -2521,6 +2896,12 @@
         10125,
         10101,
         10124
+      ],
+      "affects.engs": [
+        "Flak",
+        "Offshore defense",
+        "Harbor defense turret",
+        "Mobile Harbor defenses"
       ]
     },
     {
@@ -2536,6 +2917,9 @@
       "icon.overlay": "icon_30_468.png",
       "affects.GUIDs": [
         10130
+      ],
+      "affects.engs": [
+        "Fire station"
       ]
     },
     {
@@ -2551,6 +2935,9 @@
       "icon.overlay": "icon_30_463.png",
       "affects.GUIDs": [
         10130
+      ],
+      "affects.engs": [
+        "Fire station"
       ]
     },
     {
@@ -2566,6 +2953,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         10130
+      ],
+      "affects.engs": [
+        "Fire station"
       ]
     },
     {
@@ -2581,6 +2971,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         10130
+      ],
+      "affects.engs": [
+        "Fire station"
       ]
     },
     {
@@ -2596,6 +2989,9 @@
       "icon.overlay": "icon_30_468.png",
       "affects.GUIDs": [
         10128
+      ],
+      "affects.engs": [
+        "Hospital"
       ]
     },
     {
@@ -2611,6 +3007,9 @@
       "icon.overlay": "icon_30_463.png",
       "affects.GUIDs": [
         10128
+      ],
+      "affects.engs": [
+        "Hospital"
       ]
     },
     {
@@ -2626,6 +3025,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         10128
+      ],
+      "affects.engs": [
+        "Hospital"
       ]
     },
     {
@@ -2641,6 +3043,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         10128
+      ],
+      "affects.engs": [
+        "Hospital"
       ]
     },
     {
@@ -2656,6 +3061,9 @@
       "icon.overlay": "icon_30_468.png",
       "affects.GUIDs": [
         10129
+      ],
+      "affects.engs": [
+        "Police station"
       ]
     },
     {
@@ -2671,6 +3079,9 @@
       "icon.overlay": "icon_30_463.png",
       "affects.GUIDs": [
         10129
+      ],
+      "affects.engs": [
+        "Police station"
       ]
     },
     {
@@ -2686,6 +3097,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         10129
+      ],
+      "affects.engs": [
+        "Police station"
       ]
     },
     {
@@ -2701,6 +3115,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         10129
+      ],
+      "affects.engs": [
+        "Police station"
       ]
     },
     {
@@ -2716,6 +3133,9 @@
       "icon.overlay": "icon_30_477.png",
       "affects.GUIDs": [
         10261
+      ],
+      "affects.engs": [
+        "Basalt crusher"
       ]
     },
     {
@@ -2731,6 +3151,9 @@
       "icon.overlay": "icon_30_466.png",
       "affects.GUIDs": [
         10261
+      ],
+      "affects.engs": [
+        "Basalt crusher"
       ]
     },
     {
@@ -2746,6 +3169,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         10261
+      ],
+      "affects.engs": [
+        "Basalt crusher"
       ]
     },
     {
@@ -2761,6 +3187,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         10261
+      ],
+      "affects.engs": [
+        "Basalt crusher"
       ]
     },
     {
@@ -2776,6 +3205,9 @@
       "icon.overlay": "icon_30_477.png",
       "affects.GUIDs": [
         10098
+      ],
+      "affects.engs": [
+        "Coal mine"
       ]
     },
     {
@@ -2791,6 +3223,9 @@
       "icon.overlay": "icon_30_464.png",
       "affects.GUIDs": [
         10098
+      ],
+      "affects.engs": [
+        "Coal mine"
       ],
       "effect.ActiveEcoEffect.Value": -50,
       "effect.ActiveEcoEffect.Percental": true,
@@ -2813,6 +3248,9 @@
       "affects.GUIDs": [
         10098
       ],
+      "affects.engs": [
+        "Coal mine"
+      ],
       "effect.ActiveEcoEffect.Value": -100,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-100%",
@@ -2834,6 +3272,9 @@
       "affects.GUIDs": [
         10098
       ],
+      "affects.engs": [
+        "Coal mine"
+      ],
       "effect.ActiveEcoEffect.Value": -100,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-100%",
@@ -2854,6 +3295,9 @@
       "icon.overlay": "icon_30_477.png",
       "affects.GUIDs": [
         10054
+      ],
+      "affects.engs": [
+        "Iron ore mine"
       ]
     },
     {
@@ -2869,6 +3313,9 @@
       "icon.overlay": "icon_30_464.png",
       "affects.GUIDs": [
         10054
+      ],
+      "affects.engs": [
+        "Iron ore mine"
       ],
       "effect.ActiveEcoEffect.Value": -50,
       "effect.ActiveEcoEffect.Percental": true,
@@ -2891,6 +3338,9 @@
       "affects.GUIDs": [
         10054
       ],
+      "affects.engs": [
+        "Iron ore mine"
+      ],
       "effect.ActiveEcoEffect.Value": -100,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-100%",
@@ -2912,6 +3362,9 @@
       "affects.GUIDs": [
         10054
       ],
+      "affects.engs": [
+        "Iron ore mine"
+      ],
       "effect.ActiveEcoEffect.Value": -100,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-100%",
@@ -2932,6 +3385,9 @@
       "icon.overlay": "icon_30_477.png",
       "affects.GUIDs": [
         10200
+      ],
+      "affects.engs": [
+        "Copper mine"
       ]
     },
     {
@@ -2947,6 +3403,9 @@
       "icon.overlay": "icon_30_464.png",
       "affects.GUIDs": [
         10200
+      ],
+      "affects.engs": [
+        "Copper mine"
       ],
       "effect.ActiveEcoEffect.Value": -50,
       "effect.ActiveEcoEffect.Percental": true,
@@ -2969,6 +3428,9 @@
       "affects.GUIDs": [
         10200
       ],
+      "affects.engs": [
+        "Copper mine"
+      ],
       "effect.ActiveEcoEffect.Value": -100,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-100%",
@@ -2990,6 +3452,9 @@
       "affects.GUIDs": [
         10200
       ],
+      "affects.engs": [
+        "Copper mine"
+      ],
       "effect.ActiveEcoEffect.Value": -100,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-100%",
@@ -3010,6 +3475,9 @@
       "icon.overlay": "icon_30_477.png",
       "affects.GUIDs": [
         10083
+      ],
+      "affects.engs": [
+        "Limestone quarry"
       ]
     },
     {
@@ -3025,6 +3493,9 @@
       "icon.overlay": "icon_30_464.png",
       "affects.GUIDs": [
         10083
+      ],
+      "affects.engs": [
+        "Limestone quarry"
       ],
       "effect.ActiveEcoEffect.Value": -50,
       "effect.ActiveEcoEffect.Percental": true,
@@ -3047,6 +3518,9 @@
       "affects.GUIDs": [
         10083
       ],
+      "affects.engs": [
+        "Limestone quarry"
+      ],
       "effect.ActiveEcoEffect.Value": -100,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-100%",
@@ -3068,6 +3542,9 @@
       "affects.GUIDs": [
         10083
       ],
+      "affects.engs": [
+        "Limestone quarry"
+      ],
       "effect.ActiveEcoEffect.Value": -100,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-100%",
@@ -3088,6 +3565,9 @@
       "icon.overlay": "icon_30_477.png",
       "affects.GUIDs": [
         10052
+      ],
+      "affects.engs": [
+        "Uranium mine"
       ]
     },
     {
@@ -3103,6 +3583,9 @@
       "icon.overlay": "icon_30_464.png",
       "affects.GUIDs": [
         10052
+      ],
+      "affects.engs": [
+        "Uranium mine"
       ],
       "effect.ActiveEcoEffect.Value": -30,
       "effect.ActiveEcoEffect.Percental": true,
@@ -3125,6 +3608,9 @@
       "affects.GUIDs": [
         10052
       ],
+      "affects.engs": [
+        "Uranium mine"
+      ],
       "effect.ActiveEcoEffect.Value": -50,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-50%",
@@ -3146,6 +3632,9 @@
       "affects.GUIDs": [
         10052
       ],
+      "affects.engs": [
+        "Uranium mine"
+      ],
       "effect.ActiveEcoEffect.Value": -70,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-70%",
@@ -3166,6 +3655,9 @@
       "icon.overlay": "icon_30_477.png",
       "affects.GUIDs": [
         10149
+      ],
+      "affects.engs": [
+        "Oil driller"
       ]
     },
     {
@@ -3181,6 +3673,9 @@
       "icon.overlay": "icon_30_464.png",
       "affects.GUIDs": [
         10149
+      ],
+      "affects.engs": [
+        "Oil driller"
       ],
       "effect.ActiveEcoEffect.Value": -30,
       "effect.ActiveEcoEffect.Percental": true,
@@ -3203,6 +3698,9 @@
       "affects.GUIDs": [
         10149
       ],
+      "affects.engs": [
+        "Oil driller"
+      ],
       "effect.ActiveEcoEffect.Value": -40,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-40%",
@@ -3224,6 +3722,9 @@
       "affects.GUIDs": [
         10149
       ],
+      "affects.engs": [
+        "Oil driller"
+      ],
       "effect.ActiveEcoEffect.Value": -50,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-50%",
@@ -3244,6 +3745,9 @@
       "icon.overlay": "icon_30_477.png",
       "affects.GUIDs": [
         10075
+      ],
+      "affects.engs": [
+        "Oil rig"
       ]
     },
     {
@@ -3259,6 +3763,9 @@
       "icon.overlay": "icon_30_467.png",
       "affects.GUIDs": [
         10075
+      ],
+      "affects.engs": [
+        "Oil rig"
       ]
     },
     {
@@ -3274,6 +3781,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         10075
+      ],
+      "affects.engs": [
+        "Oil rig"
       ]
     },
     {
@@ -3289,6 +3799,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         10075
+      ],
+      "affects.engs": [
+        "Oil rig"
       ]
     },
     {
@@ -3304,6 +3817,9 @@
       "icon.overlay": "icon_30_477.png",
       "affects.GUIDs": [
         10080
+      ],
+      "affects.engs": [
+        "Sand extractor"
       ]
     },
     {
@@ -3319,6 +3835,9 @@
       "icon.overlay": "icon_30_464.png",
       "affects.GUIDs": [
         10080
+      ],
+      "affects.engs": [
+        "Sand extractor"
       ],
       "effect.ActiveEcoEffect.Value": -30,
       "effect.ActiveEcoEffect.Percental": true,
@@ -3341,6 +3860,9 @@
       "affects.GUIDs": [
         10080
       ],
+      "affects.engs": [
+        "Sand extractor"
+      ],
       "effect.ActiveEcoEffect.Value": -40,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-40%",
@@ -3362,6 +3884,9 @@
       "affects.GUIDs": [
         10080
       ],
+      "affects.engs": [
+        "Sand extractor"
+      ],
       "effect.ActiveEcoEffect.Value": -50,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-50%",
@@ -3382,6 +3907,9 @@
       "icon.overlay": "icon_30_477.png",
       "affects.GUIDs": [
         10161
+      ],
+      "affects.engs": [
+        "Gold refinery"
       ]
     },
     {
@@ -3397,6 +3925,9 @@
       "icon.overlay": "icon_30_464.png",
       "affects.GUIDs": [
         10161
+      ],
+      "affects.engs": [
+        "Gold refinery"
       ],
       "effect.ActiveEcoEffect.Value": -30,
       "effect.ActiveEcoEffect.Percental": true,
@@ -3419,6 +3950,9 @@
       "affects.GUIDs": [
         10161
       ],
+      "affects.engs": [
+        "Gold refinery"
+      ],
       "effect.ActiveEcoEffect.Value": -40,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-40%",
@@ -3440,6 +3974,9 @@
       "affects.GUIDs": [
         10161
       ],
+      "affects.engs": [
+        "Gold refinery"
+      ],
       "effect.ActiveEcoEffect.Value": -50,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-50%",
@@ -3460,6 +3997,9 @@
       "icon.overlay": "icon_30_477.png",
       "affects.GUIDs": [
         10153
+      ],
+      "affects.engs": [
+        "Lobster farm"
       ]
     },
     {
@@ -3475,6 +4015,9 @@
       "icon.overlay": "icon_30_464.png",
       "affects.GUIDs": [
         10153
+      ],
+      "affects.engs": [
+        "Lobster farm"
       ],
       "effect.ActiveEcoEffect.Value": -40,
       "effect.ActiveEcoEffect.Percental": true,
@@ -3497,6 +4040,9 @@
       "affects.GUIDs": [
         10153
       ],
+      "affects.engs": [
+        "Lobster farm"
+      ],
       "effect.ActiveEcoEffect.Value": -70,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-70%",
@@ -3518,6 +4064,9 @@
       "affects.GUIDs": [
         10153
       ],
+      "affects.engs": [
+        "Lobster farm"
+      ],
       "effect.ActiveEcoEffect.Value": -100,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-100%",
@@ -3538,6 +4087,9 @@
       "icon.overlay": "icon_30_477.png",
       "affects.GUIDs": [
         10024
+      ],
+      "affects.engs": [
+        "Rotary excavator"
       ]
     },
     {
@@ -3553,6 +4105,9 @@
       "icon.overlay": "icon_30_464.png",
       "affects.GUIDs": [
         10024
+      ],
+      "affects.engs": [
+        "Rotary excavator"
       ],
       "effect.ActiveEcoEffect.Value": -30,
       "effect.ActiveEcoEffect.Percental": true,
@@ -3575,6 +4130,9 @@
       "affects.GUIDs": [
         10024
       ],
+      "affects.engs": [
+        "Rotary excavator"
+      ],
       "effect.ActiveEcoEffect.Value": -40,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-40%",
@@ -3596,6 +4154,9 @@
       "affects.GUIDs": [
         10024
       ],
+      "affects.engs": [
+        "Rotary excavator"
+      ],
       "effect.ActiveEcoEffect.Value": -50,
       "effect.ActiveEcoEffect.Percental": true,
       "effect.ActiveEcoEffect.text": "-50%",
@@ -3616,6 +4177,9 @@
       "icon.overlay": "icon_30_477.png",
       "affects.GUIDs": [
         10102
+      ],
+      "affects.engs": [
+        "Basalt\u00a0extraction"
       ]
     },
     {
@@ -3631,6 +4195,9 @@
       "icon.overlay": "icon_30_466.png",
       "affects.GUIDs": [
         10102
+      ],
+      "affects.engs": [
+        "Basalt\u00a0extraction"
       ]
     },
     {
@@ -3646,6 +4213,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         10102
+      ],
+      "affects.engs": [
+        "Basalt\u00a0extraction"
       ]
     },
     {
@@ -3661,6 +4231,9 @@
       "icon.overlay": "icon_30_465.png",
       "affects.GUIDs": [
         10102
+      ],
+      "affects.engs": [
+        "Basalt\u00a0extraction"
       ]
     },
     {

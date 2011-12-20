@@ -27,6 +27,9 @@ icon.overlay (optional):
 affects.GUIDs (optional):
     A list of the GUIDs buildings/units/etc. affected by this technology.
     This property is either absent or has at least one GUID. It is never empty.  
+affects.engs (optional):
+    English localizations of the GUIDs in the previous list.
+    The order is the same, that is, the first localization string corresponds to the first GUID, etc.
     
 effect.ActiveEcoEffect.Value (int):
 effect.ActiveEcoEffect.Percental (bool):

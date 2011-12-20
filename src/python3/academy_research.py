@@ -165,6 +165,7 @@ def _get_research_project_dict(project_asset, eng, category, subcategory=None):
     affected_GUIDs = project_asset.findall('Values/Upgrade/TargetGUIDs/Item/UpgradeGUID')
     if len(affected_GUIDs) > 0:
         project['affects.GUIDs'] = [int(affected_GUID.text) for affected_GUID in affected_GUIDs]
+        project['affects.engs'] = [eng[affected_GUID.text] for affected_GUID in affected_GUIDs]
     
     # effect.ActiveEcoEffect.* ---------------------------------------------
     add_effect(project, project_asset.find('Values/MaintenanceCostUpgrade/ActiveEcoEffect'))
