@@ -56,7 +56,13 @@ def main():
         except KeyError:
             raise Exception('"{}": "{} item.png",'.format(project['icon.base'], project['affects.engs'][0]))
         
-        print('| icon=[[File:{}]]<span style="margin-left: -46px;">[[File:Multiple effects.png]]</span>'.format(base_icon_wiki_filename))
+        if 'icon.overlay' in project:
+            overlay_icon_wiki_filename = icon_name_map[project['icon.overlay']]
+            overlay_icon_wikitext = '<span style="margin-left: -46px;">[[File:{}]]</span>'.format(overlay_icon_wiki_filename)
+        else:
+            overlay_icon_wikitext = ''
+        
+        print('| icon=[[File:{}]]{}'.format(base_icon_wiki_filename, overlay_icon_wikitext))
         print('}}\n')
     
     print('|}')
