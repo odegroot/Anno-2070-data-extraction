@@ -167,6 +167,10 @@ def _get_research_project_dict(project_asset, eng, category, subcategory=None):
         project['affects.GUIDs'] = [int(affected_GUID.text) for affected_GUID in affected_GUIDs]
         project['affects.engs'] = [eng[affected_GUID.text] for affected_GUID in affected_GUIDs]
     
+    # effect.ActiveCost.* ---------------------------------------------
+    add_effect(project, project_asset.find('Values/MaintenanceCostUpgrade/ActiveCost'))
+    # effect.InactiveCost.* ---------------------------------------------
+    add_effect(project, project_asset.find('Values/MaintenanceCostUpgrade/InactiveCost'))
     # effect.ActiveEcoEffect.* ---------------------------------------------
     add_effect(project, project_asset.find('Values/MaintenanceCostUpgrade/ActiveEcoEffect'))
     # effect.InActiveEcoEffect.* ---------------------------------------------

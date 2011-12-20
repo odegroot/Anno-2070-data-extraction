@@ -34,6 +34,16 @@ affects.engs (optional):
 effect.* (optional):
     Bonuses granted by the technology. All effects are optional.
 
+effect.ActiveCost.Value (int):
+effect.ActiveCost.Percental (bool):
+effect.ActiveCost.text (redundant, derived from Value + Percental):
+effect.InactiveCost.Value (int):
+effect.InactiveCost.Percental (bool):
+effect.InactiveCost.text (redundant, derived from Value + Percental):
+    Maintenance cost bonus.
+
+    The exact meaning of active vs. inactive is not known. All known projects have identical values for active and inactive.
+
 effect.ActiveEcoEffect.Value (int):
 effect.ActiveEcoEffect.Percental (bool):
 effect.ActiveEcoEffect.text (redundant, derived from Value + Percental):
@@ -51,8 +61,6 @@ effect.InActiveEcoEffect.text (redundant, derived from Value + Percental):
     │   50  │   true    │ +50% │      30       │       45       │
     │   50  │   false   │ +50  │      30       │       80       │
     └───────┴───────────┴──────┴───────────────┴────────────────┘
-    
-    The exact meaning of active vs. inactive is not known. All known projects have identical values for active and inactive.
 
 effect.ActiveEnergyProduction.Value (int):
 effect.ActiveEnergyProduction.Percental (bool):

@@ -67,6 +67,8 @@ def main():
             overlay_icon_wikitext = ''
         
         effects = []
+        if 'effect.ActiveCost.text' in project:
+            effects.append('[[File:Balance-icon.png|20px|Maintenance costs]] ' + project['effect.ActiveCost.text'])
         if 'effect.ActiveEcoEffect.text' in project:
             effects.append('[[File:Ecobal-icon.png|20px|Eco effect]] ' + project['effect.ActiveEcoEffect.text'])
         if 'effect.ActiveEnergyProduction.text' in project:

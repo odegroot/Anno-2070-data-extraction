@@ -249,7 +249,13 @@
       ],
       "affects.engs": [
         "Nuclear power plant"
-      ]
+      ],
+      "effect.ActiveCost.Value": -10,
+      "effect.ActiveCost.Percental": true,
+      "effect.ActiveCost.text": "-10%",
+      "effect.InactiveCost.Value": -10,
+      "effect.InactiveCost.Percental": true,
+      "effect.InactiveCost.text": "-10%"
     },
     {
       "GUID": 61034,
@@ -285,7 +291,13 @@
       ],
       "affects.engs": [
         "Nuclear power plant"
-      ]
+      ],
+      "effect.ActiveCost.Value": -30,
+      "effect.ActiveCost.Percental": true,
+      "effect.ActiveCost.text": "-30%",
+      "effect.InactiveCost.Value": -20,
+      "effect.InactiveCost.Percental": true,
+      "effect.InactiveCost.text": "-20%"
     },
     {
       "GUID": 61036,
@@ -303,7 +315,13 @@
       ],
       "affects.engs": [
         "Nuclear power plant"
-      ]
+      ],
+      "effect.ActiveCost.Value": -30,
+      "effect.ActiveCost.Percental": true,
+      "effect.ActiveCost.text": "-30%",
+      "effect.InactiveCost.Value": -30,
+      "effect.InactiveCost.Percental": true,
+      "effect.InactiveCost.text": "-30%"
     },
     {
       "GUID": 61038,
@@ -339,7 +357,13 @@
       ],
       "affects.engs": [
         "Wind park"
-      ]
+      ],
+      "effect.ActiveCost.Value": -10,
+      "effect.ActiveCost.Percental": true,
+      "effect.ActiveCost.text": "-10%",
+      "effect.InactiveCost.Value": -10,
+      "effect.InactiveCost.Percental": true,
+      "effect.InactiveCost.text": "-10%"
     },
     {
       "GUID": 61039,
@@ -357,7 +381,13 @@
       ],
       "affects.engs": [
         "Wind park"
-      ]
+      ],
+      "effect.ActiveCost.Value": -20,
+      "effect.ActiveCost.Percental": true,
+      "effect.ActiveCost.text": "-20%",
+      "effect.InactiveCost.Value": -20,
+      "effect.InactiveCost.Percental": true,
+      "effect.InactiveCost.text": "-20%"
     },
     {
       "GUID": 61040,
@@ -375,7 +405,13 @@
       ],
       "affects.engs": [
         "Wind park"
-      ]
+      ],
+      "effect.ActiveCost.Value": -30,
+      "effect.ActiveCost.Percental": true,
+      "effect.ActiveCost.text": "-30%",
+      "effect.InactiveCost.Value": -30,
+      "effect.InactiveCost.Percental": true,
+      "effect.InactiveCost.text": "-30%"
     },
     {
       "GUID": 61041,
@@ -393,7 +429,13 @@
       ],
       "affects.engs": [
         "Offshore wind park"
-      ]
+      ],
+      "effect.ActiveCost.Value": -10,
+      "effect.ActiveCost.Percental": true,
+      "effect.ActiveCost.text": "-10%",
+      "effect.InactiveCost.Value": -10,
+      "effect.InactiveCost.Percental": true,
+      "effect.InactiveCost.text": "-10%"
     },
     {
       "GUID": 61042,
@@ -429,7 +471,13 @@
       ],
       "affects.engs": [
         "Offshore wind park"
-      ]
+      ],
+      "effect.ActiveCost.Value": -20,
+      "effect.ActiveCost.Percental": true,
+      "effect.ActiveCost.text": "-20%",
+      "effect.InactiveCost.Value": -20,
+      "effect.InactiveCost.Percental": true,
+      "effect.InactiveCost.text": "-20%"
     },
     {
       "GUID": 61044,
@@ -447,7 +495,13 @@
       ],
       "affects.engs": [
         "Offshore wind park"
-      ]
+      ],
+      "effect.ActiveCost.Value": -30,
+      "effect.ActiveCost.Percental": true,
+      "effect.ActiveCost.text": "-30%",
+      "effect.InactiveCost.Value": -30,
+      "effect.InactiveCost.Percental": true,
+      "effect.InactiveCost.text": "-30%"
     },
     {
       "GUID": 61045,
@@ -465,7 +519,13 @@
       ],
       "affects.engs": [
         "Thermal power station"
-      ]
+      ],
+      "effect.ActiveCost.Value": -10,
+      "effect.ActiveCost.Percental": true,
+      "effect.ActiveCost.text": "-10%",
+      "effect.InactiveCost.Value": -10,
+      "effect.InactiveCost.Percental": true,
+      "effect.InactiveCost.text": "-10%"
     },
     {
       "GUID": 61046,
@@ -508,6 +568,12 @@
       "affects.engs": [
         "Thermal power station"
       ],
+      "effect.ActiveCost.Value": -20,
+      "effect.ActiveCost.Percental": true,
+      "effect.ActiveCost.text": "-20%",
+      "effect.InactiveCost.Value": -20,
+      "effect.InactiveCost.Percental": true,
+      "effect.InactiveCost.text": "-20%",
       "effect.ActiveEnergyProduction.Value": 30,
       "effect.ActiveEnergyProduction.Percental": true,
       "effect.ActiveEnergyProduction.text": "+30%",
@@ -532,6 +598,12 @@
       "affects.engs": [
         "Thermal power station"
       ],
+      "effect.ActiveCost.Value": -30,
+      "effect.ActiveCost.Percental": true,
+      "effect.ActiveCost.text": "-30%",
+      "effect.InactiveCost.Value": -30,
+      "effect.InactiveCost.Percental": true,
+      "effect.InactiveCost.text": "-30%",
       "effect.ActiveEnergyProduction.Value": 40,
       "effect.ActiveEnergyProduction.Percental": true,
       "effect.ActiveEnergyProduction.text": "+40%",
@@ -555,7 +627,13 @@
       ],
       "affects.engs": [
         "Solar tower generator"
-      ]
+      ],
+      "effect.ActiveCost.Value": -10,
+      "effect.ActiveCost.Percental": true,
+      "effect.ActiveCost.text": "-10%",
+      "effect.InactiveCost.Value": -10,
+      "effect.InactiveCost.Percental": true,
+      "effect.InactiveCost.text": "-10%"
     },
     {
       "GUID": 61050,
@@ -598,6 +676,12 @@
       "affects.engs": [
         "Solar tower generator"
       ],
+      "effect.ActiveCost.Value": -20,
+      "effect.ActiveCost.Percental": true,
+      "effect.ActiveCost.text": "-20%",
+      "effect.InactiveCost.Value": -20,
+      "effect.InactiveCost.Percental": true,
+      "effect.InactiveCost.text": "-20%",
       "effect.ActiveEnergyProduction.Value": 30,
       "effect.ActiveEnergyProduction.Percental": true,
       "effect.ActiveEnergyProduction.text": "+30%",
@@ -622,6 +706,12 @@
       "affects.engs": [
         "Solar tower generator"
       ],
+      "effect.ActiveCost.Value": -30,
+      "effect.ActiveCost.Percental": true,
+      "effect.ActiveCost.text": "-30%",
+      "effect.InactiveCost.Value": -30,
+      "effect.InactiveCost.Percental": true,
+      "effect.InactiveCost.text": "-30%",
       "effect.ActiveEnergyProduction.Value": 40,
       "effect.ActiveEnergyProduction.Percental": true,
       "effect.ActiveEnergyProduction.text": "+40%",
@@ -753,7 +843,13 @@
       ],
       "affects.engs": [
         "CO2 reservoir"
-      ]
+      ],
+      "effect.ActiveCost.Value": -10,
+      "effect.ActiveCost.Percental": true,
+      "effect.ActiveCost.text": "-10%",
+      "effect.InactiveCost.Value": -10,
+      "effect.InactiveCost.Percental": true,
+      "effect.InactiveCost.text": "-10%"
     },
     {
       "GUID": 61066,
@@ -796,6 +892,12 @@
       "affects.engs": [
         "CO2 reservoir"
       ],
+      "effect.ActiveCost.Value": -20,
+      "effect.ActiveCost.Percental": true,
+      "effect.ActiveCost.text": "-20%",
+      "effect.InactiveCost.Value": -20,
+      "effect.InactiveCost.Percental": true,
+      "effect.InactiveCost.text": "-20%",
       "effect.ActiveEnergyCost.Value": -40,
       "effect.ActiveEnergyCost.Percental": true,
       "effect.ActiveEnergyCost.text": "-40%",
@@ -820,6 +922,12 @@
       "affects.engs": [
         "CO2 reservoir"
       ],
+      "effect.ActiveCost.Value": -30,
+      "effect.ActiveCost.Percental": true,
+      "effect.ActiveCost.text": "-30%",
+      "effect.InactiveCost.Value": -30,
+      "effect.InactiveCost.Percental": true,
+      "effect.InactiveCost.text": "-30%",
       "effect.ActiveEnergyCost.Value": -50,
       "effect.ActiveEnergyCost.Percental": true,
       "effect.ActiveEnergyCost.text": "-50%",
@@ -861,7 +969,13 @@
       ],
       "affects.engs": [
         "Weather control station"
-      ]
+      ],
+      "effect.ActiveCost.Value": -20,
+      "effect.ActiveCost.Percental": true,
+      "effect.ActiveCost.text": "-20%",
+      "effect.InactiveCost.Value": -20,
+      "effect.InactiveCost.Percental": true,
+      "effect.InactiveCost.text": "-20%"
     },
     {
       "GUID": 61071,
@@ -879,7 +993,13 @@
       ],
       "affects.engs": [
         "Weather control station"
-      ]
+      ],
+      "effect.ActiveCost.Value": -30,
+      "effect.ActiveCost.Percental": true,
+      "effect.ActiveCost.text": "-30%",
+      "effect.InactiveCost.Value": -30,
+      "effect.InactiveCost.Percental": true,
+      "effect.InactiveCost.text": "-30%"
     },
     {
       "GUID": 61072,
@@ -897,7 +1017,13 @@
       ],
       "affects.engs": [
         "Weather control station"
-      ]
+      ],
+      "effect.ActiveCost.Value": -40,
+      "effect.ActiveCost.Percental": true,
+      "effect.ActiveCost.text": "-40%",
+      "effect.InactiveCost.Value": -40,
+      "effect.InactiveCost.Percental": true,
+      "effect.InactiveCost.text": "-40%"
     },
     {
       "GUID": 61073,
@@ -915,7 +1041,13 @@
       ],
       "affects.engs": [
         "Monitoring station"
-      ]
+      ],
+      "effect.ActiveCost.Value": -10,
+      "effect.ActiveCost.Percental": true,
+      "effect.ActiveCost.text": "-10%",
+      "effect.InactiveCost.Value": -10,
+      "effect.InactiveCost.Percental": true,
+      "effect.InactiveCost.text": "-10%"
     },
     {
       "GUID": 61074,
@@ -958,6 +1090,12 @@
       "affects.engs": [
         "Monitoring station"
       ],
+      "effect.ActiveCost.Value": -20,
+      "effect.ActiveCost.Percental": true,
+      "effect.ActiveCost.text": "-20%",
+      "effect.InactiveCost.Value": -20,
+      "effect.InactiveCost.Percental": true,
+      "effect.InactiveCost.text": "-20%",
       "effect.ActiveEnergyCost.Value": -40,
       "effect.ActiveEnergyCost.Percental": true,
       "effect.ActiveEnergyCost.text": "-40%",
@@ -982,6 +1120,12 @@
       "affects.engs": [
         "Monitoring station"
       ],
+      "effect.ActiveCost.Value": -30,
+      "effect.ActiveCost.Percental": true,
+      "effect.ActiveCost.text": "-30%",
+      "effect.InactiveCost.Value": -30,
+      "effect.InactiveCost.Percental": true,
+      "effect.InactiveCost.text": "-30%",
       "effect.ActiveEnergyCost.Value": -50,
       "effect.ActiveEnergyCost.Percental": true,
       "effect.ActiveEnergyCost.text": "-50%",
@@ -1095,7 +1239,13 @@
       ],
       "affects.engs": [
         "River sewage treatment plant"
-      ]
+      ],
+      "effect.ActiveCost.Value": -10,
+      "effect.ActiveCost.Percental": true,
+      "effect.ActiveCost.text": "-10%",
+      "effect.InactiveCost.Value": -10,
+      "effect.InactiveCost.Percental": true,
+      "effect.InactiveCost.text": "-10%"
     },
     {
       "GUID": 61082,
@@ -1138,6 +1288,12 @@
       "affects.engs": [
         "River sewage treatment plant"
       ],
+      "effect.ActiveCost.Value": -20,
+      "effect.ActiveCost.Percental": true,
+      "effect.ActiveCost.text": "-20%",
+      "effect.InactiveCost.Value": -20,
+      "effect.InactiveCost.Percental": true,
+      "effect.InactiveCost.text": "-20%",
       "effect.ActiveEnergyCost.Value": -40,
       "effect.ActiveEnergyCost.Percental": true,
       "effect.ActiveEnergyCost.text": "-40%",
@@ -1162,6 +1318,12 @@
       "affects.engs": [
         "River sewage treatment plant"
       ],
+      "effect.ActiveCost.Value": -30,
+      "effect.ActiveCost.Percental": true,
+      "effect.ActiveCost.text": "-30%",
+      "effect.InactiveCost.Value": -30,
+      "effect.InactiveCost.Percental": true,
+      "effect.InactiveCost.text": "-30%",
       "effect.ActiveEnergyCost.Value": -50,
       "effect.ActiveEnergyCost.Percental": true,
       "effect.ActiveEnergyCost.text": "-50%",
@@ -2411,6 +2573,12 @@
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_91.png",
       "icon.overlay": "icon_30_465.png",
+      "effect.ActiveCost.Value": -50,
+      "effect.ActiveCost.Percental": true,
+      "effect.ActiveCost.text": "-50%",
+      "effect.InactiveCost.Value": -50,
+      "effect.InactiveCost.Percental": true,
+      "effect.InactiveCost.text": "-50%",
       "effect.ActiveEnergyCost.Value": -50,
       "effect.ActiveEnergyCost.Percental": true,
       "effect.ActiveEnergyCost.text": "-50%",
@@ -2429,6 +2597,12 @@
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_91.png",
       "icon.overlay": "icon_30_465.png",
+      "effect.ActiveCost.Value": -100,
+      "effect.ActiveCost.Percental": true,
+      "effect.ActiveCost.text": "-100%",
+      "effect.InactiveCost.Value": -100,
+      "effect.InactiveCost.Percental": true,
+      "effect.InactiveCost.text": "-100%",
       "effect.ActiveEnergyCost.Value": -100,
       "effect.ActiveEnergyCost.Percental": true,
       "effect.ActiveEnergyCost.text": "-100%",
@@ -2698,7 +2872,13 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_110.png",
-      "icon.overlay": "icon_30_466.png"
+      "icon.overlay": "icon_30_466.png",
+      "effect.ActiveCost.Value": -20,
+      "effect.ActiveCost.Percental": true,
+      "effect.ActiveCost.text": "-20%",
+      "effect.InactiveCost.Value": -20,
+      "effect.InactiveCost.Percental": true,
+      "effect.InactiveCost.text": "-20%"
     },
     {
       "GUID": 61133,
@@ -2722,7 +2902,13 @@
       "ItemQuality": "B",
       "ItemQuality.stars": 2,
       "icon.base": "icon_30_110.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "effect.ActiveCost.Value": -30,
+      "effect.ActiveCost.Percental": true,
+      "effect.ActiveCost.text": "-30%",
+      "effect.InactiveCost.Value": -30,
+      "effect.InactiveCost.Percental": true,
+      "effect.InactiveCost.text": "-30%"
     },
     {
       "GUID": 61135,
@@ -2734,7 +2920,13 @@
       "ItemQuality": null,
       "ItemQuality.stars": 3,
       "icon.base": "icon_30_110.png",
-      "icon.overlay": "icon_30_465.png"
+      "icon.overlay": "icon_30_465.png",
+      "effect.ActiveCost.Value": -40,
+      "effect.ActiveCost.Percental": true,
+      "effect.ActiveCost.text": "-40%",
+      "effect.InactiveCost.Value": -40,
+      "effect.InactiveCost.Percental": true,
+      "effect.InactiveCost.text": "-40%"
     },
     {
       "GUID": 61136,
@@ -2926,7 +3118,13 @@
         "Offshore defense",
         "Harbor defense turret",
         "Mobile Harbor defenses"
-      ]
+      ],
+      "effect.ActiveCost.Value": -30,
+      "effect.ActiveCost.Percental": true,
+      "effect.ActiveCost.text": "-30%",
+      "effect.InactiveCost.Value": -30,
+      "effect.InactiveCost.Percental": true,
+      "effect.InactiveCost.text": "-30%"
     },
     {
       "GUID": 61208,
@@ -2950,7 +3148,13 @@
         "Offshore defense",
         "Harbor defense turret",
         "Mobile Harbor defenses"
-      ]
+      ],
+      "effect.ActiveCost.Value": -40,
+      "effect.ActiveCost.Percental": true,
+      "effect.ActiveCost.text": "-40%",
+      "effect.InactiveCost.Value": -40,
+      "effect.InactiveCost.Percental": true,
+      "effect.InactiveCost.text": "-40%"
     },
     {
       "GUID": 61209,
@@ -2974,7 +3178,13 @@
         "Offshore defense",
         "Harbor defense turret",
         "Mobile Harbor defenses"
-      ]
+      ],
+      "effect.ActiveCost.Value": -50,
+      "effect.ActiveCost.Percental": true,
+      "effect.ActiveCost.text": "-50%",
+      "effect.InactiveCost.Value": -50,
+      "effect.InactiveCost.Percental": true,
+      "effect.InactiveCost.text": "-50%"
     },
     {
       "GUID": 61092,
@@ -3226,7 +3436,13 @@
       ],
       "affects.engs": [
         "Basalt crusher"
-      ]
+      ],
+      "effect.ActiveCost.Value": -20,
+      "effect.ActiveCost.Percental": true,
+      "effect.ActiveCost.text": "-20%",
+      "effect.InactiveCost.Value": -20,
+      "effect.InactiveCost.Percental": true,
+      "effect.InactiveCost.text": "-20%"
     },
     {
       "GUID": 61143,
@@ -3244,7 +3460,13 @@
       ],
       "affects.engs": [
         "Basalt crusher"
-      ]
+      ],
+      "effect.ActiveCost.Value": -30,
+      "effect.ActiveCost.Percental": true,
+      "effect.ActiveCost.text": "-30%",
+      "effect.InactiveCost.Value": -30,
+      "effect.InactiveCost.Percental": true,
+      "effect.InactiveCost.text": "-30%"
     },
     {
       "GUID": 61144,
@@ -3262,7 +3484,13 @@
       ],
       "affects.engs": [
         "Basalt crusher"
-      ]
+      ],
+      "effect.ActiveCost.Value": -40,
+      "effect.ActiveCost.Percental": true,
+      "effect.ActiveCost.text": "-40%",
+      "effect.InactiveCost.Value": -40,
+      "effect.InactiveCost.Percental": true,
+      "effect.InactiveCost.text": "-40%"
     },
     {
       "GUID": 61145,
@@ -4270,7 +4498,13 @@
       ],
       "affects.engs": [
         "Basalt\u00a0extraction"
-      ]
+      ],
+      "effect.ActiveCost.Value": -20,
+      "effect.ActiveCost.Percental": true,
+      "effect.ActiveCost.text": "-20%",
+      "effect.InactiveCost.Value": -20,
+      "effect.InactiveCost.Percental": true,
+      "effect.InactiveCost.text": "-20%"
     },
     {
       "GUID": 61361,
@@ -4288,7 +4522,13 @@
       ],
       "affects.engs": [
         "Basalt\u00a0extraction"
-      ]
+      ],
+      "effect.ActiveCost.Value": -30,
+      "effect.ActiveCost.Percental": true,
+      "effect.ActiveCost.text": "-30%",
+      "effect.InactiveCost.Value": -30,
+      "effect.InactiveCost.Percental": true,
+      "effect.InactiveCost.text": "-30%"
     },
     {
       "GUID": 61362,
@@ -4306,7 +4546,13 @@
       ],
       "affects.engs": [
         "Basalt\u00a0extraction"
-      ]
+      ],
+      "effect.ActiveCost.Value": -40,
+      "effect.ActiveCost.Percental": true,
+      "effect.ActiveCost.text": "-40%",
+      "effect.InactiveCost.Value": -40,
+      "effect.InactiveCost.Percental": true,
+      "effect.InactiveCost.text": "-40%"
     },
     {
       "GUID": 61220,
