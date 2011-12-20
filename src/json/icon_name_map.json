@@ -81,13 +81,29 @@
     "icon_30_141.png": "Lobster farm item.png",
     "icon_30_142.png": "Black Smoker item.png",
     
-    "icon_30_154.png": "Flak item.png"
+    "icon_30_154.png": "Flak item.png",
     "icon_30_155.png": "Energy generation Research.png",
     "icon_30_156.png": "Ecobalance buildings Research.png",
     "icon_30_157.png": "Fertilities & Resources Research.png",
     "icon_30_158.png": "Public buildings Research.png",
     "icon_30_160.png": "Production buildings Research.png",
 
+    "icon_30_462.png": "Construction plan.png",
+    "icon_30_463.png": "Productivity.png",
+    "icon_30_464.png": "Eco cost.png",
     "icon_30_465.png": "Multiple effects.png",
+    "icon_30_466.png": "Upkeep cost.png",
+    "icon_30_467.png": "Accident chance.png",
+    "icon_30_468.png": "Influence radius.png",
+    "icon_30_469.png": "Energy cost.png",
+    "icon_30_470.png": "Speed.png",
+    "icon_30_471.png": "Damage points.png",
+    "icon_30_472.png": "Capacity.png",
+    "icon_30_473.png": "Fuel consumption.png",
+    "icon_30_474.png": "Seed.png",
+    "icon_30_475.png": "Additional unit.png",
+    "icon_30_476.png": "Health points.png",
+    "icon_30_477.png": "Resource refill.png",
+    "icon_30_480.png": "Random.png"
   }
 }
