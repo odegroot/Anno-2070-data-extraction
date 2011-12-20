@@ -4,7 +4,81 @@
     "icon_27_4.png": "Fish.png",
     "icon_27_133.png": "Rice.png",
     "icon_27_12.png": "Coal-power-stn-icon.png",
+    
+    "icon_30_0.png": "Coal power station item.png",
+    "icon_30_1.png": "Hydroelectric power plant item.png",
+    "icon_30_2.png": "Nuclear power plant item.png",
+    "icon_30_3.png": "Wind park item.png",
+    "icon_30_4.png": "Offshore wind park item.png",
+    "icon_30_5.png": "Thermal power station item.png",
+    "icon_30_6.png": "Solar tower generator item.png",
+    
+    "icon_30_20.png": "Biosphere generator.png",
     "icon_30_22.png": "Waste compactor item.png",
-    "icon_30_465.png": "Multiple effects.png"
+    "icon_30_23.png": "CO2 reservoir item.png",
+    "icon_30_24.png": "Weather control station item.png",
+    "icon_30_25.png": "Monitoring station item.png",
+    "icon_30_26.png": "Ozone Maker station item.png",
+    "icon_30_27.png": "River sewage treatment plant item.png",
+    "icon_30_28.png": "Deacidification station item.png",
+    
+    "icon_30_44.png": "Commando Ship item.png",
+    "icon_30_45.png": "Hovercraft item.png",
+    "icon_30_46.png": "Colossus item.png",
+    "icon_30_47.png": "Freight ship item.png",
+    "icon_30_48.png": "Cargo liner item.png",
+    "icon_30_49.png": "Container ship item.png",
+    "icon_30_50.png": "T 38 Ocean Glider item.png",
+    "icon_30_51.png": "Deep Sea Hunter item.png",
+    "icon_30_52.png": "Chopper item.png",
+    "icon_30_53.png": "Hawk item.png",
+    "icon_30_54.png": "FireBird item.png",
+    "icon_30_55.png": "Units Research.png",
+    "icon_30_56.png": "Viper item.png",
+    
+    "icon_30_66.png": "Seed Rice.png",
+    "icon_30_67.png": "Seed Sugar.png",
+    "icon_30_68.png": "Seed Tea.png",
+    "icon_30_69.png": "Seed Vegetable.png",
+    "icon_30_70.png": "Seed Fruit.png",
+    "icon_30_71.png": "Seed Grain.png",
+    "icon_30_72.png": "Seed Corn.png",
+    "icon_30_73.png": "Seed Coffee.png",
+    "icon_30_74.png": "Seed Grapes.png",
+    "icon_30_75.png": "Seed Truffles.png",
+    
+    "icon_30_88.png": "Fire station item.png",
+    "icon_30_89.png": "Hospital item.png",
+    "icon_30_90.png": "Police station item.png",
+
+    "icon_30_91.png": "Community item.png",
+    "icon_30_92.png": "Information item.png",
+    "icon_30_93.png": "Activity item.png",
+    "icon_30_94.png": "Participation item.png",
+    "icon_30_95.png": "Laboratory item.png",
+    
+    "icon_30_110.png": "Trade building item.png",
+    
+    "icon_30_132.png": "Basalt item.png",
+    "icon_30_133.png": "Coal item.png",
+    "icon_30_134.png": "Iron ore mine item.png",
+    "icon_30_135.png": "Copper mine item.png",
+    "icon_30_136.png": "Limestone quarry item.png",
+    "icon_30_137.png": "Uranium mine item.png",
+    "icon_30_138.png": "Oil item.png",
+    "icon_30_139.png": "Sand extractor item.png",
+    "icon_30_140.png": "Gold refinery item.png",
+    "icon_30_141.png": "Lobster farm item.png",
+    "icon_30_142.png": "Black Smoker item.png",
+    
+    "icon_30_155.png": "Energy generation Research.png",
+    "icon_30_156.png": "Ecobalance buildings Research.png",
+    "icon_30_157.png": "Fertilities & Resources Research.png",
+    "icon_30_158.png": "Public buildings Research.png",
+    "icon_30_160.png": "Production buildings Research.png",
+
+    "icon_30_465.png": "Multiple effects.png",
+    
+    "icon_30_154.png": "Flak item.png"
   }
 }
