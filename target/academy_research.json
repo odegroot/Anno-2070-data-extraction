@@ -21,7 +21,13 @@
       ],
       "affects.engs": [
         "Coal power station"
-      ]
+      ],
+      "effect.ActiveEnergyProduction.Value": 20,
+      "effect.ActiveEnergyProduction.Percental": true,
+      "effect.ActiveEnergyProduction.text": "+20%",
+      "effect.InActiveEnergyProduction.Value": 20,
+      "effect.InActiveEnergyProduction.Percental": true,
+      "effect.InActiveEnergyProduction.text": "+20%"
     },
     {
       "GUID": 61012,
@@ -69,7 +75,13 @@
       "effect.ActiveEcoEffect.text": "-40%",
       "effect.InActiveEcoEffect.Value": -40,
       "effect.InActiveEcoEffect.Percental": true,
-      "effect.InActiveEcoEffect.text": "-40%"
+      "effect.InActiveEcoEffect.text": "-40%",
+      "effect.ActiveEnergyProduction.Value": 30,
+      "effect.ActiveEnergyProduction.Percental": true,
+      "effect.ActiveEnergyProduction.text": "+30%",
+      "effect.InActiveEnergyProduction.Value": 30,
+      "effect.InActiveEnergyProduction.Percental": true,
+      "effect.InActiveEnergyProduction.text": "+30%"
     },
     {
       "GUID": 61014,
@@ -93,7 +105,13 @@
       "effect.ActiveEcoEffect.text": "-50%",
       "effect.InActiveEcoEffect.Value": -50,
       "effect.InActiveEcoEffect.Percental": true,
-      "effect.InActiveEcoEffect.text": "-50%"
+      "effect.InActiveEcoEffect.text": "-50%",
+      "effect.ActiveEnergyProduction.Value": 40,
+      "effect.ActiveEnergyProduction.Percental": true,
+      "effect.ActiveEnergyProduction.text": "+40%",
+      "effect.InActiveEnergyProduction.Value": 40,
+      "effect.InActiveEnergyProduction.Percental": true,
+      "effect.InActiveEnergyProduction.text": "+40%"
     },
     {
       "GUID": 61015,
@@ -123,7 +141,13 @@
       ],
       "affects.engs": [
         "Hydroelectric power plant"
-      ]
+      ],
+      "effect.ActiveEnergyProduction.Value": 20,
+      "effect.ActiveEnergyProduction.Percental": true,
+      "effect.ActiveEnergyProduction.text": "+20%",
+      "effect.InActiveEnergyProduction.Value": 20,
+      "effect.InActiveEnergyProduction.Percental": true,
+      "effect.InActiveEnergyProduction.text": "+20%"
     },
     {
       "GUID": 61017,
@@ -171,7 +195,13 @@
       "effect.ActiveEcoEffect.text": "-40%",
       "effect.InActiveEcoEffect.Value": -40,
       "effect.InActiveEcoEffect.Percental": true,
-      "effect.InActiveEcoEffect.text": "-40%"
+      "effect.InActiveEcoEffect.text": "-40%",
+      "effect.ActiveEnergyProduction.Value": 30,
+      "effect.ActiveEnergyProduction.Percental": true,
+      "effect.ActiveEnergyProduction.text": "+30%",
+      "effect.InActiveEnergyProduction.Value": 30,
+      "effect.InActiveEnergyProduction.Percental": true,
+      "effect.InActiveEnergyProduction.text": "+30%"
     },
     {
       "GUID": 61019,
@@ -195,7 +225,13 @@
       "effect.ActiveEcoEffect.text": "-50%",
       "effect.InActiveEcoEffect.Value": -50,
       "effect.InActiveEcoEffect.Percental": true,
-      "effect.InActiveEcoEffect.text": "-50%"
+      "effect.InActiveEcoEffect.text": "-50%",
+      "effect.ActiveEnergyProduction.Value": 40,
+      "effect.ActiveEnergyProduction.Percental": true,
+      "effect.ActiveEnergyProduction.text": "+40%",
+      "effect.InActiveEnergyProduction.Value": 40,
+      "effect.InActiveEnergyProduction.Percental": true,
+      "effect.InActiveEnergyProduction.text": "+40%"
     },
     {
       "GUID": 61033,
@@ -447,7 +483,13 @@
       ],
       "affects.engs": [
         "Thermal power station"
-      ]
+      ],
+      "effect.ActiveEnergyProduction.Value": 20,
+      "effect.ActiveEnergyProduction.Percental": true,
+      "effect.ActiveEnergyProduction.text": "+20%",
+      "effect.InActiveEnergyProduction.Value": 20,
+      "effect.InActiveEnergyProduction.Percental": true,
+      "effect.InActiveEnergyProduction.text": "+20%"
     },
     {
       "GUID": 61047,
@@ -465,7 +507,13 @@
       ],
       "affects.engs": [
         "Thermal power station"
-      ]
+      ],
+      "effect.ActiveEnergyProduction.Value": 30,
+      "effect.ActiveEnergyProduction.Percental": true,
+      "effect.ActiveEnergyProduction.text": "+30%",
+      "effect.InActiveEnergyProduction.Value": 30,
+      "effect.InActiveEnergyProduction.Percental": true,
+      "effect.InActiveEnergyProduction.text": "+30%"
     },
     {
       "GUID": 61048,
@@ -483,7 +531,13 @@
       ],
       "affects.engs": [
         "Thermal power station"
-      ]
+      ],
+      "effect.ActiveEnergyProduction.Value": 40,
+      "effect.ActiveEnergyProduction.Percental": true,
+      "effect.ActiveEnergyProduction.text": "+40%",
+      "effect.InActiveEnergyProduction.Value": 40,
+      "effect.InActiveEnergyProduction.Percental": true,
+      "effect.InActiveEnergyProduction.text": "+40%"
     },
     {
       "GUID": 61049,
@@ -519,7 +573,13 @@
       ],
       "affects.engs": [
         "Solar tower generator"
-      ]
+      ],
+      "effect.ActiveEnergyProduction.Value": 20,
+      "effect.ActiveEnergyProduction.Percental": true,
+      "effect.ActiveEnergyProduction.text": "+20%",
+      "effect.InActiveEnergyProduction.Value": 20,
+      "effect.InActiveEnergyProduction.Percental": true,
+      "effect.InActiveEnergyProduction.text": "+20%"
     },
     {
       "GUID": 61051,
@@ -537,7 +597,13 @@
       ],
       "affects.engs": [
         "Solar tower generator"
-      ]
+      ],
+      "effect.ActiveEnergyProduction.Value": 30,
+      "effect.ActiveEnergyProduction.Percental": true,
+      "effect.ActiveEnergyProduction.text": "+30%",
+      "effect.InActiveEnergyProduction.Value": 30,
+      "effect.InActiveEnergyProduction.Percental": true,
+      "effect.InActiveEnergyProduction.text": "+30%"
     },
     {
       "GUID": 61052,
@@ -555,7 +621,13 @@
       ],
       "affects.engs": [
         "Solar tower generator"
-      ]
+      ],
+      "effect.ActiveEnergyProduction.Value": 40,
+      "effect.ActiveEnergyProduction.Percental": true,
+      "effect.ActiveEnergyProduction.text": "+40%",
+      "effect.InActiveEnergyProduction.Value": 40,
+      "effect.InActiveEnergyProduction.Percental": true,
+      "effect.InActiveEnergyProduction.text": "+40%"
     },
     {
       "GUID": 61061,

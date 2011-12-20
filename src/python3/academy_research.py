@@ -171,6 +171,10 @@ def _get_research_project_dict(project_asset, eng, category, subcategory=None):
     add_effect(project, project_asset.find('Values/MaintenanceCostUpgrade/ActiveEcoEffect'))
     # effect.InActiveEcoEffect.* ---------------------------------------------
     add_effect(project, project_asset.find('Values/MaintenanceCostUpgrade/InActiveEcoEffect'))
+    # effect.ActiveEnergyProduction.* ---------------------------------------------
+    add_effect(project, project_asset.find('Values/MaintenanceCostUpgrade/ActiveEnergyProduction'))
+    # effect.InActiveEnergyProduction.* ---------------------------------------------
+    add_effect(project, project_asset.find('Values/MaintenanceCostUpgrade/InActiveEnergyProduction'))
     # effect.ActiveEnergyCost.* ---------------------------------------------
     add_effect(project, project_asset.find('Values/MaintenanceCostUpgrade/ActiveEnergyCost'))
     # effect.InActiveEnergyCost.* ---------------------------------------------

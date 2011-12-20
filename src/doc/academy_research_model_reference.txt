@@ -31,6 +31,9 @@ affects.engs (optional):
     English localizations of the GUIDs in the previous list.
     The order is the same, that is, the first localization string corresponds to the first GUID, etc.
     
+effect.* (optional):
+    Bonuses granted by the technology. All effects are optional.
+
 effect.ActiveEcoEffect.Value (int):
 effect.ActiveEcoEffect.Percental (bool):
 effect.ActiveEcoEffect.text (redundant, derived from Value + Percental):
@@ -51,6 +54,12 @@ effect.InActiveEcoEffect.text (redundant, derived from Value + Percental):
     
     The exact meaning of active vs. inactive is not known. All known projects have identical values for active and inactive.
 
+effect.ActiveEnergyProduction.Value (int):
+effect.ActiveEnergyProduction.Percental (bool):
+effect.ActiveEnergyProduction.text (redundant, derived from Value + Percental):
+effect.InActiveEnergyProduction.Value (int):
+effect.InActiveEnergyProduction.Percental (bool):
+effect.InActiveEnergyProduction.text (redundant, derived from Value + Percental):
 effect.ActiveEnergyCost.Value (int):
 effect.ActiveEnergyCost.Percental (bool):
 effect.ActiveEnergyCost.text (redundant, derived from Value + Percental):
