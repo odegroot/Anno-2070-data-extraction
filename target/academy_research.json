@@ -342,7 +342,10 @@
       ],
       "affects.engs": [
         "Wind park"
-      ]
+      ],
+      "effect.InfluenceRadius.Value": -30,
+      "effect.InfluenceRadius.Percental": true,
+      "effect.InfluenceRadius.text": "-30%"
     },
     {
       "GUID": 61037,
@@ -390,7 +393,10 @@
       "effect.ActiveCost.text": "-20%",
       "effect.InactiveCost.Value": -20,
       "effect.InactiveCost.Percental": true,
-      "effect.InactiveCost.text": "-20%"
+      "effect.InactiveCost.text": "-20%",
+      "effect.InfluenceRadius.Value": -40,
+      "effect.InfluenceRadius.Percental": true,
+      "effect.InfluenceRadius.text": "-40%"
     },
     {
       "GUID": 61040,
@@ -414,7 +420,10 @@
       "effect.ActiveCost.text": "-30%",
       "effect.InactiveCost.Value": -30,
       "effect.InactiveCost.Percental": true,
-      "effect.InactiveCost.text": "-30%"
+      "effect.InactiveCost.text": "-30%",
+      "effect.InfluenceRadius.Value": -50,
+      "effect.InfluenceRadius.Percental": true,
+      "effect.InfluenceRadius.text": "-50%"
     },
     {
       "GUID": 61041,
@@ -456,7 +465,10 @@
       ],
       "affects.engs": [
         "Offshore wind park"
-      ]
+      ],
+      "effect.InfluenceRadius.Value": -30,
+      "effect.InfluenceRadius.Percental": true,
+      "effect.InfluenceRadius.text": "-30%"
     },
     {
       "GUID": 61043,
@@ -480,7 +492,10 @@
       "effect.ActiveCost.text": "-20%",
       "effect.InactiveCost.Value": -20,
       "effect.InactiveCost.Percental": true,
-      "effect.InactiveCost.text": "-20%"
+      "effect.InactiveCost.text": "-20%",
+      "effect.InfluenceRadius.Value": -40,
+      "effect.InfluenceRadius.Percental": true,
+      "effect.InfluenceRadius.text": "-40%"
     },
     {
       "GUID": 61044,
@@ -504,7 +519,10 @@
       "effect.ActiveCost.text": "-30%",
       "effect.InactiveCost.Value": -30,
       "effect.InactiveCost.Percental": true,
-      "effect.InactiveCost.text": "-30%"
+      "effect.InactiveCost.text": "-30%",
+      "effect.InfluenceRadius.Value": -50,
+      "effect.InfluenceRadius.Percental": true,
+      "effect.InfluenceRadius.text": "-50%"
     },
     {
       "GUID": 61045,
@@ -954,7 +972,10 @@
       ],
       "affects.engs": [
         "Weather control station"
-      ]
+      ],
+      "effect.InfluenceRadius.Value": -20,
+      "effect.InfluenceRadius.Percental": true,
+      "effect.InfluenceRadius.text": "-20%"
     },
     {
       "GUID": 61070,
@@ -1002,7 +1023,10 @@
       "effect.ActiveCost.text": "-30%",
       "effect.InactiveCost.Value": -30,
       "effect.InactiveCost.Percental": true,
-      "effect.InactiveCost.text": "-30%"
+      "effect.InactiveCost.text": "-30%",
+      "effect.InfluenceRadius.Value": -30,
+      "effect.InfluenceRadius.Percental": true,
+      "effect.InfluenceRadius.text": "-30%"
     },
     {
       "GUID": 61072,
@@ -1026,7 +1050,10 @@
       "effect.ActiveCost.text": "-40%",
       "effect.InactiveCost.Value": -40,
       "effect.InactiveCost.Percental": true,
-      "effect.InactiveCost.text": "-40%"
+      "effect.InactiveCost.text": "-40%",
+      "effect.InfluenceRadius.Value": -40,
+      "effect.InfluenceRadius.Percental": true,
+      "effect.InfluenceRadius.text": "-40%"
     },
     {
       "GUID": 61073,
@@ -1176,7 +1203,10 @@
       ],
       "affects.engs": [
         "Ozone Maker station"
-      ]
+      ],
+      "effect.InfluenceRadius.Value": -10,
+      "effect.InfluenceRadius.Percental": true,
+      "effect.InfluenceRadius.text": "-10%"
     },
     {
       "GUID": 61079,
@@ -1200,7 +1230,10 @@
       "effect.ActiveEnergyCost.text": "-40%",
       "effect.InActiveEnergyCost.Value": -40,
       "effect.InActiveEnergyCost.Percental": true,
-      "effect.InActiveEnergyCost.text": "-40%"
+      "effect.InActiveEnergyCost.text": "-40%",
+      "effect.InfluenceRadius.Value": -20,
+      "effect.InfluenceRadius.Percental": true,
+      "effect.InfluenceRadius.text": "-20%"
     },
     {
       "GUID": 61080,
@@ -1224,7 +1257,10 @@
       "effect.ActiveEnergyCost.text": "-50%",
       "effect.InActiveEnergyCost.Value": -50,
       "effect.InActiveEnergyCost.Percental": true,
-      "effect.InActiveEnergyCost.text": "-50%"
+      "effect.InActiveEnergyCost.text": "-50%",
+      "effect.InfluenceRadius.Value": -30,
+      "effect.InfluenceRadius.Percental": true,
+      "effect.InfluenceRadius.text": "-30%"
     },
     {
       "GUID": 61081,
@@ -1350,7 +1386,10 @@
       ],
       "affects.engs": [
         "Deacidification station"
-      ]
+      ],
+      "effect.InfluenceRadius.Value": -20,
+      "effect.InfluenceRadius.Percental": true,
+      "effect.InfluenceRadius.text": "-20%"
     },
     {
       "GUID": 61365,
@@ -1398,7 +1437,10 @@
       "effect.ActiveEnergyCost.text": "-30%",
       "effect.InActiveEnergyCost.Value": -30,
       "effect.InActiveEnergyCost.Percental": true,
-      "effect.InActiveEnergyCost.text": "-30%"
+      "effect.InActiveEnergyCost.text": "-30%",
+      "effect.InfluenceRadius.Value": -30,
+      "effect.InfluenceRadius.Percental": true,
+      "effect.InfluenceRadius.text": "-30%"
     },
     {
       "GUID": 61367,
@@ -1422,7 +1464,10 @@
       "effect.ActiveEnergyCost.text": "-40%",
       "effect.InActiveEnergyCost.Value": -40,
       "effect.InActiveEnergyCost.Percental": true,
-      "effect.InActiveEnergyCost.text": "-40%"
+      "effect.InActiveEnergyCost.text": "-40%",
+      "effect.InfluenceRadius.Value": -40,
+      "effect.InfluenceRadius.Percental": true,
+      "effect.InfluenceRadius.text": "-40%"
     },
     {
       "GUID": 60972,
@@ -2623,7 +2668,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_92.png",
-      "icon.overlay": "icon_30_468.png"
+      "icon.overlay": "icon_30_468.png",
+      "effect.InfluenceRadius.Value": 10,
+      "effect.InfluenceRadius.Percental": true,
+      "effect.InfluenceRadius.text": "+10%"
     },
     {
       "GUID": 61109,
@@ -2659,7 +2707,10 @@
       "effect.ActiveEnergyCost.text": "-40%",
       "effect.InActiveEnergyCost.Value": -40,
       "effect.InActiveEnergyCost.Percental": true,
-      "effect.InActiveEnergyCost.text": "-40%"
+      "effect.InActiveEnergyCost.text": "-40%",
+      "effect.InfluenceRadius.Value": 20,
+      "effect.InfluenceRadius.Percental": true,
+      "effect.InfluenceRadius.text": "+20%"
     },
     {
       "GUID": 61111,
@@ -2677,7 +2728,10 @@
       "effect.ActiveEnergyCost.text": "-50%",
       "effect.InActiveEnergyCost.Value": -50,
       "effect.InActiveEnergyCost.Percental": true,
-      "effect.InActiveEnergyCost.text": "-50%"
+      "effect.InActiveEnergyCost.text": "-50%",
+      "effect.InfluenceRadius.Value": 30,
+      "effect.InfluenceRadius.Percental": true,
+      "effect.InfluenceRadius.text": "+30%"
     },
     {
       "GUID": 61112,
@@ -2689,7 +2743,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_93.png",
-      "icon.overlay": "icon_30_468.png"
+      "icon.overlay": "icon_30_468.png",
+      "effect.InfluenceRadius.Value": 10,
+      "effect.InfluenceRadius.Percental": true,
+      "effect.InfluenceRadius.text": "+10%"
     },
     {
       "GUID": 61113,
@@ -2725,7 +2782,10 @@
       "effect.ActiveEnergyCost.text": "-40%",
       "effect.InActiveEnergyCost.Value": -40,
       "effect.InActiveEnergyCost.Percental": true,
-      "effect.InActiveEnergyCost.text": "-40%"
+      "effect.InActiveEnergyCost.text": "-40%",
+      "effect.InfluenceRadius.Value": 20,
+      "effect.InfluenceRadius.Percental": true,
+      "effect.InfluenceRadius.text": "+20%"
     },
     {
       "GUID": 61115,
@@ -2743,7 +2803,10 @@
       "effect.ActiveEnergyCost.text": "-50%",
       "effect.InActiveEnergyCost.Value": -50,
       "effect.InActiveEnergyCost.Percental": true,
-      "effect.InActiveEnergyCost.text": "-50%"
+      "effect.InActiveEnergyCost.text": "-50%",
+      "effect.InfluenceRadius.Value": 30,
+      "effect.InfluenceRadius.Percental": true,
+      "effect.InfluenceRadius.text": "+30%"
     },
     {
       "GUID": 61116,
@@ -2755,7 +2818,10 @@
       "ItemQuality": "C",
       "ItemQuality.stars": 1,
       "icon.base": "icon_30_94.png",
-      "icon.overlay": "icon_30_468.png"
+      "icon.overlay": "icon_30_468.png",
+      "effect.InfluenceRadius.Value": 10,
+      "effect.InfluenceRadius.Percental": true,
+      "effect.InfluenceRadius.text": "+10%"
     },
     {
       "GUID": 61117,
@@ -2791,7 +2857,10 @@
       "effect.ActiveEnergyCost.text": "-40%",
       "effect.InActiveEnergyCost.Value": -40,
       "effect.InActiveEnergyCost.Percental": true,
-      "effect.InActiveEnergyCost.text": "-40%"
+      "effect.InActiveEnergyCost.text": "-40%",
+      "effect.InfluenceRadius.Value": 20,
+      "effect.InfluenceRadius.Percental": true,
+      "effect.InfluenceRadius.text": "+20%"
     },
     {
       "GUID": 61119,
@@ -2809,7 +2878,10 @@
       "effect.ActiveEnergyCost.text": "-50%",
       "effect.InActiveEnergyCost.Value": -50,
       "effect.InActiveEnergyCost.Percental": true,
-      "effect.InActiveEnergyCost.text": "-50%"
+      "effect.InActiveEnergyCost.text": "-50%",
+      "effect.InfluenceRadius.Value": 30,
+      "effect.InfluenceRadius.Percental": true,
+      "effect.InfluenceRadius.text": "+30%"
     },
     {
       "GUID": 61128,
@@ -3208,7 +3280,10 @@
       ],
       "affects.engs": [
         "Fire station"
-      ]
+      ],
+      "effect.InfluenceRadius.Value": 10,
+      "effect.InfluenceRadius.Percental": true,
+      "effect.InfluenceRadius.text": "+10%"
     },
     {
       "GUID": 61093,
@@ -3244,7 +3319,10 @@
       ],
       "affects.engs": [
         "Fire station"
-      ]
+      ],
+      "effect.InfluenceRadius.Value": 20,
+      "effect.InfluenceRadius.Percental": true,
+      "effect.InfluenceRadius.text": "+20%"
     },
     {
       "GUID": 61095,
@@ -3262,7 +3340,10 @@
       ],
       "affects.engs": [
         "Fire station"
-      ]
+      ],
+      "effect.InfluenceRadius.Value": 30,
+      "effect.InfluenceRadius.Percental": true,
+      "effect.InfluenceRadius.text": "+30%"
     },
     {
       "GUID": 61096,
@@ -3280,7 +3361,10 @@
       ],
       "affects.engs": [
         "Hospital"
-      ]
+      ],
+      "effect.InfluenceRadius.Value": 10,
+      "effect.InfluenceRadius.Percental": true,
+      "effect.InfluenceRadius.text": "+10%"
     },
     {
       "GUID": 61097,
@@ -3316,7 +3400,10 @@
       ],
       "affects.engs": [
         "Hospital"
-      ]
+      ],
+      "effect.InfluenceRadius.Value": 20,
+      "effect.InfluenceRadius.Percental": true,
+      "effect.InfluenceRadius.text": "+20%"
     },
     {
       "GUID": 61099,
@@ -3334,7 +3421,10 @@
       ],
       "affects.engs": [
         "Hospital"
-      ]
+      ],
+      "effect.InfluenceRadius.Value": 30,
+      "effect.InfluenceRadius.Percental": true,
+      "effect.InfluenceRadius.text": "+30%"
     },
     {
       "GUID": 61100,
@@ -3352,7 +3442,10 @@
       ],
       "affects.engs": [
         "Police station"
-      ]
+      ],
+      "effect.InfluenceRadius.Value": 10,
+      "effect.InfluenceRadius.Percental": true,
+      "effect.InfluenceRadius.text": "+10%"
     },
     {
       "GUID": 61101,
@@ -3388,7 +3481,10 @@
       ],
       "affects.engs": [
         "Police station"
-      ]
+      ],
+      "effect.InfluenceRadius.Value": 20,
+      "effect.InfluenceRadius.Percental": true,
+      "effect.InfluenceRadius.text": "+20%"
     },
     {
       "GUID": 61103,
@@ -3406,7 +3502,10 @@
       ],
       "affects.engs": [
         "Police station"
-      ]
+      ],
+      "effect.InfluenceRadius.Value": 30,
+      "effect.InfluenceRadius.Percental": true,
+      "effect.InfluenceRadius.text": "+30%"
     },
     {
       "GUID": 61141,

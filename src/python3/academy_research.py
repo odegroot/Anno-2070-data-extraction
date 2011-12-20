@@ -188,6 +188,9 @@ def _get_research_project_dict(project_asset, eng, category, subcategory=None):
     accident_chance = project_asset.findtext('Values/GlobalUpgrade/AdditionalDisasterProbability/Value')
     if accident_chance != None:
         project['effect.AdditionalDisasterProbability'] = int(accident_chance)
+
+    # effect.InfluenceRadius.* ---------------------------------------------
+    add_effect(project, project_asset.find('Values/PublicBuildingUpgrade/InfluenceRadius'))
     
     return project
 

@@ -79,6 +79,9 @@ def main():
         if 'effect.AdditionalDisasterProbability' in project:
             effects.append('[[File:Disaster.png|20px|Probability of accidents]] {}%'.format(project['effect.AdditionalDisasterProbability']))
             
+        if 'effect.InfluenceRadius.text' in project:
+            effects.append('[[File:Influence area.png|20px|Influence area]] ' + project['effect.InfluenceRadius.text'])
+            
         effects_wikitext = ' <br/> '.join(effects)
         
         print(textwrap.dedent(

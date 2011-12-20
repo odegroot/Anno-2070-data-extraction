@@ -78,3 +78,8 @@ effect.InActiveEnergyCost.text (redundant, derived from Value + Percental):
 	
 effect.AdditionalDisasterProbability (int):
    The values are negative, so this effect is a reduction of the probability of disasters. In percentage points.
+
+effect.InfluenceRadius.Value (int):
+effect.InfluenceRadius.Percental (bool):
+effect.InfluenceRadius.text (redundant, derived from Value + Percental):
+    Enlarged or reduced influence area.
