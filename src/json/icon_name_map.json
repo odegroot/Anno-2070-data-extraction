@@ -5,6 +5,17 @@
     "icon_27_133.png": "Rice.png",
     "icon_27_12.png": "Coal-power-stn-icon.png",
     
+    "icon_27_196.png": "Eco Worker.png",
+    "icon_27_65.png": "Eco Employee.png",
+    "icon_27_131.png": "Eco Engineer.png",
+    "icon_27_130.png": "Eco Executive.png",
+    "icon_27_38.png": "Tycoon Worker.png",
+    "icon_27_64.png": "Tycoon Employee.png",
+    "icon_27_108.png": "Tycoon Engineer.png",
+    "icon_27_109.png": "Tycoon Executive.png",
+    "icon_27_230.png": "Lab Assistant.png",
+    "icon_27_200.png": "Researcher.png",
+    
     "icon_30_0.png": "Coal power station item.png",
     "icon_30_1.png": "Hydroelectric power plant item.png",
     "icon_30_2.png": "Nuclear power plant item.png",
@@ -50,7 +61,6 @@
     "icon_30_88.png": "Fire station item.png",
     "icon_30_89.png": "Hospital item.png",
     "icon_30_90.png": "Police station item.png",
-
     "icon_30_91.png": "Community item.png",
     "icon_30_92.png": "Information item.png",
     "icon_30_93.png": "Activity item.png",
@@ -71,6 +81,7 @@
     "icon_30_141.png": "Lobster farm item.png",
     "icon_30_142.png": "Black Smoker item.png",
     
+    "icon_30_154.png": "Flak item.png"
     "icon_30_155.png": "Energy generation Research.png",
     "icon_30_156.png": "Ecobalance buildings Research.png",
     "icon_30_157.png": "Fertilities & Resources Research.png",
@@ -78,7 +89,5 @@
     "icon_30_160.png": "Production buildings Research.png",
 
     "icon_30_465.png": "Multiple effects.png",
-    
-    "icon_30_154.png": "Flak item.png"
   }
 }
