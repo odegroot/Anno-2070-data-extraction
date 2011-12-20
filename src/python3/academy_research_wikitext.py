@@ -76,6 +76,9 @@ def main():
         if 'effect.ActiveEnergyCost.text' in project:
             effects.append('[[File:Energy-icon.png|20px|Energy cost]] ' + project['effect.ActiveEnergyCost.text'])
             
+        if 'effect.AdditionalDisasterProbability' in project:
+            effects.append('[[File:Disaster.png|20px|Probability of accidents]] {}%'.format(project['effect.AdditionalDisasterProbability']))
+            
         effects_wikitext = ' <br/> '.join(effects)
         
         print(textwrap.dedent(

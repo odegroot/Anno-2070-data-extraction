@@ -273,7 +273,8 @@
       ],
       "affects.engs": [
         "Nuclear power plant"
-      ]
+      ],
+      "effect.AdditionalDisasterProbability": -30
     },
     {
       "GUID": 61035,
@@ -297,7 +298,8 @@
       "effect.ActiveCost.text": "-30%",
       "effect.InactiveCost.Value": -20,
       "effect.InactiveCost.Percental": true,
-      "effect.InactiveCost.text": "-20%"
+      "effect.InactiveCost.text": "-20%",
+      "effect.AdditionalDisasterProbability": -40
     },
     {
       "GUID": 61036,
@@ -321,7 +323,8 @@
       "effect.ActiveCost.text": "-30%",
       "effect.InactiveCost.Value": -30,
       "effect.InactiveCost.Percental": true,
-      "effect.InactiveCost.text": "-30%"
+      "effect.InactiveCost.text": "-30%",
+      "effect.AdditionalDisasterProbability": -50
     },
     {
       "GUID": 61038,
@@ -2824,7 +2827,8 @@
       ],
       "affects.engs": [
         "Laboratory"
-      ]
+      ],
+      "effect.AdditionalDisasterProbability": -5
     },
     {
       "GUID": 61129,
@@ -2842,7 +2846,8 @@
       ],
       "affects.engs": [
         "Laboratory"
-      ]
+      ],
+      "effect.AdditionalDisasterProbability": -10
     },
     {
       "GUID": 61130,
@@ -2860,7 +2865,8 @@
       ],
       "affects.engs": [
         "Laboratory"
-      ]
+      ],
+      "effect.AdditionalDisasterProbability": -15
     },
     {
       "GUID": 61132,
@@ -4066,7 +4072,8 @@
       ],
       "affects.engs": [
         "Oil rig"
-      ]
+      ],
+      "effect.AdditionalDisasterProbability": -20
     },
     {
       "GUID": 61171,
@@ -4084,7 +4091,8 @@
       ],
       "affects.engs": [
         "Oil rig"
-      ]
+      ],
+      "effect.AdditionalDisasterProbability": -30
     },
     {
       "GUID": 61172,
@@ -4102,7 +4110,8 @@
       ],
       "affects.engs": [
         "Oil rig"
-      ]
+      ],
+      "effect.AdditionalDisasterProbability": -40
     },
     {
       "GUID": 61173,

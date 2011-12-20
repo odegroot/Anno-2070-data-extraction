@@ -74,4 +74,7 @@ effect.ActiveEnergyCost.text (redundant, derived from Value + Percental):
 effect.InActiveEnergyCost.Value (int):
 effect.InActiveEnergyCost.Percental (bool):
 effect.InActiveEnergyCost.text (redundant, derived from Value + Percental):
-	The same as ActiveEcoEffect/InActiveEcoEffect, but for Energy production/consumption.
+	 The same as ActiveEcoEffect/InActiveEcoEffect, but for Energy production/consumption.
+	
+effect.AdditionalDisasterProbability (int):
+   The values are negative, so this effect is a reduction of the probability of disasters. In percentage points.

@@ -184,6 +184,11 @@ def _get_research_project_dict(project_asset, eng, category, subcategory=None):
     # effect.InActiveEnergyCost.* ---------------------------------------------
     add_effect(project, project_asset.find('Values/MaintenanceCostUpgrade/InActiveEnergyCost'))
     
+    # effect.AdditionalDisasterProbability -----------------------------------
+    accident_chance = project_asset.findtext('Values/GlobalUpgrade/AdditionalDisasterProbability/Value')
+    if accident_chance != None:
+        project['effect.AdditionalDisasterProbability'] = int(accident_chance)
+    
     return project
 
 def add_effect(project, xml_element):
