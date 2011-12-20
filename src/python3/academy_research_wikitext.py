@@ -13,6 +13,7 @@ import academy_research
 import collections
 import json
 import os
+import textwrap
 
 __project_root = os.path.join('..', '..')
 __icon_name_map_path = os.path.join(__project_root, 'src', 'json', 'icon_name_map.json')
@@ -30,6 +31,8 @@ def main():
     table_open = False
     
     for project in projects:
+        # Section and table headers - creates section headers and open/closes tables as applicable.
+        # Assumens that the list of projects is grouped by category (which it is).
         if project['category'] != category:
             if table_open:
                 print('|}')
@@ -48,9 +51,10 @@ def main():
             print('{{Research-header}}\n')
             table_open = True
         
-        print('{{Research')
-        print('| stars = ' + str(project['ItemQuality.stars']))
-        
+        # Creates a template call for the current research project.
+        stars = str(project['ItemQuality.stars'])
+        name = project['Name.eng']
+        desc = project['description.eng']
         try:
             base_icon_wiki_filename = icon_name_map[project['icon.base']]
         except KeyError:
@@ -62,10 +66,29 @@ def main():
         else:
             overlay_icon_wikitext = ''
         
-        print('| icon=[[File:{}]]{}'.format(base_icon_wiki_filename, overlay_icon_wikitext))
-        print('}}\n')
+        effects = []
+        if 'effect.ActiveEcoEffect.text' in project:
+            effects.append('[[File:Ecobal-icon.png|20px|Eco effect]] ' + project['effect.ActiveEcoEffect.text'])
+        if 'effect.ActiveEnergyProduction.text' in project:
+            effects.append('[[File:Energy-icon.png|20px|Energy production]] ' + project['effect.ActiveEnergyProduction.text'])
+        if 'effect.ActiveEnergyCost.text' in project:
+            effects.append('[[File:Energy-icon.png|20px|Energy cost]] ' + project['effect.ActiveEnergyCost.text'])
+            
+        effects_wikitext = ' <br/> '.join(effects)
+        
+        print(textwrap.dedent(
+            '''
+            {{{{Research
+            |stars={}
+            |icon=[[File:{}]]{}
+            |name={}
+            |effect={}
+            |desc={}
+            }}}}
+            '''.format(stars, base_icon_wiki_filename, overlay_icon_wikitext, name, effects_wikitext, desc)
+        ))
     
-    print('|}')
+    print('|}') # close the last table.
 
 def get_counts_per_category(projects):
     counts = collections.defaultdict(int)
