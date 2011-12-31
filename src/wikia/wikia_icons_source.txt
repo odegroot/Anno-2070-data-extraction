@@ -1,0 +1,242 @@
+This article serves (well, will serve) as an index to the collection of icons for Anno 2070 on this wiki.
+
+<b>An important note regarding icons:</b> If, on the slim off chance you have a larger version of these one of these icons, and want to upload it, do not replace the files below. Upload a new file instead. Changing the sizes of the icons below will prove incompatible with templates used on this wiki.
+
+== All icons ==
+Here's a page with '''all''' Anno 2070 icons. These are good quality icons, but are not sorted, named or uploaded on this wiki.
+
+http://odegroot.nl/anno2070/all_icons.php (Updated on 22:38, December 15, 2011 (UTC) , no longer contains +1 naming error.)
+
+This link is to a zip of the [[#Building icons]] (icons are named):
+
+http://dl.dropbox.com/u/5296507/buildings.zip
+
+== Product icons ==
+
+<gallery spacing="small" widths="46" captionalign="left">
+3D_Projector.png|3D Projector
+Algae.png|Algae
+Bio_drinks.png|Bio drinks
+Biopolymers.png|Bio- polymers
+Building_modules.png|Building modules
+Caffeine.png|Caffeine
+Carbon.png|Carbon
+Champagne.png|Cham- pagne
+Coal.png|Coal
+Communicator.png|Comm- unicator
+Concrete.png|Concrete
+Convenience_Food.png|Con- venience Food
+Copper.png|Copper
+Corn.png|Corn
+Crude_oil.png|Crude oil
+Diamonds.png|Diamonds
+Durum_wheat.png|Durum wheat
+Explosives.png|Explosives
+Fish.png|Fish
+Fruits.png|Fruits
+Fuel_rods.png|Fuel rods
+Functional_drinks.png|Functional drinks
+Functional_food.png|Functional food
+Glass.png|Glass
+Gold_nuggets.png|Gold nuggets
+Gold.png|Gold
+Granules.png|Granules
+Grapes.png|Grapes
+Health_food.png|Health food
+Heavy_weapons.png|Heavy weapons
+High-tech_weapons.png|High-tech weapons
+Iron_Ore.png|Iron Ore
+Iron.png|Iron
+Jewelery.png|Jewelery
+Kerosene.png|Kerosene
+Limestone.png|Limestone
+Liquor.png|Liquor
+Lobster.png|Lobster
+Luxury_meal.png|Luxury meal
+Manganese_nodules.png|Man- ganese nodules
+Meat.png|Meat
+Microchips.png|Microchips
+Milk.png|Milk
+Oil.png|Oil
+Omega_acids.png|Omega acids
+Pasta_dishes.png|Pasta dishes
+Pasta.png|Pasta
+Pharmaceuticals.png|Pharm- aceuticals
+Plastics.png|Plastics
+Rare-earth_elements.png|Rare-earth elements
+Rice.png|Rice
+Sand.png|Sand
+Secret_ingredients.png|Secret ingredients
+Service_bots.png|Service bots
+Steel.png|Steel
+Sugar.png|Sugar
+Super_flavor.png|Super flavor
+Tea.png|Tea
+Tools.png|Tools
+Truffle.png|Truffle
+Uranium.png|Uranium
+Vegetables.png|Veget- ables
+Weapons.png|Weapons
+Wood.png|Wood
+</gallery>
+
+== Miscellaneous icons ==
+<gallery spacing="small" widths="46" captionalign="left">
+Credits-icon.png|Credits
+Ecobal-icon.png|Eco balance
+Balance-icon.png|Mainte&shy;nance cost
+Energy-icon.png|Energy
+Ship-icon.png
+Ship-talk.png
+Ship-multi.png
+Ship-credits.png
+Ship-move.png
+Gold_star_tiny.png|Gold star, Ark panel size
+Gold_star_small.png|Gold star, Research panel size
+Gold_star.png|Gold star
+</gallery>
+
+===Faction Icons===
+<gallery spacing="small" widths="46" captionalign="left">
+Eco_logo.png|Eco Logo
+Tycoon_logo.png|Tycoon Logo
+SAAT_logo.png|S.A.A.T. Logo
+SAAT_Tycoon_logos.png
+Eco_Tyco_logos.png
+Eco_SAAT_logos.png
+All_logos.png
+</gallery>
+
+== Overlay icons (small) ==
+These icons are used as overlays.
+
+They're 46&times;46 pixels in size, but no space is reserved for them. Instead, the image overlaps other interface elements.
+
+<gallery spacing="small" widths="46" captionalign="left">
+Accident chance.png|Accident chance
+Capacity.png|Capacity
+Construction plan.png|Construction plan
+Damage points.png|Damage points
+Eco cost.png|Eco cost
+Energy cost.png|Energy cost
+Influence radius.png|Influence radius
+Multiple effects.png|Multiple effects
+Productivity.png|Productivity
+Speed.png|Speed
+Upkeep cost.png|Upkeep cost
+Additional unit.png|Additional unit
+Fuel consumption.png|Fuel consumption
+Health points.png|Health points
+Random.png|Random
+Repair.png|Repair
+Resource refill.png|Resource refill
+Seed.png|Seed
+Toll wares.png|Toll wares
+Lvl1.png|Level 1
+Lvl2.png|Level 2
+Lvl3.png|Level 3
+Eco-overlay.png|Eco-<br />overlay
+Tyco-overlay.png|Tyco-<br />overlay
+SAAT-overlay.png|SAAT-<br />overlay
+</gallery>
+
+=== Usage example ===
+Combine the icon for [[File:Coal-power-stn-icon.png]] Coal with the overlay for [[File:Energy cost.png]] Energy to get the icon for a [[Coal Power Station]].
+
+[[File:Coal-power-stn-icon.png]]<span style="margin-left: -46px;">[[File:Energy cost.png]]</span>
+
+<pre>
+[[File:Coal-power-stn-icon.png]]<span style="margin-left: -46px;">[[File:Energy cost.png]]</span>
+</pre>
+
+The overlay icon is placed after the base image, and then the overlay is moved to the left, on top of the base image.
+
+This method requires that you specify how far the overlay icon must be moved to the left&mdash;in this case 46 pixels. This will break in a situation where the images are not placed immediately next to each other by default.
+
+Another method is this.
+
+<span style="display: inline-block; width: 0; position: relative; z-index: 1;">[[File:Energy cost.png]]</span>[[File:Coal-power-stn-icon.png]]
+
+<pre>
+<span style="display: inline-block; width: 0; position: relative; z-index: 1;">[[File:Energy cost.png]]</span>[[File:Coal-power-stn-icon.png]]
+</pre>
+
+In this method the overlay is placed first. It is given zero width (<code>display: inline-block; width: 0;</code>), so that the base image will be placed at the same location. That leaves the overlay under the base image, so it is also placed on top (<code>position: relative; z-index: 1;</code>).
+
+This second method is less concise, but may work better in some situations.
+
+The method of specifying multiple overlapping background images (<code>background-image: url('top'), url('bottom');</code>) is ruled out by Wikia blocking all <code>url()</code> declarations for safety reasons.
+
+== Building icons ==
+
+<gallery spacing="small" widths="46" captionalign="left">
+Academy-icon.png|Academy
+Airport-icon.png|Airport
+Aqua-rail-icon.png|AquaRail
+Banes-ave-icon.png|Banes Ave
+Casino-icon.png|Casino
+Clearance-term-icon.png|Clearance Terminal
+Co2-res-icon.png|CO2 Reservoir
+Coal-power-stn-icon.png|Coal Power Station
+Concert-hall-icon.png|Concert Hall
+Congress-ctr-icon.png|Congress Center
+Deacid-stn-icon.png|Deacid- ification Station
+Depot_icon.png|Depot
+Eco-ctr-icon.png|Eco City Center
+Eco-res-icon.png|Eco Worker Barracks
+Education-net-icon.png|Education Network
+Financial-ctr-icon.png|Financial Center
+Fire-stn-icon.png|Fire Station
+Flak-icon.png|Flak
+Green-blvd-icon.png|Green Blvd
+Harbor-def-icon.png|Harbor Defense Turret
+Harbor-depot-icon.png|Harbor Depot
+Highway-icon.png|Highway
+Hospital-icon.png|Hospital
+Hydro-dam-icon.png|Hydro Dam (Blueprint)
+Info-ctr-icon.png|Inform- ation Center
+Lab-icon.png|Laboratory
+Marine-power-icon.png|Marine Power Plant
+Metal-converter-icon.png|Metal Converter
+Ministry-truth-icon.png|Ministry of Truth
+Missile-pad-icon.png|Missile Pad
+Mob-harbor-def-icon.png|Mobile Harbor Defense
+Monitor-stn-icon.png|Monitoring Station
+Nuclear-power-icon.png|Nuclear Power Plant
+Nursery-icon.png|Tree Nursery
+Offshore-def-icon.png|Offshore Defense
+Offshore-wind-icon.png|Offshore Wind Farm
+Ozone-maker-icon.png|Ozone Maker
+Police-stn-icon.png|Police Station
+Port-auth-icon.png|Port Authority
+Repair-dock-icon.png|Repair Dock
+River-treatment-icon.png|River Treatment Plant
+Road-icon.png|Road
+Shield-gen-icon.png|Shield Generator
+Solar-power-icon.png|Solar Power Tower
+Sub-pen-icon.png|Submarine Pen
+Tech-ctr-icon.png|Tech City Center
+Tech-res-icon.png|Assistants' Domicile
+Thermal-power-icon.png|Thermal Power Station
+Tyco-ctr-icon.png|Tycoon City Center
+Tyco-res-icon.png|Tycoon Worker Barracks
+Tycoon-shipyard-icon.png|Tycoon Shipyard
+Underwater-ware-icon.png|Under- water Warehouse
+Warehouse-icon.png|Ware- house
+Waste-comp-icon.png|Waste Compactor
+Weather-stn-icon.png|Weather Control Station
+Wind-park-icon.png|Wind Park
+</gallery>
+
+== Vehicle icons ==
+Ships, submarines, aircraft.
+
+== Item icons ==
+Quest items, seeds, modules, etc.
+
+== Character icons ==
+EVE, Thorne, etc.
+
+<gallery spacing="small" widths="46" captionalign="left">
+File:EVE.png|E.V.E.
+</gallery>

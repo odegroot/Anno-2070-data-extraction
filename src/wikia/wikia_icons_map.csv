@@ -1,0 +1,130 @@
+Name;Wikia Icon File;Wikia Label
+holograph_factory;3D_Projector.png;3D Projector
+algae_farm;Algae.png;Algae
+health_drink_factory;Bio_drinks.png;Bio drinks
+biopolymer_factory;Biopolymers.png;Bio- polymers
+recycling_station;Building_modules.png;Building modules
+coffee_plantation;Caffeine.png;Caffeine
+carbon_factory;Carbon.png;Carbon
+champagne_cellar;Champagne.png;Cham- pagne
+excavator;Coal.png;Coal
+communicator_factory;Communicator.png;Comm- unicator
+concrete_factory;Concrete.png;Concrete
+food_supply_factory;Convenience_Food.png;Con- venience Food
+copper_mine;Copper.png;Copper
+corn_farm;Corn.png;Corn
+oil_driller;Crude_oil.png;Crude oil
+diamond_harvesting_station;Diamonds.png;Diamonds
+grain_farm;Durum_wheat.png;Durum wheat
+explosive_factory;Explosives.png;Explosives
+fishery;Fish.png;Fish
+fruit_plantation;Fruits.png;Fruits
+fuel_assembly_factory;Fuel_rods.png;Fuel rods
+energy_drink_factory;Functional_drinks.png;Functional drinks
+functional_food_factory;Functional_food.png;Functional food
+glassworks;Glass.png;Glass
+gold_refinery;Gold_nuggets.png;Gold nuggets
+gold_smeltery;Gold.png;Gold
+basalt_crusher;Granules.png;Granules
+vineyard;Grapes.png;Grapes
+health_food_factory;Health_food.png;Health food
+heavy_arsenal;Heavy_weapons.png;Heavy weapons
+advanced_arsenal;High-tech_weapons.png;High-tech weapons
+iron_mine;Iron_Ore.png;Iron Ore
+iron_smeltery;Iron.png;Iron
+jewelry_manufactory;Jewelery.png;Jewelery
+fuel_factory;Kerosene.png;Kerosene
+limestone_quarry;Limestone.png;Limestone
+distillery;Liquor.png;Liquor
+lobster_farm;Lobster.png;Lobster
+gourmet_factory;Luxury_meal.png;Luxury meal
+manganese_miner;Manganese_nodules.png;Man- ganese nodules
+meatfactory;Meat.png;Meat
+chip_factory;Microchips.png;Microchips
+dairy_farm;Milk.png;Milk
+oil_refinery;Oil.png;Oil
+fat_factory;Omega_acids.png;Omega acids
+bakery;Pasta_dishes.png;Pasta dishes
+water_mill;Pasta.png;Pasta
+pharmaceutical_factory;Pharmaceuticals.png;Pharm- aceuticals
+plastic_factory;Plastics.png;Plastics
+manganese_harvesting_station;Rare-earth_elements.png;Rare-earth elements
+rice_farm;Rice.png;Rice
+sand_extractor;Sand.png;Sand
+chemical_plant;Secret_ingredients.png;Secret ingredients
+robot_factory;Service_bots.png;Service bots
+steelwork;Steel.png;Steel
+sugar_beet_plantation;Sugar.png;Sugar
+flavor_lab;Super_flavor.png;Super flavor
+tea_plantation;Tea.png;Tea
+tool_factory;Tools.png;Tools
+truffle_farm;Truffle.png;Truffle
+uranium_mine;Uranium.png;Uranium
+vegetable_farm;Vegetables.png;Veget- ables
+arsenal;Weapons.png;Weapons
+saw_mill;Wood.png;Wood
+techs_academy;Academy-icon.png;Academy
+airport;Airport-icon.png;Airport
+;Aqua-rail-icon.png;AquaRail
+;Banes-ave-icon.png;Banes Ave
+casino;Casino-icon.png;Casino
+container_harbour;Clearance-term-icon.png;Clearance Terminal
+final_storage;Co2-res-icon.png;CO2 Reservoir
+coalpowerplant;Coal-power-stn-icon.png;Coal Power Station
+concert_hall;Concert-hall-icon.png;Concert Hall
+congress_center;Congress-ctr-icon.png;Congress Center
+deacidification_station;Deacid-stn-icon.png;Deacid- ification Station
+markethouse;Depot_icon.png;Depot
+town_center_ecos;Eco-ctr-icon.png;Eco City Center
+eco_worker_residence;Eco-res-icon.png;Eco Worker Barracks
+eco_citizen_residence;Eco-res-icon.png;Eco Worker Barracks
+eco_executive_residence;Eco-res-icon.png;Eco Worker Barracks
+eco_leader_residence;Eco-res-icon.png;Eco Worker Barracks
+education_network;Education-net-icon.png;Education Network
+corporate headquarter;Financial-ctr-icon.png;Financial Center
+fire_station;Fire-stn-icon.png;Fire Station
+anti_aircraft_site;Flak-icon.png;Flak
+;Green-blvd-icon.png;Green Blvd
+harbour_defence_turret;Harbor-def-icon.png;Harbor Defense Turret
+harbour_depot;Harbor-depot-icon.png;Harbor Depot
+;Highway-icon.png;Highway
+hospital;Hospital-icon.png;Hospital
+hydroelectric_powerplant;Hydro-dam-icon.png;Hydro Dam (Blueprint)
+broadcasting_station;Info-ctr-icon.png;Inform- ation Center
+techs_laboratory;Lab-icon.png;Laboratory
+;Marine-power-icon.png;Marine Power Plant
+black_smoker_miner;Metal-converter-icon.png;Metal Converter
+ministry_of_truth;Ministry-truth-icon.png;Ministry of Truth
+;Missile-pad-icon.png;Missile Pad
+;Mob-harbor-def-icon.png;Mobile Harbor Defense
+monitoring_station;Monitor-stn-icon.png;Monitoring Station
+nuclearpowerplant;Nuclear-power-icon.png;Nuclear Power Plant
+treefarm;Nursery-icon.png;Tree Nursery
+underwater_defence_battery;Offshore-def-icon.png;Offshore Defense
+offshore_wind_park;Offshore-wind-icon.png;Offshore Wind Farm
+ozone_maker_base;Ozone-maker-icon.png;Ozone Maker
+police_station;Police-stn-icon.png;Police Station
+port_authority;Port-auth-icon.png;Port Authority
+repair_dock;Repair-dock-icon.png;Repair Dock
+river_filter_plant;River-treatment-icon.png;River Treatment Plant
+;Road-icon.png;Road
+mobile_shield_generator;Shield-gen-icon.png;Shield Generator
+solar_tower;Solar-power-icon.png;Solar Power Tower
+;Sub-pen-icon.png;Submarine Pen
+town_center_techs;Tech-ctr-icon.png;Tech City Center
+tech_worker_residence;Tech-res-icon.png;Assistants' Domicile
+tech_citizen_residence;Tech-res-icon.png;Assistants' Domicile
+tech_executive_residence;Tech-res-icon.png;Assistants' Domicile
+tech_leader_residence;Tech-res-icon.png;Assistants' Domicile
+cogeneration_power_station;Thermal-power-icon.png;Thermal Power Station
+town_center_tycoons;Tyco-ctr-icon.png;Tycoon City Center
+tycoon_worker_residence;Tyco-res-icon.png;Tycoon Worker Barracks
+tycoon_citizen_residence;Tyco-res-icon.png;Tycoon Worker Barracks
+tycoon_executive_residence;Tyco-res-icon.png;Tycoon Worker Barracks
+tycoon_leader_residence;Tyco-res-icon.png;Tycoon Worker Barracks
+shipyard_tycoons;Tycoon-shipyard-icon.png;Tycoon Shipyard
+underwater warehouse;Underwater-ware-icon.png;Under- water Warehouse
+warehouse;Warehouse-icon.png;Ware- house
+waste_incinerator;Waste-comp-icon.png;Waste Compactor
+weather_control_base;Weather-stn-icon.png;Weather Control Station
+wind_park;Wind-park-icon.png;Wind Park
