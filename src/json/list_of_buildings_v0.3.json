@@ -1,9 +1,11 @@
 {
-  "_model": "http://aprilboy.e404.sk/anno2070/json\\list_of_buildings_model_v0.3.1.json", 
-  "_version": "0.3.1", 
+  "_model": "https://github.com/odegroot/Anno-2070-data-extraction/blob/master/src/json/list_of_buildings_model_v0.3.json", 
+  "_version": "0.3.2", 
   "buildings": [
     {
-      ".ifo": "tycoons\\residence\\Worker_Residence_tycoons_01\\Worker_Residence_tycoons_01.ifo", 
+      ".ifo": "worker_residence_tycoons_01.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 2, 
       "Eng": "Worker Barracks", 
       "Faction": "tycoons", 
@@ -17,7 +19,9 @@
       "Unlock.IntermediateLevel": "IntermediateTycoons"
     }, 
     {
-      ".ifo": "tycoons\\residence\\Citizen_Residence_tycoons_01\\Citizen_Residence_tycoons_01.ifo", 
+      ".ifo": "citizen_residence_tycoons_01.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 2, 
       "BuildCost.Tools": 1, 
       "Eng": "Employee House", 
@@ -32,7 +36,9 @@
       "Unlock.IntermediateLevel": "IntermediateTycoons"
     }, 
     {
-      ".ifo": "tycoons\\residence\\Executive_Residence_tycoons_01\\executive_residence_tycoons_01.ifo", 
+      ".ifo": "executive_residence_tycoons_01.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 4, 
       "BuildCost.Concrete": 3, 
       "BuildCost.Tools": 3, 
@@ -48,7 +54,9 @@
       "Unlock.IntermediateLevel": "IntermediateTycoons"
     }, 
     {
-      ".ifo": "tycoons\\residence\\Leader_Residence_tycoons_01\\leader_residence_tycoons_01.ifo", 
+      ".ifo": "leader_residence_tycoons_01.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 5, 
       "BuildCost.Concrete": 6, 
       "BuildCost.Steel": 4, 
@@ -65,7 +73,9 @@
       "Unlock.IntermediateLevel": "IntermediateTycoons"
     }, 
     {
-      ".ifo": "tycoons\\residence\\Destroyed_residences_tycoons\\destroyed_residence_01_tycoons.ifo", 
+      ".ifo": "destroyed_residence_01_tycoons.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 2, 
       "Eng": "Residence ruins", 
       "Faction": "tycoons", 
@@ -77,7 +87,9 @@
       "Unlock.IntermediateLevel": "IntermediateTycoons"
     }, 
     {
-      ".ifo": "tycoons\\public\\town_center_tycoons\\town_center_tycoons.ifo", 
+      ".ifo": "town_center_tycoons.ifo", 
+      "BuildBlocker.x": 8, 
+      "BuildBlocker.z": 6, 
       "BuildCost.BuildingModules": 5, 
       "BuildCost.Credits": 300, 
       "BuildCost.Tools": 3, 
@@ -96,7 +108,9 @@
       "Template": "PublicBuilding"
     }, 
     {
-      ".ifo": "tycoons\\public\\casino_tycoons\\casino_tycoons.ifo", 
+      ".ifo": "casino_tycoons.ifo", 
+      "BuildBlocker.x": 5, 
+      "BuildBlocker.z": 6, 
       "BuildCost.BuildingModules": 4, 
       "BuildCost.Credits": 300, 
       "BuildCost.Tools": 4, 
@@ -119,7 +133,9 @@
       "Unlock.ResidentLevel": "Tycoons1"
     }, 
     {
-      ".ifo": "tycoons\\special\\ministry_of_truth\\ministry_of_truth_tycoons.ifo", 
+      ".ifo": "ministry_of_truth_tycoons.ifo", 
+      "BuildBlocker.x": 6, 
+      "BuildBlocker.z": 6, 
       "BuildCost.BuildingModules": 10, 
       "BuildCost.Concrete": 20, 
       "BuildCost.Credits": 800, 
@@ -144,7 +160,9 @@
       "Unlock.ResidentLevel": "Tycoons2"
     }, 
     {
-      ".ifo": "tycoons\\public\\corporate_headquarter_tycoons\\corporate_headquarter_tycoons.ifo", 
+      ".ifo": "corporate_headquarter_tycoons.ifo", 
+      "BuildBlocker.x": 9, 
+      "BuildBlocker.z": 7, 
       "BuildCost.BuildingModules": 20, 
       "BuildCost.Concrete": 30, 
       "BuildCost.Credits": 1200, 
@@ -169,7 +187,9 @@
       "Unlock.ResidentLevel": "Tycoons3"
     }, 
     {
-      ".ifo": "tycoons\\public\\monument_tycoons\\monument_unfinished_01_tycoons.ifo", 
+      ".ifo": "monument_unfinished_01_tycoons.ifo", 
+      "BuildBlocker.x": 18, 
+      "BuildBlocker.z": 13, 
       "BuildCost.BuildingModules": 80, 
       "BuildCost.Concrete": 25, 
       "BuildCost.Credits": 50000, 
@@ -194,7 +214,9 @@
       "Unlock.ResidentLevel": "Tycoons4"
     }, 
     {
-      ".ifo": "tycoons\\public\\monument_tycoons\\monument_unfinished_02_tycoons.ifo", 
+      ".ifo": "monument_unfinished_02_tycoons.ifo", 
+      "BuildBlocker.x": 18, 
+      "BuildBlocker.z": 13, 
       "BuildCost.BuildingModules": 80, 
       "BuildCost.Concrete": 25, 
       "BuildCost.Credits": 50000, 
@@ -219,7 +241,9 @@
       "Unlock.ResidentLevel": "Tycoons4"
     }, 
     {
-      ".ifo": "tycoons\\public\\monument_tycoons\\monument_unfinished_03_tycoons.ifo", 
+      ".ifo": "monument_unfinished_03_tycoons.ifo", 
+      "BuildBlocker.x": 18, 
+      "BuildBlocker.z": 13, 
       "BuildCost.BuildingModules": 80, 
       "BuildCost.Concrete": 25, 
       "BuildCost.Credits": 50000, 
@@ -244,7 +268,9 @@
       "Unlock.ResidentLevel": "Tycoons4"
     }, 
     {
-      ".ifo": "tycoons\\public\\monument_tycoons\\monument_tycoons.ifo", 
+      ".ifo": "monument_tycoons.ifo", 
+      "BuildBlocker.x": 18, 
+      "BuildBlocker.z": 13, 
       "BuildCost.BuildingModules": 80, 
       "BuildCost.Concrete": 25, 
       "BuildCost.Credits": 50000, 
@@ -269,7 +295,9 @@
       "Unlock.ResidentLevel": "Tycoons4"
     }, 
     {
-      ".ifo": "tycoons\\production\\flavor_lab_tycoons\\flavor_lab_tycoons.ifo", 
+      ".ifo": "flavor_lab_tycoons.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 2, 
       "BuildCost.Concrete": 5, 
       "BuildCost.Credits": 150, 
@@ -304,7 +332,9 @@
       "Unlock.ResidentLevel": "Tycoons2"
     }, 
     {
-      ".ifo": "tycoons\\production\\meat_factory_tycoons\\meat_factory_tycoons.ifo", 
+      ".ifo": "meat_factory_tycoons.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 1, 
       "BuildCost.Concrete": 3, 
       "BuildCost.Credits": 100, 
@@ -338,7 +368,9 @@
       "Unlock.ResidentLevel": "Tycoons2"
     }, 
     {
-      ".ifo": "tycoons\\production\\food_supply_factory_tycoons\\food_supply_factory_tycoons.ifo", 
+      ".ifo": "food_supply_factory_tycoons.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 4, 
       "BuildCost.BuildingModules": 2, 
       "BuildCost.Concrete": 7, 
       "BuildCost.Credits": 200, 
@@ -376,7 +408,9 @@
       "Unlock.ResidentLevel": "Tycoons2"
     }, 
     {
-      ".ifo": "tycoons\\production\\lobster_farm_tycoons\\lobster_farm_tycoons.ifo", 
+      ".ifo": "lobster_farm_tycoons.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 5, 
       "BuildCost.Concrete": 6, 
       "BuildCost.Credits": 300, 
@@ -411,7 +445,9 @@
       "Unlock.ResidentLevel": "Tycoons3"
     }, 
     {
-      ".ifo": "tycoons\\production\\truffle_farm_tycoons\\truffel_farm_tycoons.ifo", 
+      ".ifo": "truffel_farm_tycoons.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 3, 
       "BuildCost.Concrete": 8, 
       "BuildCost.Credits": 200, 
       "BuildCost.Steel": 3, 
@@ -446,7 +482,9 @@
       "Unlock.ResidentLevel": "Tycoons3"
     }, 
     {
-      ".ifo": "tycoons\\production\\gourmet_factory_tycoons\\gourmet_factory_tycoons.ifo", 
+      ".ifo": "gourmet_factory_tycoons.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 4, 
       "BuildCost.BuildingModules": 8, 
       "BuildCost.Concrete": 10, 
       "BuildCost.Credits": 400, 
@@ -485,7 +523,9 @@
       "Unlock.ResidentLevel": "Tycoons3"
     }, 
     {
-      ".ifo": "tycoons\\production\\distillery_tycoons\\distillery_tycoon.ifo", 
+      ".ifo": "distillery_tycoon.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 2, 
       "BuildCost.Credits": 50, 
       "BuildCost.Tools": 1, 
@@ -518,7 +558,9 @@
       "Unlock.ResidentLevel": "Tycoons1"
     }, 
     {
-      ".ifo": "tycoons\\production\\champagne_cellar_tycoons\\champagne_cellar_tycoons.ifo", 
+      ".ifo": "champagne_cellar_tycoons.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 4, 
       "BuildCost.BuildingModules": 7, 
       "BuildCost.Concrete": 12, 
       "BuildCost.Credits": 400, 
@@ -557,7 +599,9 @@
       "Unlock.ResidentLevel": "Tycoons3"
     }, 
     {
-      ".ifo": "tycoons\\production\\vineyard_tycoon\\vineyard_tycoons.ifo", 
+      ".ifo": "vineyard_tycoons.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 3, 
       "BuildCost.Concrete": 7, 
       "BuildCost.Credits": 200, 
       "BuildCost.Steel": 8, 
@@ -592,7 +636,9 @@
       "Unlock.ResidentLevel": "Tycoons3"
     }, 
     {
-      ".ifo": "tycoons\\production\\oil_driller_tycoons\\oil_driller_tycoons.ifo", 
+      ".ifo": "oil_driller_tycoons.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 4, 
       "BuildCost.BuildingModules": 1, 
       "BuildCost.Concrete": 3, 
       "BuildCost.Credits": 150, 
@@ -624,7 +670,9 @@
       "Unlock.ResidentLevel": "Tycoons2"
     }, 
     {
-      ".ifo": "tycoons\\production\\plastic_factory_tycoons\\plastic_factory_tycoons.ifo", 
+      ".ifo": "plastic_factory_tycoons.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 4, 
       "BuildCost.BuildingModules": 2, 
       "BuildCost.Concrete": 6, 
       "BuildCost.Credits": 300, 
@@ -659,7 +707,9 @@
       "Unlock.ResidentLevel": "Tycoons2"
     }, 
     {
-      ".ifo": "tycoons\\production\\gold_refinery_tycoons\\gold_refinery_tycoons.ifo", 
+      ".ifo": "gold_refinery_tycoons.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 7, 
       "BuildCost.BuildingModules": 7, 
       "BuildCost.Credits": 400, 
       "BuildCost.Steel": 8, 
@@ -692,7 +742,9 @@
       "Unlock.ResidentLevel": "Tycoons4"
     }, 
     {
-      ".ifo": "tycoons\\production\\gold_smeltery_tycoons\\gold_smeltery_tycoons.ifo", 
+      ".ifo": "gold_smeltery_tycoons.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 4, 
       "BuildCost.BuildingModules": 8, 
       "BuildCost.Concrete": 15, 
       "BuildCost.Credits": 500, 
@@ -731,7 +783,9 @@
       "Unlock.ResidentLevel": "Tycoons4"
     }, 
     {
-      ".ifo": "tycoons\\production\\jewelry_manufactory_tycoons\\jewelry_manufactory_tycoons.ifo", 
+      ".ifo": "jewelry_manufactory_tycoons.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 4, 
       "BuildCost.BuildingModules": 9, 
       "BuildCost.Concrete": 18, 
       "BuildCost.Credits": 600, 
@@ -770,7 +824,9 @@
       "Unlock.ResidentLevel": "Tycoons4"
     }, 
     {
-      ".ifo": "tycoons\\production\\fat_factory_tycoons\\fat_factory_tycoons.ifo", 
+      ".ifo": "fat_factory_tycoons.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 3, 
       "BuildCost.Concrete": 12, 
       "BuildCost.Credits": 100, 
       "BuildCost.Steel": 14, 
@@ -804,7 +860,9 @@
       "Unlock.ResidentLevel": "Tycoons3"
     }, 
     {
-      ".ifo": "tycoons\\production\\chemical_plant_tycoons\\chemical_plant_tycoons.ifo", 
+      ".ifo": "chemical_plant_tycoons.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 12, 
       "BuildCost.Concrete": 20, 
       "BuildCost.Credits": 400, 
@@ -843,7 +901,9 @@
       "Unlock.ResidentLevel": "Tycoons4"
     }, 
     {
-      ".ifo": "tycoons\\production\\healthcare_office_tycoons\\healthcare_office_tycoons.ifo", 
+      ".ifo": "healthcare_office_tycoons.ifo", 
+      "BuildBlocker.x": 5, 
+      "BuildBlocker.z": 4, 
       "BuildCost.BuildingModules": 15, 
       "BuildCost.Concrete": 25, 
       "BuildCost.Credits": 1000, 
@@ -882,7 +942,9 @@
       "Unlock.ResidentLevel": "Tycoons4"
     }, 
     {
-      ".ifo": "tycoons\\production\\excavator_tycoons\\excavator_tycoons.ifo", 
+      ".ifo": "excavator_tycoons.ifo", 
+      "BuildBlocker.x": 5, 
+      "BuildBlocker.z": 8, 
       "BuildCost.BuildingModules": 1, 
       "BuildCost.Credits": 50, 
       "BuildCost.Tools": 3, 
@@ -911,7 +973,9 @@
       "Unlock.ResidentLevel": "Tycoons1"
     }, 
     {
-      ".ifo": "tycoons\\production\\steel_works\\steel_works.ifo", 
+      ".ifo": "steel_works.ifo", 
+      "BuildBlocker.x": 5, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 6, 
       "BuildCost.Concrete": 8, 
       "BuildCost.Credits": 400, 
@@ -946,7 +1010,9 @@
       "Unlock.ResidentLevel": "Tycoons3"
     }, 
     {
-      ".ifo": "tycoons\\production\\heavy_arsenal_tycoons\\heavy_arsenal_tycoons.ifo", 
+      ".ifo": "heavy_arsenal_tycoons.ifo", 
+      "BuildBlocker.x": 5, 
+      "BuildBlocker.z": 6, 
       "BuildCost.BuildingModules": 4, 
       "BuildCost.Credits": 1000, 
       "BuildCost.Steel": 12, 
@@ -984,7 +1050,9 @@
       "Unlock.ResidentLevel": "Tycoons3"
     }, 
     {
-      ".ifo": "tycoons\\production\\explosive_factory_tycoons\\tycoons_explosive_factory.ifo", 
+      ".ifo": "tycoons_explosive_factory.ifo", 
+      "BuildBlocker.x": 6, 
+      "BuildBlocker.z": 4, 
       "BuildCost.Concrete": 8, 
       "BuildCost.Credits": 600, 
       "BuildCost.Steel": 5, 
@@ -1019,7 +1087,9 @@
       "Unlock.ResidentLevel": "Tycoons3"
     }, 
     {
-      ".ifo": "tycoons\\production\\concrete_factory_tycoons\\concrete_factory_tycoons.ifo", 
+      ".ifo": "concrete_factory_tycoons.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 4, 
       "BuildCost.BuildingModules": 3, 
       "BuildCost.Credits": 250, 
       "BuildCost.Tools": 4, 
@@ -1056,7 +1126,9 @@
       "Unlock.ResidentLevel": "Tycoons2"
     }, 
     {
-      ".ifo": "tycoons\\production\\fuel_assembly_factory_tycoons\\fuel_assembly_factory_tycoons.ifo", 
+      ".ifo": "fuel_assembly_factory_tycoons.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 4, 
       "BuildCost.BuildingModules": 5, 
       "BuildCost.Concrete": 4, 
       "BuildCost.Credits": 600, 
@@ -1092,7 +1164,9 @@
       "Unlock.ResidentLevel": "Tycoons3"
     }, 
     {
-      ".ifo": "others\\production\\basalt_crusher_others\\basalt_crusher_others.ifo", 
+      ".ifo": "basalt_crusher_others.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 4, 
       "BuildCost.Credits": 50, 
       "BuildCost.Tools": 1, 
       "Eng": "Basalt crusher", 
@@ -1119,7 +1193,9 @@
       "Unlock.IntermediateLevel": "IntermediateTycoons"
     }, 
     {
-      ".ifo": "tycoons\\production\\coal_fired_power_plant_tycoons\\coal_fired_power_plant_tycoons.ifo", 
+      ".ifo": "coal_fired_power_plant_tycoons.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 4, 
       "BuildCost.BuildingModules": 1, 
       "BuildCost.Credits": 350, 
       "BuildCost.Tools": 4, 
@@ -1142,7 +1218,9 @@
       "Unlock.ResidentLevel": "Tycoons1"
     }, 
     {
-      ".ifo": "tycoons\\production\\nuclear_power_plant_tycoons\\nuclear_power_plant_tycoons.ifo", 
+      ".ifo": "nuclear_power_plant_tycoons.ifo", 
+      "BuildBlocker.x": 8, 
+      "BuildBlocker.z": 8, 
       "BuildCost.BuildingModules": 10, 
       "BuildCost.Concrete": 30, 
       "BuildCost.Credits": 3000, 
@@ -1167,7 +1245,9 @@
       "Unlock.ResidentLevel": "Tycoons3"
     }, 
     {
-      ".ifo": "tycoons\\production\\nuclear_power_plant_tycoons\\nuclear_power_plant_destroyed_tycoons.ifo", 
+      ".ifo": "nuclear_power_plant_destroyed_tycoons.ifo", 
+      "BuildBlocker.x": 8, 
+      "BuildBlocker.z": 8, 
       "Eng": "Destroyed Nuclear power plant", 
       "Faction": "tycoons", 
       "GUID": 10270, 
@@ -1180,7 +1260,9 @@
       "Template": "FactoryBuilding"
     }, 
     {
-      ".ifo": "tycoons\\special\\ark_tycoons\\ark_tycoons.ifo", 
+      ".ifo": "ark_tycoons.ifo", 
+      "BuildBlocker.x": 35, 
+      "BuildBlocker.z": 35, 
       "Eng": "Haven", 
       "Faction": "tycoons", 
       "GUID": 10084, 
@@ -1190,7 +1272,9 @@
       "Template": "Ark"
     }, 
     {
-      ".ifo": "tycoons\\special\\shipyard_tycoons\\shipyard_tycoons.ifo", 
+      ".ifo": "shipyard_tycoons.ifo", 
+      "BuildBlocker.x": 6, 
+      "BuildBlocker.z": 8, 
       "BuildCost.BuildingModules": 3, 
       "BuildCost.Concrete": 9, 
       "BuildCost.Credits": 400, 
@@ -1215,7 +1299,9 @@
       "Unlock.ResidentLevel": "Tycoons2"
     }, 
     {
-      ".ifo": "tycoons\\special\\missile_launching_platform_tycoons\\missile_launching_platform_tycoons.ifo", 
+      ".ifo": "missile_launching_platform_tycoons.ifo", 
+      "BuildBlocker.x": 5, 
+      "BuildBlocker.z": 5, 
       "BuildCost.BuildingModules": 50, 
       "BuildCost.Concrete": 36, 
       "BuildCost.Credits": 20000, 
@@ -1242,7 +1328,9 @@
       "Unlock.ResidentLevel": "Tycoons4"
     }, 
     {
-      ".ifo": "tycoons\\special\\final_storage_tycoons\\final_storage_tycoons.ifo", 
+      ".ifo": "final_storage_tycoons.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 4, 
       "BuildCost.BuildingModules": 30, 
       "BuildCost.Concrete": 25, 
       "BuildCost.Credits": 5000, 
@@ -1269,7 +1357,9 @@
       "Unlock.ResidentLevel": "Tycoons4"
     }, 
     {
-      ".ifo": "tycoons\\production\\waste_incinerator_tycoons\\waste_incinerator_tycoons.ifo", 
+      ".ifo": "waste_incinerator_tycoons.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 6, 
       "BuildCost.BuildingModules": 4, 
       "BuildCost.Concrete": 12, 
       "BuildCost.Credits": 800, 
@@ -1294,7 +1384,9 @@
       "Unlock.ResidentLevel": "Tycoons2"
     }, 
     {
-      ".ifo": "tycoons\\special\\deacidification_station_tycoons\\deacidification_station_tycoons.ifo", 
+      ".ifo": "deacidification_station_tycoons.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 15, 
       "BuildCost.Concrete": 15, 
       "BuildCost.Credits": 2000, 
@@ -1320,7 +1412,9 @@
       "Unlock.ResidentLevel": "Tycoons3"
     }, 
     {
-      ".ifo": "tycoons\\ornaments\\depot_tycoons\\depot_tycoons.ifo", 
+      ".ifo": "depot_tycoons.ifo", 
+      "BuildBlocker.x": 2, 
+      "BuildBlocker.z": 2, 
       "BuildCost.Credits": 200, 
       "Eng": "Loading area", 
       "Faction": "tycoons", 
@@ -1332,7 +1426,9 @@
       "Template": "OrnamentBuilding"
     }, 
     {
-      ".ifo": "tycoons\\ornaments\\supply_tycoons\\supply_tycoons_01.ifo", 
+      ".ifo": "supply_tycoons_01.ifo", 
+      "BuildBlocker.x": 1, 
+      "BuildBlocker.z": 1, 
       "BuildCost.Credits": 200, 
       "Eng": "Power pole", 
       "Faction": "tycoons", 
@@ -1344,7 +1440,9 @@
       "Template": "OrnamentBuilding"
     }, 
     {
-      ".ifo": "tycoons\\ornaments\\supply_tycoons\\supply_tycoons_02.ifo", 
+      ".ifo": "supply_tycoons_02.ifo", 
+      "BuildBlocker.x": 1, 
+      "BuildBlocker.z": 1, 
       "BuildCost.Credits": 200, 
       "Eng": "Streetlight", 
       "Faction": "tycoons", 
@@ -1356,7 +1454,9 @@
       "Template": "OrnamentBuilding"
     }, 
     {
-      ".ifo": "tycoons\\ornaments\\supply_tycoons\\supply_tycoons_03.ifo", 
+      ".ifo": "supply_tycoons_03.ifo", 
+      "BuildBlocker.x": 1, 
+      "BuildBlocker.z": 1, 
       "BuildCost.Credits": 200, 
       "Eng": "Public address system", 
       "Faction": "tycoons", 
@@ -1368,7 +1468,9 @@
       "Template": "OrnamentBuilding"
     }, 
     {
-      ".ifo": "tycoons\\ornaments\\tanks_tycoons\\tanks_tycoons_01.ifo", 
+      ".ifo": "tanks_tycoons_01.ifo", 
+      "BuildBlocker.x": 1, 
+      "BuildBlocker.z": 2, 
       "BuildCost.Credits": 200, 
       "Eng": "Gas tank", 
       "Faction": "tycoons", 
@@ -1380,7 +1482,9 @@
       "Template": "OrnamentBuilding"
     }, 
     {
-      ".ifo": "tycoons\\ornaments\\tanks_tycoons\\tanks_tycoons_02.ifo", 
+      ".ifo": "tanks_tycoons_02.ifo", 
+      "BuildBlocker.x": 1, 
+      "BuildBlocker.z": 1, 
       "BuildCost.Credits": 200, 
       "Eng": "Silo", 
       "Faction": "tycoons", 
@@ -1392,7 +1496,9 @@
       "Template": "OrnamentBuilding"
     }, 
     {
-      ".ifo": "tycoons\\ornaments\\tanks_tycoons\\tanks_tycoons_03.ifo", 
+      ".ifo": "tanks_tycoons_03.ifo", 
+      "BuildBlocker.x": 2, 
+      "BuildBlocker.z": 1, 
       "BuildCost.Credits": 200, 
       "Eng": "Double silo", 
       "Faction": "tycoons", 
@@ -1404,7 +1510,9 @@
       "Template": "OrnamentBuilding"
     }, 
     {
-      ".ifo": "tycoons\\production\\meat_factory_field_tycoons\\meat_factory_field_tycoons.ifo", 
+      ".ifo": "meat_factory_field_tycoons.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 4, 
       "BuildCost.Credits": 15, 
       "Eng": "Pigsty", 
       "Faction": "tycoons", 
@@ -1418,7 +1526,9 @@
       "Unlock.ResidentLevel": "Tycoons2"
     }, 
     {
-      ".ifo": "tycoons\\production\\flavor_lab_field_tycoons\\flavor_lab_field_tycoons.ifo", 
+      ".ifo": "flavor_lab_field_tycoons.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 4, 
       "BuildCost.Credits": 20, 
       "Eng": "Vegetable cultivation", 
       "Faction": "tycoons", 
@@ -1432,7 +1542,9 @@
       "Unlock.ResidentLevel": "Tycoons2"
     }, 
     {
-      ".ifo": "tycoons\\production\\truffel_farm_field_tycoons\\truffel_farm_field_tycoons.ifo", 
+      ".ifo": "truffel_farm_field_tycoons.ifo", 
+      "BuildBlocker.x": 5, 
+      "BuildBlocker.z": 3, 
       "BuildCost.Credits": 20, 
       "Eng": "Truffle farm field", 
       "Faction": "tycoons", 
@@ -1446,7 +1558,9 @@
       "Unlock.ResidentLevel": "Tycoons3"
     }, 
     {
-      ".ifo": "tycoons\\production\\distillery_field_tycoons\\distillery_field_tycoons.ifo", 
+      ".ifo": "distillery_field_tycoons.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 4, 
       "BuildCost.Credits": 5, 
       "Eng": "Rice paddies", 
       "Faction": "tycoons", 
@@ -1460,7 +1574,9 @@
       "Unlock.ResidentLevel": "Tycoons1"
     }, 
     {
-      ".ifo": "tycoons\\production\\vineyard_field_tycoons\\vineyard_field_tycoons.ifo", 
+      ".ifo": "vineyard_field_tycoons.ifo", 
+      "BuildBlocker.x": 6, 
+      "BuildBlocker.z": 3, 
       "BuildCost.Credits": 15, 
       "Eng": "Vineyards", 
       "Faction": "tycoons", 
@@ -1474,7 +1590,9 @@
       "Unlock.ResidentLevel": "Tycoons3"
     }, 
     {
-      ".ifo": "tycoons\\production\\fat_factory_field_tycoons\\fat_factory_field_tycoons.ifo", 
+      ".ifo": "fat_factory_field_tycoons.ifo", 
+      "BuildBlocker.x": 2, 
+      "BuildBlocker.z": 3, 
       "BuildCost.Credits": 10, 
       "Eng": "Slaughterhouse", 
       "Faction": "tycoons", 
@@ -1488,7 +1606,9 @@
       "Unlock.ResidentLevel": "Tycoons4"
     }, 
     {
-      ".ifo": "ecos\\residence\\pioneer_residence_ecos_01\\pioneer_residence_ecos_01.ifo", 
+      ".ifo": "pioneer_residence_ecos_01.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 2, 
       "Eng": "Worker Barracks", 
       "Faction": "ecos", 
@@ -1501,7 +1621,9 @@
       "Unlock.IntermediateLevel": "IntermediateEcos"
     }, 
     {
-      ".ifo": "ecos\\residence\\villager_residence_ecos_01\\villager_residence_ecos_01.ifo", 
+      ".ifo": "villager_residence_ecos_01.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 2, 
       "BuildCost.Tools": 1, 
       "Eng": "Employee House", 
@@ -1515,7 +1637,9 @@
       "Unlock.IntermediateLevel": "IntermediateEcos"
     }, 
     {
-      ".ifo": "ecos\\residence\\builder residence_ecos_01\\builder_residence_ecos_01.ifo", 
+      ".ifo": "builder_residence_ecos_01.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 4, 
       "BuildCost.Tools": 3, 
       "BuildCost.Wood": 3, 
@@ -1530,7 +1654,9 @@
       "Unlock.IntermediateLevel": "IntermediateEcos"
     }, 
     {
-      ".ifo": "ecos\\residence\\creator_residence_ecos_01\\creator_residence_ecos_01.ifo", 
+      ".ifo": "creator_residence_ecos_01.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 5, 
       "BuildCost.Glass": 4, 
       "BuildCost.Tools": 6, 
@@ -1546,7 +1672,9 @@
       "Unlock.IntermediateLevel": "IntermediateEcos"
     }, 
     {
-      ".ifo": "ecos\\residence\\destroyed_residences_ecos\\destroyed_residence_01_ecos.ifo", 
+      ".ifo": "destroyed_residence_01_ecos.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 2, 
       "Eng": "Residence ruins", 
       "Faction": "ecos", 
@@ -1558,7 +1686,9 @@
       "Unlock.IntermediateLevel": "IntermediateTycoons"
     }, 
     {
-      ".ifo": "ecos\\public\\town_center_ecos\\town_center_ecos.ifo", 
+      ".ifo": "town_center_ecos.ifo", 
+      "BuildBlocker.x": 8, 
+      "BuildBlocker.z": 6, 
       "BuildCost.BuildingModules": 5, 
       "BuildCost.Credits": 600, 
       "BuildCost.Tools": 3, 
@@ -1577,7 +1707,9 @@
       "Template": "PublicBuilding"
     }, 
     {
-      ".ifo": "ecos\\public\\concert_hall_ecos\\concert_hall_ecos.ifo", 
+      ".ifo": "concert_hall_ecos.ifo", 
+      "BuildBlocker.x": 5, 
+      "BuildBlocker.z": 6, 
       "BuildCost.BuildingModules": 4, 
       "BuildCost.Credits": 600, 
       "BuildCost.Tools": 3, 
@@ -1600,7 +1732,9 @@
       "Unlock.ResidentLevel": "Ecos1"
     }, 
     {
-      ".ifo": "ecos\\special\\education_network\\education_network_ecos.ifo", 
+      ".ifo": "education_network_ecos.ifo", 
+      "BuildBlocker.x": 6, 
+      "BuildBlocker.z": 6, 
       "BuildCost.BuildingModules": 10, 
       "BuildCost.Credits": 800, 
       "BuildCost.Tools": 12, 
@@ -1625,7 +1759,9 @@
       "Unlock.ResidentLevel": "Ecos2"
     }, 
     {
-      ".ifo": "ecos\\public\\congress_center_ecos\\congress_center_ecos.ifo", 
+      ".ifo": "congress_center_ecos.ifo", 
+      "BuildBlocker.x": 9, 
+      "BuildBlocker.z": 7, 
       "BuildCost.BuildingModules": 15, 
       "BuildCost.Credits": 1200, 
       "BuildCost.Glass": 25, 
@@ -1650,7 +1786,9 @@
       "Unlock.ResidentLevel": "Ecos3"
     }, 
     {
-      ".ifo": "ecos\\public\\monument_ecos\\monument_unfinished01_ecos.ifo", 
+      ".ifo": "monument_unfinished01_ecos.ifo", 
+      "BuildBlocker.x": 16, 
+      "BuildBlocker.z": 12, 
       "BuildCost.BuildingModules": 80, 
       "BuildCost.Credits": 50000, 
       "BuildCost.Glass": 36, 
@@ -1675,7 +1813,9 @@
       "Unlock.ResidentLevel": "Ecos4"
     }, 
     {
-      ".ifo": "ecos\\public\\monument_ecos\\monument_unfinished02_ecos.ifo", 
+      ".ifo": "monument_unfinished02_ecos.ifo", 
+      "BuildBlocker.x": 16, 
+      "BuildBlocker.z": 12, 
       "BuildCost.BuildingModules": 80, 
       "BuildCost.Credits": 50000, 
       "BuildCost.Glass": 36, 
@@ -1700,7 +1840,9 @@
       "Unlock.ResidentLevel": "Ecos4"
     }, 
     {
-      ".ifo": "ecos\\public\\monument_ecos\\monument_unfinished03_ecos.ifo", 
+      ".ifo": "monument_unfinished03_ecos.ifo", 
+      "BuildBlocker.x": 16, 
+      "BuildBlocker.z": 12, 
       "BuildCost.BuildingModules": 80, 
       "BuildCost.Credits": 50000, 
       "BuildCost.Glass": 36, 
@@ -1725,7 +1867,9 @@
       "Unlock.ResidentLevel": "Ecos4"
     }, 
     {
-      ".ifo": "ecos\\public\\monument_ecos\\monument_ecos.ifo", 
+      ".ifo": "monument_ecos.ifo", 
+      "BuildBlocker.x": 16, 
+      "BuildBlocker.z": 12, 
       "BuildCost.BuildingModules": 80, 
       "BuildCost.Credits": 50000, 
       "BuildCost.Glass": 36, 
@@ -1750,7 +1894,9 @@
       "Unlock.ResidentLevel": "Ecos4"
     }, 
     {
-      ".ifo": "ecos\\production\\vegetable_farm_ecos\\vegetable_farm_ecos.ifo", 
+      ".ifo": "vegetable_farm_ecos.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 2, 
       "BuildCost.Credits": 200, 
       "BuildCost.Tools": 2, 
@@ -1783,7 +1929,9 @@
       "Unlock.ResidentLevel": "Ecos2"
     }, 
     {
-      ".ifo": "ecos\\production\\soy_farm_ecos\\soy_farm_ecos.ifo", 
+      ".ifo": "soy_farm_ecos.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 1, 
       "BuildCost.Credits": 250, 
       "BuildCost.Tools": 3, 
@@ -1816,7 +1964,9 @@
       "Unlock.ResidentLevel": "Ecos2"
     }, 
     {
-      ".ifo": "ecos\\production\\health_food_factory_ecos\\health_food_factory_ecos.ifo", 
+      ".ifo": "health_food_factory_ecos.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 4, 
       "BuildCost.BuildingModules": 2, 
       "BuildCost.Credits": 300, 
       "BuildCost.Tools": 2, 
@@ -1854,7 +2004,9 @@
       "Unlock.ResidentLevel": "Ecos2"
     }, 
     {
-      ".ifo": "ecos\\production\\grain_farm_ecos\\grain_farm_ecos.ifo", 
+      ".ifo": "grain_farm_ecos.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 3, 
       "BuildCost.Credits": 150, 
       "BuildCost.Glass": 4, 
       "BuildCost.Tools": 5, 
@@ -1889,7 +2041,9 @@
       "Unlock.ResidentLevel": "Ecos3"
     }, 
     {
-      ".ifo": "ecos\\production\\water_mill_ecos\\water_mill_ecos.ifo", 
+      ".ifo": "water_mill_ecos.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 2, 
       "BuildCost.BuildingModules": 4, 
       "BuildCost.Credits": 400, 
       "BuildCost.Glass": 6, 
@@ -1925,7 +2079,9 @@
       "Unlock.ResidentLevel": "Ecos3"
     }, 
     {
-      ".ifo": "ecos\\production\\bakery_ecos\\bakery_ecos.ifo", 
+      ".ifo": "bakery_ecos.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 8, 
       "BuildCost.Credits": 300, 
       "BuildCost.Glass": 10, 
@@ -1964,7 +2120,9 @@
       "Unlock.ResidentLevel": "Ecos3"
     }, 
     {
-      ".ifo": "ecos\\production\\tea_plantation\\tea_plantation.ifo", 
+      ".ifo": "tea_plantation.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 2, 
       "BuildCost.Credits": 100, 
       "BuildCost.Tools": 1, 
@@ -1994,7 +2152,9 @@
       "Unlock.ResidentLevel": "Ecos1"
     }, 
     {
-      ".ifo": "ecos\\production\\fruit_plantation_ecos\\fruit_plantation_ecos.ifo", 
+      ".ifo": "fruit_plantation_ecos.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 3, 
       "BuildCost.Credits": 300, 
       "BuildCost.Glass": 3, 
       "BuildCost.Tools": 5, 
@@ -2027,7 +2187,9 @@
       "Unlock.ResidentLevel": "Ecos3"
     }, 
     {
-      ".ifo": "ecos\\production\\dairy_farm_ecos\\dairy_farm_ecos.ifo", 
+      ".ifo": "dairy_farm_ecos.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 4, 
       "BuildCost.Credits": 400, 
       "BuildCost.Glass": 4, 
       "BuildCost.Tools": 3, 
@@ -2061,7 +2223,9 @@
       "Unlock.ResidentLevel": "Ecos3"
     }, 
     {
-      ".ifo": "ecos\\production\\health_drink_factory_ecos\\health_drink_factory_ecos.ifo", 
+      ".ifo": "health_drink_factory_ecos.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 4, 
       "BuildCost.BuildingModules": 6, 
       "BuildCost.Credits": 500, 
       "BuildCost.Glass": 8, 
@@ -2100,7 +2264,9 @@
       "Unlock.ResidentLevel": "Ecos3"
     }, 
     {
-      ".ifo": "ecos\\production\\communicator_factory_ecos\\communicator_factory_ecos.ifo", 
+      ".ifo": "communicator_factory_ecos.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 1, 
       "BuildCost.Credits": 300, 
       "BuildCost.Tools": 6, 
@@ -2135,7 +2301,9 @@
       "Unlock.ResidentLevel": "Ecos2"
     }, 
     {
-      ".ifo": "ecos\\production\\holograph_factory_ecos\\holograph_factory_ecos.ifo", 
+      ".ifo": "holograph_factory_ecos.ifo", 
+      "BuildBlocker.x": 5, 
+      "BuildBlocker.z": 4, 
       "BuildCost.BuildingModules": 8, 
       "BuildCost.Credits": 700, 
       "BuildCost.Glass": 8, 
@@ -2174,7 +2342,9 @@
       "Unlock.ResidentLevel": "Ecos4"
     }, 
     {
-      ".ifo": "ecos\\production\\corn_farm_ecos\\corn_farm_ecos.ifo", 
+      ".ifo": "corn_farm_ecos.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 4, 
       "BuildCost.Credits": 500, 
       "BuildCost.Glass": 6, 
@@ -2210,7 +2380,9 @@
       "Unlock.ResidentLevel": "Ecos4"
     }, 
     {
-      ".ifo": "ecos\\production\\biopolymer_factory_ecos\\biopolymer_factory_ecos.ifo", 
+      ".ifo": "biopolymer_factory_ecos.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 8, 
       "BuildCost.Credits": 1000, 
       "BuildCost.Glass": 8, 
@@ -2249,7 +2421,9 @@
       "Unlock.ResidentLevel": "Ecos4"
     }, 
     {
-      ".ifo": "ecos\\production\\robot_factory_ecos\\robot_factory_ecos.ifo", 
+      ".ifo": "robot_factory_ecos.ifo", 
+      "BuildBlocker.x": 6, 
+      "BuildBlocker.z": 4, 
       "BuildCost.BuildingModules": 12, 
       "BuildCost.Credits": 1200, 
       "BuildCost.Glass": 16, 
@@ -2288,7 +2462,9 @@
       "Unlock.ResidentLevel": "Ecos4"
     }, 
     {
-      ".ifo": "ecos\\production\\tree_farm_ecos\\tree_farm_ecos.ifo", 
+      ".ifo": "tree_farm_ecos.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 4, 
       "BuildCost.BuildingModules": 1, 
       "BuildCost.Credits": 250, 
       "BuildCost.Tools": 4, 
@@ -2312,7 +2488,9 @@
       "Unlock.ResidentLevel": "Ecos2"
     }, 
     {
-      ".ifo": "others\\production\\saw_mill_others\\saw_mill_others.ifo", 
+      ".ifo": "saw_mill_others.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 1, 
       "BuildCost.Credits": 400, 
       "BuildCost.Tools": 2, 
@@ -2344,7 +2522,9 @@
       "Unlock.ResidentLevel": "Ecos2"
     }, 
     {
-      ".ifo": "ecos\\production\\glassworks_ecos\\glassworks_ecos.ifo", 
+      ".ifo": "glassworks_ecos.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 4, 
       "BuildCost.BuildingModules": 4, 
       "BuildCost.Credits": 400, 
       "BuildCost.Tools": 5, 
@@ -2382,7 +2562,9 @@
       "Unlock.ResidentLevel": "Ecos3"
     }, 
     {
-      ".ifo": "ecos\\production\\debris_recycler_ecos\\debris_recycler_ecos.ifo", 
+      ".ifo": "debris_recycler_ecos.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 3, 
       "BuildCost.Credits": 100, 
       "BuildCost.Tools": 1, 
       "Eng": "Basalt\u00a0extraction", 
@@ -2407,7 +2589,9 @@
       "Unlock.IntermediateLevel": "IntermediateEcos"
     }, 
     {
-      ".ifo": "ecos\\production\\windpark_ecos\\windpark_ecos.ifo", 
+      ".ifo": "windpark_ecos.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 1, 
       "BuildCost.Credits": 120, 
       "BuildCost.Tools": 1, 
@@ -2428,7 +2612,9 @@
       "Unlock.ResidentLevel": "Ecos1"
     }, 
     {
-      ".ifo": "ecos\\production\\offshore_windpark_ecos\\offshore_windpark_ecos.ifo", 
+      ".ifo": "offshore_windpark_ecos.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 4, 
       "BuildCost.BuildingModules": 7, 
       "BuildCost.Credits": 300, 
       "BuildCost.Glass": 4, 
@@ -2450,7 +2636,9 @@
       "Unlock.ResidentLevel": "Ecos3"
     }, 
     {
-      ".ifo": "ecos\\production\\cogeneration_power_station_ecos\\cogeneration_power_station_ecos.ifo", 
+      ".ifo": "cogeneration_power_station_ecos.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 6, 
       "BuildCost.BuildingModules": 6, 
       "BuildCost.Credits": 300, 
       "BuildCost.Tools": 6, 
@@ -2472,7 +2660,9 @@
       "Unlock.ResidentLevel": "Ecos2"
     }, 
     {
-      ".ifo": "ecos\\production\\solar_tower_ecos\\solar_tower_ecos.ifo", 
+      ".ifo": "solar_tower_ecos.ifo", 
+      "BuildBlocker.x": 5, 
+      "BuildBlocker.z": 5, 
       "BuildCost.BuildingModules": 15, 
       "BuildCost.Credits": 2000, 
       "BuildCost.Glass": 30, 
@@ -2497,7 +2687,9 @@
       "Unlock.ResidentLevel": "Ecos4"
     }, 
     {
-      ".ifo": "ecos\\production\\solar_tower_field_ecos\\solar_tower_field_ecos.ifo", 
+      ".ifo": "solar_tower_field_ecos.ifo", 
+      "BuildBlocker.x": 8, 
+      "BuildBlocker.z": 8, 
       "BuildCost.Credits": 500, 
       "Eng": "Solar mirrors", 
       "Faction": "ecos", 
@@ -2511,7 +2703,7 @@
       "Unlock.ResidentLevel": "Ecos4"
     }, 
     {
-      ".ifo": "ecos\\special\\monitoring_station_ecos\\monitoring_station_ecos.ifo", 
+      ".ifo": "monitoring_station_ecos.ifo", 
       "BuildCost.BuildingModules": 6, 
       "BuildCost.Credits": 1000, 
       "BuildCost.Glass": 10, 
@@ -2538,7 +2730,9 @@
       "Unlock.ResidentLevel": "Ecos3"
     }, 
     {
-      ".ifo": "ecos\\special\\weather_control_base_ecos\\weather_control_base_ecos.ifo", 
+      ".ifo": "weather_control_base_ecos.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 3, 
       "BuildCost.Credits": 400, 
       "BuildCost.Tools": 3, 
@@ -2563,7 +2757,9 @@
       "Unlock.ResidentLevel": "Ecos2"
     }, 
     {
-      ".ifo": "ecos\\special\\river_filter_plant_ecos\\river_filter_plant_ecos.ifo", 
+      ".ifo": "river_filter_plant_ecos.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 7, 
       "BuildCost.Credits": 10000, 
       "BuildCost.Glass": 12, 
       "BuildCost.Tools": 2, 
@@ -2590,7 +2786,9 @@
       "Unlock.ResidentLevel": "Ecos4"
     }, 
     {
-      ".ifo": "ecos\\special\\ozone_maker_building_ecos\\ozone_maker_building_ecos.ifo", 
+      ".ifo": "ozone_maker_building_ecos.ifo", 
+      "BuildBlocker.x": 7, 
+      "BuildBlocker.z": 4, 
       "BuildCost.BuildingModules": 20, 
       "BuildCost.Credits": 3000, 
       "BuildCost.Glass": 20, 
@@ -2616,7 +2814,9 @@
       "Unlock.ResidentLevel": "Ecos4"
     }, 
     {
-      ".ifo": "ecos\\special\\shield_generator_ecos\\shield_generator_ecos.ifo", 
+      ".ifo": "shield_generator_ecos.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 3, 
       "BuildCost.Credits": 1000, 
       "BuildCost.Glass": 10, 
       "BuildCost.Tools": 5, 
@@ -2641,7 +2841,9 @@
       "Unlock.ResidentLevel": "Ecos4"
     }, 
     {
-      ".ifo": "ecos\\special\\shipyard_ecos\\shipyard_ecos.ifo", 
+      ".ifo": "shipyard_ecos.ifo", 
+      "BuildBlocker.x": 5, 
+      "BuildBlocker.z": 6, 
       "BuildCost.BuildingModules": 4, 
       "BuildCost.Credits": 800, 
       "BuildCost.Tools": 5, 
@@ -2664,7 +2866,9 @@
       "Unlock.ResidentLevel": "Ecos2"
     }, 
     {
-      ".ifo": "ecos\\special\\ark_base_ecos\\ark_base_ecos.ifo", 
+      ".ifo": "ark_base_ecos.ifo", 
+      "BuildBlocker.x": 35, 
+      "BuildBlocker.z": 35, 
       "Eng": "Biosphere", 
       "Faction": "ecos", 
       "GUID": 10095, 
@@ -2674,7 +2878,9 @@
       "Template": "Ark"
     }, 
     {
-      ".ifo": "ecos\\special\\anti_aircraft_site_ecos\\anti_aircraft_site_ecos.ifo", 
+      ".ifo": "anti_aircraft_site_ecos.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 5, 
       "BuildCost.Credits": 700, 
       "BuildCost.Tools": 3, 
@@ -2696,7 +2902,9 @@
       "Unlock.ResidentLevel": "Tycoons3"
     }, 
     {
-      ".ifo": "ecos\\ornaments\\eden_line_green_house_ecos\\eden_line_green_house_ecos.ifo", 
+      ".ifo": "eden_line_green_house_ecos.ifo", 
+      "BuildBlocker.x": 2, 
+      "BuildBlocker.z": 1, 
       "BuildCost.Credits": 400, 
       "Eng": "Tool shed", 
       "Faction": "ecos", 
@@ -2708,7 +2916,9 @@
       "Template": "OrnamentBuilding"
     }, 
     {
-      ".ifo": "ecos\\ornaments\\eden_line_plaza_ecos\\eden_line_plaza_ecos.ifo", 
+      ".ifo": "eden_line_plaza_ecos.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 3, 
       "BuildCost.Credits": 400, 
       "Eng": "Plaza", 
       "Faction": "ecos", 
@@ -2720,7 +2930,9 @@
       "Template": "OrnamentBuilding"
     }, 
     {
-      ".ifo": "ecos\\ornaments\\eden_line_rainwater_depot_ecos\\eden_line_rainwater_depot_ecos.ifo", 
+      ".ifo": "eden_line_rainwater_depot_ecos.ifo", 
+      "BuildBlocker.x": 2, 
+      "BuildBlocker.z": 2, 
       "BuildCost.Credits": 400, 
       "Eng": "Rain water tank", 
       "Faction": "ecos", 
@@ -2732,7 +2944,9 @@
       "Template": "OrnamentBuilding"
     }, 
     {
-      ".ifo": "ecos\\production\\vegetable_farm_field_ecos\\vegetable_farm_field_ecos.ifo", 
+      ".ifo": "vegetable_farm_field_ecos.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 4, 
       "BuildCost.Credits": 10, 
       "Eng": "Farm field", 
       "Faction": "ecos", 
@@ -2746,7 +2960,9 @@
       "Unlock.ResidentLevel": "Ecos2"
     }, 
     {
-      ".ifo": "ecos\\production\\soy_farm_ecos_field\\soy_farm_field_ecos.ifo", 
+      ".ifo": "soy_farm_field_ecos.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 4, 
       "BuildCost.Credits": 15, 
       "Eng": "Rice paddies", 
       "Faction": "ecos", 
@@ -2760,7 +2976,9 @@
       "Unlock.ResidentLevel": "Ecos2"
     }, 
     {
-      ".ifo": "ecos\\production\\grain_farm_field_ecos\\grain_farm_field_ecos.ifo", 
+      ".ifo": "grain_farm_field_ecos.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 5, 
       "BuildCost.Credits": 30, 
       "Eng": "Grain farm field", 
       "Faction": "ecos", 
@@ -2774,7 +2992,9 @@
       "Unlock.ResidentLevel": "Ecos3"
     }, 
     {
-      ".ifo": "ecos\\production\\tea_plantation_field_ecos\\tea_plantation_field_ecos.ifo", 
+      ".ifo": "tea_plantation_field_ecos.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 4, 
       "BuildCost.Credits": 5, 
       "Eng": "Tea field", 
       "Faction": "ecos", 
@@ -2788,7 +3008,9 @@
       "Unlock.ResidentLevel": "Ecos1"
     }, 
     {
-      ".ifo": "ecos\\production\\fruit_plantation_field_ecos\\fruit_plantation_field_ecos.ifo", 
+      ".ifo": "fruit_plantation_field_ecos.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 3, 
       "BuildCost.Credits": 20, 
       "Eng": "Fruit plantation field", 
       "Faction": "ecos", 
@@ -2802,7 +3024,9 @@
       "Unlock.ResidentLevel": "Ecos3"
     }, 
     {
-      ".ifo": "ecos\\production\\dairy_farm_field_ecos\\dairy_farm_field_ecos.ifo", 
+      ".ifo": "dairy_farm_field_ecos.ifo", 
+      "BuildBlocker.x": 5, 
+      "BuildBlocker.z": 5, 
       "BuildCost.Credits": 25, 
       "Eng": "Dairy farm field", 
       "Faction": "ecos", 
@@ -2816,7 +3040,9 @@
       "Unlock.ResidentLevel": "Ecos3"
     }, 
     {
-      ".ifo": "ecos\\production\\corn_farm_field_ecos\\corn_farm_field_ecos.ifo", 
+      ".ifo": "corn_farm_field_ecos.ifo", 
+      "BuildBlocker.x": 6, 
+      "BuildBlocker.z": 3, 
       "BuildCost.Credits": 30, 
       "Eng": "Corn farm field", 
       "Faction": "ecos", 
@@ -2830,7 +3056,9 @@
       "Unlock.ResidentLevel": "Ecos4"
     }, 
     {
-      ".ifo": "ecos\\production\\debris_recycler_field_ecos\\debris_recycler_field_ecos.ifo", 
+      ".ifo": "debris_recycler_field_ecos.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 4, 
       "BuildCost.Credits": 10, 
       "Eng": "Basalt quarry", 
       "Faction": "ecos", 
@@ -2842,7 +3070,9 @@
       "Unlock.IntermediateLevel": "IntermediateEcos"
     }, 
     {
-      ".ifo": "techs\\residence\\scientist_residence_techs_01\\scientist_residence_techs_01.ifo", 
+      ".ifo": "scientist_residence_techs_01.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 3, 
       "BuildCost.Tools": 2, 
       "Eng": "Assitants' domicile", 
@@ -2856,7 +3086,9 @@
       "Unlock.IntermediateLevel": "IntermediateTechs"
     }, 
     {
-      ".ifo": "techs\\residence\\genius_residence_techs_01\\genius_residence_techs_01.ifo", 
+      ".ifo": "genius_residence_techs_01.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 4, 
       "BuildCost.Carbon": 4, 
       "BuildCost.Tools": 6, 
@@ -2871,7 +3103,9 @@
       "Unlock.IntermediateLevel": "IntermediateTechs"
     }, 
     {
-      ".ifo": "techs\\residence\\destroyed_residences_techs\\scientist_residence_01_destroyed_techs.ifo", 
+      ".ifo": "scientist_residence_01_destroyed_techs.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 3, 
       "BuildCost.Tools": 4, 
       "Eng": "Residence ruins", 
@@ -2884,7 +3118,9 @@
       "Unlock.IntermediateLevel": "IntermediateTycoons"
     }, 
     {
-      ".ifo": "techs\\special\\laboratory_techs\\tech_laboratory.ifo", 
+      ".ifo": "tech_laboratory.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 4, 
       "BuildCost.BuildingModules": 5, 
       "BuildCost.Carbon": 10, 
       "BuildCost.Credits": 5000, 
@@ -2909,7 +3145,9 @@
       "Unlock.ResidentLevel": "Techs1"
     }, 
     {
-      ".ifo": "techs\\public\\town_center_techs\\town_center_techs.ifo", 
+      ".ifo": "town_center_techs.ifo", 
+      "BuildBlocker.x": 6, 
+      "BuildBlocker.z": 5, 
       "BuildCost.BuildingModules": 5, 
       "BuildCost.Credits": 2000, 
       "BuildCost.Tools": 3, 
@@ -2928,7 +3166,9 @@
       "Template": "PublicBuilding"
     }, 
     {
-      ".ifo": "techs\\special\\broadcasting_station_techs\\broadcasting_station_techs.ifo", 
+      ".ifo": "broadcasting_station_techs.ifo", 
+      "BuildBlocker.x": 6, 
+      "BuildBlocker.z": 5, 
       "BuildCost.BuildingModules": 10, 
       "BuildCost.Carbon": 15, 
       "BuildCost.Credits": 3000, 
@@ -2952,7 +3192,9 @@
       "Unlock.ResidentLevel": "Techs2"
     }, 
     {
-      ".ifo": "techs\\production\\algae_farm_techs\\algae_farm_techs.ifo", 
+      ".ifo": "algae_farm_techs.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 6, 
       "BuildCost.Credits": 500, 
       "BuildCost.Tools": 2, 
@@ -2984,7 +3226,9 @@
       "Unlock.ResidentLevel": "Techs1"
     }, 
     {
-      ".ifo": "techs\\production\\functional_food_factory_techs\\functional_food_factory_techs.ifo", 
+      ".ifo": "functional_food_factory_techs.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 8, 
       "BuildCost.Credits": 600, 
       "BuildCost.Tools": 4, 
@@ -3016,7 +3260,9 @@
       "Unlock.ResidentLevel": "Techs1"
     }, 
     {
-      ".ifo": "techs\\production\\coffee_plantation_techs\\coffee_plantation_techs.ifo", 
+      ".ifo": "coffee_plantation_techs.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 6, 
       "BuildCost.Carbon": 3, 
       "BuildCost.Credits": 500, 
@@ -3050,7 +3296,9 @@
       "Unlock.ResidentLevel": "Techs1"
     }, 
     {
-      ".ifo": "techs\\production\\energy_drink_factory_techs\\energy_drink_factory_techs.ifo", 
+      ".ifo": "energy_drink_factory_techs.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 5, 
       "BuildCost.BuildingModules": 8, 
       "BuildCost.Carbon": 8, 
       "BuildCost.Credits": 500, 
@@ -3088,7 +3336,9 @@
       "Unlock.ResidentLevel": "Techs1"
     }, 
     {
-      ".ifo": "techs\\production\\fuel_factory_techs\\techs_fuel_factory.ifo", 
+      ".ifo": "techs_fuel_factory.ifo", 
+      "BuildBlocker.x": 5, 
+      "BuildBlocker.z": 4, 
       "BuildCost.BuildingModules": 12, 
       "BuildCost.Carbon": 10, 
       "BuildCost.Credits": 500, 
@@ -3123,7 +3373,9 @@
       "Unlock.ResidentLevel": "Techs1"
     }, 
     {
-      ".ifo": "techs\\production\\advanced_arsenal_techs\\advanced_arsenal_techs.ifo", 
+      ".ifo": "advanced_arsenal_techs.ifo", 
+      "BuildBlocker.x": 5, 
+      "BuildBlocker.z": 4, 
       "BuildCost.BuildingModules": 6, 
       "BuildCost.Carbon": 6, 
       "BuildCost.Credits": 2000, 
@@ -3161,7 +3413,9 @@
       "Unlock.ResidentLevel": "Techs2"
     }, 
     {
-      ".ifo": "techs\\production\\debris_extractor_techs\\debris_extractor_techs.ifo", 
+      ".ifo": "debris_extractor_techs.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 4, 
       "BuildCost.Carbon": 8, 
       "BuildCost.Credits": 1000, 
       "BuildCost.Tools": 6, 
@@ -3191,7 +3445,9 @@
       "Unlock.ResidentLevel": "Techs2"
     }, 
     {
-      ".ifo": "techs\\production\\carbon_factory_techs\\carbon_factory_techs.ifo", 
+      ".ifo": "carbon_factory_techs.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 5, 
       "BuildCost.BuildingModules": 8, 
       "BuildCost.Credits": 1500, 
       "BuildCost.Tools": 5, 
@@ -3226,7 +3482,9 @@
       "Unlock.IntermediateLevel": "IntermediateTechs"
     }, 
     {
-      ".ifo": "techs\\production\\sea_current_turbine_techs\\sea_current_turbine_techs.ifo", 
+      ".ifo": "sea_current_turbine_techs.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 4, 
       "BuildCost.BuildingModules": 12, 
       "BuildCost.Credits": 1000, 
       "BuildCost.Tools": 5, 
@@ -3244,7 +3502,7 @@
       "Unlock.IntermediateLevel": "IntermediateTechs"
     }, 
     {
-      ".ifo": "techs\\production\\hydroelectric_powerplant_techs\\dam_center.ifo", 
+      ".ifo": "dam_center.ifo", 
       "BuildCost.BuildingModules": 30, 
       "BuildCost.Carbon": 15, 
       "BuildCost.Credits": 8000, 
@@ -3270,7 +3528,9 @@
       "Unlock.ResidentLevel": "Techs2"
     }, 
     {
-      ".ifo": "techs\\special\\academy_techs\\academy_techs.ifo", 
+      ".ifo": "academy_techs.ifo", 
+      "BuildBlocker.x": 6, 
+      "BuildBlocker.z": 5, 
       "BuildCost.BuildingModules": 15, 
       "BuildCost.Carbon": 20, 
       "BuildCost.Credits": 10000, 
@@ -3295,7 +3555,9 @@
       "Unlock.ResidentLevel": "Techs2"
     }, 
     {
-      ".ifo": "techs\\special\\submarine_base_techs\\submarine_base_techs.ifo", 
+      ".ifo": "submarine_base_techs.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 8, 
       "BuildCost.BuildingModules": 10, 
       "BuildCost.Carbon": 8, 
       "BuildCost.Credits": 1000, 
@@ -3318,7 +3580,9 @@
       "Unlock.ResidentLevel": "Techs1"
     }, 
     {
-      ".ifo": "techs\\special\\ark_techs\\ark_techs.ifo", 
+      ".ifo": "ark_techs.ifo", 
+      "BuildBlocker.x": 35, 
+      "BuildBlocker.z": 35, 
       "Eng": "Vortex", 
       "Faction": "techs", 
       "GUID": 10122, 
@@ -3328,7 +3592,9 @@
       "Template": "Ark"
     }, 
     {
-      ".ifo": "techs\\special\\ark_father_techs\\ark_father_techs.ifo", 
+      ".ifo": "ark_father_techs.ifo", 
+      "BuildBlocker.x": 36, 
+      "BuildBlocker.z": 36, 
       "Eng": "F.A.T.H.E.R. 1.0", 
       "Faction": "techs", 
       "GUID": 10264, 
@@ -3337,7 +3603,9 @@
       "Template": "Ark"
     }, 
     {
-      ".ifo": "techs\\special\\underwater_defence_battery_techs\\underwater_defence_battery_techs.ifo", 
+      ".ifo": "underwater_defence_battery_techs.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 8, 
       "BuildCost.Carbon": 3, 
       "BuildCost.Credits": 500, 
@@ -3363,7 +3631,9 @@
       "Unlock.ResidentLevel": "Techs1"
     }, 
     {
-      ".ifo": "techs\\special\\airport_techs\\airport_techs.ifo", 
+      ".ifo": "airport_techs.ifo", 
+      "BuildBlocker.x": 14, 
+      "BuildBlocker.z": 6, 
       "BuildCost.BuildingModules": 10, 
       "BuildCost.Carbon": 12, 
       "BuildCost.Credits": 1500, 
@@ -3387,7 +3657,9 @@
       "Unlock.ResidentLevel": "Techs1"
     }, 
     {
-      ".ifo": "techs\\production\\algae_farm_field_techs\\algae_farm_field_techs_algae.ifo", 
+      ".ifo": "algae_farm_field_techs_algae.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 3, 
       "BuildCost.Credits": 150, 
       "Eng": "Algae farm field", 
       "Faction": "techs", 
@@ -3401,7 +3673,9 @@
       "Unlock.ResidentLevel": "Techs1"
     }, 
     {
-      ".ifo": "techs\\production\\coffee_plantation_field_techs\\coffee_plantation_field_techs.ifo", 
+      ".ifo": "coffee_plantation_field_techs.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 4, 
       "BuildCost.Credits": 75, 
       "Eng": "Coffee plantation field", 
       "Faction": "techs", 
@@ -3415,7 +3689,9 @@
       "Unlock.ResidentLevel": "Techs1"
     }, 
     {
-      ".ifo": "others\\production\\fishery_others\\fishery_others.ifo", 
+      ".ifo": "fishery_others.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 2, 
       "BuildCost.BuildingModules": 1, 
       "BuildCost.Credits": 100, 
       "BuildCost.Tools": 2, 
@@ -3443,7 +3719,9 @@
       "Unlock.ResidentLevel": "Tycoons1"
     }, 
     {
-      ".ifo": "others\\production\\sugar_beet_plantation_others\\sugar_beet_plantation_others.ifo", 
+      ".ifo": "sugar_beet_plantation_others.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 7, 
       "BuildCost.Credits": 500, 
       "BuildCost.Tools": 8, 
@@ -3477,7 +3755,9 @@
       "Unlock.ResidentLevel": "Tycoons3"
     }, 
     {
-      ".ifo": "others\\production\\iron_mine_others\\iron_mine_others.ifo", 
+      ".ifo": "iron_mine_others.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 2, 
       "BuildCost.Credits": 600, 
       "BuildCost.Tools": 4, 
@@ -3509,7 +3789,9 @@
       "Unlock.ResidentLevel": "Tycoons2"
     }, 
     {
-      ".ifo": "others\\production\\iron_smeltery_others\\iron_smeltery_others.ifo", 
+      ".ifo": "iron_smeltery_others.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 2, 
       "BuildCost.Credits": 400, 
       "BuildCost.Tools": 4, 
@@ -3546,7 +3828,9 @@
       "Unlock.ResidentLevel": "Tycoons2"
     }, 
     {
-      ".ifo": "others\\production\\tool_factory_others\\tool_factory_others.ifo", 
+      ".ifo": "tool_factory_others.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 4, 
       "BuildCost.BuildingModules": 2, 
       "BuildCost.Credits": 500, 
       "BuildCost.Tools": 3, 
@@ -3580,7 +3864,7 @@
       "Unlock.ResidentLevel": "Tycoons2"
     }, 
     {
-      ".ifo": "others\\production\\coal_mine_others\\coal_mine_others.ifo", 
+      ".ifo": "coal_mine_others.ifo", 
       "BuildCost.BuildingModules": 2, 
       "BuildCost.Credits": 600, 
       "BuildCost.Tools": 2, 
@@ -3611,7 +3895,7 @@
       "Unlock.ResidentLevel": "Tycoons2"
     }, 
     {
-      ".ifo": "others\\production\\copper_mine_others\\copper_mine_others.ifo", 
+      ".ifo": "copper_mine_others.ifo", 
       "BuildCost.BuildingModules": 1, 
       "BuildCost.Credits": 750, 
       "BuildCost.Tools": 4, 
@@ -3643,7 +3927,7 @@
       "Unlock.ResidentLevel": "Techs2"
     }, 
     {
-      ".ifo": "others\\production\\uranium_mine_others\\uranium_mine_others.ifo", 
+      ".ifo": "uranium_mine_others.ifo", 
       "BuildCost.BuildingModules": 7, 
       "BuildCost.Concrete": 8, 
       "BuildCost.Credits": 1000, 
@@ -3677,7 +3961,9 @@
       "Unlock.ResidentLevel": "Tycoons3"
     }, 
     {
-      ".ifo": "others\\production\\sand_extractor_others\\sand_extractor_others.ifo", 
+      ".ifo": "sand_extractor_others.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 7, 
       "BuildCost.BuildingModules": 2, 
       "BuildCost.Credits": 200, 
       "BuildCost.Tools": 4, 
@@ -3709,7 +3995,9 @@
       "Unlock.ResidentLevel": "Tycoons2"
     }, 
     {
-      ".ifo": "others\\production\\limestone_quarry_others\\limestone_quarry_others.ifo", 
+      ".ifo": "limestone_quarry_others.ifo", 
+      "BuildBlocker.x": 2, 
+      "BuildBlocker.z": 2, 
       "BuildCost.BuildingModules": 4, 
       "BuildCost.Credits": 300, 
       "BuildCost.Tools": 4, 
@@ -3741,7 +4029,9 @@
       "Unlock.ResidentLevel": "Tycoons2"
     }, 
     {
-      ".ifo": "others\\production\\chip_factory_others\\chip_factory_others.ifo", 
+      ".ifo": "chip_factory_others.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 1, 
       "BuildCost.Credits": 500, 
       "BuildCost.Tools": 6, 
@@ -3778,7 +4068,9 @@
       "Unlock.ResidentLevel": "Techs2"
     }, 
     {
-      ".ifo": "others\\production\\arsenal_others\\arsenal_others.ifo", 
+      ".ifo": "arsenal_others.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 4, 
       "BuildCost.BuildingModules": 4, 
       "BuildCost.Credits": 1000, 
       "BuildCost.Tools": 6, 
@@ -3812,7 +4104,9 @@
       "Unlock.ResidentLevel": "Tycoons2"
     }, 
     {
-      ".ifo": "others\\production\\oil_rig_others\\oil_rig_others.ifo", 
+      ".ifo": "oil_rig_others.ifo", 
+      "BuildBlocker.x": 7, 
+      "BuildBlocker.z": 7, 
       "BuildCost.BuildingModules": 18, 
       "BuildCost.Credits": 3000, 
       "BuildCost.Tools": 12, 
@@ -3841,7 +4135,9 @@
       "Unlock.ResidentLevel": "Tycoons2"
     }, 
     {
-      ".ifo": "others\\production\\oil_refinery_others\\oil_refinery_others.ifo", 
+      ".ifo": "oil_refinery_others.ifo", 
+      "BuildBlocker.x": 6, 
+      "BuildBlocker.z": 5, 
       "BuildCost.BuildingModules": 2, 
       "BuildCost.Credits": 400, 
       "BuildCost.Tools": 6, 
@@ -3875,7 +4171,9 @@
       "Unlock.ResidentLevel": "Tycoons2"
     }, 
     {
-      ".ifo": "others\\production\\manganese_miner_field_others\\manganese_miner_field_others.ifo", 
+      ".ifo": "manganese_miner_field_others.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 7, 
       "BuildCost.BuildingModules": 12, 
       "BuildCost.Credits": 1000, 
       "BuildCost.Tools": 6, 
@@ -3904,7 +4202,9 @@
       "Unlock.ResidentLevel": "Tycoons4"
     }, 
     {
-      ".ifo": "others\\production\\manganese_harvesting_station_others\\manganese_harvesting_station_others.ifo", 
+      ".ifo": "manganese_harvesting_station_others.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 15, 
       "BuildCost.Credits": 1500, 
       "BuildCost.Tools": 12, 
@@ -3936,7 +4236,9 @@
       "Unlock.ResidentLevel": "Tycoons4"
     }, 
     {
-      ".ifo": "others\\production\\diamond_harvesting_station_others\\diamond_harvesting_station_others.ifo", 
+      ".ifo": "diamond_harvesting_station_others.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 4, 
       "BuildCost.BuildingModules": 20, 
       "BuildCost.Credits": 2000, 
       "BuildCost.Tools": 12, 
@@ -3967,7 +4269,9 @@
       "Unlock.ResidentLevel": "Tycoons4"
     }, 
     {
-      ".ifo": "others\\production\\black_smoker_miner_others\\black_smoker_miner_others.ifo", 
+      ".ifo": "black_smoker_miner_others.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 50, 
       "BuildCost.Credits": 4000, 
       "BuildCost.Tools": 30, 
@@ -3995,7 +4299,9 @@
       "Unlock.ResidentLevel": "Techs2"
     }, 
     {
-      ".ifo": "others\\production\\black_smoker_miner_others\\black_smoker_miner_others.ifo", 
+      ".ifo": "black_smoker_miner_others.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 50, 
       "BuildCost.Credits": 4000, 
       "BuildCost.Tools": 30, 
@@ -4022,7 +4328,9 @@
       "Unlock.ResidentLevel": "Techs2"
     }, 
     {
-      ".ifo": "others\\production\\black_smoker_miner_others\\black_smoker_miner_others.ifo", 
+      ".ifo": "black_smoker_miner_others.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 50, 
       "BuildCost.Credits": 4000, 
       "BuildCost.Tools": 30, 
@@ -4049,7 +4357,9 @@
       "Unlock.ResidentLevel": "Techs2"
     }, 
     {
-      ".ifo": "others\\production\\black_smoker_miner_others\\black_smoker_miner_others.ifo", 
+      ".ifo": "black_smoker_miner_others.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 50, 
       "BuildCost.Credits": 4000, 
       "BuildCost.Tools": 30, 
@@ -4076,7 +4386,9 @@
       "Unlock.ResidentLevel": "Techs2"
     }, 
     {
-      ".ifo": "others\\production\\black_smoker_miner_others\\black_smoker_miner_others.ifo", 
+      ".ifo": "black_smoker_miner_others.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 50, 
       "BuildCost.Credits": 4000, 
       "BuildCost.Tools": 30, 
@@ -4103,7 +4415,9 @@
       "Unlock.ResidentLevel": "Techs2"
     }, 
     {
-      ".ifo": "others\\production\\smelting_works_others\\smelting_works_others.ifo", 
+      ".ifo": "smelting_works_others.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 3, 
       "BuildCost.Credits": 50, 
       "BuildCost.Tools": 2, 
       "Eng": "Smelter", 
@@ -4129,7 +4443,9 @@
       "Template": "FactoryBuilding"
     }, 
     {
-      ".ifo": "others\\public\\warehouse_others_01\\warehouse_others_01.ifo", 
+      ".ifo": "warehouse_others_01.ifo", 
+      "BuildBlocker.x": 6, 
+      "BuildBlocker.z": 2, 
       "BuildCost.BuildingModules": 3, 
       "BuildCost.Credits": 300, 
       "BuildCost.Tools": 2, 
@@ -4148,7 +4464,9 @@
       "Template": "WarehouseWithGuns"
     }, 
     {
-      ".ifo": "others\\public\\warehouse_others_02\\warehouse_others_02.ifo", 
+      ".ifo": "warehouse_others_02.ifo", 
+      "BuildBlocker.x": 6, 
+      "BuildBlocker.z": 2, 
       "BuildCost.BuildingModules": 8, 
       "BuildCost.Credits": 500, 
       "BuildCost.Tools": 6, 
@@ -4169,7 +4487,9 @@
       "Unlock.ResidentLevel": "Tycoons2"
     }, 
     {
-      ".ifo": "others\\public\\warehouse_others_03\\warehouse_others_03.ifo", 
+      ".ifo": "warehouse_others_03.ifo", 
+      "BuildBlocker.x": 6, 
+      "BuildBlocker.z": 2, 
       "BuildCost.BuildingModules": 10, 
       "BuildCost.Credits": 1000, 
       "BuildCost.Tools": 12, 
@@ -4190,7 +4510,9 @@
       "Unlock.ResidentLevel": "Tycoons3"
     }, 
     {
-      ".ifo": "others\\public\\markethouse_01_others\\markethouse_01_others.ifo", 
+      ".ifo": "markethouse_01_others.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 4, 
       "BuildCost.BuildingModules": 1, 
       "BuildCost.Credits": 300, 
       "BuildCost.Tools": 3, 
@@ -4209,7 +4531,9 @@
       "Template": "Markethouse"
     }, 
     {
-      ".ifo": "others\\public\\markethouse_02_others\\markethouse_02_others.ifo", 
+      ".ifo": "markethouse_02_others.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 4, 
       "BuildCost.BuildingModules": 2, 
       "BuildCost.Credits": 400, 
       "BuildCost.Tools": 5, 
@@ -4230,7 +4554,9 @@
       "Unlock.ResidentLevel": "Tycoons2"
     }, 
     {
-      ".ifo": "others\\public\\markethouse_03_others\\markethouse_others_03.ifo", 
+      ".ifo": "markethouse_others_03.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 4, 
       "BuildCost.BuildingModules": 4, 
       "BuildCost.Credits": 500, 
       "BuildCost.Tools": 10, 
@@ -4251,7 +4577,9 @@
       "Unlock.ResidentLevel": "Tycoons3"
     }, 
     {
-      ".ifo": "others\\public\\underwater_warehouse_others_01\\underwater_warehouse_others_01.ifo", 
+      ".ifo": "underwater_warehouse_others_01.ifo", 
+      "BuildBlocker.x": 6, 
+      "BuildBlocker.z": 6, 
       "BuildCost.BuildingModules": 8, 
       "BuildCost.Credits": 600, 
       "BuildCost.Tools": 4, 
@@ -4270,7 +4598,9 @@
       "Template": "WarehouseWithGuns"
     }, 
     {
-      ".ifo": "others\\public\\underwater_warehouse_others_02\\underwater_warehouse_others_02.ifo", 
+      ".ifo": "underwater_warehouse_others_02.ifo", 
+      "BuildBlocker.x": 6, 
+      "BuildBlocker.z": 6, 
       "BuildCost.BuildingModules": 12, 
       "BuildCost.Credits": 800, 
       "BuildCost.Tools": 6, 
@@ -4291,7 +4621,9 @@
       "Unlock.ResidentLevel": "Tycoons2"
     }, 
     {
-      ".ifo": "others\\public\\underwater_warehouse_others_03\\underwater_warehouse_others_03.ifo", 
+      ".ifo": "underwater_warehouse_others_03.ifo", 
+      "BuildBlocker.x": 6, 
+      "BuildBlocker.z": 6, 
       "BuildCost.BuildingModules": 14, 
       "BuildCost.Carbon": 2, 
       "BuildCost.Credits": 1000, 
@@ -4313,7 +4645,9 @@
       "Unlock.ResidentLevel": "Tycoons2"
     }, 
     {
-      ".ifo": "others\\public\\underwater_markethouse_01_others\\underwater_markethouse_01_others.ifo", 
+      ".ifo": "underwater_markethouse_01_others.ifo", 
+      "BuildBlocker.x": 6, 
+      "BuildBlocker.z": 6, 
       "BuildCost.BuildingModules": 8, 
       "BuildCost.Credits": 500, 
       "BuildCost.Tools": 4, 
@@ -4334,7 +4668,9 @@
       "Unlock.ResidentLevel": "Tycoons2"
     }, 
     {
-      ".ifo": "others\\special\\ark_others\\ark_others.ifo", 
+      ".ifo": "ark_others.ifo", 
+      "BuildBlocker.x": 35, 
+      "BuildBlocker.z": 35, 
       "Eng": "Standard model", 
       "Faction": "others", 
       "GUID": 10034, 
@@ -4344,7 +4680,9 @@
       "Template": "Ark"
     }, 
     {
-      ".ifo": "others\\special\\hospital_others\\hospital_others.ifo", 
+      ".ifo": "hospital_others.ifo", 
+      "BuildBlocker.x": 6, 
+      "BuildBlocker.z": 4, 
       "BuildCost.BuildingModules": 7, 
       "BuildCost.Credits": 500, 
       "BuildCost.Tools": 6, 
@@ -4368,7 +4706,9 @@
       "Unlock.ResidentLevel": "Tycoons3"
     }, 
     {
-      ".ifo": "others\\special\\police_station_others\\police_station_others.ifo", 
+      ".ifo": "police_station_others.ifo", 
+      "BuildBlocker.x": 5, 
+      "BuildBlocker.z": 5, 
       "BuildCost.BuildingModules": 7, 
       "BuildCost.Credits": 1000, 
       "BuildCost.Tools": 10, 
@@ -4392,7 +4732,9 @@
       "Unlock.ResidentLevel": "Tycoons4"
     }, 
     {
-      ".ifo": "others\\special\\fire_station_others\\fire_station_others.ifo", 
+      ".ifo": "fire_station_others.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 6, 
       "BuildCost.BuildingModules": 6, 
       "BuildCost.Credits": 300, 
       "BuildCost.Tools": 8, 
@@ -4416,7 +4758,9 @@
       "Unlock.ResidentLevel": "Tycoons2"
     }, 
     {
-      ".ifo": "others\\special\\port_authority_others\\port_authority_others.ifo", 
+      ".ifo": "port_authority_others.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 6, 
       "BuildCost.BuildingModules": 5, 
       "BuildCost.Credits": 1200, 
       "BuildCost.Tools": 10, 
@@ -4440,7 +4784,9 @@
       "Unlock.ResidentLevel": "Tycoons2"
     }, 
     {
-      ".ifo": "others\\special\\harboursystem_others\\harboursystem_others_ground.ifo", 
+      ".ifo": "harboursystem_others_ground.ifo", 
+      "BuildBlocker.x": 1, 
+      "BuildBlocker.z": 1, 
       "BuildCost.Credits": 5, 
       "Eng": "Quay wall", 
       "Faction": "others", 
@@ -4454,7 +4800,9 @@
       "Unlock.ResidentLevel": "Tycoons2"
     }, 
     {
-      ".ifo": "others\\special\\harboursystem_others\\harboursystem_others_large_lift.ifo", 
+      ".ifo": "harboursystem_others_large_lift.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 0, 
       "Eng": "Harbour Props", 
       "Faction": "others", 
       "GUID": 10074, 
@@ -4463,7 +4811,9 @@
       "Template": "SimpleBlocking"
     }, 
     {
-      ".ifo": "others\\special\\harbour_defence_turret_others\\harbour_defence_turret_others.ifo", 
+      ".ifo": "harbour_defence_turret_others.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 8, 
       "BuildCost.Credits": 800, 
       "BuildCost.Tools": 5, 
@@ -4486,7 +4836,9 @@
       "Unlock.ResidentLevel": "Tycoons2"
     }, 
     {
-      ".ifo": "techs\\special\\advanced_defence_turret_techs\\advanced_defence_turret_techs.ifo", 
+      ".ifo": "advanced_defence_turret_techs.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 3, 
       "BuildCost.AdvancedWeapons": 4, 
       "BuildCost.Carbon": 4, 
       "BuildCost.Credits": 2500, 
@@ -4509,7 +4861,9 @@
       "Unlock.ResidentLevel": "Techs2"
     }, 
     {
-      ".ifo": "others\\special\\container_harbour_others\\container_harbour_others.ifo", 
+      ".ifo": "container_harbour_others.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 5, 
       "BuildCost.BuildingModules": 15, 
       "BuildCost.Credits": 2000, 
       "BuildCost.Tools": 10, 
@@ -4532,7 +4886,9 @@
       "Unlock.ResidentLevel": "Tycoons4"
     }, 
     {
-      ".ifo": "others\\special\\harbour_depot_others\\harbour_depot_others.ifo", 
+      ".ifo": "harbour_depot_others.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 4, 
       "BuildCost.BuildingModules": 10, 
       "BuildCost.Credits": 1000, 
       "BuildCost.Tools": 10, 
@@ -4555,7 +4911,9 @@
       "Unlock.ResidentLevel": "Tycoons2"
     }, 
     {
-      ".ifo": "others\\special\\repair_dock_others\\repair_dock_others_base.ifo", 
+      ".ifo": "repair_dock_others_base.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 3, 
       "BuildCost.BuildingModules": 3, 
       "BuildCost.Credits": 2000, 
       "BuildCost.Tools": 5, 
@@ -4580,7 +4938,9 @@
       "Unlock.ResidentLevel": "Tycoons2"
     }, 
     {
-      ".ifo": "others\\production\\sugar_beet_plantation_field_others\\sugar_beet_plantation_field_others.ifo", 
+      ".ifo": "sugar_beet_plantation_field_others.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 3, 
       "BuildCost.Credits": 50, 
       "Eng": "Sugar beet field", 
       "Faction": "others", 
@@ -4594,7 +4954,9 @@
       "Unlock.ResidentLevel": "Tycoons3"
     }, 
     {
-      ".ifo": "others\\production\\diamond_harvesting_station_field_others\\diamond_harvesting_station_field_others.ifo", 
+      ".ifo": "diamond_harvesting_station_field_others.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 3, 
       "BuildCost.Credits": 200, 
       "Eng": "Diamond harvesting fields", 
       "Faction": "others", 
@@ -4608,7 +4970,9 @@
       "Unlock.ResidentLevel": "Tycoons4"
     }, 
     {
-      ".ifo": "third party\\aquanauts\\headquarter_aquanauts\\headquarter_aquanauts.ifo", 
+      ".ifo": "headquarter_aquanauts.ifo", 
+      "BuildBlocker.x": 12, 
+      "BuildBlocker.z": 6, 
       "Eng": "Deep sea laboratory", 
       "Faction": "third party", 
       "GUID": 10018, 
@@ -4617,7 +4981,9 @@
       "Template": "ThirdPartyWarehouse"
     }, 
     {
-      ".ifo": "third party\\aquanauts\\geothermical_powerplant_aquanauts\\geothermical_powerplant_aquanauts.ifo", 
+      ".ifo": "geothermical_powerplant_aquanauts.ifo", 
+      "BuildBlocker.x": 3, 
+      "BuildBlocker.z": 3, 
       "Eng": "aquanaut_props", 
       "Faction": "third party", 
       "GUID": 10146, 
@@ -4627,7 +4993,7 @@
       "Template": "SimpleBlocking"
     }, 
     {
-      ".ifo": "ecos\\special\\monitoring_station_ecos\\monitoring_station_ecos.ifo", 
+      ".ifo": "monitoring_station_ecos.ifo", 
       "BuildCost.Credits": 1000, 
       "Eng": "Monitoring station", 
       "Faction": "third party", 
@@ -4641,7 +5007,9 @@
       "Template": "FarmBuilding"
     }, 
     {
-      ".ifo": "ecos\\special\\ozone_maker_building_ecos\\ozone_maker_building_ecos.ifo", 
+      ".ifo": "ozone_maker_building_ecos.ifo", 
+      "BuildBlocker.x": 7, 
+      "BuildBlocker.z": 4, 
       "BuildCost.Credits": 3000, 
       "Eng": "Ozone Generator Station", 
       "Faction": "third party", 
@@ -4659,7 +5027,9 @@
       "Unlock.ResidentLevel": "Ecos4"
     }, 
     {
-      ".ifo": "third party\\oil baron\\giant_pumping_station_oil_baron\\giant_pumping_station_oil_baron.ifo", 
+      ".ifo": "giant_pumping_station_oil_baron.ifo", 
+      "BuildBlocker.x": 5, 
+      "BuildBlocker.z": 2, 
       "Eng": "Sokow Transnational pumping station", 
       "Faction": "third party", 
       "GUID": 10062, 
@@ -4670,7 +5040,9 @@
       "Template": "SimpleBuilding"
     }, 
     {
-      ".ifo": "third party\\oil baron\\headquarter_oil_baron\\headquarter_oil_baron.ifo", 
+      ".ifo": "headquarter_oil_baron.ifo", 
+      "BuildBlocker.x": 7, 
+      "BuildBlocker.z": 8, 
       "Eng": "Sokow Transnational branch office", 
       "Faction": "third party", 
       "GUID": 10115, 
@@ -4681,7 +5053,9 @@
       "Template": "Warehouse"
     }, 
     {
-      ".ifo": "tycoons\\special\\shipyard_tycoons\\shipyard_tycoons.ifo", 
+      ".ifo": "shipyard_tycoons.ifo", 
+      "BuildBlocker.x": 6, 
+      "BuildBlocker.z": 8, 
       "Eng": "Shipyard", 
       "Faction": "third party", 
       "GUID": 10135, 
@@ -4697,7 +5071,7 @@
       "Template": "TaskBasedProductionBuilding"
     }, 
     {
-      ".ifo": "third party\\oil baron\\props\\chimney_01_prop_oil_baron.ifo", 
+      ".ifo": "chimney_01_prop_oil_baron.ifo", 
       "Eng": "oil_baron_props", 
       "Faction": "third party", 
       "GUID": 10251, 
@@ -4706,7 +5080,9 @@
       "Template": "SimpleBlocking"
     }, 
     {
-      ".ifo": "third party\\pirates\\harbor_pirates\\harbor_pirates.ifo", 
+      ".ifo": "harbor_pirates.ifo", 
+      "BuildBlocker.x": 20, 
+      "BuildBlocker.z": 20, 
       "Eng": "Pirate harbor", 
       "Faction": "third party", 
       "GUID": 10133, 
@@ -4716,7 +5092,9 @@
       "Template": "ThirdPartyWarehouse"
     }, 
     {
-      ".ifo": "third party\\pirates\\cannon_pirates_01\\cannon_pirates_01.ifo", 
+      ".ifo": "cannon_pirates_01.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 4, 
       "Eng": "Decrepit Pirate Cannons", 
       "Faction": "third party", 
       "GUID": 10134, 
@@ -4727,7 +5105,9 @@
       "Template": "ThirdpartyMilitaryBuilding"
     }, 
     {
-      ".ifo": "third party\\pirates\\cannon_pirates_02\\cannon_pirates_02.ifo", 
+      ".ifo": "cannon_pirates_02.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 4, 
       "Eng": "[GUIDNAME 10134]", 
       "Faction": "third party", 
       "GUID": 10250, 
@@ -4738,7 +5118,9 @@
       "Template": "ThirdpartyMilitaryBuilding"
     }, 
     {
-      ".ifo": "third party\\pirates\\harbor_pirates\\harbor_pirates_destroyed.ifo", 
+      ".ifo": "harbor_pirates_destroyed.ifo", 
+      "BuildBlocker.x": 20, 
+      "BuildBlocker.z": 20, 
       "Eng": "Destroyed Pirate Base", 
       "Faction": "third party", 
       "GUID": 10258, 
@@ -4748,7 +5130,9 @@
       "Template": "ThirdPartyWarehouse"
     }, 
     {
-      ".ifo": "third party\\pirates\\cannon_pirates_01\\cannon_pirates_destroyed_01.ifo", 
+      ".ifo": "cannon_pirates_destroyed_01.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 4, 
       "Eng": "Destroyed Pirate Cannon", 
       "Faction": "third party", 
       "GUID": 10259, 
@@ -4759,7 +5143,9 @@
       "Template": "ThirdpartyMilitaryBuilding"
     }, 
     {
-      ".ifo": "third party\\pirates\\cannon_pirates_02\\cannon_pirates_destroyed_02.ifo", 
+      ".ifo": "cannon_pirates_destroyed_02.ifo", 
+      "BuildBlocker.x": 4, 
+      "BuildBlocker.z": 4, 
       "Eng": "Destroyed Pirate Cannon", 
       "Faction": "third party", 
       "GUID": 10260, 
@@ -4770,7 +5156,9 @@
       "Template": "ThirdpartyMilitaryBuilding"
     }, 
     {
-      ".ifo": "third party\\supporters\\town_center_ecos\\town_center_ecos_supporters.ifo", 
+      ".ifo": "town_center_ecos_supporters.ifo", 
+      "BuildBlocker.x": 6, 
+      "BuildBlocker.z": 5, 
       "BuildCost.BuildingModules": 5, 
       "BuildCost.Credits": 600, 
       "BuildCost.Tools": 3, 
@@ -4789,7 +5177,9 @@
       "Template": "PublicBuilding"
     }, 
     {
-      ".ifo": "third party\\rival\\rival_town_center\\rival_town_center.ifo", 
+      ".ifo": "rival_town_center.ifo", 
+      "BuildBlocker.x": 6, 
+      "BuildBlocker.z": 5, 
       "BuildCost.BuildingModules": 5, 
       "BuildCost.Credits": 600, 
       "BuildCost.Tools": 3, 

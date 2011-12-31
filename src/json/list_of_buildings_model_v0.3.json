@@ -17,12 +17,22 @@
       "BuildCost.* added", 
       "MaintananceCost.* added", 
       "Unlock.* added"
+    ], 
+    "0.3.1": [
+      "2011-12-31", 
+      "migration to this GitHub project", 
+      "from python 2.7 to 3.2", 
+      "using data files from rda folder instead of My Documents,, but .ifo => BuildBlocker.* do not work yet"
+    ], 
+    "0.3.2": [
+      "2011-12-31", 
+      "ifo files copied to rda folder => BuildBlocker.* works just fine (i hope)"
     ]
   }, 
   "_description": "this is a list of Anno 2070 buildings with properties that help fan-made tools in there .. i tried to name the properties somewhat close to actual xml elements in game data files .. you can contact me on http://anno2070.wikia.com/wiki/User:DeathApril or peter.hozak@gmail.com", 
   "_gameversion": "v1.02 (patch3.rda)", 
   "_missing_keys": "not all objects use all the keys in this model, please check for KeyError exceptions before working with them (e.g. Production.RawNeeded2Material will be missing for factories with 1 input only)", 
-  "_version": "0.3.1", 
+  "_version": "0.3.2", 
   "buildings": {
     ".ifo": "text: path to .ifo of data2.rda data\\graphics\buildings, based on the first Object/Variations/Item/Filename for each asset", 
     "BuildBlocker.x": "int: 'x' dimension of the building in tiles (right shift by 11 bits of the number found in BuildBlocker/x element in .ifo file", 

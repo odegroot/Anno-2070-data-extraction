@@ -5,29 +5,36 @@ Created on 31.12.2011
 
 @author: peter.hozak@gmail.com (http://anno2070.wikia.com/wiki/User:DeathApril)
 
-> this github version of v0.3 is not working with ifo files - they should be added to rda folder first !!!
-> more documentation + exception handling (missing data messages) + better coding style in next version ...
+> this is a github version of v0.3 from http://aprilboy.e404.sk/anno2070/
+> more documentation + exceptions (missing data) + better coding style in next version ...
 '''
 
 from __future__ import division
-import json, re #, sys
+import json, re, os, shutil, sys
 from xml.etree import ElementTree as ET
 
-__version__ = "0.3.1"
+__version__ = "0.3.2"
 
 # global settings
-# to do: use os.path.join instead of \\
+# to do v0.4: use os.path.join instead of \\
 folder = "..\\"
 assets_path = folder + "rda\\patch3\\data\\config\\game\\assets.xml"
 icons_txt_path = folder + "rda\\eng3\\data\\loca\\eng\\txt\\icons.txt"
 guids_txt_path = folder + "rda\\eng3\\data\\loca\\eng\\txt\\guids.txt"
 properties_path = folder + "rda\\patch3\\data\\config\\game\\properties.xml"
 icons_path = folder + "rda\\patch3\\data\\config\\game\\icons.xml"
+
+# to do v0.4: use json\\icon_name_map.json instead
 IconWikiaFilessource_path = folder + "wikia\\wikia_icons_source.txt"
 IconWikiaFiles_path = folder + "wikia\\wikia_icons_map.csv"
-output_name = "json\\list_of_buildings_v" + __version__ + ".json"
-model_name = "json\\list_of_buildings_model_v" + __version__ + ".json"
-model_url = "http://aprilboy.e404.sk/anno2070/" + model_name
+
+__orig_data_folder = "C:\\Users\\Peter\\Documents\\ANNO 2070" # location of all extracted data files that are not on github
+__ifo_files = folder + "rda\\ifo_files"
+
+v = ".".join(__version__.split(".")[:2])
+output_name = "json\\list_of_buildings_v" + v + ".json"
+model_name = "json\\list_of_buildings_model_v" + v + ".json"
+model_url = "https://github.com/odegroot/Anno-2070-data-extraction/blob/master/src/" + model_name.replace("\\", "/")
 
 
 def get_building_list():
@@ -74,7 +81,7 @@ def get_building_list():
                 except: pass
                 try:    b["InfluenceRadius"] = int(asset.find("Values/Influence/InfluenceRadius").text)
                 except: pass
-                try:    b[".ifo"] = asset.find("Values/Object/Variations/Item/Filename").text.replace(".cfg",".ifo").replace("data\\graphics\\buildings\\", "")
+                try:    b[".ifo"] = (asset.find("Values/Object/Variations/Item/Filename").text.split("\\")[-1][:-3] + "ifo").lower()
                 except: pass
                 try:    b["MaxResidentCount"] = int(asset.find("Values/ResidenceBuilding/MaxResidentCount").text)
                 except: pass
@@ -259,13 +266,22 @@ def update_IconWikiaFiles():
     pass # manually for now ...
 
 
-def get_BuildBlocker(detail_path):
-    ifo_path = folder + "data2\\graphics\\buildings\\" + detail_path
-    b = ET.parse(ifo_path).find(".//BuildBlocker/Position")
+def get_BuildBlocker(ifo):
+    b = ET.parse(os.path.join(__ifo_files, ifo)).find(".//BuildBlocker/Position")
     x = abs(int(b.find("x").text)) >> 11
     z = abs(int(b.find("z").text)) >> 11
     return [x, z]
 
+def copy_ifo_files():
+    buildings = get_building_list()
+    ifos = []
+    for b in buildings:
+        ifos.append(b[".ifo"])
+    for root, dirs, files in os.walk(__orig_data_folder):
+        for f in files:
+            if f in ifos:
+                shutil.copy(os.path.join(root, f), __ifo_files)
+    return None
 
 def parse_Unlocks():
     Unlocks = {}
@@ -339,7 +355,13 @@ def main():
              "_version": __version__,
              "_gameversion": "v1.02 (patch3.rda)",
              "_missing_keys": "not all objects use all the keys in this model, please check for KeyError exceptions before working with them (e.g. Production.RawNeeded2Material will be missing for factories with 1 input only)",
-             "_changelog": {"0.3": ["2011-12-17",
+             "_changelog": {"0.3.2": ["2011-12-31",
+                                      "ifo files copied to rda folder => BuildBlocker.* works just fine (i hope)"],
+                            "0.3.1": ["2011-12-31",
+                                      "migration to this GitHub project",
+                                      "from python 2.7 to 3.2",
+                                      "using data files from rda folder instead of My Documents,, but .ifo => BuildBlocker.* do not work yet"],
+                            "0.3": ["2011-12-17",
                                     "IconFileName changed, the second number corresponds to IconIndexdo without added +1 (for icons numbered from 0 instead from 1)",
                                     "IconWikiaFile added",
                                     "Production.Product.BaseGoldPrice added (in default trade price, not in datafile format)",
@@ -422,9 +444,11 @@ def main():
                            }
              } 
     
-    #print parse_IconWikiaFilesSource()
+    #parse_IconWikiaFilesSource()
+    #copy_ifo_files()
     
     buildings = get_building_list()
+    
     print(validate(buildings, model["buildings"]))
     out_json(buildings, model)
     out_csv(buildings, model, "buildings")
