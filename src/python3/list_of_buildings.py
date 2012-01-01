@@ -10,7 +10,7 @@ Created on 31.12.2011
 '''
 
 from __future__ import division
-import json, re, os, shutil, sys
+import json, re, os, shutil, sys #@UnusedImport
 from xml.etree import ElementTree as ET
 
 __version__ = "0.3.2"
@@ -277,8 +277,7 @@ def copy_ifo_files():
     ifos = []
     for b in buildings:
         ifos.append(b[".ifo"])
-    for root, dirs, files in os.walk(__orig_data_folder):
-        del dirs # getting rid of the unused variable warning ... 
+    for root, dirs, files in os.walk(__orig_data_folder): #@UnusedVariable
         for f in files:
             if f in ifos:
                 shutil.copy(os.path.join(root, f), __ifo_files)
