@@ -278,6 +278,7 @@ def copy_ifo_files():
     for b in buildings:
         ifos.append(b[".ifo"])
     for root, dirs, files in os.walk(__orig_data_folder):
+        del dirs # getting rid of the unused variable warning ... 
         for f in files:
             if f in ifos:
                 shutil.copy(os.path.join(root, f), __ifo_files)
