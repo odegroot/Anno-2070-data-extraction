@@ -50,6 +50,7 @@ def test():
     # it looks like the CDATA[] contains 20 bytes (160 bits) = hopefully 5 x 32-bit ints, little endian byte order
     # first number is always 16, third and fifth are 0
     # second and fourth numbers are hopefully coordinates in subtiles (1 tile = 2**11 subtiles)
+    # test.isd was created manually from first polygon CDATA of an actual xml from data3.levels.islands.normal.n_l22.isd
     bit_shift = 11
     polygon = []
     with open("test.isd", "rb") as f:
@@ -58,18 +59,25 @@ def test():
             if not i_coordinates:
                 break
             try: # python 3.2
-                x = int.from_bytes(i_coordinates[4:8], 'little') >> bit_shift
-                z = int.from_bytes(i_coordinates[12:16], 'little') >> bit_shift
+                x = int.from_bytes(i_coordinates[4:8], 'little')
+                y = int.from_bytes(i_coordinates[12:16], 'little')
             except AttributeError: # python 2.7
                 from struct import unpack
-                x = unpack(str("<l"), i_coordinates[4:8])[0] >> bit_shift
-                z = unpack(str("<l"), i_coordinates[12:16])[0] >> bit_shift
-            polygon.append((x, z))
-    print(polygon)
+                x = unpack(str("<l"), i_coordinates[4:8])[0]
+                y = unpack(str("<l"), i_coordinates[12:16])[0]
+            x = x >> bit_shift
+            y = y >> bit_shift
+            polygon.append((x, y))
     
-    
+    #print(polygon)
+    png = Image.open("test.png")
+    size = png.size[1]
+    polygon = [(x+10, size-y-24) for x, y in polygon]
+    draw = ImageDraw.Draw(png)
+    draw.polygon(polygon, outline=(255,0,0))
+    del draw
+    png.save("result.png")
 
 if __name__ == "__main__":
     test()
-    #print(2**11)
     
