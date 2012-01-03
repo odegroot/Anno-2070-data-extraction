@@ -65,11 +65,11 @@ def coordinates_from_bytes(b):
 def convert_polygons_to_tiles(polygons, island_size, out_test_file=None):
     size = [i << __final_bit_shift for i in island_size] # island size is a tuple (x,y) x=width, y=height
     
-    png = Image.new("RGBA", size)
+    png = Image.new("L", size)
     draw = ImageDraw.Draw(png)
     for i in range(len(polygons)):
         print("   polygon {:2}".format(i))
-        draw.polygon(polygons[i], fill=(255,0,0))
+        draw.polygon(polygons[i], fill=(255))
     del draw
     
     png = png.resize(island_size)
@@ -82,13 +82,13 @@ def convert_polygons_to_tiles(polygons, island_size, out_test_file=None):
     for y in range(island_size[1]):
         for x in range(island_size[0]):
             p = pixels[x, y]
-            if p == (0,0,0,0):
+            if p == (0):
                 tiles += " "
-            elif p == (255,0,0,255):
+            elif p == (255):
                 tiles += "r"
-            elif p == (0,255,0,255):
+            elif p == (200):
                 tiles += "G"
-            elif p == (0,0,255,255):
+            elif p == (100):
                 tiles += "b"
             else:
                 tiles += "?"
