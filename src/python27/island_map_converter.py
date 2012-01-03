@@ -37,7 +37,7 @@ except ImportError:
     print("To download PIL, see http://www.pythonware.com/products/pil/")
     raise
 
-__version__ = "0.2"
+__version__ = "0.3"
 
 def _transform(rgb):
     # to do: create a mapping from actual .png colors ;))
