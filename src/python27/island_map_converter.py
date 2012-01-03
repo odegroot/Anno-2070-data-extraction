@@ -55,7 +55,8 @@ def test():
     # first number is always 16, third and fifth are 0
     # second and fourth numbers are hopefully coordinates in subtiles (1 tile = 2**11 subtiles)
     # test.isd was created manually from first polygon CDATA of an actual xml from data3.levels.islands.normal.n_l22.isd
-    bit_shift = 11
+    bit_shift = 6
+    unshifted = 12-bit_shift #@UnusedVariable
     polygon = []
     with open("test.isd", "rb") as f:
         while True:
@@ -69,17 +70,27 @@ def test():
                 from struct import unpack
                 x = unpack(str("<l"), i_coordinates[4:8])[0]
                 y = unpack(str("<l"), i_coordinates[12:16])[0]
-            x = x >> bit_shift
-            y = y >> bit_shift
+            x = (x + (1<<11)) >> bit_shift
+            y = (y + (1<<11)) >> bit_shift
             polygon.append((x, y))
+
+#    for i1, i2 in ((j,j+1) for j in range(10,26)):
+#        diff_x = (polygon[i2][0] - polygon[i1][0]) >> unshifted
+#        diff_y = (polygon[i2][1] - polygon[i1][1]) >> unshifted
+#        print("{}: {}, {}".format((i1,i2), diff_x, diff_y))
     
-    #print(polygon)
-    png = Image.open("test.png")
-    size = png.size[1]
-    polygon = [(x+8, size-y-24) for x, y in polygon]
+    island_size = (240, 240) # x=width, y=height
+    size = [i<<unshifted for i in island_size] 
+    print(size)
+    png = Image.new("RGBA", size)
+    polygon = [(x, size[1]-y) for x, y in polygon]
     draw = ImageDraw.Draw(png)
     draw.polygon(polygon, fill=(255,0,0))
+#    for i in range(len(polygon)):
+#        #draw.text(i, "{}, {}".format(i[0]>>unshifted, i[1]>>unshifted), fill=(255,255,255))
+#        draw.text(polygon[i], "{}".format(i), fill=(255,255,255))
     del draw
+    png = png.resize((240,240))
     png.save("result.png")
 
 if __name__ == "__main__":
