@@ -42,24 +42,13 @@ except ImportError:
 
 
 __version__ = "0.3"
-__first_bit_shift = 6
+__first_bit_shift = 6 # the bigger this number is, the better performance, but more false-positives of blocked tiles in result
 __final_bit_shift = 12 - __first_bit_shift
 
 
-def _transform(rgb):
-    # to do: create a mapping from actual .png colors ;))
-    r, g, b = rgb
-    if b > max(r,g):
-        rgb = (0, 0, 255)
-    elif g > 80 or g > 35 and g > r:
-        rgb = (0, 255, 0)
-    else:
-        rgb = (255, 0, 0)
-    return rgb
-
 def coordinates_from_bytes(b):
     # it looks like the CDATA[] contains 20 bytes (160 bits) = hopefully 5 x longs (32-bit integers), little endian byte order
-    # (16, x, 0, y, 0) where x and y are coordinates in subtiles (1 tile = 2**12 subtiles)
+    # (16, x, 0, y, 0) where x and y are coordinates in subtiles (1 tile = 2**12 x 2**12 subtiles)
     try: # python 3.2
         x = int.from_bytes(b[4:8], 'little')
         y = int.from_bytes(b[12:16], 'little')
@@ -78,14 +67,13 @@ def convert_polygons_to_tiles(polygons, island_size, out_test_file=None):
     
     png = Image.new("RGBA", size)
     draw = ImageDraw.Draw(png)
-    print("Computing polygons:")
     for i in range(len(polygons)):
-        print("   polygon {}".format(i))
-        polygon = [(x, size[1]-y) for x, y in polygons[i]]
-        draw.polygon(polygon, fill=(255,0,0))
+        print("   polygon {:2}".format(i))
+        draw.polygon(polygons[i], fill=(255,0,0))
     del draw
     
-    png = png.resize(island_size, 3)
+    png = png.resize(island_size)
+    png = png.transpose(Image.FLIP_TOP_BOTTOM)
     if out_test_file:
         png.save(out_test_file)
     
@@ -109,6 +97,7 @@ def convert_polygons_to_tiles(polygons, island_size, out_test_file=None):
 
 def test_isd():
     isd_path = "..//rda//island_maps//data3.levels.islands.normal.n_l22.isd"
+    print("{}:".format(isd_path.split(".")[-2]))
     with open(isd_path, "rb") as f:
         isd_text = f.read()
     BuildBlocker = re.split(r"</?BuildBlockerShapes>", isd_text) # splits to 3 strings - before, inside and after the element
