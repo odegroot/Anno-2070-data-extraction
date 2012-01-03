@@ -85,7 +85,7 @@ def convert_polygons_to_tiles(polygons, island_size, out_test_file=None):
         draw.polygon(polygon, fill=(255,0,0))
     del draw
     
-    png = png.resize(island_size)
+    png = png.resize(island_size, 3)
     if out_test_file:
         png.save(out_test_file)
     
