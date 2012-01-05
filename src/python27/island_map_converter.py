@@ -33,18 +33,25 @@ from future_builtins import * #@UnusedWildImport
 
 import json, re, os, sys #@UnusedImport
 from pprint import pprint #@UnusedImport
+from datetime import datetime, timedelta
 #from xml.etree import ElementTree as ET # not working :((
 try:
-    from PIL import Image, ImageDraw
+    from PIL import Image, ImageDraw #@UnusedImport
 except ImportError:
     print("To download PIL, see http://www.pythonware.com/products/pil/")
     raise
-
+try:
+    import numpy as np #@UnusedImport
+    import matplotlib.nxutils as nx
+except ImportError:
+    print("To download matplotlib, see http://matplotlib.sourceforge.net/users/installing.html")
+    raise
 
 __version__ = "0.3"
-__first_bit_shift = 6 # the bigger this number is, the better performance, but more false-positives of blocked tiles in result
+__first_bit_shift = 0 # the bigger this number is, the better performance, but more false-positives of blocked tiles in result
 __final_bit_shift = 12 - __first_bit_shift
-
+__sample_offset_x = (1<<11)
+__sample_offset_y = __sample_offset_x
 
 def coordinates_from_bytes(b):
     # it looks like the CDATA[] contains 20 bytes (160 bits) = hopefully 5 x longs (32-bit integers), little endian byte order
@@ -56,59 +63,38 @@ def coordinates_from_bytes(b):
         from struct import unpack
         x = unpack(str("<l"), b[4:8])[0]
         y = unpack(str("<l"), b[12:16])[0]
-    # + 1<<11 is here to shift coordinates from corners to the center of tiles (found out by trial and error)
     # >> __first_bit_shift helps to lower the resolution of subtiles to acceptable levels to draw polygons (performance issues)
-    x = (x + (1<<11)) >> __first_bit_shift
-    y = (y + (1<<11)) >> __first_bit_shift
+    x = x >> __first_bit_shift
+    y = y >> __first_bit_shift
     return (x, y)
-
-def convert_polygons_to_tiles(polygons, island_size, out_test_file=None):
-    size = [i << __final_bit_shift for i in island_size] # island size is a tuple (x,y) x=width, y=height
-    
-    png = Image.new("L", size)
-    draw = ImageDraw.Draw(png)
-    for i in range(len(polygons)):
-        print("   polygon {:2}".format(i))
-        draw.polygon(polygons[i], fill=(255))
-    del draw
-    
-    png = png.resize(island_size)
-    png = png.transpose(Image.FLIP_TOP_BOTTOM)
-    if out_test_file:
-        png.save(out_test_file)
-    
-    pixels = png.load()
-    tiles = "" # internal text format - 1 letter for each pixel
-    for y in range(island_size[1]):
-        for x in range(island_size[0]):
-            p = pixels[x, y]
-            if p == (0):
-                tiles += " "
-            elif p == (255):
-                tiles += "r"
-            elif p == (200):
-                tiles += "G"
-            elif p == (100):
-                tiles += "b"
-            else:
-                tiles += "?"
-        tiles += "\n"
-    return tiles
 
 def test_isd():
     isd_path = "..//rda//island_maps//data3.levels.islands.normal.n_l22.isd"
-    print("{}:".format(isd_path.split(".")[-2]))
+    print("{}".format(isd_path.split(".")[-2]))
     with open(isd_path, "rb") as f:
         isd_text = f.read()
+    
     BuildBlocker = re.split(r"</?BuildBlockerShapes>", isd_text) # splits to 3 strings - before, inside and after the element
     if len(BuildBlocker) != 3:
         e = "Previous split should have resulted in 3 strings. {} found in {}".format(len(BuildBlocker), isd_path)
         raise NotImplementedError(e)
     BuildBlocker = BuildBlocker[1].strip(b"</i>Polygon\n\r")
     polygons = re.split(r"</Polygon>\r\n</i>\r\n<i><Polygon>", BuildBlocker)
+    
+    width = 240
+    height = 240
+    island_size = (width, height)
+    # list for tiles - accessed by [y*width + x]
+    tiles = [ 0 for y in range(height) for x in range(width) ] #@UnusedVariable
+    # which points should be sampled from polygons - multiple access needed => list comprehension
+    sample_points = [ (x*(1<<__final_bit_shift)+__sample_offset_x, y*(1<<__final_bit_shift)+__sample_offset_y) for y in range(height) for x in range(width) ]
     for i in range(len(polygons)):
         polygon = polygons[i].strip(b"</i>\n\rCDATA[]")
         points = re.split(r"]</i>\r\n<i>CDATA\[", polygon)
+        min_x = island_size[0]
+        min_y = island_size[1]
+        max_x = 0
+        max_y = 0
         for j in range(len(points)):
             p = points[j]
             if len(p) != 20:
@@ -116,13 +102,28 @@ def test_isd():
                 raise NotImplementedError(e)
             x, y = coordinates_from_bytes(p)
             points[j] = (x, y)
-        polygons[i] = points
-    tiles = convert_polygons_to_tiles(polygons, (240,240), "result.png")
+            min_x = min(min_x, x>>12)
+            min_y = min(min_y, y>>12)
+            max_x = max(max_x, x>>12)
+            max_y = max(max_y, y>>12)
+        
+        tiles_needed = [ y*width + x for x in range(min_x, max_x+1) for y in range(min_y, max_y+1) ]
+        sample_points_needed = [ sample_points[y*width + x] for x in range(min_x, max_x+1) for y in range(min_y, max_y+1) ]
+        # http://matplotlib.sourceforge.net/faq/howto_faq.html#test-whether-a-point-is-inside-a-polygon
+        mask = nx.points_inside_poly(np.array(sample_points_needed, int), np.array(points, int))
+        for k in range(len(tiles_needed)):
+            if mask[k]:
+                tiles[tiles_needed[k]] = 255 
     
-    with open("result.txt", "w") as f:
-        f.write(tiles)
+    # test of result
+    png = Image.new("L", island_size)
+    png.putdata(tiles)
+    png = png.transpose(Image.FLIP_TOP_BOTTOM)
+    png.save("result.png")
+    
     return None
 
 if __name__ == "__main__":
+    start = datetime.now()
     test_isd()
-    
+    print("\n{}".format(datetime.now()-start))
