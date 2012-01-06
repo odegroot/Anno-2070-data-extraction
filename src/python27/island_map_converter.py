@@ -31,10 +31,11 @@ from future_builtins import * #@UnusedWildImport
     #    pass
 
 
-import json, re, os, sys #@UnusedImport
+import math, json, re, os, sys #@UnusedImport
 from pprint import pprint #@UnusedImport
 from datetime import datetime
 from struct import unpack
+from operator import itemgetter
     #.isd files are not well-formed xml, no point in using xml parsers ...
     #from xml.etree import ElementTree as ET
     
@@ -78,35 +79,29 @@ def adjust_tiles(tiles, size, isd_text, element_name, polygons_split=None, polyg
     # list for tiles - accessed by [y*width + x]
     # which points should be sampled from polygons - multiple access needed => list comprehension
     sample_points = [ (x, y) for y in range(height) for x in range(width) ]
+    all_vertices = []
     for i in range(len(polygons)):
         polygon = re.sub(r"^[^[]*\[|][^]]*$", b"", polygons[i])
         if polygons_exclude and re.search(r"{}".format(polygons_exclude), polygon, flags=re.DOTALL):
             continue
-        points = re.split(r"]<.*?>CDATA\[", polygon, flags=re.DOTALL)
+        vertices = re.split(r"]<.*?>CDATA\[", polygon, flags=re.DOTALL)
         min_x = width
         min_y = height
         max_x = 0
         max_y = 0
-        for j in range(len(points)):
-            p = points[j]
+        for j in range(len(vertices)):
+            p = vertices[j]
             if len(p) not in (20, 16):
-                e = "Each polygon point should be 20 or 16 bytes. {} bytes found in point {}/0-{} in polygon {}/0-{}:".format(len(p), j, len(points)-1, i, len(polygons)-1)
+                e = "Each polygon point should be 20 or 16 bytes. {} bytes found in point {}/0-{} in polygon {}/0-{}:".format(len(p), j, len(vertices)-1, i, len(polygons)-1)
                 print(p)
                 raise NotImplementedError(e)
             x, y = coordinates_from_bytes(p, unpack_string)
             if element_name == "SurfLines":
-                points[j] = (x+0.5, y-0.5)
-                if j:
-                    x0, y0 = points[j-1]
-                    x1, y1 = points[j]
-                    num = 10
-                    line_x_points = np.linspace(x0, x1, num)
-                    line_y_points = np.linspace(y0, y1, num)
-                    line_points = set([(int(line_x_points[k]), int(line_y_points[k])) for k in range(num)])
-                    for lp in line_points:
-                        tiles[lp[1]*width + lp[0]] = out_color
+                if not j:
+                    first_vertice_angle =  math.atan2(y - height/2, x - width/2)
+                all_vertices.append( (x-0.5, y-0.5, first_vertice_angle) )
             else:
-                points[j] = (x-0.5, y-0.5)
+                vertices[j] = (x-0.5, y-0.5)
                 min_x = min(min_x, int(x))
                 min_y = min(min_y, int(y))
                 max_x = max(max_x, int(x)+1)
@@ -115,10 +110,18 @@ def adjust_tiles(tiles, size, isd_text, element_name, polygons_split=None, polyg
             tiles_needed = [ y*width + x for x in range(min_x, max_x+1) for y in range(min_y, max_y+1) ]
             sample_points_needed = np.array([ sample_points[y*width + x] for x in range(min_x, max_x+1) for y in range(min_y, max_y+1) ], float)
             # http://matplotlib.sourceforge.net/faq/howto_faq.html#test-whether-a-point-is-inside-a-polygon
-            mask = nx.points_inside_poly(sample_points_needed, np.array(points, float))
+            mask = nx.points_inside_poly(sample_points_needed, np.array(vertices, float))
             for k in range(len(tiles_needed)):
                 if mask[k]:
                     tiles[tiles_needed[k]] = out_color
+    if element_name == "SurfLines":
+        #all_vertices.sort(key=itemgetter(3))
+        all_vertices.sort(key=itemgetter(2))
+        all_vertices = np.array([(x,y) for x, y, s in all_vertices], float) #@UnusedVariable
+        mask = nx.points_inside_poly(np.array( sample_points ), all_vertices)
+        for k in range(len(tiles)):
+            if mask[k]:
+                tiles[k] = out_color
                 
     return None
 
@@ -133,10 +136,6 @@ def test_isd():
     size = (width, height)
     
     tiles = [ 0 for y in range(height) for x in range(width) ] #@UnusedVariable
-    adjust_tiles(tiles, size, isd_text,
-                 element_name="BuildBlockerShapes",
-                 polygons_split="</Polygon>\r\n</i>\r\n<i><Polygon>",
-                 out_color=255)
     
     adjust_tiles(tiles, size, isd_text,
                  element_name="SurfLines",
@@ -148,6 +147,11 @@ def test_isd():
 #                 element_name="CoastBuildingLines",
 #                 polygons_split"</Points>[^P]*Points>",
 #                 out_color=50) # probably not needed
+    
+    adjust_tiles(tiles, size, isd_text,
+                 element_name="BuildBlockerShapes",
+                 polygons_split="</Polygon>\r\n</i>\r\n<i><Polygon>",
+                 out_color=255)
     
     # test of result
     png = Image.new("L", size)
