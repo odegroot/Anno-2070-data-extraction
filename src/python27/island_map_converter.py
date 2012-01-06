@@ -95,7 +95,7 @@ def adjust_tiles(tiles, size, isd_text, element_name, polygons_split=None, polyg
                 raise NotImplementedError(e)
             x, y = coordinates_from_bytes(p, unpack_string)
             if element_name == "SurfLines":
-                points[j] = (x, y)
+                points[j] = (x+0.5, y-0.5)
                 if j:
                     x0, y0 = points[j-1]
                     x1, y1 = points[j]
