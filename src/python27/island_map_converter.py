@@ -51,21 +51,18 @@ except ImportError:
     raise
 
 __version__ = "0.3"
-__sample_offset_x = 1<<11
-__sample_offset_y = __sample_offset_x
 
 def coordinates_from_bytes(b, unpack_string):
     # it looks like standard CDATA[] contains 20 bytes (160 bits) = hopefully 5 x longs (32-bit integers), little endian byte order
     # (16, x, 0, y, 0) where x and y are coordinates in subtiles (1 tile = 2**12 x 2**12 subtiles)
-    x0, x1, y0, y1 = (4,8,12,16)
-    x = unpack(str(unpack_string), b[x0:x1])[0]
-    y = unpack(str(unpack_string), b[y0:y1])[0]
-    if type(x) == float:
-        x = int(x * (1<<12))
-        y = int(y * (1<<12))
+    x = unpack(str(unpack_string), b[4:8])[0]
+    y = unpack(str(unpack_string), b[12:16])[0]
+    if unpack_string == "<l":
+        x /= (1<<12)
+        y /= (1<<12)
     return (x, y)
 
-def adjust_tiles(tiles, size, isd_text, element_name, polygons_split, out_color, unpack_string="<l"):
+def adjust_tiles(tiles, size, isd_text, element_name, polygons_split=None, polygons_exclude=None, out_color=255, unpack_string="<l"):
     element = re.split(r"</?{}>".format(element_name), isd_text) # splits to 3 strings - before, inside and after the element
     if len(element) != 3:
         e = "Previous split should have resulted in 3 strings. {} found".format(len(element))
@@ -80,10 +77,11 @@ def adjust_tiles(tiles, size, isd_text, element_name, polygons_split, out_color,
     height = size[1]
     # list for tiles - accessed by [y*width + x]
     # which points should be sampled from polygons - multiple access needed => list comprehension
-    sample_points = [ (x*(1<<12)+__sample_offset_x, y*(1<<12)+__sample_offset_y) for y in range(height) for x in range(width) ]
-    
+    sample_points = [ (x, y) for y in range(height) for x in range(width) ]
     for i in range(len(polygons)):
         polygon = re.sub(r"^[^[]*\[|][^]]*$", b"", polygons[i])
+        if polygons_exclude and re.search(r"{}".format(polygons_exclude), polygon, flags=re.DOTALL):
+            continue
         points = re.split(r"]<.*?>CDATA\[", polygon, flags=re.DOTALL)
         min_x = width
         min_y = height
@@ -96,22 +94,31 @@ def adjust_tiles(tiles, size, isd_text, element_name, polygons_split, out_color,
                 print(p)
                 raise NotImplementedError(e)
             x, y = coordinates_from_bytes(p, unpack_string)
-            points[j] = (x, y)
-            x = x >> 12
-            y = y >> 12
-            min_x = min(min_x, x)
-            min_y = min(min_y, y)
-            max_x = max(max_x, x)
-            max_y = max(max_y, y)
-        
-        #print(min_x, min_y, max_x, max_y)
-        tiles_needed = [ y*width + x for x in range(min_x, max_x+1) for y in range(min_y, max_y+1) ]
-        sample_points_needed = [ sample_points[y*width + x] for x in range(min_x, max_x+1) for y in range(min_y, max_y+1) ]
-        # http://matplotlib.sourceforge.net/faq/howto_faq.html#test-whether-a-point-is-inside-a-polygon
-        mask = nx.points_inside_poly(np.array(sample_points_needed, int), np.array(points, int))
-        for k in range(len(tiles_needed)):
-            if mask[k]:
-                tiles[tiles_needed[k]] = out_color
+            if element_name == "SurfLines":
+                points[j] = (x, y)
+                if j:
+                    x0, y0 = points[j-1]
+                    x1, y1 = points[j]
+                    num = 10
+                    line_x_points = np.linspace(x0, x1, num)
+                    line_y_points = np.linspace(y0, y1, num)
+                    line_points = set([(int(line_x_points[k]), int(line_y_points[k])) for k in range(num)])
+                    for lp in line_points:
+                        tiles[lp[1]*width + lp[0]] = out_color
+            else:
+                points[j] = (x-0.5, y-0.5)
+                min_x = min(min_x, int(x))
+                min_y = min(min_y, int(y))
+                max_x = max(max_x, int(x)+1)
+                max_y = max(max_y, int(y)+1)
+        if element_name != "SurfLines":
+            tiles_needed = [ y*width + x for x in range(min_x, max_x+1) for y in range(min_y, max_y+1) ]
+            sample_points_needed = np.array([ sample_points[y*width + x] for x in range(min_x, max_x+1) for y in range(min_y, max_y+1) ], float)
+            # http://matplotlib.sourceforge.net/faq/howto_faq.html#test-whether-a-point-is-inside-a-polygon
+            mask = nx.points_inside_poly(sample_points_needed, np.array(points, float))
+            for k in range(len(tiles_needed)):
+                if mask[k]:
+                    tiles[tiles_needed[k]] = out_color
                 
     return None
 
@@ -127,18 +134,20 @@ def test_isd():
     
     tiles = [ 0 for y in range(height) for x in range(width) ] #@UnusedVariable
     adjust_tiles(tiles, size, isd_text,
-                 "SurfLines",
-                 None,
-                 150,
-                 "<f") # looks like a float instead of subtiles
+                 element_name="BuildBlockerShapes",
+                 polygons_split="</Polygon>\r\n</i>\r\n<i><Polygon>",
+                 out_color=255)
+    
     adjust_tiles(tiles, size, isd_text,
-                 "CoastBuildingLines",
-                 "</Points>[^P]*Points>",
-                 50)
-    adjust_tiles(tiles, size, isd_text,
-                 "BuildBlockerShapes",
-                 "</Polygon>\r\n</i>\r\n<i><Polygon>",
-                 255)
+                 element_name="SurfLines",
+                 polygons_split="</SurfLinePoints>\r\n</i>\r\n<i><SurfSetting>",
+                 out_color=150,
+                 unpack_string="<f") # looks like a float instead of subtiles
+    
+#    adjust_tiles(tiles, size, isd_text,
+#                 element_name="CoastBuildingLines",
+#                 polygons_split"</Points>[^P]*Points>",
+#                 out_color=50) # probably not needed
     
     # test of result
     png = Image.new("L", size)
