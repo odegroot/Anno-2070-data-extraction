@@ -99,7 +99,7 @@ def adjust_tiles(tiles, size, isd_text, element_name, polygons_split=None, polyg
             if element_name == "SurfLines":
                 if not j:
                     first_vertice_angle =  math.atan2(y - height/2, x - width/2)
-                all_vertices.append( (x-0.5, y-0.5, first_vertice_angle) )
+                all_vertices.append( (x-0.5, y+0.5, first_vertice_angle) )
             else:
                 vertices[j] = (x-0.5, y-0.5)
                 min_x = min(min_x, int(x))
@@ -135,12 +135,12 @@ def test_isd():
     height = 240
     size = (width, height)
     
-    tiles = [ 0 for y in range(height) for x in range(width) ] #@UnusedVariable
+    tiles = [ 255 for y in range(height) for x in range(width) ] #@UnusedVariable
     
     adjust_tiles(tiles, size, isd_text,
                  element_name="SurfLines",
                  polygons_split="</SurfLinePoints>\r\n</i>\r\n<i><SurfSetting>",
-                 out_color=150,
+                 out_color=0,
                  unpack_string="<f") # looks like a float instead of subtiles
     
 #    adjust_tiles(tiles, size, isd_text,
@@ -151,7 +151,7 @@ def test_isd():
     adjust_tiles(tiles, size, isd_text,
                  element_name="BuildBlockerShapes",
                  polygons_split="</Polygon>\r\n</i>\r\n<i><Polygon>",
-                 out_color=255)
+                 out_color=200)
     
     # test of result
     png = Image.new("L", size)
