@@ -36,6 +36,7 @@ from pprint import pprint #@UnusedImport
 from datetime import datetime
 from struct import unpack
 from operator import itemgetter
+from numpy.lib.function_base import percentile
     #.isd files are not well-formed xml, no point in using xml parsers ...
     #from xml.etree import ElementTree as ET
     
@@ -51,17 +52,7 @@ except ImportError:
     print("To download matplotlib, see http://matplotlib.sourceforge.net/users/installing.html\n")
     raise
 
-__version__ = "0.3"
-
-def coordinates_from_bytes(b, unpack_string):
-    # it looks like standard CDATA[] contains 20 bytes (160 bits) = hopefully 5 x longs (32-bit integers), little endian byte order
-    # (16, x, 0, y, 0) where x and y are coordinates in subtiles (1 tile = 2**12 x 2**12 subtiles)
-    x = unpack(str(unpack_string), b[4:8])[0]
-    y = unpack(str(unpack_string), b[12:16])[0]
-    if unpack_string == "<l":
-        x /= (1<<12)
-        y /= (1<<12)
-    return (x, y)
+__version__ = "0.4"
 
 def adjust_tiles(tiles, size, isd_text, element_name, polygons_split=None, polygons_exclude=None, out_color=255, unpack_string="<l"):
     element = re.split(r"</?{}>".format(element_name), isd_text) # splits to 3 strings - before, inside and after the element
@@ -78,7 +69,10 @@ def adjust_tiles(tiles, size, isd_text, element_name, polygons_split=None, polyg
     height = size[1]
     # list for tiles - accessed by [y*width + x]
     # which points should be sampled from polygons - multiple access needed => list comprehension
-    sample_points = [ (x, y) for y in range(height) for x in range(width) ]
+    xs = np.arange(width*height) % width
+    ys = np.arange(width*height) // width
+    sample_points = np.column_stack((xs, ys))
+    
     all_vertices = []
     for i in range(len(polygons)):
         polygon = re.sub(r"^[^[]*\[|][^]]*$", b"", polygons[i])
@@ -95,7 +89,14 @@ def adjust_tiles(tiles, size, isd_text, element_name, polygons_split=None, polyg
                 e = "Each polygon point should be 20 or 16 bytes. {} bytes found in point {}/0-{} in polygon {}/0-{}:".format(len(p), j, len(vertices)-1, i, len(polygons)-1)
                 print(p)
                 raise NotImplementedError(e)
-            x, y = coordinates_from_bytes(p, unpack_string)
+            # it looks like standard CDATA[] contains bytes in little endian byte order
+            # a) 20 bytes = 5 x 32-bit integers (?, x, ?, y, ?), 
+            # b) 16 bytes = 4 x 32-bit floats (?, x, ?, y)
+            x = unpack(str(unpack_string), p[4:8])[0]
+            y = unpack(str(unpack_string), p[12:16])[0]
+            if unpack_string == "<l":
+                x /= (1<<12)
+                y /= (1<<12)
             if element_name == "SurfLines":
                 if not j:
                     first_vertice_angle =  math.atan2(y - height/2, x - width/2)
@@ -108,17 +109,17 @@ def adjust_tiles(tiles, size, isd_text, element_name, polygons_split=None, polyg
                 max_y = max(max_y, int(y)+1)
         if element_name != "SurfLines":
             tiles_needed = [ y*width + x for x in range(min_x, max_x+1) for y in range(min_y, max_y+1) ]
-            sample_points_needed = np.array([ sample_points[y*width + x] for x in range(min_x, max_x+1) for y in range(min_y, max_y+1) ], float)
+            sample_points_needed = [ sample_points[y*width + x] for x in range(min_x, max_x+1) for y in range(min_y, max_y+1) ]
             # http://matplotlib.sourceforge.net/faq/howto_faq.html#test-whether-a-point-is-inside-a-polygon
-            mask = nx.points_inside_poly(sample_points_needed, np.array(vertices, float))
+            mask = nx.points_inside_poly(sample_points_needed, vertices)
             for k in range(len(tiles_needed)):
                 if mask[k]:
                     tiles[tiles_needed[k]] = out_color
+    
     if element_name == "SurfLines":
-        #all_vertices.sort(key=itemgetter(3))
         all_vertices.sort(key=itemgetter(2))
         all_vertices = np.array([(x,y) for x, y, s in all_vertices], float) #@UnusedVariable
-        mask = nx.points_inside_poly(np.array( sample_points ), all_vertices)
+        mask = nx.points_inside_poly(sample_points, all_vertices)
         for k in range(len(tiles)):
             if mask[k]:
                 tiles[k] = out_color
