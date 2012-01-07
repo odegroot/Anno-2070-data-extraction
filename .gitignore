@@ -1,2 +1,5 @@
 src/rda/island_maps/isd/*
-!src/rda/island_maps/isd/*.n_l22*.isd
+!src/rda/island_maps/isd/*normal.n_l22*.isd
+
+src/rda/island_maps/converter_isd/*
+!src/rda/island_maps/converter_isd/*normal.n_l22*.png
