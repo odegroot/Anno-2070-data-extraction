@@ -36,7 +36,6 @@ from pprint import pprint #@UnusedImport
 from datetime import datetime
 from struct import unpack
 from operator import itemgetter
-from numpy.lib.function_base import percentile
     #.isd files are not well-formed xml, no point in using xml parsers ...
     #from xml.etree import ElementTree as ET
     
@@ -54,6 +53,9 @@ except ImportError:
 
 __version__ = "0.4"
 
+def main():
+    pass
+
 def adjust_tiles(tiles, size, isd_text, element_name, polygons_split=None, polygons_exclude=None, out_color=255, unpack_string="<l"):
     element = re.split(r"</?{}>".format(element_name), isd_text) # splits to 3 strings - before, inside and after the element
     if len(element) != 3:
@@ -68,12 +70,12 @@ def adjust_tiles(tiles, size, isd_text, element_name, polygons_split=None, polyg
     width = size[0]
     height = size[1]
     # list for tiles - accessed by [y*width + x]
-    # which points should be sampled from polygons - multiple access needed => list comprehension
+    # which points should be sampled from polygons - by matplotlib.nxutils.points_inside_poly
     xs = np.arange(width*height) % width
     ys = np.arange(width*height) // width
     sample_points = np.column_stack((xs, ys))
-    
     all_vertices = []
+    
     for i in range(len(polygons)):
         polygon = re.sub(r"^[^[]*\[|][^]]*$", b"", polygons[i])
         if polygons_exclude and re.search(r"{}".format(polygons_exclude), polygon, flags=re.DOTALL):
@@ -118,7 +120,7 @@ def adjust_tiles(tiles, size, isd_text, element_name, polygons_split=None, polyg
     
     if element_name == "SurfLines":
         all_vertices.sort(key=itemgetter(2))
-        all_vertices = np.array([(x,y) for x, y, s in all_vertices], float) #@UnusedVariable
+        all_vertices = [(x,y) for x, y, s in all_vertices] #@UnusedVariable
         mask = nx.points_inside_poly(sample_points, all_vertices)
         for k in range(len(tiles)):
             if mask[k]:
@@ -162,7 +164,11 @@ def test_isd():
     
     return None
 
+def copy_island_files():
+    pass
+
 if __name__ == "__main__":
     start = datetime.now()
-    test_isd()
+    #test_isd()
+    copy_island_files()
     print("\n{}".format(datetime.now()-start))
