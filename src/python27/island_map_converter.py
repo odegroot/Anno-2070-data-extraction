@@ -152,7 +152,6 @@ def adjust_tiles(tiles, size, isd_text, element_name, polygons_split=None, polyg
                 max_x = max(max_x, int(x)+1)
                 max_y = max(max_y, int(y)+1)
         if element_name != "SurfLines":
-            gg = [ y*width + x for x in range(min_x, max_x+1) for y in range(min_y, max_y+1) ]
             tiles_needed = [ y*width + x for x in range(min_x, max_x+1) for y in range(min_y, max_y+1) ]
             try:
                 sample_points_needed = [ sample_points[y*width + x] for x in range(min_x, max_x+1) for y in range(min_y, max_y+1) ]
