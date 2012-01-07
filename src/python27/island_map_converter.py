@@ -31,7 +31,7 @@ from future_builtins import * #@UnusedWildImport
     #    pass
 
 
-import math, json, re, os, sys #@UnusedImport
+import math, json, re, os, shutil, sys #@UnusedImport
 from pprint import pprint #@UnusedImport
 from datetime import datetime
 from struct import unpack
@@ -52,6 +52,10 @@ except ImportError:
     raise
 
 __version__ = "0.4"
+
+__folder = "..\\"
+__island_maps = __folder + "rda\\island_maps"
+__orig_data_folder = "C:\\Users\\Peter\\Documents\\ANNO 2070" # location of all extracted data files that are not on github
 
 def main():
     pass
@@ -164,11 +168,21 @@ def test_isd():
     
     return None
 
-def copy_island_files():
-    pass
+def copy_island_files(ext):
+    if ext == "isd":
+        base_root = "islands\\"
+    else:
+        base_root = "levels\\"
+    for root, dirs, files in os.walk(__orig_data_folder): #@UnusedVariable
+        if base_root in root:
+            prefix = re.sub(r"\\", ".", re.split(base_root+"\\", root)[1]) + "."
+            for f in files:
+                if ".{}".format(ext) in f:
+                    print(os.path.join(__island_maps, ext, prefix, f))
+                    shutil.copy(os.path.join(root, f), os.path.join(__island_maps, ext, prefix+f))
 
 if __name__ == "__main__":
     start = datetime.now()
+    copy_island_files("png") # www, png, isd
     #test_isd()
-    copy_island_files()
     print("\n{}".format(datetime.now()-start))
