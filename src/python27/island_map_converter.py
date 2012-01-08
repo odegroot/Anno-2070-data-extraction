@@ -59,13 +59,12 @@ __orig_data_folder = "C:\\Users\\Peter\\Documents\\ANNO 2070" # location of all 
 __isd_path = os.path.join(__island_maps, "isd")
 __out_path = os.path.join(__island_maps, "converted_isd")
 
-
 def main():
     isd_list = os.listdir(__isd_path)
-    #isd_list = ["campaign.chapter 01.u_d10_corals.isd"]
+    isd_list = ["normal.n_l22.isd"]
     for file_name in isd_list:
         isd_path = os.path.join(__isd_path, file_name)
-        out_path = os.path.join(__out_path, file_name[:-4]+".png")
+        out_path = "result.png" #os.path.join(__out_path, file_name[:-4]+".png")
         print(isd_path)
         with open(isd_path, "rb") as f:
             isd_text = f.read()
@@ -74,103 +73,37 @@ def main():
         height = int( re.split(r"</?Height>", isd_text[:100])[1] )
         size = (width, height)
         tiles = [ 255 for y in range(height) for x in range(width) ] #@UnusedVariable
-        adjust_tiles(tiles, size, isd_text,
-                     element_name="SurfLines",
-                     polygons_split="</SurfLinePoints>\r\n</i>\r\n<i><SurfSetting>",
-                     out_color=0,
-                     unpack_string="<f") # looks like a float instead of subtiles
-#        adjust_tiles(tiles, size, isd_text,
-#                     element_name="CoastBuildingLines",
-#                     polygons_split"</Points>[^P]*Points>",
-#                     out_color=50) # probably not needed
-        adjust_tiles(tiles, size, isd_text,
-                     element_name="BuildBlockerShapes",
-                     polygons_split="</Polygon>\r\n</i>\r\n<i><Polygon>",
-                     out_color=200)
+        adjust_tiles(tiles, size, isd_text)
         # test of result
-        png = Image.new("L", size)
-        png.putdata(tiles)
-        png = png.transpose(Image.FLIP_TOP_BOTTOM)
-        png.save(out_path)
+#        png = Image.new("L", size)
+#        png.putdata(tiles)
+#        png = png.transpose(Image.FLIP_TOP_BOTTOM)
+#        png.save(out_path)
     return None
 
 
-def adjust_tiles(tiles, size, isd_text, element_name, polygons_split=None, polygons_exclude=None, out_color=255, unpack_string="<l"):
-    element = re.split(r"</?{}>".format(element_name), isd_text)
-    if len(element) != 3:
-        e = "Previous split should have resulted in 3 strings. {} found".format(len(element))
+def adjust_tiles(tiles, size, isd_text):
+    ChunkMap = re.split(r"<ChunkMap>", isd_text)
+    if len(ChunkMap) != 2:
+        e = "Previous split should have resulted in 2 strings. {} found".format(len(ChunkMap))
         raise NotImplementedError(e)
-    element = element[1]
-    if polygons_split:
-        polygons = re.split(r"{}".format(polygons_split, flags=re.DOTALL), element)
-    else:
-        polygons = [element]
-    width = size[0]
-    height = size[1]
-    # list for tiles - accessed by [y*width + x]
-    # which points should be sampled from polygons - by matplotlib.nxutils.points_inside_poly
-    xs = np.arange(width*height) % width
-    ys = np.arange(width*height) // width
-    sample_points = np.column_stack((xs, ys))
-    all_vertices = []
-    for i in range(len(polygons)):
-        polygon = re.sub(r"^[^[]*\[|][^]]*$", b"", polygons[i])
-        if polygons_exclude and re.search(r"{}".format(polygons_exclude), polygon, flags=re.DOTALL):
-            continue
-        vertices = re.split(r"]<.*?>CDATA\[", polygon, flags=re.DOTALL)
-        min_x = width
-        min_y = height
-        max_x = 0
-        max_y = 0
-        for j in range(len(vertices)):
-            p = vertices[j]
-            if p == b"":
-                sys.stderr.write("   - no data in element {} \n".format(element_name))
-                return None
-            try:
-                # it looks like standard CDATA[] contains bytes in little endian byte order
-                # a) 20 bytes = 5 x 32-bit integers (?, x, ?, y, ?), 
-                # b) 16 bytes = 4 x 32-bit floats (?, x, ?, y)
-                x = unpack(str(unpack_string), p[4:8])[0]
-                y = unpack(str(unpack_string), p[12:16])[0]
-            except:
-                e = "Each polygon point should be 20 or 16 bytes. {} bytes found in point {}/0-{} in polygon {}/0-{} in element {}:\n\n".format(len(p), j, len(vertices)-1, i, len(polygons)-1, element_name)
-                sys.stderr.write(e)
-                print(p)
-                raise
-            if unpack_string == "<l":
-                x /= (1<<12)
-                y /= (1<<12)
-            if element_name == "SurfLines":
-                if not j:
-                    first_vertice_angle =  math.atan2(y - height/2, x - width/2)
-                all_vertices.append( (x-0.5, y+0.5, first_vertice_angle) )
-            else:
-                vertices[j] = (x-0.5, y-0.5)
-                min_x = min(min_x, int(x))
-                min_y = min(min_y, int(y))
-                max_x = max(max_x, int(x)+1)
-                max_y = max(max_y, int(y)+1)
-        if element_name != "SurfLines":
-            tiles_needed = [ y*width + x for x in range(min_x, max_x+1) for y in range(min_y, max_y+1) ]
-            try:
-                sample_points_needed = [ sample_points[y*width + x] for x in range(min_x, max_x+1) for y in range(min_y, max_y+1) ]
-            except IndexError:
-                sys.stderr.write("   > sample_points_needed IndexError \n")
-                tiles_needed = tiles
-                sample_points_needed = sample_points
-            # http://matplotlib.sourceforge.net/faq/howto_faq.html#test-whether-a-point-is-inside-a-polygon
-            mask = nx.points_inside_poly(sample_points_needed, vertices)
-            for k in range(len(tiles_needed)):
-                if mask[k]:
-                    tiles[tiles_needed[k]] = out_color
-    if element_name == "SurfLines":
-        all_vertices.sort(key=itemgetter(2))
-        all_vertices = [(x,y) for x, y, s in all_vertices] #@UnusedVariable
-        mask = nx.points_inside_poly(sample_points, all_vertices)
-        for k in range(len(tiles)):
-            if mask[k]:
-                tiles[k] = out_color
+    ChunkMap = ChunkMap[1]
+    # first 2 characters after <Width> tag in <ChunkMap> => up to 99 chunks (= 1584 x 1584 tiles per island)
+    width_chunks = int( re.split(r"<Width>", ChunkMap[:100])[1][:2].strip("<") )
+    height_chunks = int( re.split(r"<Height>", ChunkMap[:100])[1][:2].strip("<") )
+    elements = re.split(r"<Element>", ChunkMap)[1:]
+    f = open("result.txt","w")
+    for texture_index in (18, 29, 52, 71, 72, 74, 75, 76, 78, 79, 80, 82, 83, 84, 85, 86, 87, 94, 95, 96, 98, 99, 104):
+        f.write("\n{}\n\n".format(texture_index))
+        test_lines = [["\u25CB" for i in range(width_chunks)] for i in range(height_chunks)]
+        for i in range(len(elements)):
+            TexIndexData = re.split(r"<TexIndexData><TextureIndex>{}<[^C]*CDATA\[".format(texture_index), elements[i])[1:]
+            if not TexIndexData:
+                continue
+            #data = TexIndexData[0][:293]
+            test_lines[i//height_chunks][i%width_chunks] = "\u25A0"
+        for test_line in reversed(test_lines):
+            f.write(" ".join(test_line)+"\n")
     return None
 
 
