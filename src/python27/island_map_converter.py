@@ -33,23 +33,21 @@ from future_builtins import * #@UnusedWildImport
 
 import math, json, re, os, shutil, sys #@UnusedImport
 from pprint import pprint #@UnusedImport
-from datetime import datetime
-from struct import unpack
-from operator import itemgetter
+from datetime import datetime #@UnusedImport
+from struct import unpack #@UnusedImport
+from operator import itemgetter #@UnusedImport
     #.isd files are not well-formed xml, no point in using xml parsers ...
     #from xml.etree import ElementTree as ET
 try:
     from PIL import Image, ImageDraw #@UnusedImport
-except ImportError:
-    print("To download PIL, see http://www.pythonware.com/products/pil/\n")
-    raise
-try:
     import numpy as np #@UnusedImport
-    import matplotlib.nxutils as nx
+    import matplotlib.nxutils as nx #@UnusedImport
+    from bitstring import BitArray, BitStream #@UnusedImport
 except ImportError:
-    print("To download matplotlib, see http://matplotlib.sourceforge.net/users/installing.html\n")
+    print("To download matplotlib, see http://matplotlib.sourceforge.net/users/installing.html")
+    print("To download PIL, see http://www.pythonware.com/products/pil/")
+    print("To download bitstring, see http://code.google.com/p/python-bitstring/")
     raise
-
 
 __version__ = "0.5"
 
@@ -64,7 +62,7 @@ def main():
     isd_list = ["normal.n_l22.isd"]
     for file_name in isd_list:
         isd_path = os.path.join(__isd_path, file_name)
-        out_path = "result.png" #os.path.join(__out_path, file_name[:-4]+".png")
+        #out_path = "result.png" #os.path.join(__out_path, file_name[:-4]+".png")
         print(isd_path)
         with open(isd_path, "rb") as f:
             isd_text = f.read()
@@ -72,38 +70,44 @@ def main():
         width = int( re.split(r"</?Width>", isd_text[:100])[1] )
         height = int( re.split(r"</?Height>", isd_text[:100])[1] )
         size = (width, height)
-        tiles = [ 255 for y in range(height) for x in range(width) ] #@UnusedVariable
-        adjust_tiles(tiles, size, isd_text)
-        # test of result
-#        png = Image.new("L", size)
-#        png.putdata(tiles)
-#        png = png.transpose(Image.FLIP_TOP_BOTTOM)
-#        png.save(out_path)
+        for texture_index in (18, 29, 52, 71, 72, 74, 75, 76, 78, 79, 80, 82, 83, 84, 85, 86, 87, 94, 95, 96, 98, 99, 104):
+            tiles = [ 0 for i in range(height*width) ] #@UnusedVariable
+            adjust_tiles(tiles, size, isd_text, texture_index)
+            # test of result
+            png = Image.new("L", size)
+            png.putdata(tiles)
+            png = png.transpose(Image.FLIP_TOP_BOTTOM)
+            out_path = "..\\rda\\island_maps\\test_results\\normal.n_l22.isd TextureIndex {}.png".format(texture_index)
+            png.save(out_path)
     return None
 
 
-def adjust_tiles(tiles, size, isd_text):
+def adjust_tiles(tiles, size, isd_text, texture_index = 52):
     ChunkMap = re.split(r"<ChunkMap>", isd_text)
     if len(ChunkMap) != 2:
         e = "Previous split should have resulted in 2 strings. {} found".format(len(ChunkMap))
         raise NotImplementedError(e)
     ChunkMap = ChunkMap[1]
     # first 2 characters after <Width> tag in <ChunkMap> => up to 99 chunks (= 1584 x 1584 tiles per island)
+    (width_tiles, height_tiles) = size #@UnusedVariable
     width_chunks = int( re.split(r"<Width>", ChunkMap[:100])[1][:2].strip("<") )
-    height_chunks = int( re.split(r"<Height>", ChunkMap[:100])[1][:2].strip("<") )
-    elements = re.split(r"<Element>", ChunkMap)[1:]
-    f = open("result.txt","w")
-    for texture_index in (18, 29, 52, 71, 72, 74, 75, 76, 78, 79, 80, 82, 83, 84, 85, 86, 87, 94, 95, 96, 98, 99, 104):
-        f.write("\n{}\n\n".format(texture_index))
-        test_lines = [["\u25CB" for i in range(width_chunks)] for i in range(height_chunks)]
-        for i in range(len(elements)):
-            TexIndexData = re.split(r"<TexIndexData><TextureIndex>{}<[^C]*CDATA\[".format(texture_index), elements[i])[1:]
-            if not TexIndexData:
-                continue
-            #data = TexIndexData[0][:293]
-            test_lines[i//height_chunks][i%width_chunks] = "\u25A0"
-        for test_line in reversed(test_lines):
-            f.write(" ".join(test_line)+"\n")
+    height_chunks = int( re.split(r"<Height>", ChunkMap[:100])[1][:2].strip("<") ) #@UnusedVariable
+    chunks = re.split(r"<Element>", ChunkMap)[1:]
+    for i in range(len(chunks)):
+        TexIndexData = re.split(r"<TexIndexData><TextureIndex>{}<[^C]*CDATA\[".format(texture_index), chunks[i])[1:]
+        if not TexIndexData:
+            continue
+        start_x = i%width_chunks
+        start_z = i//width_chunks
+        # each CDATA contains 4 bytes header, then 289 bytes data for 17x17 tiles
+        # chunks overlay by 1px, so i can ignore every 17th byte + last 17 bytes
+        data = BitStream( bytes=TexIndexData[0][:293][-289:] )
+        for z in range(16):
+            for x in range(17):
+                position = start_z*16*width_tiles + z*240 + start_x*16 + x
+                d = data.read("uint:8")
+                if x != 16:
+                    tiles[position] = d
     return None
 
 
