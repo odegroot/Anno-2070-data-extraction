@@ -59,7 +59,7 @@ __out_path = os.path.join(__island_maps, "converted_isd")
 
 def main():
     isd_list = os.listdir(__isd_path)
-    isd_list = ["normal.n_l22.isd"]
+    #isd_list = ["normal.n_l22.isd"]
     for file_name in isd_list:
         isd_path = os.path.join(__isd_path, file_name)
         #out_path = "result.png" #os.path.join(__out_path, file_name[:-4]+".png")
@@ -70,15 +70,15 @@ def main():
         width = int( re.split(r"</?Width>", isd_text[:100])[1] )
         height = int( re.split(r"</?Height>", isd_text[:100])[1] )
         size = (width, height)
-        for texture_index in (18, 29, 52, 71, 72, 74, 75, 76, 78, 79, 80, 82, 83, 84, 85, 86, 87, 94, 95, 96, 98, 99, 104):
-            tiles = [ 0 for i in range(height*width) ] #@UnusedVariable
-            adjust_tiles(tiles, size, isd_text, texture_index)
-            # test of result
-            png = Image.new("L", size)
-            png.putdata(tiles)
-            png = png.transpose(Image.FLIP_TOP_BOTTOM)
-            out_path = "..\\rda\\island_maps\\test_results\\normal.n_l22.isd TextureIndex {}.png".format(texture_index)
-            png.save(out_path)
+        tiles = [ 0 for i in range(height*width) ] #@UnusedVariable
+        adjust_tiles(tiles, size, isd_text)
+        # test of result
+        
+#        png = Image.new("L", size)
+#        png.putdata(tiles)
+#        png = png.transpose(Image.FLIP_TOP_BOTTOM)
+#        out_path = "..\\rda\\island_maps\\test_results\\normal.n_l22.isd TextureIndex {}.png".format(texture_index)
+#        png.save(out_path)
     return None
 
 
@@ -94,20 +94,27 @@ def adjust_tiles(tiles, size, isd_text, texture_index = 52):
     height_chunks = int( re.split(r"<Height>", ChunkMap[:100])[1][:2].strip("<") ) #@UnusedVariable
     chunks = re.split(r"<Element>", ChunkMap)[1:]
     for i in range(len(chunks)):
-        TexIndexData = re.split(r"<TexIndexData><TextureIndex>{}<[^C]*CDATA\[".format(texture_index), chunks[i])[1:]
-        if not TexIndexData:
-            continue
-        start_x = i%width_chunks
-        start_z = i//width_chunks
-        # each CDATA contains 4 bytes header, then 289 bytes data for 17x17 tiles
-        # chunks overlay by 1px, so i can ignore every 17th byte + last 17 bytes
-        data = BitStream( bytes=TexIndexData[0][:293][-289:] )
-        for z in range(16):
-            for x in range(17):
-                position = start_z*16*width_tiles + z*240 + start_x*16 + x
-                d = data.read("uint:8")
-                if x != 16:
-                    tiles[position] = d
+        VertexResolution = re.split(r"<VertexResolution>|</>", chunks[i])[1]
+        # height map = 16x16 tiles, 8 bytes header, 4 => 4**(resolution-3) bytes per tile,, 2**(resolution+3) bytes extra
+#        4    4    1024
+#        5    16    4096
+#        6    64    16384
+
+        
+#        TexIndexData = re.split(r"<TexIndexData><TextureIndex>{}<[^C]*CDATA\[".format(texture_index), chunks[i])[1:]
+#        if not TexIndexData:
+#            continue
+#        start_x = i%width_chunks
+#        start_z = i//width_chunks
+#        # each CDATA contains 4 bytes header, then 289 bytes data for 17x17 tiles
+#        # chunks overlay by 1px, so i can ignore every 17th byte + last 17 bytes
+#        data = BitStream( bytes=TexIndexData[0][:293][-289:] )
+#        for z in range(16):
+#            for x in range(17):
+#                position = start_z*16*width_tiles + z*240 + start_x*16 + x
+#                d = data.read("uint:8")
+#                if x != 16:
+#                    tiles[position] = d
     return None
 
 
