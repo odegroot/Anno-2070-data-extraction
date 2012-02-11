@@ -53,7 +53,7 @@ __version__ = "0.5"
 
 __folder = ".."
 __island_maps = os.path.join(__folder, "rda", "island_maps")
-__orig_data_folder = "C:\\Users\\Peter\\Documents\\ANNO 2070" # location of all extracted data files that are not on github
+_orig_data_folder = "C:\\Users\\Peter\\Documents\\ANNO 2070" # location of all extracted data files that are not on github
 __isd_path = os.path.join(__island_maps, "isd")
 __out_path = os.path.join(__island_maps, "converted_isd")
 
@@ -113,7 +113,7 @@ def adjust_tiles(tiles, size, isd_text):
             for x in range(17):
                 position = start_z*16*width_tiles + z*240 + start_x*16 + x
                 d = int( data.read(read_string))
-                if x != 16 and d == 858993471: #trial and error, 0x3333333f, d >> 24 == 51...
+                if x != 16 and d == 858993471: #trial and error, 0x3333333f=858993471, 0x33=51, 0x3f=63, 0x3333=13107, 0x333f=13119
                     tiles[position] = 255
         
     return None
@@ -124,7 +124,7 @@ def copy_island_files(ext):
         base_root = "islands\\"
     else:
         base_root = "levels\\"
-    for root, dirs, files in os.walk(__orig_data_folder): #@UnusedVariable
+    for root, dirs, files in os.walk(_orig_data_folder): #@UnusedVariable
         if base_root in root:
             prefix = re.sub(r"\\", ".", re.split(base_root+"\\", root)[1]) + "."
             for f in files:

@@ -1,6 +1,6 @@
 {
-  "_model": "https://github.com/odegroot/Anno-2070-data-extraction/blob/master/src/json/list_of_buildings_model_v0.3.json", 
-  "_version": "0.3.2", 
+  "_model": "https://github.com/odegroot/Anno-2070-data-extraction/blob/master/src/json/list_of_buildings_model_v0.4.json", 
+  "_version": "0.4", 
   "buildings": [
     {
       ".ifo": "worker_residence_tycoons_01.ifo", 

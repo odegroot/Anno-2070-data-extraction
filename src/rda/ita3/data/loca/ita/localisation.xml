@@ -1,0 +1,385 @@
+<Localisation>
+  <Speech>
+    <Directory>speech</Directory>
+  </Speech>
+  <VolumeFactor>200</VolumeFactor>
+  <GameFont>
+    <FontFilename>fonts/GEORGIA.ttf</FontFilename>
+  </GameFont>
+  <Font>
+    <Name>ConsoleFont</Name>
+    <Desc>Font used to render console texts</Desc>
+    <Flag>TextureFont</Flag>
+    <FontSize>14</FontSize>
+    <Weight>500</Weight>
+    <FontName>Courier New</FontName>
+  </Font>
+  <Font>
+    <Name>IngameMessages</Name>
+    <Desc>Used for ingame message bubbles</Desc>
+    <RelativeFontSize>22</RelativeFontSize>
+    <RelativeFontWidth>0</RelativeFontWidth>
+    <Weight>0</Weight>
+    <Flag>TextureFont</Flag>
+    <Flag>Antialiasing</Flag>
+    <Flag>Outline</Flag>
+    <ShadowOffset>
+      <x>1</x>
+      <y>1</y>
+    </ShadowOffset>
+    <ShadowColor>0</ShadowColor>
+    <FontName>Times New Roman</FontName>
+    <DefaultColor>4282264082</DefaultColor>
+  </Font>
+  <Font>
+    <Name>Headlines</Name>
+    <Desc>Used for menu character and objekt names</Desc>
+    <RelativeFontSize>22</RelativeFontSize>
+    <RelativeFontWidth>0</RelativeFontWidth>
+    <Weight>500</Weight>
+    <Flag>TextureFont</Flag>
+    <Flag>Antialiasing</Flag>
+    <Flag>Shadow</Flag>
+    <ShadowOffset>
+      <x>1</x>
+      <y>1</y>
+    </ShadowOffset>
+    <ShadowColor>0</ShadowColor>
+    <FontName>Times New Roman</FontName>
+    <DefaultColor>42242216120</DefaultColor>
+  </Font>
+  <Font>
+    <Name>Tooltip</Name>
+    <Desc>Used for Tooltip detail text</Desc>
+    <RelativeFontSize>18</RelativeFontSize>
+    <RelativeFontWidth>0</RelativeFontWidth>
+    <Flag>TextureFont</Flag>
+    <Flag>Antialiasing</Flag>
+    <FontName>Times New Roman</FontName>
+    <DefaultColor>4294967295</DefaultColor>
+  </Font>
+  <Font>
+    <Name>LoadingBarText</Name>
+    <Desc>Used for Text on loading bar.</Desc>
+    <RelativeFontSize>20</RelativeFontSize>
+    <RelativeFontWidth>0</RelativeFontWidth>
+    <Weight>500</Weight>
+    <Flag>TextureFont</Flag>
+    <Flag>Antialiasing</Flag>
+    <Flag>Shadow</Flag>
+    <ShadowOffset>
+      <x>1</x>
+      <y>1</y>
+    </ShadowOffset>
+    <ShadowColor>0</ShadowColor>
+    <FontName>Times New Roman</FontName>
+    <DefaultColor>42242216120</DefaultColor>
+  </Font>
+  <Font>
+    <Name>Timer</Name>
+    <Desc>Used for timers</Desc>
+    <RelativeFontSize>14</RelativeFontSize>
+    <RelativeFontWidth>0</RelativeFontWidth>
+    <Weight>700</Weight>
+    <Flag>TextureFont</Flag>
+    <Flag>Antialiasing</Flag>
+    <FontName>Times New Roman</FontName>
+    <DefaultColor>4278190080</DefaultColor>
+  </Font>
+  <Font>
+    <Name>Mainmenu Header</Name>
+    <Desc>Default for all maimenu headers</Desc>
+    <RelativeFontSize>24</RelativeFontSize>
+    <RelativeFontWidth>0</RelativeFontWidth>
+    <Weight>500</Weight>
+    <Flag>TextureFont</Flag>
+    <Flag>Antialiasing</Flag>
+    <Flag>Shadow</Flag>
+    <ShadowOffset>
+      <x>0</x>
+      <y>1</y>
+    </ShadowOffset>
+    <ShadowColor>6047786</ShadowColor>
+    <FontName>Times New Roman</FontName>
+    <DefaultColor>4278190080</DefaultColor>
+  </Font>
+  <Font>
+    <Name>Mainmenu Subheader</Name>
+    <Desc>Default for all maimenu sub headers</Desc>
+    <RelativeFontSize>20</RelativeFontSize>
+    <RelativeFontWidth>0</RelativeFontWidth>
+    <Weight>500</Weight>
+    <Flag>TextureFont</Flag>
+    <Flag>Antialiasing</Flag>
+    <Flag>Shadow</Flag>
+    <ShadowOffset>
+      <x>0</x>
+      <y>-1</y>
+    </ShadowOffset>
+    <ShadowColor>15522472</ShadowColor>
+    <FontName>Times New Roman</FontName>
+    <DefaultColor>4278190080</DefaultColor>
+  </Font>
+  <Font>
+    <Name>Mainmenu Subheader Start</Name>
+    <Desc>only Startscreen/Ingame Option</Desc>
+    <RelativeFontSize>19</RelativeFontSize>
+    <RelativeFontWidth>0</RelativeFontWidth>
+    <Weight>500</Weight>
+    <Flag>TextureFont</Flag>
+    <Flag>Antialiasing</Flag>
+    <Flag>Shadow</Flag>
+    <FontName>Times New Roman</FontName>
+    <DefaultColor>4278190080</DefaultColor>
+  </Font>
+  <Font>
+    <Name>Mainmenu text</Name>
+    <Desc>Default for all maimenu texts</Desc>
+    <RelativeFontSize>16</RelativeFontSize>
+    <RelativeFontWidth>0</RelativeFontWidth>
+    <Weight>500</Weight>
+    <Flag>TextureFont</Flag>
+    <Flag>Antialiasing</Flag>
+    <FontName>Arial</FontName>
+    <DefaultColor>0</DefaultColor>
+  </Font>
+  <Font>
+    <Name>Mainmenu text black</Name>
+    <Desc>Default for all maimenu texts</Desc>
+    <RelativeFontSize>16</RelativeFontSize>
+    <RelativeFontWidth>0</RelativeFontWidth>
+    <Weight>1000</Weight>
+    <Flag>TextureFont</Flag>
+    <Flag>Antialiasing</Flag>
+    <Flag>Shadow</Flag>
+    <ShadowOffset>
+      <x>0</x>
+      <y>1</y>
+    </ShadowOffset>
+    <ShadowColor>6047786</ShadowColor>
+    <FontName>Arial</FontName>
+    <DefaultColor>0</DefaultColor>
+  </Font>
+  <Font>
+    <Name>Default Shadow</Name>
+    <Desc>Used for smaller headlines in Diplomacy menu</Desc>
+    <RelativeFontSize>18</RelativeFontSize>
+    <RelativeFontWidth>0</RelativeFontWidth>
+    <Weight>500</Weight>
+    <Flag>TextureFont</Flag>
+    <Flag>Antialiasing</Flag>
+    <Flag>Shadow</Flag>
+    <ShadowOffset>
+      <x>1</x>
+      <y>1</y>
+    </ShadowOffset>
+    <ShadowColor>0</ShadowColor>
+    <FontName>Times New Roman</FontName>
+    <DefaultColor>42242216120</DefaultColor>
+  </Font>
+  <Font>
+    <Name>Hyperlink</Name>
+    <Desc>Used to render hyper links</Desc>
+    <RelativeFontSize>18</RelativeFontSize>
+    <RelativeFontWidth>0</RelativeFontWidth>
+    <Flag>TextureFont</Flag>
+    <Flag>Antialiasing</Flag>
+    <Flag>Underline</Flag>
+    <FontName>Times New Roman</FontName>
+    <DefaultColor>4278190267</DefaultColor>
+  </Font>
+  <Font>
+    <Name>Default Bold</Name>
+    <Desc>Default for all ingame texts but bold</Desc>
+    <RelativeFontSize>18</RelativeFontSize>
+    <RelativeFontWidth>0</RelativeFontWidth>
+    <Weight>700</Weight>
+    <Flag>TextureFont</Flag>
+    <Flag>Antialiasing</Flag>
+    <FontName>Times New Roman</FontName>
+    <DefaultColor>4278190080</DefaultColor>
+  </Font>
+  <Font>
+    <Name>Default</Name>
+    <Desc>Default for all ingame texts</Desc>
+    <RelativeFontSize>18</RelativeFontSize>
+    <RelativeFontWidth>0</RelativeFontWidth>
+    <Flag>TextureFont</Flag>
+    <Flag>Antialiasing</Flag>
+    <FontName>Times New Roman</FontName>
+    <DefaultColor>4278190080</DefaultColor>
+  </Font>
+  <Font>
+    <Name>H1</Name>
+    <Desc>Header for campaign name</Desc>
+    <RelativeFontSize>56</RelativeFontSize>
+    <RelativeFontWidth>0</RelativeFontWidth>
+    <Flag>TextureFont</Flag>
+    <Flag>Antialiasing</Flag>
+    <FontName>Times New Roman</FontName>
+    <DefaultColor>4278190080</DefaultColor>
+  </Font>
+  <Font>
+    <Name>H2</Name>
+    <Desc>Subheader for campaign name</Desc>
+    <RelativeFontSize>36</RelativeFontSize>
+    <RelativeFontWidth>0</RelativeFontWidth>
+    <Flag>TextureFont</Flag>
+    <Flag>Antialiasing</Flag>
+    <FontName>Times New Roman</FontName>
+    <DefaultColor>4278190080</DefaultColor>
+  </Font>
+  <Font>
+    <Name>CreditsTask</Name>
+    <Desc>Font for companis's tasks in credits text</Desc>
+    <RelativeFontSize>26</RelativeFontSize>
+    <RelativeFontWidth>0</RelativeFontWidth>
+    <Flag>TextureFont</Flag>
+    <Flag>Antialiasing</Flag>
+    <FontName>Times New Roman</FontName>
+    <DefaultColor>4281935115</DefaultColor>
+  </Font>
+  <Font>
+    <Name>CreditsLogo</Name>
+    <Desc>Font for Logos in credits text</Desc>
+    <RelativeFontSize>32</RelativeFontSize>
+    <RelativeFontWidth>0</RelativeFontWidth>
+    <Flag>TextureFont</Flag>
+    <Flag>Antialiasing</Flag>
+    <FontName>Times New Roman</FontName>
+    <DefaultColor>4281935115</DefaultColor>
+  </Font>
+  <Font>
+    <Name>CreditsHeader</Name>
+    <Desc>Header font for credits text</Desc>
+    <RelativeFontSize>26</RelativeFontSize>
+    <RelativeFontWidth>0</RelativeFontWidth>
+    <Flag>TextureFont</Flag>
+    <Flag>Antialiasing</Flag>
+    <FontName>Times New Roman</FontName>
+    <Flag>Shadow</Flag>
+    <ShadowOffset>
+      <x>0</x>
+      <y>-1</y>
+    </ShadowOffset>
+    <ShadowColor>4294967295</ShadowColor>
+    <DefaultColor>4281935115</DefaultColor>
+  </Font>
+  <Font>
+    <Name>Credits</Name>
+    <Desc>Main font for credits text</Desc>
+    <RelativeFontSize>22</RelativeFontSize>
+    <RelativeFontWidth>0</RelativeFontWidth>
+    <Flag>TextureFont</Flag>
+    <Flag>Antialiasing</Flag>
+    <FontName>Times New Roman</FontName>
+    <DefaultColor>4278190080</DefaultColor>
+  </Font>
+  <LinkDefaultColor>4282925838</LinkDefaultColor>
+  <LinkHoverColor>4291078763</LinkHoverColor>
+  <Text>
+    <Filename>txt/guids.txt</Filename>
+    <GUIDRangeMin>0</GUIDRangeMin>
+    <GUIDRangeMax>999999</GUIDRangeMax>
+  </Text>
+  <Text>
+    <Filename>txt/Interface.txt</Filename>
+    <GUIDRangeMin>1000000</GUIDRangeMin>
+    <GUIDRangeMax>1999999</GUIDRangeMax>
+  </Text>
+  <Text>
+    <Filename>txt/News.txt</Filename>
+    <GUIDRangeMin>2000000</GUIDRangeMin>
+    <GUIDRangeMax>2099999</GUIDRangeMax>
+  </Text>
+  <Text>
+    <Filename>txt/Keyboardlayout.txt</Filename>
+    <GUIDRangeMin>2100000</GUIDRangeMin>
+    <GUIDRangeMax>2199999</GUIDRangeMax>
+  </Text>
+  <Text>
+    <Filename>txt/misc.txt</Filename>
+    <GUIDRangeMin>2200000</GUIDRangeMin>
+    <GUIDRangeMax>2299999</GUIDRangeMax>
+  </Text>
+  <Text>
+    <Filename>txt/Names.txt</Filename>
+    <GUIDRangeMin>2300000</GUIDRangeMin>
+    <GUIDRangeMax>2399999</GUIDRangeMax>
+  </Text>
+  <Text>
+    <Filename>txt/Internal.txt</Filename>
+    <GUIDRangeMin>2400000</GUIDRangeMin>
+    <GUIDRangeMax>2499999</GUIDRangeMax>
+  </Text>
+  <Text>
+    <Filename>txt/Icons.txt</Filename>
+    <GUIDRangeMin>2500000</GUIDRangeMin>
+    <GUIDRangeMax>2699999</GUIDRangeMax>
+  </Text>
+  <Text>
+    <Filename>txt/MediaAndCredits.txt</Filename>
+    <GUIDRangeMin>2700000</GUIDRangeMin>
+    <GUIDRangeMax>2999999</GUIDRangeMax>
+  </Text>
+  <Text>
+    <Filename>txt/Chapters.txt</Filename>
+    <GUIDRangeMin>3000000</GUIDRangeMin>
+    <GUIDRangeMax>3999999</GUIDRangeMax>
+  </Text>
+  <Text>
+    <Filename>txt/Quests.txt</Filename>
+    <GUIDRangeMin>4000000</GUIDRangeMin>
+    <GUIDRangeMax>4499999</GUIDRangeMax>
+  </Text>
+  <Text>
+    <Filename>txt/Residents.txt</Filename>
+    <GUIDRangeMin>4500000</GUIDRangeMin>
+    <GUIDRangeMax>4999999</GUIDRangeMax>
+  </Text>
+  <Text>
+    <Filename>txt/Third.txt</Filename>
+    <GUIDRangeMin>5000000</GUIDRangeMin>
+    <GUIDRangeMax>6999999</GUIDRangeMax>
+  </Text>
+  <Text>
+    <Filename>txt/DLC01.txt</Filename>
+    <GUIDRangeMin>7000000</GUIDRangeMin>
+    <GUIDRangeMax>7109999</GUIDRangeMax>
+  </Text>
+  <Text>
+    <Filename>txt/DLC02.txt</Filename>
+    <GUIDRangeMin>7110000</GUIDRangeMin>
+    <GUIDRangeMax>7209999</GUIDRangeMax>
+  </Text>
+  <Text>
+    <Filename>txt/DLC03.txt</Filename>
+    <GUIDRangeMin>7210000</GUIDRangeMin>
+    <GUIDRangeMax>7309999</GUIDRangeMax>
+  </Text>
+  <Text>
+    <Filename>txt/DLC04.txt</Filename>
+    <GUIDRangeMin>7310000</GUIDRangeMin>
+    <GUIDRangeMax>7409999</GUIDRangeMax>
+  </Text>
+  <Text>
+    <Filename>txt/All_Audio_Pools_Offsetlist.txt</Filename>
+    <GUIDRangeMin>9900000</GUIDRangeMin>
+    <GUIDRangeMax>9999999</GUIDRangeMax>
+  </Text>
+  <Text>
+    <Filename>txt/tt_normal.txt</Filename>
+    <GUIDRangeMin>10000000</GUIDRangeMin>
+    <GUIDRangeMax>19999999</GUIDRangeMax>
+  </Text>
+  <Text>
+    <Filename>txt/tt_disabled.txt</Filename>
+    <GUIDRangeMin>20000000</GUIDRangeMin>
+    <GUIDRangeMax>29999999</GUIDRangeMax>
+  </Text>
+  <Text>
+    <Filename>txt/tt_pressed.txt</Filename>
+    <GUIDRangeMin>30000000</GUIDRangeMin>
+    <GUIDRangeMax>39999999</GUIDRangeMax>
+  </Text>
+</Localisation>
