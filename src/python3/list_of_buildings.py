@@ -16,51 +16,52 @@ from xml.etree import ElementTree as ET
 
 # globals
 __version__ = "0.4"
-_gameversion = "1.02"
-_patchnumber = "3"
+_gameversion = "1.04"
+_patchnumber = "5"
+_patchnumber_language = "4"
 _changelog = {"0.4": ["2012-02-11",
-                       "objects instead of *.* keys",
-                       "multilingual support - new keys added: Cze, Esp, Fra, Ger, Ita, Pol, Rus + the same for b['Production']['Product'] object"],
-               "0.3.2": ["2011-12-31",
-                         "ifo files copied to rda _folder => BuildBlocker.* works just fine (i hope)"],
-               "0.3.1": ["2011-12-31",
-                         "migration to this GitHub project",
-                         "from python 2.7 to 3.2",
-                         "using data files from rda _folder instead of My Documents,, but .ifo => BuildBlocker.* do not work yet"],
-               "0.3": ["2011-12-17",
-                       "IconFileName changed, the second number corresponds to IconIndexdo without added +1 (for icons numbered from 0 instead from 1)",
-                       "IconWikiaFile added",
-                       "Production.Product.BaseGoldPrice added (in default trade price, not in datafile format)",
-                       "FarmField.BuildBlocker.* added (for convenience)",
-                       "BuildCost.* added",
-                       "MaintananceCost.* added",
-                       "Unlock.* added"],
-               "0.2": ["2011-12-15",
-                       "BuildBlocker array of 2 ints split to 2 properties*.x and *.z (so .csv dump of could be 1:1 to JSON)",
-                       "ProductName, ProductGUID and ProductEng renamed to Production.Product.* (for naming consistency)",
-                       "MaxResidentCount, Faction and Group added",
-                       "FarmField.* added + the farmfields themselves can be found in the buildings array by GUID (for farm size)",
-                       "Production.* added"]
-               }
+                      "objects instead of *.* keys",
+                      "multilingual support - new keys added: Cze, Esp, Fra, Ger, Ita, Pol, Rus + the same for b['Production']['Product'] object"],
+              "0.3.2": ["2011-12-31",
+                        "ifo files copied to rda _folder => BuildBlocker.* works just fine (i hope)"],
+              "0.3.1": ["2011-12-31",
+                        "migration to this GitHub project",
+                        "from python 2.7 to 3.2",
+                        "using data files from rda _folder instead of My Documents,, but .ifo => BuildBlocker.* do not work yet"],
+              "0.3": ["2011-12-17",
+                      "IconFileName changed, the second number corresponds to IconIndexdo without added +1 (for icons numbered from 0 instead from 1)",
+                      "IconWikiaFile added",
+                      "Production.Product.BaseGoldPrice added (in default trade price, not in datafile format)",
+                      "FarmField.BuildBlocker.* added (for convenience)",
+                      "BuildCost.* added",
+                      "MaintananceCost.* added",
+                      "Unlock.* added"],
+              "0.2": ["2011-12-15",
+                      "BuildBlocker array of 2 ints split to 2 properties*.x and *.z (so .csv dump of could be 1:1 to JSON)",
+                      "ProductName, ProductGUID and ProductEng renamed to Production.Product.* (for naming consistency)",
+                      "MaxResidentCount, Faction and Group added",
+                      "FarmField.* added + the farmfields themselves can be found in the buildings array by GUID (for farm size)",
+                      "Production.* added"]
+              }
 
-# TODO v0.4: use os.path.join instead of \\
-_folder = "..\\"
-_assets_path = _folder + "rda\\patch3\\data\\config\\game\\assets.xml"
-_icons_txt_path = _folder + "rda\\eng3\\data\\loca\\eng\\txt\\icons.txt"
-_guids_txt_path = _folder + "rda\\eng3\\data\\loca\\eng\\txt\\guids.txt"
-_properties_path = _folder + "rda\\patch3\\data\\config\\game\\properties.xml"
-_icons_path = _folder + "rda\\patch3\\data\\config\\game\\icons.xml"
+# TODO v0.4.1: merge eng5.rda guids.txt with eng4.rda icons.txt
+_folder = ".."
+_assets_path = os.path.join(_folder, "rda", "patch"+_patchnumber, "data", "config", "game", "assets.xml")
+_properties_path = os.path.join(_folder, "rda", "patch"+_patchnumber, "data", "config", "game", "properties.xml")
+_icons_path = os.path.join(_folder, "rda", "patch"+_patchnumber, "data", "config", "game", "icons.xml")
+_icons_txt_path = os.path.join(_folder, "rda", "{lang}"+_patchnumber_language, "data", "loca", "eng", "txt", "icons.txt")
+_guids_txt_path = os.path.join(_folder, "rda", "{lang}"+_patchnumber_language, "data", "loca", "eng", "txt", "guids.txt")
+_languages = ["cze", "eng", "esp", "fra", "ger", "ita", "pol", "rus"]
 
 # TODO v0.4: use json\\icon_name_map.json instead
-_IconWikiaFilessource_path = _folder + "wikia\\wikia_icons_source.txt"
-_IconWikiaFiles_path = _folder + "wikia\\wikia_icons_map.csv"
+_IconWikiaFiles_path = os.path.join(_folder, "json", "icon_name_map.json")
 
 _orig_data_folder = "C:\\Users\\Peter\\Documents\\ANNO 2070" # location of all extracted data files that are not on github
-_ifo_files = _folder + "rda\\ifo_files"
+_ifo_files = os.path.join(_folder, "rda", "ifo_files")
 
 _v = ".".join(__version__.split(".")[:2])
-_output_name = "json\\list_of_buildings_v" + _v + ".json"
-_model_name = "json\\list_of_buildings_model_v" + _v + ".json"
+_output_name = os.path.join("json", "list_of_buildings_v" + _v + ".json")
+_model_name = os.path.join("json", "list_of_buildings_model_v" + _v + ".json")
 _model_url = "https://github.com/odegroot/Anno-2070-data-extraction/blob/master/src/" + _model_name.replace("\\", "/")
 
 
