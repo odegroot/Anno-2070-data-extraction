@@ -3,7 +3,7 @@
     <Name>BoundingBox</Name>
     <Position>
       <x>0</x>
-      <y>9916</y>
+      <y>6862</y>
       <z>0</z>
     </Position>
     <Rotation>
@@ -14,9 +14,9 @@
       <Direction>0</Direction>
     </Rotation>
     <Extents>
-      <x>18720</x>
-      <y>15396</y>
-      <z>18720</z>
+      <x>26208</x>
+      <y>23134</y>
+      <z>26208</z>
     </Extents>
   </BoundingBox>
   <IntersectBox>

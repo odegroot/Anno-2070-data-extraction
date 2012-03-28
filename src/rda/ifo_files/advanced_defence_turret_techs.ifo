@@ -211,7 +211,7 @@
       <y>62</y>
       <z>0</z>
       <w>4095</w>
-      <Direction>-7194</Direction>
+      <Direction>-7105</Direction>
     </Rotation>
     <Extents>
       <x>409</x>
@@ -231,7 +231,7 @@
       <y>2957</y>
       <z>0</z>
       <w>2832</w>
-      <Direction>-378794</Direction>
+      <Direction>-378773</Direction>
     </Rotation>
     <Extents>
       <x>409</x>
@@ -251,7 +251,7 @@
       <y>4094</y>
       <z>0</z>
       <w>47</w>
-      <Direction>-731872</Direction>
+      <Direction>-731891</Direction>
     </Rotation>
     <Extents>
       <x>409</x>
@@ -271,7 +271,7 @@
       <y>2972</y>
       <z>0</z>
       <w>-2816</w>
-      <Direction>381234</Direction>
+      <Direction>381287</Direction>
     </Rotation>
     <Extents>
       <x>409</x>

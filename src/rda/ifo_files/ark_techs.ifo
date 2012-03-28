@@ -124,7 +124,7 @@
     <Position>
       <x>2048</x>
       <y>0</y>
-      <z>-59392</z>
+      <z>-75776</z>
     </Position>
     <Rotation>
       <x>0</x>
@@ -144,7 +144,7 @@
     <Position>
       <x>-2048</x>
       <y>0</y>
-      <z>-59392</z>
+      <z>-75776</z>
     </Position>
     <Rotation>
       <x>0</x>
@@ -164,7 +164,7 @@
     <Position>
       <x>2048</x>
       <y>0</y>
-      <z>-63488</z>
+      <z>-79872</z>
     </Position>
     <Rotation>
       <x>0</x>
@@ -184,7 +184,7 @@
     <Position>
       <x>-2048</x>
       <y>0</y>
-      <z>-63488</z>
+      <z>-79872</z>
     </Position>
     <Rotation>
       <x>0</x>
@@ -204,7 +204,7 @@
     <Position>
       <x>0</x>
       <y>0</y>
-      <z>-59392</z>
+      <z>-75776</z>
     </Position>
     <Rotation>
       <x>0</x>
@@ -224,7 +224,7 @@
     <Position>
       <x>-8192</x>
       <y>0</y>
-      <z>-65536</z>
+      <z>-81920</z>
     </Position>
     <Rotation>
       <x>0</x>
@@ -244,7 +244,7 @@
     <Position>
       <x>0</x>
       <y>0</y>
-      <z>-65536</z>
+      <z>-81920</z>
     </Position>
     <Rotation>
       <x>0</x>
@@ -264,7 +264,7 @@
     <Position>
       <x>8192</x>
       <y>0</y>
-      <z>-65536</z>
+      <z>-81920</z>
     </Position>
     <Rotation>
       <x>0</x>
@@ -1364,11 +1364,11 @@
     </Position>
     <Position>
       <x>20480</x>
-      <z>-49152</z>
+      <z>-65536</z>
     </Position>
     <Position>
       <x>-20480</x>
-      <z>-49152</z>
+      <z>-65536</z>
     </Position>
   </WaterBlocker>
   <WaterBlocker>

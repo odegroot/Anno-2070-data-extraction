@@ -2,9 +2,9 @@
   <BoundingBox>
     <Name>BoundingBox</Name>
     <Position>
-      <x>-7184</x>
-      <y>31967</y>
-      <z>-7651</z>
+      <x>-8350</x>
+      <y>33323</y>
+      <z>-1989</z>
     </Position>
     <Rotation>
       <x>0</x>
@@ -14,9 +14,9 @@
       <Direction>0</Direction>
     </Rotation>
     <Extents>
-      <x>48466</x>
-      <y>50227</y>
-      <z>53355</z>
+      <x>69765</x>
+      <y>52397</y>
+      <z>67337</z>
     </Extents>
   </BoundingBox>
   <IntersectBox>
@@ -34,9 +34,9 @@
       <Direction>0</Direction>
     </Rotation>
     <Extents>
-      <x>40960</x>
+      <x>36044</x>
       <y>409</y>
-      <z>40954</z>
+      <z>37109</z>
     </Extents>
   </IntersectBox>
   <IntersectBox>
@@ -59,6 +59,26 @@
       <z>20302</z>
     </Extents>
   </IntersectBox>
+  <Dummy>
+    <Name>infolayer</Name>
+    <Position>
+      <x>0</x>
+      <y>88473</y>
+      <z>0</z>
+    </Position>
+    <Rotation>
+      <x>0</x>
+      <y>0</y>
+      <z>0</z>
+      <w>4096</w>
+      <Direction>0</Direction>
+    </Rotation>
+    <Extents>
+      <x>409</x>
+      <y>409</y>
+      <z>409</z>
+    </Extents>
+  </Dummy>
   <Instancing>0</Instancing>
   <BuildBlocker>
     <Position>

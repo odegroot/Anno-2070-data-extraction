@@ -42,7 +42,7 @@
   <Dummy>
     <Name>impact_0</Name>
     <Position>
-      <x>228</x>
+      <x>227</x>
       <y>1686</y>
       <z>-3276</z>
     </Position>
@@ -51,7 +51,7 @@
       <y>2884</y>
       <z>0</z>
       <w>2907</w>
-      <Direction>-366725</Direction>
+      <Direction>-366775</Direction>
     </Rotation>
     <Extents>
       <x>409</x>
@@ -71,7 +71,7 @@
       <y>-12</y>
       <z>0</z>
       <w>4095</w>
-      <Direction>1455</Direction>
+      <Direction>1375</Direction>
     </Rotation>
     <Extents>
       <x>409</x>
@@ -91,7 +91,7 @@
       <y>-2907</y>
       <z>0</z>
       <w>2884</w>
-      <Direction>370498</Direction>
+      <Direction>370504</Direction>
     </Rotation>
     <Extents>
       <x>409</x>
@@ -111,7 +111,27 @@
       <y>-4094</y>
       <z>0</z>
       <w>56</w>
-      <Direction>730802</Direction>
+      <Direction>730860</Direction>
+    </Rotation>
+    <Extents>
+      <x>409</x>
+      <y>409</y>
+      <z>409</z>
+    </Extents>
+  </Dummy>
+  <Dummy>
+    <Name>infolayer</Name>
+    <Position>
+      <x>0</x>
+      <y>8601</y>
+      <z>0</z>
+    </Position>
+    <Rotation>
+      <x>0</x>
+      <y>0</y>
+      <z>0</z>
+      <w>4096</w>
+      <Direction>0</Direction>
     </Rotation>
     <Extents>
       <x>409</x>

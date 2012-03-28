@@ -15,7 +15,7 @@ import json
 from xml.etree import ElementTree as ET
 
 # globals
-__version__ = "0.4"
+__version__ = "0.4.0"
 _gameversion = "1.04"
 _patchnumber = "5"
 _patchnumber_language = "4"
@@ -44,16 +44,15 @@ _changelog = {"0.4": ["2012-02-11",
                       "Production.* added"]
               }
 
-# TODO v0.4.1: merge eng5.rda guids.txt with eng4.rda icons.txt
+# TODO v0.4.x: merge eng5.rda guids.txt with eng4.rda icons.txt
 _folder = ".."
 _assets_path = os.path.join(_folder, "rda", "patch"+_patchnumber, "data", "config", "game", "assets.xml")
 _properties_path = os.path.join(_folder, "rda", "patch"+_patchnumber, "data", "config", "game", "properties.xml")
 _icons_path = os.path.join(_folder, "rda", "patch"+_patchnumber, "data", "config", "game", "icons.xml")
-_icons_txt_path = os.path.join(_folder, "rda", "{lang}"+_patchnumber_language, "data", "loca", "eng", "txt", "icons.txt")
-_guids_txt_path = os.path.join(_folder, "rda", "{lang}"+_patchnumber_language, "data", "loca", "eng", "txt", "guids.txt")
+_icons_txt_path = os.path.join(_folder, "rda", "{lang}"+_patchnumber_language, "data", "loca", "{lang}", "txt", "icons.txt")
+_guids_txt_path = os.path.join(_folder, "rda", "{lang}"+_patchnumber_language, "data", "loca", "{lang}", "txt", "guids.txt")
 _languages = ["cze", "eng", "esp", "fra", "ger", "ita", "pol", "rus"]
 
-# TODO v0.4: use json\\icon_name_map.json instead
 _IconWikiaFiles_path = os.path.join(_folder, "json", "icon_name_map.json")
 
 _orig_data_folder = "C:\\Users\\Peter\\Documents\\ANNO 2070" # location of all extracted data files that are not on github
@@ -63,13 +62,13 @@ _v = ".".join(__version__.split(".")[:2])
 _output_name = os.path.join("json", "list_of_buildings_v" + _v + ".json")
 _model_name = os.path.join("json", "list_of_buildings_model_v" + _v + ".json")
 _model_url = "https://github.com/odegroot/Anno-2070-data-extraction/blob/master/src/" + _model_name.replace("\\", "/")
-
+_validation_result = set()
 
 def get_building_list():
     AssetGroups = ET.parse(_assets_path).findall(".//Group")
     IconFileNames = parse_IconFileNames()
-    IconWikiaFiles = parse_IconWikiaFiles()
-    Eng = parse_Eng()
+    IconWikiaFiles, IconWikiaFiles_missing = parse_IconWikiaFiles()
+    Localisaton = parse_Localisation()
     ProductGUIDs = parse_ProductGUIDs()
     BaseGoldPrices = parse_BaseGoldPrices()
     Unlocks = parse_Unlocks()    
@@ -94,124 +93,191 @@ def get_building_list():
                     continue
                 GUID = int(asset.find("Values/Standard/GUID").text)
                 Name = asset.find("Values/Standard/Name").text
+                # ___base attributes, localisations and buildblocker___ #
                 b = {"GUID": GUID, "Name": Name}
-                try:    b["Eng"] = Eng[GUID]
-                except: pass
-                try:    b["IconFileName"] = IconFileNames[GUID]
-                except: pass
-                try:    b["IconWikiaFile"] = IconWikiaFiles[Name]
-                except: pass
-                try:    b["Faction"] = faction_name
-                except: pass
-                try:    b["Group"] = group_name
-                except: pass
-                try:    b["Template"] = template
-                except: pass
-                try:    b["InfluenceRadius"] = int(asset.find("Values/Influence/InfluenceRadius").text)
-                except: pass
-                try:    b[".ifo"] = (asset.find("Values/Object/Variations/Item/Filename").text.split("\\")[-1][:-3] + "ifo").lower()
-                except: pass
+                b["Localisation"] = {}
+                for lang in _languages:
+                    try:
+                        b["Localisation"][lang] = Localisaton[lang][GUID]
+                    except KeyError:
+                        print("{} (={}) not in Localisation[{}]".format(GUID, Name, lang))
+                try:
+                    b["IconFileName"] = IconFileNames[GUID]
+                    try:
+                        b["IconWikiaFile"] = IconWikiaFiles[b["IconFileName"]]
+                    except KeyError:
+                        if b["IconFileName"] not in IconWikiaFiles_missing:
+                            print("{} (={}) not in IconWikiaFiles (icon_name_map.json)".format(b["IconFileName"], Name))
+                except KeyError:
+                    # known missing GUIDs in icons.xml
+                    if GUID not in (10264, 10074, 10018, 10251):
+                        print("{} (={}) not in IconFileNames (icons.xml)".format(GUID, Name))
+                try:
+                    b["Faction"] = faction_name
+                except AttributeError:
+                    pass
+                try:
+                    b["Group"] = group_name
+                except AttributeError:
+                    pass
+                try:
+                    b["Template"] = template
+                except AttributeError:
+                    pass
+                try:
+                    b["InfluenceRadius"] = int(asset.find("Values/Influence/InfluenceRadius").text)
+                except AttributeError:
+                    pass
+                try:
+                    b[".ifo"] = (asset.find("Values/Object/Variations/Item/Filename").text.split("\\")[-1][:-3] + "ifo").lower()
+                except AttributeError:
+                    pass
                 try:    b["MaxResidentCount"] = int(asset.find("Values/ResidenceBuilding/MaxResidentCount").text)
-                except: pass
+                except AttributeError:
+                    pass
                 try:
                     (x, z) = get_BuildBlocker( b[".ifo"] )
-                    b["BuildBlocker.x"] = x
-                    b["BuildBlocker.z"] = z
-                except: pass
+                    b["BuildBlocker"] = {"x": x, "z": z}
+                except AttributeError:
+                    pass
+                # ___farmfield___ #
                 try:
-                    b["FarmField.GUID"] = int(asset.find("Values/Farm/FarmFieldGUID").text)
-                    try:    b["FarmField.Count"] = int(asset.find("Values/Farm/FarmfieldCount").text)
-                    except: pass
-                    try:    b["FarmField.Fertility"] = asset.find("Values/Farm/Fertility").text
-                    except: pass
+                    b["FarmField"] = {"GUID": int(asset.find("Values/Farm/FarmFieldGUID").text)}
                     try:
-                        # this split and join is to add "_field" to the .ifo filename
-                        farmifo = b[".ifo"].split("\\")
-                        for i in range(-2,0):
-                            f = farmifo[i].split("_")
-                            farmifo[i] = "_".join(f[0:-1] + ["field"] + [f[-1]])
-                        farmifo = "\\".join(farmifo).replace("tycoon.ifo", "tycoons.ifo") # tycoon do not have consistend .ifo filenames for fields 
-                        (x, z) = get_BuildBlocker( farmifo )
-                        b["FarmField.BuildBlocker.x"] = x
-                        b["FarmField.BuildBlocker.z"] = z
-                    except: pass
-                except: pass
+                        b["FarmField"]["Fertility"] = asset.find("Values/Farm/Fertility").text
+                    except AttributeError:
+                        pass
+                    try:
+                        b["FarmField"]["Count"] = int(asset.find("Values/Farm/FarmfieldCount").text)
+                        if b["FarmField"]["Count"] > 0:
+                            # add "_field" to the .ifo filename
+                            farmifo = b[".ifo"]
+                            f = farmifo.split("_")
+                            farmifo = "_".join(f[0:-1] + ["field"] + [f[-1]])
+                            # correct naming inconsistencies
+                            if farmifo == "tea_field_plantation.ifo":
+                                farmifo = "tea_plantation_field_ecos.ifo"
+                            elif farmifo == "algae_farm_field_techs.ifo":
+                                farmifo = "algae_farm_field_techs_algae.ifo"
+                            else:
+                                farmifo = farmifo.replace("tycoon.ifo", "tycoons.ifo")
+                            try:
+                                (x, z) = get_BuildBlocker( farmifo )
+                                b["FarmField"]["BuildBlocker"] = {"x": x, "z": z}
+                            except IOError:
+                                print("{} file does not exist".format(farmifo))
+                    except AttributeError:
+                        pass
+                except AttributeError:
+                    pass
+                # ___production___ #
                 try:    
-                    b["Production.Product.Name"] = asset.find("Values/WareProduction/Product").text
+                    b["Production"] = {"Product": {"Name": asset.find("Values/WareProduction/Product").text}}
                     #default values:
-                    b["Production.ProductionTime"] = 20000 #miliseconds
-                    b["Production.ProductionCount"] = 1000 #kilograms
-                    b["Production.RawNeeded1"] = 1000
-                    b["Production.RawNeeded2"] = 1000
-                    try:    b["Production.Product.GUID"] = ProductGUIDs[ b["Production.Product.Name"] ]
-                    except: pass
-                    try:    b["Production.Product.BaseGoldPrice"] = BaseGoldPrices[ b["Production.Product.Name"] ]
-                    except: pass
-                    try:    b["Production.Product.Eng"] = Eng[ b["Production.Product.GUID"] ]
-                    except: pass
-                    try:    b["Production.ProductionTime"] = int(asset.find("Values/WareProduction/ProductionTime").text)
-                    except: pass
-                    try:    b["Production.ProductionCount"] = int(asset.find("Values/WareProduction/ProductionCount").text)
-                    except: pass
-                    try:    b["Production.RawMaterial1"] = asset.find("Values/Factory/RawMaterial1").text
-                    except: del b["Production.RawNeeded1"]
-                    try:    b["Production.RawMaterial2"] = asset.find("Values/Factory/RawMaterial2").text
-                    except: del b["Production.RawNeeded2"]
-                    try:    b["Production.RawNeeded1"] = int(asset.find("Values/Factory/RawNeeded1").text)
-                    except: pass
-                    try:    b["Production.RawNeeded2"] = int(asset.find("Values/Factory/RawNeeded2").text)
-                    except: pass
-                    TicksPerMinute = 60000 / b["Production.ProductionTime"]
-                    b["Production.ProductionTonsPerMinute"] = ( b["Production.ProductionCount"] / 1000 ) * TicksPerMinute 
-                    try:    b["Production.RawNeeded1TonsPerMinute"] = ( b["Production.RawNeeded1"] / 1000 ) * b["Production.ProductionTonsPerMinute"]
-                    except: pass
-                    try:    b["Production.RawNeeded2TonsPerMinute"] = ( b["Production.RawNeeded2"] / 1000 ) * b["Production.ProductionTonsPerMinute"]
-                    except: pass
-                except: pass
-                try:
-                    for cost in asset.findall("Values/BuildCost/*/*"):
-                        try:    
-                            if cost.tag == "Credits":
-                                b["BuildCost." + cost.tag] = int(cost.text)
-                            else:
-                                b["BuildCost." + cost.tag] = int(cost.text) // 1000 # in tons
-                        except: pass
-                except: pass
-                try:
-                    for cost in asset.findall("Values/MaintenanceCost/*"):
+                    b["Production"]["ProductionTime"] = 20000 #miliseconds
+                    b["Production"]["ProductionCount"] = 1000 #kilograms
+                    b["Production"]["RawNeeded1"] = 1000
+                    b["Production"]["RawNeeded2"] = 1000
+                    try:
+                        b["Production"]["Product"]["GUID"] = ProductGUIDs[ b["Production"]["Product"]["Name"] ]
+                    except KeyError:
+                        print("{} not in ProductGUIDs".format(b["Production"]["Product"]["Name"]))
+                    try:
+                        b["Production"]["Product"]["BaseGoldPrice"] = BaseGoldPrices[ b["Production"]["Product"]["Name"] ]
+                    except KeyError:
+                        print("{} not in BaseGoldPrices".format(b["Production"]["Product"]["Name"]))
+                    b["Production"]["Product"]["Localisation"] = {}
+                    for lang in _languages:
                         try:
-                            c = int(cost.text)
-                            if "Cost" in cost.tag:
-                                c = -c
-                            if c % (2 << 10):
-                                b["MaintenanceCost." + cost.tag] = c # in Credits
-                            else:
-                                b["MaintenanceCost." + cost.tag] = c >> 12 # in game eco / power / ... units
-                        except: pass
-                except: pass
+                            b["Production"]["Product"]["Localisation"][lang] = Localisaton[lang][b["Production"]["Product"]["GUID"]]
+                        except KeyError:
+                            print("{} (={}) not in Localisation[{}]".format(b["Production"]["Product"]["GUID"], b["Production"]["Product"]["Name"], lang))
+                    try:
+                        b["Production"]["ProductionTime"] = int(asset.find("Values/WareProduction/ProductionTime").text)
+                    except AttributeError:
+                        pass
+                    TicksPerMinute = 60000 / b["Production"]["ProductionTime"]
+                    b["Production"]["ProductionTonsPerMinute"] = ( b["Production"]["ProductionCount"] / 1000 ) * TicksPerMinute 
+                    try:
+                        ["Production"]["ProductionCount"] = int(asset.find("Values/WareProduction/ProductionCount").text)
+                    except AttributeError:
+                        pass
+                    try:
+                        b["Production"]["RawMaterial1"] = asset.find("Values/Factory/RawMaterial1").text
+                    except:
+                        del b["Production"]["RawNeeded1"]
+                    try:
+                        b["Production"]["RawMaterial2"] = asset.find("Values/Factory/RawMaterial2").text
+                    except:
+                        del b["Production"]["RawNeeded2"]
+                    try:
+                        b["Production"]["RawNeeded1"] = int(asset.find("Values/Factory/RawNeeded1").text)
+                        b["Production"]["RawNeeded1TonsPerMinute"] = ( b["Production"]["RawNeeded1"] / 1000 ) * b["Production"]["ProductionTonsPerMinute"]
+                    except AttributeError:
+                        pass
+                    try:
+                        b["Production"]["RawNeeded2"] = int(asset.find("Values/Factory/RawNeeded2").text)
+                        b["Production"]["RawNeeded2TonsPerMinute"] = ( b["Production"]["RawNeeded2"] / 1000 ) * b["Production"]["ProductionTonsPerMinute"]
+                    except AttributeError:
+                        pass
+                except AttributeError:
+                    pass
+                # ___costs and unlocks___ #
                 try:
-                    b["Unlock.IntermediateLevel"] = asset.find("Values/BuildCost/NeedsIntermediatelevel").text
-                    (count, level) = Unlocks[ b["Unlock.IntermediateLevel"] ]
-                    b["Unlock.ResidentCount"] = count
-                    b["Unlock.ResidentLevel"] = level
-                except: pass
+                    b["BuildCost"] = {}
+                    for cost in asset.findall("Values/BuildCost/*/*"):
+                        try:
+                            if cost.tag == "Credits":
+                                b["BuildCost"][cost.tag] = int(cost.text)
+                            else:
+                                b["BuildCost"][cost.tag] = int(cost.text) // 1000 # in tons
+                        except AttributeError:
+                            pass
+                except AttributeError:
+                    pass
+                try:
+                    b["MaintenanceCost"] = {}
+                    for cost in asset.findall("Values/MaintenanceCost/*"):
+                        if not isinstance(cost.text, int):
+                            continue
+                        c = int(cost.text)
+                        if "Cost" in cost.tag:
+                            c = -c
+                        if c % (2 << 10):
+                            b["MaintenanceCost"][cost.tag] = c # in Credits
+                        else:
+                            b["MaintenanceCost"][cost.tag] = c >> 12 # in game eco / power / ... units
+                except AttributeError:
+                    pass
+                try:
+                    b["Unlock"] = {"IntermediateLevel": asset.find("Values/BuildCost/NeedsIntermediatelevel").text}
+                    (count, level) = Unlocks[ b["Unlock"]["IntermediateLevel"] ]
+                    b["Unlock"]["ResidentCount"] = count
+                    b["Unlock"]["ResidentLevel"] = level
+                except AttributeError:
+                    pass
+                except KeyError:
+                    print("{} not in Unlocks".format(b["Unlock"]["IntermediateLevel"]))
                 buildings.append(b)
     return buildings
 
 #===============================================================================
 
-def parse_Eng():
-    Eng = {}
-    for line in open(_icons_txt_path, encoding="utf_16"):
-        result = re.search("(\\d*)=(.*)", line)
-        if result:
-            Eng[int(result.group(1))] = result.group(2)
-    for line in open(_guids_txt_path, encoding="utf_16"):
-        result = re.search("(\\d*)=(.*)", line)
-        if result:
-            Eng[int(result.group(1))] = result.group(2)
-    return Eng
-
+def parse_Localisation():
+    Localisation = {}
+    for lang in _languages:
+        Localisation[lang] = {}
+        with open(_icons_txt_path.format(lang=lang), encoding="utf_16") as f:
+            for line in f:
+                result = re.search("(\\d*)=(.*)", line)
+                if result:
+                    Localisation[lang][int(result.group(1))] = result.group(2)
+        with open(_guids_txt_path.format(lang=lang), encoding="utf_16") as f:
+            for line in f:
+                result = re.search("(\\d*)=(.*)", line)
+                if result:
+                    Localisation[lang][int(result.group(1))] = result.group(2)
+    return Localisation
 
 def parse_ProductGUIDs():
     ProductGUIDs = {}
@@ -220,15 +286,13 @@ def parse_ProductGUIDs():
             ProductGUIDs[p.tag] = int(p.find("icon").text)
     return ProductGUIDs
 
-
 def parse_BaseGoldPrices():
     BaseGoldPrices = {}
     for p in ET.parse(_properties_path).findall(".//ProductPrices/*"):
         try:    
             BaseGoldPrices[p.tag] = int(int(p.find("BaseGoldPrice").text) * 2.5)
-        except: pass
+        except AttributeError: pass
     return BaseGoldPrices
-
 
 def parse_IconFileNames():
     prefix = "icon_"
@@ -244,54 +308,12 @@ def parse_IconFileNames():
             IconFileNames[int(i.find("GUID").text)] = prefix + IconFileID + midfix + IconIndex + postfix
     return IconFileNames
 
-
 def parse_IconWikiaFiles():
-    IconWikiaFiles = {}
     with open(_IconWikiaFiles_path) as f:
-        f.readline() # first line contains headers
-        for line in f:
-            (key, value) = line.strip().replace("\"","").split(";")[0:2]
-            IconWikiaFiles[key] = value
-    return IconWikiaFiles
-
-
-def parse_IconWikiaFilesSource():
-    """in the _IconWikiaFilessource_path file is the edit>source text of the Icons wikia page
-    to be used only once to get icon names from the source code and match them with eng3 and then the map file edited manually"""
-    buildings = get_building_list()
-    WikiaCSVString = "Name;Wikia Icon File;Wikia Label\n"
-    def prep(string):
-        return re.sub("[ ._-]*", "", string.lower())
-    with open(_IconWikiaFilessource_path) as f:
-        for line in f:
-            if ".png" in line and "File:" not in line:
-                try:
-                    (png, label) = line.strip().replace(";","").split("|")[0:2]
-                except:
-                    (png, label) = (line.strip().replace(";","").split("|")[0], "")
-                name = ""
-                for b in buildings:
-                    names = [ prep(b["Name"]) ]
-                    try:    names.append(prep(b["Eng"]))
-                    except: pass
-                    try:    names.append(prep(b["IconWikiaFile"]))
-                    except: pass
-                    try:    names.append(prep(b["Production.Product.Name"]))
-                    except: pass
-                    try:    names.append(prep(b["Production.Product.Eng"]))
-                    except: pass
-                    try:    names.append(prep(b["IconFileName"]))
-                    except: pass
-                    if prep(label) in names or prep(png.split(".")[0]) in names:
-                        name = b["Name"]
-                        break
-                WikiaCSVString += "{0};{1};{2}\n".format(name, png, label)
-    return WikiaCSVString
-
-
-def update_IconWikiaFiles():
-    pass # manually for now ...
-
+        temp = json.load(f)
+    IconWikiaFiles = temp["data"]
+    IconWikiaFiles_missing = temp["missing_data"]
+    return IconWikiaFiles, IconWikiaFiles_missing
 
 def get_BuildBlocker(ifo):
     b = ET.parse(os.path.join(_ifo_files, ifo)).find(".//BuildBlocker/Position")
@@ -314,8 +336,14 @@ def parse_Unlocks():
     Unlocks = {}
     for p in ET.parse(_properties_path).findall(".//SortedLevels")[1].getchildren():
         for i in p.findall("levels/Item"):
-            try:    Unlocks[i.find("IntermediateLevel").text] = ( int(i.find("ResidentCount").text), p.tag )
-            except: pass
+            try:
+                key = i.find("IntermediateLevel").text
+                value = ( int(i.find("ResidentCount").text), p.tag )
+                Unlocks[key] = value
+                if key[-1] == "1":
+                    Unlocks[key[:-1]] = (0, key[:-1].replace("Intermediate", ""))
+            except AttributeError:
+                pass
     return Unlocks
 
 #===============================================================================
@@ -324,32 +352,31 @@ def validate(buildings, model):
     """validation of buildings dict values using types from model dict values
        recursive if both buildings and model value is dict"""
     valid_keys = model.keys()
-    result = set()
     for b in buildings:
         for k in b.keys():
             if k not in valid_keys:
-                result.add("\"{0}\": \"\",".format(k))
+                _validation_result.add("\"{0}\": \"\",".format(k))
                 continue
             mk = model[k]
             bk = b[k]
             if isinstance(mk, dict):
                 if not isinstance(bk, dict):
-                    result.add("expected dict in {0}, found {0} instead".format(k, type(bk)))
-                validate(bk, mk)
+                    _validation_result.add("expected dict in {0}, found {0} instead".format(k, type(bk)))
+                validate([bk], mk)
             elif isinstance(mk, str):
                 if not (mk.startswith("text") or
                         mk.startswith("int") or
                         mk.startswith("float")):
-                    result.add("unknown type <{0}> for key: {1}".format(mk, k))
+                    _validation_result.add("unknown type <{0}> for key: {1}".format(mk, k))
                 elif (mk.startswith("text") and not isinstance(bk, str) or
                       mk.startswith("int") and not isinstance(bk, int) or
-                      mk.startswith("float") and not isinstance(bk, float)):
-                    result.add("{0} should be <{1}> type, but for b[\"Name\"] = {2} the value is: {3}".format(k, mk, b["Name"], bk))
+                      mk.startswith("float") and not isinstance(bk, float) and not isinstance(bk, int)):
+                    _validation_result.add("{0} should be <{1}> type, but somewhere the value is: {2}".format(k, mk, bk))
             else:
-                result.add("expected data type for {0} in the model: {1}".format(k, type(mk)))
-    if result:
+                _validation_result.add("expected data type for {0} in the model: {1}".format(k, type(mk)))
+    if _validation_result:
         text_result = "Invalid keys not found in model:\n\n"
-        for r in result:
+        for r in _validation_result:
             text_result += r + "\n"
     else:
         text_result = "Validation ok."
@@ -358,13 +385,13 @@ def validate(buildings, model):
 
 def out_json(buildings, model):
     json.dump(model,
-              fp=open(_folder + _model_name, "w"),
+              fp=open(os.path.join(_folder, _model_name), "w"),
               indent=2,
               sort_keys=True)
     json.dump({"_version": __version__,
                "_model": _model_url,
                "buildings": buildings},
-              fp=open(_folder + _output_name, "w"),
+              fp=open(os.path.join(_folder, _output_name), "w"),
               indent=2,
               sort_keys=True)
     return None
@@ -499,7 +526,6 @@ def main():
                            }
              } 
     
-    #parse_IconWikiaFilesSource()
     #copy_ifo_files()
     
     buildings = get_building_list()

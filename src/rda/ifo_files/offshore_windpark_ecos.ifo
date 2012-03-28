@@ -82,9 +82,9 @@
   <Dummy>
     <Name>needwater_0</Name>
     <Position>
-      <x>4096</x>
+      <x>6144</x>
       <y>-2867</y>
-      <z>6144</z>
+      <z>4096</z>
     </Position>
     <Rotation>
       <x>0</x>
@@ -102,9 +102,9 @@
   <Dummy>
     <Name>needwater_1</Name>
     <Position>
-      <x>0</x>
+      <x>2048</x>
       <y>-2867</y>
-      <z>6144</z>
+      <z>4096</z>
     </Position>
     <Rotation>
       <x>0</x>
@@ -122,9 +122,9 @@
   <Dummy>
     <Name>needwater_2</Name>
     <Position>
-      <x>-4096</x>
+      <x>-2048</x>
       <y>-2867</y>
-      <z>6144</z>
+      <z>4096</z>
     </Position>
     <Rotation>
       <x>0</x>
@@ -142,9 +142,9 @@
   <Dummy>
     <Name>needwater_3</Name>
     <Position>
-      <x>-4096</x>
+      <x>-6144</x>
       <y>-2867</y>
-      <z>2048</z>
+      <z>4096</z>
     </Position>
     <Rotation>
       <x>0</x>
@@ -162,9 +162,9 @@
   <Dummy>
     <Name>needwater_4</Name>
     <Position>
-      <x>4096</x>
+      <x>6144</x>
       <y>-2867</y>
-      <z>2048</z>
+      <z>0</z>
     </Position>
     <Rotation>
       <x>0</x>
@@ -182,9 +182,9 @@
   <Dummy>
     <Name>needwater_5</Name>
     <Position>
-      <x>0</x>
+      <x>2048</x>
       <y>-2867</y>
-      <z>2048</z>
+      <z>0</z>
     </Position>
     <Rotation>
       <x>0</x>
@@ -202,9 +202,9 @@
   <Dummy>
     <Name>needwater_6</Name>
     <Position>
-      <x>4096</x>
+      <x>-2048</x>
       <y>-2867</y>
-      <z>-2048</z>
+      <z>0</z>
     </Position>
     <Rotation>
       <x>0</x>
@@ -222,9 +222,9 @@
   <Dummy>
     <Name>needwater_7</Name>
     <Position>
-      <x>0</x>
+      <x>-6144</x>
       <y>-2867</y>
-      <z>-2048</z>
+      <z>0</z>
     </Position>
     <Rotation>
       <x>0</x>
@@ -242,9 +242,9 @@
   <Dummy>
     <Name>needwater_8</Name>
     <Position>
-      <x>-4096</x>
+      <x>6144</x>
       <y>-2867</y>
-      <z>-2048</z>
+      <z>-4096</z>
     </Position>
     <Rotation>
       <x>0</x>
@@ -262,9 +262,9 @@
   <Dummy>
     <Name>needwater_9</Name>
     <Position>
-      <x>4096</x>
+      <x>2048</x>
       <y>-2867</y>
-      <z>-6144</z>
+      <z>-4096</z>
     </Position>
     <Rotation>
       <x>0</x>
@@ -282,9 +282,9 @@
   <Dummy>
     <Name>needwater_10</Name>
     <Position>
-      <x>0</x>
+      <x>-2048</x>
       <y>-2867</y>
-      <z>-6144</z>
+      <z>-4096</z>
     </Position>
     <Rotation>
       <x>0</x>
@@ -302,9 +302,9 @@
   <Dummy>
     <Name>needwater_11</Name>
     <Position>
-      <x>-4096</x>
+      <x>-6144</x>
       <y>-2867</y>
-      <z>-6144</z>
+      <z>-4096</z>
     </Position>
     <Rotation>
       <x>0</x>
@@ -427,20 +427,20 @@
   <Instancing>0</Instancing>
   <BuildBlocker>
     <Position>
-      <x>-6144</x>
-      <z>-8192</z>
+      <x>-8192</x>
+      <z>-6144</z>
     </Position>
     <Position>
-      <x>6144</x>
-      <z>-8192</z>
+      <x>8192</x>
+      <z>-6144</z>
     </Position>
     <Position>
-      <x>6144</x>
-      <z>8192</z>
+      <x>8192</x>
+      <z>6144</z>
     </Position>
     <Position>
-      <x>-6144</x>
-      <z>8192</z>
+      <x>-8192</x>
+      <z>6144</z>
     </Position>
   </BuildBlocker>
   <WaterBlocker>

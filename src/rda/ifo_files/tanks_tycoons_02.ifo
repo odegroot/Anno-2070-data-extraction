@@ -51,7 +51,7 @@
       <y>2884</y>
       <z>0</z>
       <w>2907</w>
-      <Direction>-366835</Direction>
+      <Direction>-366775</Direction>
     </Rotation>
     <Extents>
       <x>409</x>
@@ -71,7 +71,7 @@
       <y>77</y>
       <z>0</z>
       <w>4094</w>
-      <Direction>-8837</Direction>
+      <Direction>-8826</Direction>
     </Rotation>
     <Extents>
       <x>409</x>
@@ -91,7 +91,7 @@
       <y>-2859</y>
       <z>0</z>
       <w>2932</w>
-      <Direction>362719</Direction>
+      <Direction>362723</Direction>
     </Rotation>
     <Extents>
       <x>409</x>
@@ -111,7 +111,27 @@
       <y>-4095</y>
       <z>0</z>
       <w>3</w>
-      <Direction>736919</Direction>
+      <Direction>736936</Direction>
+    </Rotation>
+    <Extents>
+      <x>409</x>
+      <y>409</y>
+      <z>409</z>
+    </Extents>
+  </Dummy>
+  <Dummy>
+    <Name>infolayer</Name>
+    <Position>
+      <x>0</x>
+      <y>13107</y>
+      <z>0</z>
+    </Position>
+    <Rotation>
+      <x>0</x>
+      <y>0</y>
+      <z>0</z>
+      <w>4096</w>
+      <Direction>0</Direction>
     </Rotation>
     <Extents>
       <x>409</x>
